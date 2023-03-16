@@ -1,0 +1,13 @@
+.footer {
+    outline: 1px red solid;
+}
+
+.scroll-up::after {
+    width: 14px;
+    height: 14px;
+content: '';
+display: block;
+background-size: contain;
+background-image: url("../images/vectors/vector up.svg");
+
+}
