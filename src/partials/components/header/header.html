@@ -1,21 +1,21 @@
-<header>
-  <a href="/" class="site-logo">
-    <svg class="header__logo" width="54" height="44">
+<header class="site-header">
+  <a href="/" class="site-header__logo">
+    <svg class="site-header__icon" width="54" height="44">
       <use href="./images/vectors/sprite.svg#icon-logo"></use>
     </svg>
   </a>
+
   <!-- Navigation block -->
-  <!-- Navigation block -->
-  <nav class="navigation">
-    <ul>
-      <li class="has-dropdown">
+  <nav class="main-navigation">
+    <ul class="main-navigation__list">
+      <li class="main-navigation__item has-dropdown">
         <a href="#"
           >Services
-          <svg class="header__logo" width="54" height="44">
-            <use href="./images/vectors/sprite.svg#icon-logo"></use>
+          <svg class="main-navigation__triangle-icon" width="12" height="9">
+            <use href="./images/vectors/sprite.svg#icon-polygon-down"></use>
           </svg>
         </a>
-        <ul class="dropdown">
+        <ul class="main-navigation__dropdown">
           <li><a href="/bim-modeling">BIM Modeling</a></li>
           <li><a href="/bim-coordination">BIM Coordination</a></li>
           <li><a href="/bim-content">BIM Content</a></li>
@@ -44,15 +44,15 @@
 
   <!-- Burger menu / button -->
   <button type="button" class="burger-btn" data-menu-button>
-    <svg width="24" height="21">
+    <svg width="24" height="24">
       <use
-        href="./images/vectors/sprite.svg#icon-logo"
+        href="./images/vectors/sprite.svg#icon-burger"
         class="burger-icon"
       ></use>
     </svg>
-    <svg width="24" height="21">
+    <svg width="32" height="32">
       <use
-        href="./images/vectors/sprite.svg#icon-logo"
+        href="./images/vectors/sprite.svg#icon-close"
         class="burger-close-icon"
       ></use>
     </svg>
