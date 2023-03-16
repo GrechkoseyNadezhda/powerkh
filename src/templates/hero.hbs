@@ -1,0 +1,32 @@
+{{!-- потрібно підставити массив обєктів--}}
+{{!-- приклад об'єкта: {subtitle: 'текст заголовка', description: 'опис'
+} --}}
+
+{{!-- {{#each this}}
+<li class="howWeWork__item">
+      <h3 class="howWeWork__subtitle">{{this.subtitle}}</h3>
+      <p class="howWeWork__description">
+       {{this.description}}
+      </p>
+    </li>
+    {{/each}} --}}
+
+
+    {{!-- потрібно підставити  обєкт--}}
+{{!-- приклад об'єкта: {subtitle: 'текст заголовка', text: 'текст'
+} --}}
+
+
+  {{<section class="hero">
+  <div class="hero__block">
+    <img class="hero__frame-down-left" src="./images/vectors/frame-down-left.svg" alt="docorative element">
+    <img class="hero__frame-up-left" src="./images/vectors/frame-up-left.svg" alt="docorative element">
+    <img class="hero__frame-down-right" src="./images/vectors/frame-down-right.svg" alt="docorative element">
+    <img class="hero__frame-up-right" src="./images/vectors/frame-up-right.svg" alt="docorative element">
+    <h2 class="hero__title">{{this.subtitle}}</h2>
+    <p class="hero__text">{{this.text}}</p>
+    <button class="hero__btn" type="button">Discuss the task
+    <img src="./images/vectors/arrow.svg" alt="arrow">
+    </button>
+   </div>
+</section>}}

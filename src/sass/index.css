@@ -42,6 +42,35 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-image: url("../images/hero/Prefabrication/Prefabrication@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 360px) {
+  .container {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 152px;
+    max-width: 1440;
+  }
+}
+
 .btn {
   padding: 16px;
   color: var(--pure-white-color);
@@ -55,17 +84,55 @@ a {
 }
 
 .hero {
-  background-image: url("../images/hero/Prefabrication/Prefabrication@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
   padding: 206px 20px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 192px 68px 252px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding: 192px 640px 252px 168px;
+  }
 }
 
 .hero__block {
+  position: relative;
   width: 288px;
   padding: 24px 16px;
   background: var(--pure-white-color);
+}
+@media screen and (min-width: 768px) {
+  .hero__block {
+    padding: 52px 40px 24px;
+    width: 632px;
+  }
+}
+
+.hero__frame-down-left {
+  position: absolute;
+  bottom: -16px;
+  left: -16px;
+}
+
+.hero__frame-up-left {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+}
+
+.hero__frame-down-right {
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
+}
+
+.hero__frame-up-right {
+  position: absolute;
+  top: -16px;
+  right: -16px;
 }
 
 .hero__title {
@@ -77,6 +144,11 @@ a {
   color: var(--dark-grey-color);
   margin-bottom: 24px;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    margin-bottom: 32px;
+  }
+}
 
 .hero__text {
   font-family: "Montserrat";
@@ -87,12 +159,17 @@ a {
   color: var(--dark-grey-color);
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .hero__text {
+    margin-bottom: 24px;
+  }
+}
 
 .hero__btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin-left: auto;
   gap: 8px;
   background: var(--pure-white-color);
   border: none;

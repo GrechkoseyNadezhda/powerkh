@@ -1,20 +1,28 @@
-// .container {
-//   margin: 0 auto;
-//   padding: 0 20px;
-//   @include mq(mob) {
-//     max-width: 360px;
-//   }
+body {
+  background-image: url('../images/hero/Prefabrication/Prefabrication@1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 
-//   @include mq(tab) {
-//     padding: 0 32px;
-//     max-width: 768px;
-//   }
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  @include mq(mob) {
+    max-width: 360px;
+  }
 
-//   @include mq(desk) {
-//     padding: 0 152px;
-//     max-width: 1440;
-//   }
-// }
+  @include mq(tab) {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+
+  @include mq(desk) {
+    padding: 0 152px;
+    max-width: 1440;
+  }
+}
+
 .btn {
   padding: 16px;
   color: var(--pure-white-color);
