@@ -5,8 +5,14 @@
 @import './utils/variables';
 @import './utils/fonts';
 @import './utils/mixins';
-@import './utils/common';
+@import './utils/reset';
 @import './utils/common_classes';
 
+//layout
 
 @import './layout/footer';
+
+//Templates
+
+@import './templates/howWeWork';
+
