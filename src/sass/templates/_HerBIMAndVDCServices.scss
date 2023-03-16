@@ -1,14 +1,18 @@
 .benefits__list{
     list-style: none;
     @include font-body-reg;
+    margin: 0 auto;
 }
 
 .benefits__item {
   display: flex;
   align-items: center;
+  justify-content: center;
 &::before {
   margin-right: 20px;
   margin-left: 20px;
+  margin-top: 24px;
+  margin-bottom: 20px;
     content: ' ';
     display: inline-block;
     background-image: url(../images/vectors/vector-right.svg);
@@ -17,4 +21,16 @@
     background-size: cover;
     color: #CDCDCD; 
  }
+}
+
+.benefits__description {
+  @include font-body-reg;
+}
+
+.benefits__title {
+  font-family: 'PT Mono';
+ 
+  font-weight: 900;
+  font-size: 20px;
+
 }
