@@ -1,0 +1,43 @@
+.impact-on-business__container {
+  padding-bottom: 40px;
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
+}
+
+.impact-on-business__title {
+  margin-bottom: 52px;
+  @include font-title;
+}
+.impact-on-business__block {
+  @include mq(desk) {
+    display: flex;
+    gap: 158px;
+  }
+}
+.impact-on-business__description {
+  margin-bottom: 24px;
+  @include font-body-reg;
+  @include mq(desk) {
+    width: 553px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+}
+
+.impact-on-business__item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  display: flex;
+  gap: 28px;
+}
+.impact-on-business__number {
+  width: 37px;
+  @include font-title;
+  flex-shrink: 0;
+  text-align-last: right;
+}
+.impact-on-business__statistics {
+  @include font-body-reg;
+}
