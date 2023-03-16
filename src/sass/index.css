@@ -42,33 +42,66 @@ a {
   text-decoration: none;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
-}
-@media screen and (min-width: 360px) {
-  .container {
-    max-width: 360px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 0 32px;
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .container {
-    padding: 0 152px;
-    max-width: 1440;
-  }
+.btn {
+  padding: 16px;
+  color: var(--pure-white-color);
+  text-transform: uppercase;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.125;
+  background-color: var(--dark-grey-color);
 }
 
-.container {
-  width: 1440px;
-  padding-left: 150px;
-  padding-right: 150px;
+.hero {
+  background-image: url("../images/hero/Prefabrication/Prefabrication@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 206px 20px;
+}
+
+.hero__block {
+  width: 288px;
+  padding: 24px 16px;
+  background: var(--pure-white-color);
+}
+
+.hero__title {
+  font-family: "PT Mono";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  color: var(--dark-grey-color);
+  margin-bottom: 24px;
+}
+
+.hero__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--dark-grey-color);
+  margin-bottom: 16px;
+}
+
+.hero__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
+  gap: 8px;
+  background: var(--pure-white-color);
+  border: none;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.12;
+  color: var(--dark-grey-color);
 }
 
 .howWeWork ol {
@@ -155,7 +188,7 @@ a {
   max-width: 750px;
 }
 
-header {
+.site-header {
   position: relative;
   width: 100%;
   height: 60px;
@@ -165,6 +198,63 @@ header {
   background-color: #ffffff;
 }
 
+.main-navigation {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.main-navigation__list {
+  display: flex;
+  gap: 52px;
+}
+
 .burger-menu {
   display: none;
+}
+
+.main-navigation__dropdown {
+  display: none;
+}
+
+.burger-close-icon {
+  display: none;
+}
+
+.have-BIM-project {
+  background-color: var(--pure-white-color);
+}
+
+.have-BIM-project__block {
+  width: 320px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: var(--background-color);
+}
+@media screen and (min-width: 768px) {
+  .have-BIM-project__block {
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .have-BIM-project__block {
+    width: 1136px;
+  }
+}
+
+.have-BIM-project__title {
+  margin: 0 auto 40px;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--dark-grey-color);
+}
+@media screen and (max-width: 767.98px) {
+  .have-BIM-project__title {
+    max-width: 284px;
+  }
 }/*# sourceMappingURL=index.css.map */

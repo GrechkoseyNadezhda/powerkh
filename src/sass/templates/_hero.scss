@@ -1,3 +1,165 @@
-.title {
-  background-repeat: inherit;
+.hero {
+  background-image: url('../images/hero/Prefabrication/Prefabrication@1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  // background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  padding: 206px 20px;
 }
+
+.hero__block {
+  width: 288px;
+  // min-width: 288px;
+  padding: 24px 16px;
+  background: var(--pure-white-color);
+}
+.hero__title {
+  font-family: 'PT Mono';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  color: var(--dark-grey-color);
+  margin-bottom: 24px;
+}
+
+.hero__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--dark-grey-color);
+  margin-bottom: 16px;
+}
+
+.hero__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 8px;
+  background: var(--pure-white-color);
+  border: none;
+
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.12;
+  color: var(--dark-grey-color);
+}
+
+.smth {
+  //some CSS
+  @media screen and (max-width: $small) {
+    //do Smth
+  }
+  @media screen and (min-width: $medium) {
+    //do Smth
+  }
+}
+$mobile: 360px;
+$tablet: 768px;
+$desktop: 1440px;
+
+// @media screen and (min-width: 1200px)
+// .banner--hero {
+//     padding: 30px 45px;
+// }
+
+// @media screen and (min-width: 1200px)
+// .banner {
+//     left: 20px;
+//     max-width: 632px;
+//     transform: translateY(-50%);
+// }
+// @media screen and (min-width: 720px)
+// .banner--hero {
+//     padding: 30px 45px;
+// }
+// @media screen and (min-width: 720px)
+// .banner {
+//     width: 650px;
+// }
+// .banner--hero {
+//     padding: 25px 15px;
+// }
+// .banner {
+//     background-color: #fff;
+//     left: 50%;
+//     min-width: 288px;
+//     position: absolute;
+//     top: 50%;
+//     transform: translate(-50%,-50%);
+// }
+// *, :after, :before {
+//     margin: 0;
+//     padding: 0;
+// }
+// *, :after, :before {
+//     box-sizing: border-box;
+// }
+// user agent stylesheet
+// div {
+//     display: block;
+// }
+// body {
+//     font-family: Montserrat,GothamPro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+// }
+// body {
+//     font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+//     margin: 0;
+// }
+// :root {
+//     -moz-tab-size: 4;
+//     -o-tab-size: 4;
+//     tab-size: 4;
+// }
+// html {
+//     -webkit-text-size-adjust: 100%;
+//     line-height: 1.15;
+// }
+// .banner:after, .banner:before {
+//     background-repeat: no-repeat;
+//     background-size: auto 100%;
+//     content: "";
+//     height: calc(100% + 30px);
+//     position: absolute;
+//     top: -15px;
+// }
+// .banner:before {
+//     background-image: url(../images/hero/border-left.svg);
+//     left: -15px;
+//     width: 48px;
+// }
+// *, :after, :before {
+//     margin: 0;
+//     padding: 0;
+// }
+// *, :after, :before {
+//     box-sizing: border-box;
+// }
+// @media screen and (min-width: 720px)
+// .banner:after {
+//     width: 41px;
+// }
+// .banner:after {
+//     background-image: url(../images/hero/border-right.svg);
+//     right: -15px;
+//     width: 43px;
+// }
+// .banner:after, .banner:before {
+//     background-repeat: no-repeat;
+//     background-size: auto 100%;
+//     content: "";
+//     height: calc(100% + 30px);
+//     position: absolute;
+//     top: -15px;
+// }
+// *, :after, :before {
+//     margin: 0;
+//     padding: 0;
+// }
+// *, :after, :before {
+//     box-sizing: border-box;
