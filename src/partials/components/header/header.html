@@ -1,0 +1,101 @@
+<header>
+  <a href="/" class="site-logo">
+    <svg class="header__logo" width="54" height="44">
+      <use href="./images/vectors/sprite.svg#icon-logo"></use>
+    </svg>
+  </a>
+
+  <!-- Navigation block -->
+  <nav class="navigation">
+    <ul>
+      <li class="has-dropdown">
+        <a href="#"
+          >Services
+          <svg class="header__logo" width="54" height="44">
+            <use href="./images/vectors/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="dropdown">
+          <li><a href="/bim-modeling">BIM Modeling</a></li>
+          <li><a href="/bim-coordination">BIM Coordination</a></li>
+          <li><a href="/bim-content">BIM Content</a></li>
+          <li><a href="/scan-to-bim">Scan to BIM</a></li>
+          <li><a href="/bim-automation">BIM Automation</a></li>
+          <li>
+            <a href="/prefabrication-fabrication"
+              >Prefabrication &amp; Fabrication</a
+            >
+          </li>
+          <li><a href="/structural-detailing">Structural detailing</a></li>
+          <li>
+            <a href="/architectural-rendering">Architectural Rendering</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/case-studies">Case Studies</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+      <li>
+        <!-- Contact Us modal trigger -->
+        <button class="contact-us-btn" onclick="openModal()">Contact Us</button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Burger menu button -->
+  <div class="burger-menu" data-menu>
+    <nav class="burger-menu__nav">
+      <ul class="burger-menu__list">
+        <li class="burger-menu__el">
+          <a href="/" class="burger-menu__link">Home</a>
+        </li>
+        <li class="burger-menu__el">Services</li>
+        <li class="burger-menu__el">
+          <ul class="burger-menu__list-inner">
+            <li class="burger-menu__el">
+              <a href="/" class="burger-menu__link">BIM Modeling</a>
+            </li>
+            <li class="burger-menu__el">
+              <a href="/" class="burger-menu__link">BIM Coordination</a>
+            </li>
+            <li class="burger-menu__el">
+              <a href="/" class="burger-menu__link">BIM Content</a>
+            </li>
+            <li class="burger-menu__el">
+              <a href="/" class="burger-menu__link">Scan to BIM</a>
+            </li>
+            <li class="burger-menu__el">
+              <a href="/" class="burger-menu__link">BIM Automation</a>
+            </li>
+            <li class="burger-menu__el">
+              <a href="/" class="burger-menu__link"
+                >Prefabrication &amp; Fabrication</a
+              >
+            </li>
+            <li class="burger-menu__el">
+              <a href="/" class="burger-menu__link">Structural detailing</a>
+            </li>
+            <li class="burger-menu__el">
+              <a href="/" class="burger-menu__link">Architectural Rendering</a>
+            </li>
+          </ul>
+        </li>
+        <li class="burger-menu__el">
+          <a href="/" class="burger-menu__link">Case Studies</a>
+        </li>
+        <li class="burger-menu__el">
+          <a href="/" class="burger-menu__link">Blog</a>
+        </li>
+        <li class="burger-menu__el">
+          <a href="/" class="burger-menu__link">About</a>
+        </li>
+        <li class="burger-menu__el">
+          <a href="/" class="burger-menu__link">Career</a>
+        </li>
+        <li class="burger-menu__el">
+          <a href="/" class="burger-menu__link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,189 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #ffffff;
+}
+
+.burger-menu {
+  display: none;
+}
+
+// // Header styles
+// header {
+//   position: relative;
+
+//   height: 60px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+
+//   background-color: #ffffff;
+
+//   .site-logo {
+//     display: block;
+//   }
+
+//   // Navigation styles
+//   .navigation {
+//     ul {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       list-style: none;
+//       margin: 0;
+//       padding: 0;
+
+//       li {
+//         position: relative;
+
+//         // Dropdown styles
+//         &.has-dropdown {
+//           &:hover .dropdown {
+//             display: block;
+//           }
+
+//           .dropdown {
+//             display: none;
+//             position: absolute;
+//             top: 100%;
+//             left: 0;
+//             min-width: 200px;
+//             padding: 0.5rem 1rem;
+//             background-color: #fff;
+//             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//             z-index: 1;
+
+//             li {
+//               margin: 0.25rem 0;
+//             }
+
+//             a {
+//               display: block;
+//               padding: 0.25rem 0;
+//               color: #333;
+//               text-decoration: none;
+//               transition: all 0.2s ease;
+//             }
+//           }
+//         }
+
+//         a {
+//           padding: 0.5rem;
+//           color: #333;
+//           text-decoration: none;
+//           transition: all 0.2s ease;
+
+//           &:hover {
+//             color: #000;
+//           }
+//         }
+//       }
+//     }
+
+//     // Contact Us button styles
+//     .contact-us-btn {
+//       padding: 0.5rem 1rem;
+//       border: none;
+//       background-color: #0093dd;
+//       color: #fff;
+//       font-size: 1rem;
+//       cursor: pointer;
+//       transition: all 0.2s ease;
+
+//       &:hover {
+//         background-color: #0071a8;
+//       }
+//     }
+//   }
+
+//   // Burger menu button styles
+//   .burger-menu-btn {
+//     display: none;
+//     width: 30px;
+//     height: 30px;
+//     position: relative;
+//     cursor: pointer;
+
+//     .bar {
+//       position: absolute;
+//       top: 50%;
+//       left: 0;
+//       width: 100%;
+//       height: 2px;
+//       background-color: #333;
+//       transform: translateY(-50%);
+//       transition: all 0.2s ease;
+//     }
+
+//     .bar:nth-child(1) {
+//       transform-origin: top left;
+//     }
+
+//     .bar:nth-child(3) {
+//       transform-origin: bottom left;
+//     }
+//   }
+
+//   @media only screen and (max-width: 768px) {
+//     // Hide Contact Us button on tablet and mobile
+//     .navigation li:last-child {
+//       display: none;
+//     }
+//   }
+
+//   @media only screen and (max-width: 480px) {
+//     // Show Burger menu button on mobile
+//     .burger-menu-btn {
+//       display: block;
+//     }
+
+//     // Hide navigation items on mobile
+//     .navigation ul {
+//       display: none;
+//       flex-direction: column;
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       padding: 1rem;
+//       background-color: #fff;
+//       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//       z-index: 1;
+
+//       li {
+//         margin: 0.5rem 0;
+
+//         a {
+//           padding: 0.5rem 0;
+//           font-size: 1.2rem;
+//           text-align: center;
+//           color: #333;
+//           text-decoration: none;
+//           transition: all 0.2s ease;
+
+//           &:hover {
+//             color: #000;
+//           }
+//         }
+//       }
+//     }
+
+//     // Animate burger menu opening
+//     .burger-menu-btn.open .bar:nth-child(1) {
+//       transform: rotate(45deg) translate(5px, 5px);
+//     }
+
+//     .burger-menu-btn.open .bar:nth-child(2) {
+//       opacity: 0;
+//     }
+
+//     .burger-menu-btn.open .bar:nth-child(3) {
+//       transform: rotate(-45deg) translate(5px, -5px);
+//     }
+//   }
+// }
