@@ -1,4 +1,51 @@
+.bim-automation-services {
+  background-color: orange;
+  padding: 32px 20px;
+}
+
 .bim-automation-services__title {
-  font-size: 20px;
-  line-height: 1.1;
+  @include font-title;
+  margin-bottom: 24px;
+}
+
+.bim-automation-services__block {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--pure-white-color);
+}
+
+.bim-automation-services__text,
+.bim-automation-services__topic,
+.bim-automation-services__item {
+  @include font-body-reg;
+}
+
+.bim-automation-services__text {
+  margin-bottom: 40px;
+}
+
+.bim-automation-services__topic {
+  margin-bottom: 50px;
+}
+
+.bim-automation-services__list {
+  padding-left: 60px;
+}
+
+.bim-automation-services__item {
+  position: relative;
+  min-height: 40px;
+  &:not(:last-child) {
+    margin-bottom: 34px;
+  }
+  &::before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    left: -60px;
+    top: -11px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/vectors/arrow_long_right.svg);
+  }
 }
