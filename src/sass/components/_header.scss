@@ -1,4 +1,4 @@
-header {
+.site-header {
   position: relative;
   width: 100%;
   height: 60px;
@@ -9,7 +9,26 @@ header {
   background-color: #ffffff;
 }
 
+.main-navigation {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.main-navigation__list {
+  display: flex;
+  gap: 52px;
+}
+
 .burger-menu {
+  display: none;
+}
+
+.main-navigation__dropdown {
+  display: none;
+}
+
+.burger-close-icon {
   display: none;
 }
 
