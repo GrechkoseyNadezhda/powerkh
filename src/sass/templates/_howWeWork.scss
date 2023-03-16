@@ -1,0 +1,82 @@
+// common styles
+.container {
+  width: 1440px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin: 0 auto;
+}
+
+.howWeWork {
+  // ol потрібна для відображення цифр в кінці
+  ol {
+    counter-reset: ol-numbers;
+  }
+
+  .howWeWork__item:nth-last-of-type(1)::before {
+    background-image: url(../images/vectors/done.svg);
+    width: 62px;
+    height: 62px;
+    top: 69px;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: cover;
+  }
+}
+
+.howWeWork__title {
+  @include font-title;
+}
+
+.howWeWork__item {
+  padding-left: 89px;
+  padding-top: 35px;
+  height: 178px;
+  position: relative;
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 69px;
+    left: 4;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/vectors/arrow-down.svg);
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: cover;
+  }
+  &::after {
+    counter-increment: ol-numbers;
+    content: '0' counter(ol-numbers);
+    @include font-h1;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 78px;
+    position: absolute;
+    right: 0;
+    top: 49px;
+    width: 94px;
+    height: 80px;
+  }
+}
+
+.howWeWork__subtitle {
+  margin-bottom: 24px;
+  @include font-body-bold;
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: block;
+    height: 1px;
+    width: 100%;
+  }
+}
+.howWeWork__description {
+  @include font-body-reg;
+  max-width: 750px;
+}
