@@ -1,0 +1,20 @@
+.benefits__list{
+    list-style: none;
+    @include font-body-reg;
+}
+
+.benefits__item {
+  display: flex;
+  align-items: center;
+&::before {
+  margin-right: 20px;
+  margin-left: 20px;
+    content: ' ';
+    display: inline-block;
+    background-image: url(../images/vectors/vector-right.svg);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    color: #CDCDCD; 
+ }
+}
