@@ -1,4 +1,4 @@
-import './js/hero';
+
 import './js/exampleTemplate';
 
 // header
