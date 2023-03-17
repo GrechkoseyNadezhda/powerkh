@@ -39,15 +39,21 @@ body._lock {
   background-color: #cdcdcd;
 
   overflow: auto;
-  max-height: 0;
+  // max-height: 0;
 
-  transition: max-height 0.5s ease-in;
-
+  // transition: max-height 0.5s ease-in;
+  pointer-events: none;
+  transform: scaleY(0);
+  transform-origin: right top;
+  transition: all 0.3s linear;
   @include font-button;
 }
 
 .burger-menu._active {
-  max-height: 100vh;
+  // max-height: 100vh;
+  pointer-events: auto;
+  transform: scaleY(1);
+  visibility: visible;
 }
 .burger-menu__list {
   padding: 96px 20px 96px 20px;

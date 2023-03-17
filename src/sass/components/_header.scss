@@ -63,27 +63,38 @@
   top: 0;
 
   &:hover .main-navigation__dropdown {
-    display: flex;
+    pointer-events: auto;
+    transform: scaleY(1);
+    visibility: visible;
   }
 }
 
 .main-navigation__dropdown {
   display: none;
-  flex-direction: column;
-  gap: 8px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 360px;
-  padding: 48px 36px 48px 28px;
-  background-color: #cdcdcd;
 
-  font-family: 'PT Mono';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(18 / 16);
+  @media screen and (min-width: 720px) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #cdcdcd;
+    left: 0;
+    padding: 48px 28px;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    transform: scaleY(0);
+    transform-origin: right top;
+    transition: all 0.25s linear;
+    visibility: hidden;
+    width: 360px;
 
-  color: #0e0e0e;
+    font-family: 'PT Mono';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(18 / 16);
+
+    color: #0e0e0e;
+  }
 }
 
 @include mq(tab) {
