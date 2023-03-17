@@ -1,7 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 // Utils
-
+@import './main.scss';
 @import './utils/variables';
 @import './utils/fonts';
 @import './utils/mixins';
@@ -9,11 +9,15 @@
 @import './utils/common_classes';
 
 //Templates
-
+@import './templates/hero';
 @import './templates/howWeWork';
+@import './templates/HerBIMAndVDCServices.scss';
 @import './templates/contactUs';
-
+@import './templates/architecAndStructBim';
+@import './templates/impactOnBusiness';
 
 //Components
 @import './components/header';
+@import './components/burgerMenu';
 @import './components/haveBIMproject';
+@import './components/ourCaseStudies';

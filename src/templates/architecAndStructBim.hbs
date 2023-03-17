@@ -1,0 +1,14 @@
+{{! потрібно підставити об'єкт }}
+{{! приклад об'єкта: {title: 'текст заголовка', text: 'опис', topic: 'заголовок переліку',
+list: ['массив рядків']
+} }}
+<div class='container bim-automation-services__block'>
+  <h2 class='bim-automation-services__title'>{{this.title}}</h2>
+  <p class='bim-automation-services__text'>{{this.text}}</p>
+  <p class='bim-automation-services__topic'>{{this.topic}}</p>
+  <ul class='bim-automation-services__list'>
+    {{#each this.list}}
+      <li class='bim-automation-services__item'>{{this}}</li>
+    {{/each}}
+  </ul>
+</div>
