@@ -1,1 +1,1 @@
-import './bim-coordination-sections/bim-coordinationCreateTemplates';
+import './bim-coordination-sections/bim-coordination-create-templates';
