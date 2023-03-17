@@ -1,15 +1,8 @@
-// .hero {
-//   padding: 206px 20px;
-//   @include mq(tab) {
-//     padding: 192px 68px 252px;
-//   }
-//   @include mq(desk) {
-//     padding: 192px 640px 252px 168px;
-//   }
-// }
+
 .hero {
   padding-top: 206px;
   padding-left: 18px;
+  height: 100vh;
   @include mq(tab) {
     padding-top: 192px;
   }
@@ -18,7 +11,6 @@
 .hero__block {
   position: relative;
   width: 288px;
-  // min-width: 288px;
   padding: 24px 16px;
   background: var(--pure-white-color);
   @include mq(tab) {

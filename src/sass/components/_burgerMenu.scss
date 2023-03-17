@@ -1,0 +1,102 @@
+body._lock {
+  overflow: hidden;
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  padding-right: 20px;
+  cursor: pointer;
+
+  z-index: 5;
+  position: relative;
+}
+
+.burger-btn._active .burger-icon {
+  display: none;
+}
+
+.burger-btn._active .burger-close-icon {
+  display: block;
+}
+
+.burger-icon {
+  display: block;
+}
+
+.burger-close-icon {
+  display: none;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #cdcdcd;
+
+  overflow: auto;
+  max-height: 0;
+
+  transition: max-height 0.5s ease-in;
+
+  @include font-button;
+}
+
+.burger-menu._active {
+  max-height: 100vh;
+}
+.burger-menu__list {
+  padding: 96px 20px 96px 20px;
+}
+
+.burger-menu__el {
+  margin-bottom: 8px;
+}
+.burger-menu__el:last-child {
+  margin-bottom: 0px;
+}
+
+.burger-menu__el:first-child {
+  margin-bottom: 12px;
+}
+
+.burger-menu__el:nth-child(3) {
+  margin-bottom: 12px;
+}
+
+.burger-menu__el--disabled {
+  cursor: default;
+  color: #828282;
+}
+
+.burger-menu__link {
+}
+
+.burger-sub-menu__list {
+  padding-left: 24px;
+}
+.burger-sub-menu__el {
+  margin-bottom: 8px;
+}
+
+.burger-sub-menu__el:last-child {
+  margin-bottom: 0px;
+}
+
+@include mq(tab) {
+  .burger-menu {
+    top: 60px;
+    left: 0;
+    right: 20px;
+    width: 390px;
+  }
+}
+
+@include mq(desk) {
+  .burger-menu {
+  }
+}
