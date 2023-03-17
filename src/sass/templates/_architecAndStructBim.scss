@@ -1,6 +1,12 @@
 .bim-automation-services {
-  // background-color: orange;
   padding: 32px 20px;
+
+  @include mq(tab) {
+    padding: 32px;
+  }
+  @include mq(desk) {
+    padding: 120px 152px;
+  }
 }
 
 .bim-automation-services__title {
@@ -12,6 +18,14 @@
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: var(--pure-white-color);
+
+  @include mq(tab) {
+    padding-top: 52px;
+    padding-bottom: 62px;
+  }
+  @include mq(desk) {
+    padding: 80px;
+  }
 }
 
 .bim-automation-services__text,
@@ -22,14 +36,35 @@
 
 .bim-automation-services__text {
   margin-bottom: 40px;
+
+  @include mq(tab) {
+    margin-bottom: 52px;
+  }
+
+  @include mq(desk) {
+    max-width: 768px;
+  }
 }
 
 .bim-automation-services__topic {
   margin-bottom: 50px;
+
+  @include mq(tab) {
+    margin-bottom: 62px;
+  }
+
+  @include mq(desk) {
+    margin-bottom: 63px;
+  }
 }
 
 .bim-automation-services__list {
   padding-left: 60px;
+
+  @include mq(desk) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .bim-automation-services__item {
@@ -47,5 +82,22 @@
     width: 40px;
     height: 40px;
     background-image: url(../images/vectors/arrow_long_right.svg);
+  }
+
+  @include mq(tab) {
+    min-height: 0;
+    &:not(:last-child) {
+      margin-bottom: 53px;
+    }
+  }
+  @include mq(desk) {
+    min-height: 41px;
+    width: 400px;
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+    &:nth-child(odd) {
+      margin-right: 116px;
+    }
   }
 }
