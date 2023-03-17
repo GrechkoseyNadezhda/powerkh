@@ -1,4 +1,4 @@
-import sectionTemplate from '../templates/section-3.hbs';
+import sectionTemplate from '../templates/outsourceProjects.hbs';
 
 console.log(sectionTemplate);
 const dataSectionExample = {

@@ -1,4 +1,4 @@
-.section-3 {
+.outsourceProjects {
   padding-bottom: 40px;
   @include mq(tab) {
     padding-bottom: 60px;
@@ -8,7 +8,7 @@
   }
 }
 
-.section-3__title {
+.outsourceProjects__title {
   @include font-title;
   padding-bottom: 40px;
   @include mq(tab) {
@@ -16,7 +16,7 @@
   }
 }
 
-.section-3__subtitle {
+.outsourceProjects__subtitle {
   @include font-body-bold;
   margin-bottom: 34px;
   max-width: 240px;
@@ -53,15 +53,15 @@
   }
 }
 
-.section-3 > .section-3__description {
+.outsourceProjects > .outsourceProjects__description {
   padding-bottom: 40px;
 }
 
-.section-3__description {
+.outsourceProjects__description {
   @include font-body-reg;
 }
 
-.section-3__item > .section-3__description {
+.outsourceProjects__item > .outsourceProjects__description {
   @include mq(tab) {
     margin-left: 80px;
   }
@@ -71,11 +71,11 @@
   }
 }
 
-.section-3__list {
+.outsourceProjects__list {
   @include font-body-reg;
 }
 
-.section-3__item {
+.outsourceProjects__item {
   margin-top: 32px;
   position: relative;
   @include mq(tab) {
