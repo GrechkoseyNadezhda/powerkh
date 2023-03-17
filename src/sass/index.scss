@@ -8,11 +8,16 @@
 @import './utils/reset';
 @import './utils/common_classes';
 
-//layout
-
-@import './layout/footer';
-
 //Templates
 
+@import './templates/hero';
 @import './templates/howWeWork';
+@import './templates/contactUs';
+@import './templates/architecAndStructBim';
+@import './templates/impactOnBusiness';
 
+//Components
+
+@import './components/header';
+@import './components/haveBIMproject';
+@import './components/footer';
