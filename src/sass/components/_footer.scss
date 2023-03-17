@@ -1,6 +1,13 @@
 .footer {
   padding: 0 20px 40px;
   background-color: white;
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+    padding: 40px 32px;
+  }
 }
 
 .footer__nav {
@@ -9,11 +16,18 @@
   // -webkit-columns: 2;
   // -moz-columns: 2;
   column-gap: 80px;
+  margin-bottom: 28px;
 
   @include font-body-reg;
   text-transform: capitalize;
   line-height: 20px;
   color: var(--dark-grey-color);
+
+  @include mq(tab) {
+    display: block;
+    columns: 1;
+    margin-right: 91px;
+  }
 }
 
 .footer__navItem,
@@ -44,7 +58,7 @@
 
 .footer__title {
   @include font-title-14;
-  margin: 28px 0 10px;
+  margin-bottom: 10px;
 }
 
 .footer__services {
@@ -52,16 +66,28 @@
   text-transform: capitalize;
   line-height: 20px;
   color: var(--dark-grey-color);
+  @include mq(tab) {
+    margin-right: auto;
+  }
 }
 
 .footer__social {
   margin: 12px auto 32px;
   width: 160px;
+  @include mq(tab) {
+    margin: 0;
+    width: 144px;
+  }
 }
 
 .scroll-up {
   display: block;
   text-align: center;
+  @include font-title-14;
+
+  @include mq(tab) {
+    text-align: right;
+  }
 }
 
 .scroll-up::after {
@@ -72,11 +98,19 @@
   margin: 0 auto;
   background-image: url('../images/vectors/vector up.svg');
   margin: 4px auto 12px;
+
+  @include mq(tab) {
+    margin-right: 0;
+  }
 }
 
 .footer__icons {
   display: flex;
   gap: 32px;
+
+  @include mq(tab) {
+    gap: 24px;
+  }
 }
 
 .footer__icon:hover {
@@ -86,4 +120,9 @@
 .footer__slogan {
   @include font-title-14;
   text-align: center;
+  flex-basis: 100%;
+  @include mq(tab) {
+    text-align: left;
+    margin-left: 181px;
+  }
 }
