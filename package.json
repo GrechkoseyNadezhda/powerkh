@@ -4,8 +4,8 @@
   "description": "",
   "homepage": "https://yuriy0790.github.io/powerkh",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "start": "parcel src/pages/index.html",
+    "build": "parcel build src/pages/index.html --public-url /parcel-project-template/"
   },
   "repository": {
     "type": "git",
