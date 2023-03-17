@@ -1,4 +1,6 @@
 import './js/hero';
 import './js/exampleTemplate';
-import './js/HerBIMandVDC'
- 
+
+// header
+import './js/header/burgerMenu';
+import './js/HerBIMandVDC';
