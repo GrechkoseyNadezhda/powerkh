@@ -1,0 +1,88 @@
+.footer {
+  padding: 0 20px 40px;
+}
+
+.footer__nav {
+  display: inline-block;
+  columns: 2;
+  // -webkit-columns: 2;
+  // -moz-columns: 2;
+  column-gap: 80px;
+
+  @include font-body-reg;
+  text-transform: capitalize;
+  line-height: 20px;
+  color: var(--dark-grey-color);
+}
+
+.footer__navItem,
+.footer__servItem {
+  position: relative;
+  width: max-content;
+  margin-bottom: 4px;
+}
+
+.footer__navItem::after,
+.footer__servItem::after {
+  display: block;
+  position: absolute;
+  right: 50%;
+  width: 0;
+  content: '';
+  transition: width 300ms linear, right 300ms linear;
+}
+
+.footer__navItem.active::after,
+.footer__servItem.active::after,
+.footer__navItem:hover::after,
+.footer__servItem:hover::after {
+  right: 0;
+  width: 100%;
+  border: 1px solid var(--pure-black-color);
+}
+
+.footer__title {
+  @include font-title-14;
+  margin: 28px 0 10px;
+}
+
+.footer__services {
+  @include font-body-reg;
+  text-transform: capitalize;
+  line-height: 20px;
+  color: var(--dark-grey-color);
+}
+
+.footer__social {
+  margin: 12px auto 32px;
+  width: 160px;
+}
+
+.scroll-up {
+  display: block;
+  text-align: center;
+}
+
+.scroll-up::after {
+  display: block;
+  width: 14px;
+  height: 14px;
+  content: '';
+  margin: 0 auto;
+  background-image: url('../images/vectors/vector up.svg');
+  margin: 4px auto 12px;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 32px;
+}
+
+.footer__icon:hover {
+  opacity: 0.7;
+}
+
+.footer__slogan {
+  @include font-title-14;
+  text-align: center;
+}
