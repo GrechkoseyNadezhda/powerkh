@@ -1,6 +1,9 @@
 .BIMServices {
   padding-top: 80px;
   padding-bottom: 80px;
+
+
+  background-color: var(--pure-white-color);
 }
 .BIM__subtitle {
   @include font-body-reg;
