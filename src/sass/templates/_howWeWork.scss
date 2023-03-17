@@ -1,35 +1,71 @@
 .howWeWork {
   // ol потрібна для відображення цифр в кінці
+  background-color: var(--pure-white-color);
   ol {
     counter-reset: ol-numbers;
+    position: relative;
+    &::after {
+      content: ' ';
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      background-color: var(--pure-black-color);
+      display: block;
+      height: 1px;
+      width: 100%;
+    }
   }
 
   .howWeWork__item:nth-last-of-type(1)::before {
     background-image: url(../images/vectors/done.svg);
     width: 62px;
     height: 62px;
-    top: 69px;
+    bottom: 36px;
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     background-size: cover;
+    @include mq(tab) {
+      top: 48px;
+    }
+    @include mq(desk) {
+      top: 56px;
+    }
   }
 }
 
 .howWeWork__title {
   @include font-title;
+  margin-bottom: 36px;
+  @include mq(tab) {
+    margin-bottom: 48px;
+  }
+  @include mq(desk) {
+    margin-bottom: 56px;
+  }
 }
 
 .howWeWork__item {
-  padding-left: 89px;
+  // padding-left: 89px;
+
   padding-top: 35px;
-  height: 178px;
+  height: 289px;
   position: relative;
+  @include mq(tab) {
+    padding-left: 92px;
+    height: 168px;
+  }
+  @include mq(desk) {
+    padding-left: 97px;
+    height: 166px;
+  }
   &::before {
     content: ' ';
     position: absolute;
-    top: 69px;
-    left: 4;
+    // top: 69px;
+    // left: 4;
+    bottom: 47px;
+    left: 0;
     display: block;
     width: 40px;
     height: 40px;
@@ -38,6 +74,12 @@
     -o-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     background-size: cover;
+    @include mq(tab) {
+      bottom: 72px;
+    }
+    @include mq(desk) {
+      bottom: 78px;
+    }
   }
   &::after {
     counter-increment: ol-numbers;
@@ -47,10 +89,18 @@
     font-size: 70px;
     line-height: 78px;
     position: absolute;
+    // right: 0;
+    // top: 49px;
+    bottom: 28px;
     right: 0;
-    top: 49px;
-    width: 94px;
-    height: 80px;
+    width: 84px;
+    height: 78px;
+    @include mq(tab) {
+      bottom: 42px;
+    }
+    @include mq(desk) {
+      bottom: 48px;
+    }
   }
 }
 
@@ -62,7 +112,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: var(--pure-black-color);
     display: block;
     height: 1px;
     width: 100%;
@@ -71,4 +121,7 @@
 .howWeWork__description {
   @include font-body-reg;
   max-width: 750px;
+  @include mq(tab) {
+    width: 424px;
+  }
 }
