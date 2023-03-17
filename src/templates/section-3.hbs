@@ -1,6 +1,13 @@
-{{#each this}}
-  <li class='section-3__item'>
-    <h3 class='section-3__subtitle'>{{this.subtitle}}</h3>
-    <p class='section-3__description'>{{this.description}}</p>
-  </li>
-{{/each}}
+<section class='container section-3'>
+  <h2 class='section-3__title'>{{this.title}}</h2>
+  <p class='section-3__description'>{{this.description}}</p>
+  <ul class='section-3__list'>
+    <p>{{this.list-description}}</p>
+    {{#each this}}
+      <li class='section-3__item'>
+        <h3 class='section-3__subtitle'>{{this.subtitle}}</h3>
+        <p class='section-3__description'>{{this.subtitle-description}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</section>
