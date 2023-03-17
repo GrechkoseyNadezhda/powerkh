@@ -69,8 +69,6 @@
 
   @include mq(tab) {
     gap: 53px;
-    // display: flex;
-    // flex-wrap: wrap;
   }
   @include mq(desk) {
     flex-direction: row;
@@ -81,9 +79,6 @@
 .bim-automation-services__item {
   position: relative;
   min-height: 40px;
-  // &:not(:last-child) {
-  //   margin-bottom: 34px;
-  // }
   &::before {
     content: ' ';
     position: absolute;
@@ -97,18 +92,9 @@
 
   @include mq(tab) {
     min-height: 0;
-    // &:not(:last-child) {
-    //   margin-bottom: 53px;
-    // }
   }
   @include mq(desk) {
     min-height: 41px;
     width: 400px;
-    // &:not(:last-child) {
-    //   margin-bottom: 35px;
-    // }
-    // &:nth-child(odd) {
-    //   margin-right: 116px;
-    // }
   }
 }
