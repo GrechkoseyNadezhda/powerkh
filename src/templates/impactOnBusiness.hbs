@@ -1,32 +1,24 @@
 {{!-- підставити об'єкт --}}
-{{!-- приклад об'єкта: {title: 'текст заголовка', description: 'опис', percent: '90%'
-, fixed: 'text', number: '5x', speed: 'text', times: '10x', cheaper: 'text'} --}}
+{{!-- приклад об'єкта:  {description: 'опис', list: [{number: 'виділені цифри', text: 'права частина тексту'}]} --}}
 
-<section class="impact-on-business">
+{{!-- <section class="impact-on-business"> --}}
   <div class="impact-on-business__container container">
-    <h2 class="impact-on-business__title">{{this.title}}</h2>
+    <h2 class="impact-on-business__title">Impact on business</h2>
     <div class="impact-on-business__block">
       <p class="impact-on-business__description">
        {{this.description}}
       </p>
       <ul class="impact-on-business__list">
-        <li class="impact-on-business__item">
-          <span class="impact-on-business__number">{{this.percent}}</span>
-          <p class="impact-on-business__statistics">
-            {{this.fixed}}
-          </p>
-        </li>
+        {{#each this.list}}
         <li class="impact-on-business__item">
           <span class="impact-on-business__number">{{this.number}}</span>
-          <p class="impact-on-business__statistics">{{this.speed}}</p>
-        </li>
-        <li class="impact-on-business__item">
-          <span class="impact-on-business__number">{{this.times}}</span>
           <p class="impact-on-business__statistics">
-           {{this.cheaper}}
+            {{this.text}}
           </p>
         </li>
+        {{/each}}
+        
       </ul>
     </div>
   </div>
-</section>
+
