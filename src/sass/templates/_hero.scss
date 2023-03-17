@@ -1,18 +1,16 @@
+
 .hero {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
-  padding: 206px 20px;
+  padding-top: 206px;
+  padding-left: 18px;
+  height: 100vh;
   @include mq(tab) {
-    padding: 192px 68px 252px;
-  }
-  @include mq(desk) {
-    padding: 192px 640px 252px 168px;
+    padding-top: 192px;
   }
 }
 
 .hero__block {
   position: relative;
   width: 288px;
-  // min-width: 288px;
   padding: 24px 16px;
   background: var(--pure-white-color);
   @include mq(tab) {
@@ -22,21 +20,21 @@
 }
 
 .hero__frame-down-left {
-position: absolute;
-bottom: -16px;
-left: -16px;
-
+  position: absolute;
+  bottom: -16px;
+  left: -16px;
 }
+
 .hero__frame-up-left {
-position: absolute;
-top: -16px;
-left: -16px;
+  position: absolute;
+  top: -16px;
+  left: -16px;
 }
 
 .hero__frame-down-right {
-position: absolute;
-bottom: -16px;
-right: -16px;
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
 }
 
 .hero__frame-up-right {
@@ -46,8 +44,7 @@ right: -16px;
 }
 
 .hero__title {
-  font-family: 'PT Mono';
-  font-weight: 700;
+  @include font-title;
   font-size: 24px;
   line-height: 1.12;
   text-transform: uppercase;
@@ -59,11 +56,7 @@ right: -16px;
 }
 
 .hero__text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.43;
+  @include font-body-reg;
   color: var(--dark-grey-color);
   margin-bottom: 16px;
   @include mq(tab) {
@@ -79,11 +72,6 @@ right: -16px;
   gap: 8px;
   background: var(--pure-white-color);
   border: none;
-
-  font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.12;
+  @include font-button;
   color: var(--dark-grey-color);
 }

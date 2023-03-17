@@ -1,0 +1,153 @@
+.footer {
+  padding: 0 20px 40px;
+  background-color: white;
+
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 36px;
+    padding: 40px 32px;
+  }
+
+  @include mq(desk) {
+    padding: 40px 152px;
+  }
+}
+
+.footer__nav {
+  display: inline-block;
+  columns: 2;
+  column-gap: 80px;
+  margin-bottom: 28px;
+
+  @include font-body-reg;
+  text-transform: capitalize;
+  line-height: 20px;
+  color: var(--dark-grey-color);
+
+  @include mq(tab) {
+    columns: 1;
+    margin-right: 91px;
+  }
+
+  @include mq(desk) {
+    columns: 2;
+    column-gap: 40px;
+    margin-right: 98px;
+  }
+}
+
+.footer__navItem,
+.footer__servItem {
+  position: relative;
+  width: max-content;
+  margin-bottom: 4px;
+}
+
+.footer__navItem::after,
+.footer__servItem::after {
+  display: block;
+  position: absolute;
+  right: 50%;
+  width: 0;
+  content: '';
+  transition: width 300ms linear, right 300ms linear;
+}
+
+.footer__navItem.active::after,
+.footer__servItem.active::after,
+.footer__navItem:hover::after,
+.footer__servItem:hover::after {
+  right: 0;
+  width: 100%;
+  border: 1px solid var(--pure-black-color);
+}
+
+.footer__services {
+  @include font-body-reg;
+  text-transform: capitalize;
+  line-height: 20px;
+  color: var(--dark-grey-color);
+  margin-bottom: 12px;
+
+  @include mq(tab) {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  @include mq(desk) {
+    display: inline-block;
+    columns: 3;
+  }
+}
+
+.footer__title {
+  @include font-title-14;
+  margin-bottom: 10px;
+}
+
+.footer__social {
+  margin: 0 auto 32px;
+  width: 160px;
+
+  @include mq(tab) {
+    margin: 0;
+    width: 144px;
+    text-align: right;
+  }
+}
+
+.scroll-up {
+  display: block;
+  text-align: center;
+  @include font-title-14;
+
+  @include mq(tab) {
+    display: inline-block;
+    margin-bottom: 18px;
+  }
+}
+
+.scroll-up::after {
+  display: block;
+  width: 14px;
+  height: 14px;
+  content: '';
+  margin: 0 auto;
+  background-image: url('../images/vectors/vector up.svg');
+  margin: 4px auto 12px;
+
+  @include mq(tab) {
+    display: inline-block;
+    margin: 0 0 0 8px;
+  }
+}
+
+.footer__icons {
+  display: flex;
+  gap: 32px;
+
+  @include mq(tab) {
+    gap: 24px;
+  }
+}
+
+.footer__icon:hover {
+  opacity: 0.7;
+}
+
+.footer__slogan {
+  @include font-title-14;
+  text-align: center;
+  flex-basis: 100%;
+
+  @include mq(tab) {
+    text-align: left;
+    margin-left: 181px;
+  }
+  @include mq(desk) {
+    text-align: left;
+    margin-left: 0;
+  }
+}
