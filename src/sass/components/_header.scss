@@ -9,24 +9,18 @@
   justify-content: space-between;
   align-items: center;
   z-index: 999;
+
+  padding: 0px 20px;
+
   background-color: #ffffff;
-
-  @include mq(tab) {
-    max-width: 704px;
-  }
-
-  @include mq(desk) {
-    max-width: 1136px;
-  }
 }
 
 .site-header__logo {
-  padding-left: 8px;
 }
 
 .main-navigation {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -92,33 +86,25 @@
   color: #0e0e0e;
 }
 
-// .burger-btn {
-//   background-color: transparent;
-//   border: none;
-//   padding: 0;
-//   padding-right: 20px;
+@include mq(tab) {
+  .site-header {
+    max-width: 704px;
+    padding: 0px 24px 0px 8px;
+  }
 
-//   cursor: pointer;
-// }
-// .burger-icon {
-// }
+  .main-navigation {
+    gap: 52px;
+  }
+}
 
-// .burger-close-icon {
-//   display: none;
-// }
-
-// .burger-menu {
-//   display: none;
-// }
-
-// .burger-menu__list {
-// }
-// .burger-menu__el {
-// }
-// .burger-menu__link {
-// }
-// .burger-menu__list-inner {
-// }
+@include mq(desk) {
+  .site-header {
+    max-width: 1136px;
+  }
+  .main-navigation {
+    gap: 40px;
+  }
+}
 
 @include mq(mob-only) {
   .main-navigation__item:not(:nth-child(2)) {
@@ -126,21 +112,10 @@
   }
 }
 
-@include mq(tab) {
+@include mq(tab-only) {
   .main-navigation__item {
     &:last-child {
       display: none;
-    }
-  }
-}
-
-@include mq(desk) {
-  .contact-us-btn {
-    display: block;
-  }
-  .main-navigation__item {
-    &:last-child {
-      display: block;
     }
   }
 }
