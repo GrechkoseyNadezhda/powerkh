@@ -323,6 +323,65 @@ a {
   }
 }
 
+.bim-automation-services {
+  padding: 32px 20px;
+}
+
+.bim-automation-services__title {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.bim-automation-services__block {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--pure-white-color);
+}
+
+.bim-automation-services__text,
+.bim-automation-services__topic,
+.bim-automation-services__item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714286;
+}
+
+.bim-automation-services__text {
+  margin-bottom: 40px;
+}
+
+.bim-automation-services__topic {
+  margin-bottom: 50px;
+}
+
+.bim-automation-services__list {
+  padding-left: 60px;
+}
+
+.bim-automation-services__item {
+  position: relative;
+  min-height: 40px;
+}
+.bim-automation-services__item:not(:last-child) {
+  margin-bottom: 34px;
+}
+.bim-automation-services__item::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  left: -60px;
+  top: -11px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/vectors/arrow_long_right.svg);
+}
+
 .impact-on-business__container {
   padding-bottom: 40px;
 }
@@ -535,4 +594,129 @@ a {
   .have-BIM-project__title {
     max-width: 284px;
   }
+}
+
+.caseStudies__subtitle {
+  margin-bottom: 52px;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.caseStudies__list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .caseStudies__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 18px;
+    justify-content: space-between;
+  }
+}
+.caseStudies__item {
+  width: 316px;
+  border: 2px solid var(--ligth-grey-color);
+}
+.caseStudies__item:hover {
+  transition: 500ms;
+  color: var(--pure-white-color);
+  background-color: var(--pure-black-color);
+}
+.caseStudies__item:hover p::after {
+  content: "";
+  margin-left: 128px;
+  filter: invert(100%);
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 20px;
+  background-size: contain;
+  background-image: url(../images/vectors/vector-right.svg);
+}
+@media screen and (min-width: 768px) {
+  .caseStudies__item {
+    width: 342px;
+  }
+  .caseStudies__item:hover p::after {
+    margin-left: 114px;
+    width: 56px;
+    height: 56px;
+    background-position: top;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .caseStudies__item {
+    width: 360px;
+  }
+}
+
+.caseStudies__section-title {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.125;
+  margin-bottom: 16px;
+}
+
+.caseStudies__infoDiv {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  padding: 18px 24px 36px 18px;
+}
+@media screen and (min-width: 768px) {
+  .caseStudies__infoDiv {
+    height: 146px;
+    padding-bottom: 28px;
+  }
+}
+
+.caseStudies__img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.caseStudies__body {
+  display: flex;
+}
+
+.caseStudies__all-arrow {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.125;
+  margin-bottom: 59px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.caseStudies__all-arrow::after {
+  content: "";
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/vectors/vector-right.svg);
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .caseStudies__all-arrow {
+    margin-left: 183px;
+    justify-content: start;
+  }
+}
+
+.caseStudies__all-link:hover, .caseStudies__all-link:focus {
+  transition: 300ms;
+  opacity: 50%;
 }/*# sourceMappingURL=index.css.map */
