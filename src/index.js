@@ -1,2 +1,2 @@
 import './js/exampleTemplate';
-import './js/section-3';
+import './js/outsourceProjects';

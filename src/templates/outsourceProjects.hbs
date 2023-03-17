@@ -1,15 +1,13 @@
-<div class='outsourceProjects'>
-  <h2 class='outsourceProjects__title'>{{this.title}}</h2>
-  <p class='outsourceProjects__description'>{{this.description}}</p>
-  <ul class='outsourceProjects__list'>
-    <p>{{this.listDescription}}</p>
-    {{#each this.items}}
-      <li class='outsourceProjects__item'>
-        <h3 class='outsourceProjects__subtitle'>{{this.subtitle}}</h3>
-        <p
-          class='outsourceProjects__description'
-        >{{this.subtitleDescription}}</p>
-      </li>
-    {{/each}}
-  </ul>
-</div>
+{{! <div class='outsourceProjects'> }}
+<h2 class='outsourceProjects__title'>{{this.title}}</h2>
+<p class='outsourceProjects__description'>{{this.description}}</p>
+<ul class='outsourceProjects__list'>
+  <p>{{this.listDescription}}</p>
+  {{#each this.items}}
+    <li class='outsourceProjects__item'>
+      <h3 class='outsourceProjects__subtitle'>{{this.subtitle}}</h3>
+      <p class='outsourceProjects__description'>{{this.subtitleDescription}}</p>
+    </li>
+  {{/each}}
+</ul>
+{{! </div> }}

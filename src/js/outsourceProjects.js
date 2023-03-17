@@ -29,7 +29,7 @@ const dataSectionExample = {
     },
   ],
 };
-const section = document.querySelector('.section-3');
+const section = document.querySelector('.outsourceProjects');
 console.log(section);
 
 export function sectionMarkup(dataArr, element) {
