@@ -3,6 +3,9 @@
   @include mq(tab) {
     padding-bottom: 60px;
   }
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
 }
 
 .section-3__title {

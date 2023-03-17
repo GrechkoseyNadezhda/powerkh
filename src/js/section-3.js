@@ -9,19 +9,23 @@ const dataSectionExample = {
   items: [
     {
       subtitle: 'Engineering and design experience',
-      subtitleDescription: 'Our specialists understand the design intent and',
+      subtitleDescription:
+        'Our specialists understand the design intent and Powerkh for BIM Outsourcing Projects',
     },
     {
       subtitle: 'Engineering and design experience',
-      subtitleDescription: 'Our specialists understand the design intent and',
+      subtitleDescription:
+        'Our specialists understand the design intent and Powerkh for BIM Outsourcing Projects',
     },
     {
       subtitle: 'Engineering and design experience',
-      subtitleDescription: 'Our specialists understand the design intent and',
+      subtitleDescription:
+        'Our specialists understand the design intent and Powerkh for BIM Outsourcing Projects',
     },
     {
       subtitle: 'Engineering and design experience',
-      subtitleDescription: 'Our specialists understand the design intent and',
+      subtitleDescription:
+        'Our specialists understand the design intent and Powerkh for BIM Outsourcing Projects',
     },
   ],
 };
