@@ -2,6 +2,7 @@
 .hero {
   padding-top: 206px;
   padding-left: 18px;
+  height: 100vh;
   @include mq(tab) {
     padding-top: 192px;
   }
