@@ -89,14 +89,14 @@ body._lock {
 
 @include mq(tab) {
   .burger-menu {
-    top: 60px;
-    left: 0;
-    right: 20px;
+    left: auto;
+    right: 36px;
     width: 390px;
   }
 }
 
 @include mq(desk) {
   .burger-menu {
+    right: 20px;
   }
 }
