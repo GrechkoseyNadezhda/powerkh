@@ -30,7 +30,7 @@ const dataSectionExample = {
   ],
 };
 const section = document.querySelector('.outsourceProjects');
-console.log(section);
+// console.log(section);
 
 export function sectionMarkup(dataArr, element) {
   element.insertAdjacentHTML('beforeend', sectionTemplate(dataArr));
