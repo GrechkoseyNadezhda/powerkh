@@ -1,20 +1,23 @@
 .footer {
   padding: 0 20px 40px;
   background-color: white;
+
   @include mq(tab) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 40px;
+    row-gap: 36px;
     padding: 40px 32px;
+  }
+
+  @include mq(desk) {
+    padding: 40px 152px;
   }
 }
 
 .footer__nav {
   display: inline-block;
   columns: 2;
-  // -webkit-columns: 2;
-  // -moz-columns: 2;
   column-gap: 80px;
   margin-bottom: 28px;
 
@@ -24,9 +27,14 @@
   color: var(--dark-grey-color);
 
   @include mq(tab) {
-    display: block;
     columns: 1;
     margin-right: 91px;
+  }
+
+  @include mq(desk) {
+    columns: 2;
+    column-gap: 40px;
+    margin-right: 98px;
   }
 }
 
@@ -56,27 +64,37 @@
   border: 1px solid var(--pure-black-color);
 }
 
-.footer__title {
-  @include font-title-14;
-  margin-bottom: 10px;
-}
-
 .footer__services {
   @include font-body-reg;
   text-transform: capitalize;
   line-height: 20px;
   color: var(--dark-grey-color);
+  margin-bottom: 12px;
+
   @include mq(tab) {
     margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  @include mq(desk) {
+    display: inline-block;
+    columns: 3;
   }
 }
 
+.footer__title {
+  @include font-title-14;
+  margin-bottom: 10px;
+}
+
 .footer__social {
-  margin: 12px auto 32px;
+  margin: 0 auto 32px;
   width: 160px;
+
   @include mq(tab) {
     margin: 0;
     width: 144px;
+    text-align: right;
   }
 }
 
@@ -86,7 +104,8 @@
   @include font-title-14;
 
   @include mq(tab) {
-    text-align: right;
+    display: inline-block;
+    margin-bottom: 18px;
   }
 }
 
@@ -100,7 +119,8 @@
   margin: 4px auto 12px;
 
   @include mq(tab) {
-    margin-right: 0;
+    display: inline-block;
+    margin: 0 0 0 8px;
   }
 }
 
@@ -121,8 +141,13 @@
   @include font-title-14;
   text-align: center;
   flex-basis: 100%;
+
   @include mq(tab) {
     text-align: left;
     margin-left: 181px;
+  }
+  @include mq(desk) {
+    text-align: left;
+    margin-left: 0;
   }
 }
