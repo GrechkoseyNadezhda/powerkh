@@ -1,4 +1,14 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  background-color: var(--dark-grey-color);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url("../images/hero/Prefabrication/Prefabrication@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
 :root {
   --pure-black-color: #000000;
   --pure-white-color: #ffffff;
@@ -42,13 +52,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-image: url("../images/hero/Prefabrication/Prefabrication@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -67,7 +70,7 @@ body {
 @media screen and (min-width: 1440px) {
   .container {
     padding: 0 152px;
-    max-width: 1440;
+    max-width: 1440px;
   }
 }
 
@@ -84,17 +87,12 @@ body {
 }
 
 .hero {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
-  padding: 206px 20px;
+  padding-top: 206px;
+  padding-left: 18px;
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 192px 68px 252px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .hero {
-    padding: 192px 640px 252px 168px;
+    padding-top: 192px;
   }
 }
 
@@ -137,7 +135,10 @@ body {
 
 .hero__title {
   font-family: "PT Mono";
+  font-style: normal;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
   font-size: 24px;
   line-height: 1.12;
   text-transform: uppercase;
@@ -155,7 +156,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.43;
+  line-height: 1.4285714286;
   color: var(--dark-grey-color);
   margin-bottom: 16px;
 }
@@ -177,7 +178,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.12;
+  line-height: 1.125;
   color: var(--dark-grey-color);
 }
 
@@ -265,6 +266,132 @@ body {
   max-width: 750px;
 }
 
+.contact-us {
+  background-color: var(--pure-white-color);
+}
+
+.contact-us__block {
+  width: 320px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: var(--background-color);
+}
+@media screen and (min-width: 768px) {
+  .contact-us__block {
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact-us__block {
+    width: 1136px;
+  }
+}
+
+.contact-us__title {
+  margin: 0 auto 32px;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--dark-grey-color);
+}
+@media screen and (max-width: 767.98px) {
+  .contact-us__title {
+    max-width: 284px;
+  }
+}
+
+.contact-us__description {
+  margin: 0 auto 32px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714286;
+}
+@media screen and (min-width: 768px) {
+  .contact-us__description {
+    width: 560px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact-us__description {
+    width: 672px;
+  }
+}
+
+.impact-on-business__container {
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .impact-on-business__container {
+    padding-bottom: 80px;
+  }
+}
+
+.impact-on-business__title {
+  margin-bottom: 52px;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+@media screen and (min-width: 1440px) {
+  .impact-on-business__block {
+    display: flex;
+    gap: 158px;
+  }
+}
+
+.impact-on-business__description {
+  margin-bottom: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714286;
+}
+@media screen and (min-width: 1440px) {
+  .impact-on-business__description {
+    width: 553px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+}
+
+.impact-on-business__item {
+  display: flex;
+  gap: 28px;
+}
+.impact-on-business__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.impact-on-business__number {
+  width: 37px;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  flex-shrink: 0;
+  -moz-text-align-last: right;
+       text-align-last: right;
+}
+
+.impact-on-business__statistics {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714286;
+}
+
 .site-header {
   position: relative;
   width: 100%;
@@ -272,7 +399,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: grey;
+}
+
+.site-header__logo {
+  padding-left: 8px;
 }
 
 .main-navigation {
@@ -284,20 +415,90 @@ body {
 .main-navigation__list {
   display: flex;
   gap: 52px;
+  align-items: center;
 }
 
-.burger-menu {
-  display: none;
+.main-navigation__link {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+}
+
+.contact-us-btn {
+  padding: 16px;
+  text-transform: uppercase;
+  font-family: "PT Mono";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+.has-dropdown {
+  position: relative;
+  top: 0;
+}
+.has-dropdown:hover .main-navigation__dropdown {
+  display: flex;
 }
 
 .main-navigation__dropdown {
   display: none;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 360px;
+  padding: 48px 36px 48px 28px;
+  background-color: #cdcdcd;
+  font-family: "PT Mono";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.125;
+  color: #0e0e0e;
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  padding-right: 20px;
+  cursor: pointer;
 }
 
 .burger-close-icon {
   display: none;
 }
 
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .main-navigation__item:not(:nth-child(2)) {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-navigation__item:last-child {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact-us-btn {
+    display: block;
+  }
+  .main-navigation__item:last-child {
+    display: block;
+  }
+}
 .have-BIM-project {
   background-color: var(--pure-white-color);
 }
