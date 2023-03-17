@@ -1,8 +1,12 @@
 {{!-- потрібно підставити массив обєктів--}}
 {{!-- приклад об'єкта: {subtitle: 'текст заголовка', description: 'опис'
 } --}}
-
-{{#each this}}
+ <div class="container">
+    <h2 class="section-title howWeWork__title">
+      How Powerkh Works with Clients
+    </h2>
+    <ol class="howWeWork__list">
+      {{#each this}}
 <li class="howWeWork__item">
       <h3 class="howWeWork__subtitle">{{this.subtitle}}</h3>
       <p class="howWeWork__description">
@@ -10,3 +14,5 @@
       </p>
     </li>
     {{/each}}
+    </ol>
+  </div>
