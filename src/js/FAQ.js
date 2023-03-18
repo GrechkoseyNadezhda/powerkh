@@ -7,5 +7,4 @@ const questExample = [
   'Do you offer free revisions?',
 ];
 const faqSection = document.querySelector('.faq');
-console.log(faqSection);
 faqSection.insertAdjacentHTML('beforeend', FAQ(questExample));
