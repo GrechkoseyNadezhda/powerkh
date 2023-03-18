@@ -1,0 +1,16 @@
+.faq {
+  outline: 1px solid red;
+  background-color: white;
+  padding: 0 20px;
+}
+.faq__title {
+  @include font-title;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.faq__questions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
