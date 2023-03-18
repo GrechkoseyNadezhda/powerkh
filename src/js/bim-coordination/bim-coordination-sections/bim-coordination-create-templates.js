@@ -12,6 +12,7 @@ import {
 } from './bim-coordination-data';
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
+import { fetchDatabaseFAQ } from '../../common/fetchDatabaseFAQ';
 
 // export const refs = {
 //   hero: document.querySelector('.hero__content'),
@@ -31,3 +32,16 @@ useTemplate(refs.contactUs, contactUsHBS, contactUsPrefabrication);
 //   'beforeend',
 //   servicesHBS(servicesCoordination)
 // );
+// const BASEURL = 'https://poverkh-default-rtdb.firebaseio.com/';
+// async function fetchDatabaseFAQ(endpoint) {
+//   const response = await fetch(BASEURL + endpoint);
+//   const answer = await response.json();
+//   let answerArr = [];
+//   for (let key in answer) {
+//     answerArr.push(answer[key]);
+//   }
+//   console.log(answerArr);
+//   return answerArr;
+// }
+
+fetchDatabaseFAQ('/faq/bimCoordination.json');
