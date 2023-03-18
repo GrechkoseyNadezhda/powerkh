@@ -10,19 +10,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../sass/index.scss" />
-    <script
-      type="module"
-      src="../js/prefabrication/prefabrication.js"
-    ></script>
+    <script type="module" src="../js/prefabrication/prefabrication.js"></script>
   </head>
-  <body>
+  <body class="prefabrication-page">
+    <include src="./partials/components/header/header.html"></include>
     <include src="./partials/components/hero.html"></include>
-
-    <!-- <include src="./partials/components/header/header.html"></include>
-    <include
-      src="./partials/bim-coordination/bim-coordination-structure.html"
-    ></include>
-
-    <include src="./partials/components/haveBIMproject.html"></include> -->
+    <include src="./partials/prefabrication/prefabrication-structure.html"></include>
+    <!-- FAQ -->
+    <include src="./partials/components/ourCaseStudies.html"></include>
+    <include src="./partials/components/haveBIMproject.html"></include>
+    <include src="./partials/components/footer.html"></include>
   </body>
 </html>
+
