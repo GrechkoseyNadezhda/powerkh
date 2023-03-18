@@ -1,14 +1,37 @@
 import howWeWorkHBS from '../../../templates/howWeWork.hbs';
 import servicesHBS from '../../../templates/architecAndStructBim.hbs';
-import { howCoordination, servicesCoordination } from './bim-coordination-data';
+import heroHBS from '../../../templates/hero.hbs';
+import featuresForProjectsHBS from '../../../templates/outsourceProjects.hbs';
+import contactUsHBS from '../../../templates/contactUs.hbs';
+import {
+  addValueCoordination,
+  heroCoordination,
+  howCoordination,
+  servicesCoordination,
+  contactUsCoordination,
+} from './bim-coordination-data';
+import { refs } from '../../common/refs-services';
+import { useTemplate } from '../../common/use-template';
 
-const refs = {
-  howWeWork: document.querySelector('.howWeWork'),
-  services: document.querySelector('.bim-automation-services'),
-};
+// export const refs = {
+//   hero: document.querySelector('.hero__content'),
+//   howWeWork: document.querySelector('.howWeWork'),
+//   services: document.querySelector('.bim-automation-services'),
+// };
 
-refs.howWeWork.insertAdjacentHTML('beforeend', howWeWorkHBS(howCoordination));
-refs.services.insertAdjacentHTML(
-  'beforeend',
-  servicesHBS(servicesCoordination)
+useTemplate(refs.hero, heroHBS, heroCoordination);
+useTemplate(refs.howWeWork, howWeWorkHBS, howCoordination);
+useTemplate(refs.services, servicesHBS, servicesCoordination);
+useTemplate(
+  refs.featuresForProjects,
+  featuresForProjectsHBS,
+  addValueCoordination
 );
+useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
+
+// refs.hero.insertAdjacentHTML('beforeend', heroHBS(heroCoordination));
+// refs.howWeWork.insertAdjacentHTML('beforeend', howWeWorkHBS(howCoordination));
+// refs.services.insertAdjacentHTML(
+//   'beforeend',
+//   servicesHBS(servicesCoordination)
+// );
