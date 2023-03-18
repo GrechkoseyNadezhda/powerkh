@@ -5,6 +5,7 @@
   height: 100vh;
   @include mq(tab) {
     padding-top: 192px;
+    padding-left: 34px;
   }
 }
 
