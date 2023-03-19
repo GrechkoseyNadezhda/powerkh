@@ -1,6 +1,8 @@
 import heroHBS from '../../../templates/hero.hbs';
-import { heroCareer } from './career-data';
+
+import { heroContacts } from './contacts-data';
+
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 
-useTemplate(refs.hero, heroHBS, heroCareer);
+useTemplate(refs.hero, heroHBS, heroContacts);

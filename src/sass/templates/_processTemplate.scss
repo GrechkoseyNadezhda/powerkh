@@ -1,0 +1,208 @@
+.process {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--pure-white-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--pure-white-color);
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--pure-white-color);
+  }
+}
+
+.process__main-title {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(22 / 20);
+}
+
+.process__list {
+  margin-top: 53px;
+  list-style: none;
+  @include font-body-reg;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+.process__title-audit {
+  @include font-title;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  &::before {
+    content: ' ';
+    display: inline-block;
+    background-image: url(../images/vectors/audit.svg);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    margin-right: 14px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 12px;
+    margin-bottom: 12px;
+    &::before {
+      margin-right: 0px;
+    }
+    &::after {
+      content: ' ';
+      display: block;
+      background-image: url(../images/vectors/arrow-long-right.svg);
+      width: 104px;
+      height: 15px;
+      background-size: cover;
+    }
+  }
+}
+
+.process__title-design {
+  @include font-title;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  &::before {
+    content: ' ';
+    display: inline-block;
+    background-image: url(../images/vectors/design.svg);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    margin-right: 14px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 12px;
+    gap: 12px;
+    &::before {
+      margin-right: 0px;
+    }
+    &::after {
+      content: ' ';
+      display: block;
+      background-image: url(../images/vectors/arrow-long-right.svg);
+      width: 104px;
+      height: 15px;
+      background-size: cover;
+    }
+  }
+}
+
+.process__title-test {
+  @include font-title;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+
+  &::before {
+    content: ' ';
+    display: inline-block;
+    background-image: url(../images/vectors/test.svg);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    margin-right: 14px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 12px;
+    gap: 12px;
+    &::before {
+      margin-right: 0px;
+    }
+    &::after {
+      content: ' ';
+      display: block;
+      background-image: url(../images/vectors/arrow-long-right.svg);
+      width: 104px;
+      height: 15px;
+      background-size: cover;
+    }
+  }
+}
+.process__title-refine {
+  @include font-title;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  &::before {
+    content: ' ';
+    display: inline-block;
+    background-image: url(../images/vectors/refine.svg);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    margin-right: 14px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 12px;
+    gap: 12px;
+    &::before {
+      margin-right: 0px;
+    }
+    &::after {
+      content: ' ';
+      display: block;
+      background-image: url(../images/vectors/arrow-long-right.svg);
+      width: 104px;
+      height: 15px;
+      background-size: cover;
+    }
+  }
+}
+
+.process__title-maintain {
+  @include font-title;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+
+  &::before {
+    content: ' ';
+    display: inline-block;
+    background-image: url(../images/vectors/maintain.svg);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    margin-right: 14px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 12px;
+    gap: 12px;
+    &::before {
+      margin-right: 0px;
+    }
+  }
+}
+
+.process__description {
+  &::after {
+    content: ' ';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    background-image: url(../images/vectors/long-arrow-down-process.svg);
+    width: 14px;
+    height: 27px;
+    background-size: cover;
+    margin-right: 14px;
+  }
+  @media screen and (min-width: 1440px) {
+    @include font-body-reg;
+
+    &::after {
+      display: none;
+    }
+  }
+}

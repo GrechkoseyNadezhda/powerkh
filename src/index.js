@@ -9,3 +9,5 @@ import './js/faq';
 
 // BIM-Modeling
 import './js/bim-modeling/bim-modeling';
+
+import './js/footer';
