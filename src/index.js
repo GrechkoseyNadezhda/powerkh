@@ -6,3 +6,6 @@ import './js/HerBIMandVDC';
 
 //FAQ
 import './js/FAQ';
+
+// BIM-Modeling
+import './js/bim-modeling/bim-modeling';
