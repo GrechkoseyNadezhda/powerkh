@@ -7,8 +7,8 @@ import {
   heroCoordination,
   howCoordination,
   servicesCoordination,
-  addValuePrefabrication,
-  contactUsPrefabrication,
+  addValueCoordination,
+  contactUsCoordination,
 } from './bim-coordination-data';
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
@@ -23,8 +23,12 @@ import { fetchDatabaseFAQ } from '../../common/fetchDatabaseFAQ';
 useTemplate(refs.hero, heroHBS, heroCoordination);
 useTemplate(refs.howWeWork, howWeWorkHBS, howCoordination);
 useTemplate(refs.services, servicesHBS, servicesCoordination);
-useTemplate(refs.featuresForProjects, featuresForProjectsHBS, addValuePrefabrication);
-useTemplate(refs.contactUs, contactUsHBS, contactUsPrefabrication);
+useTemplate(
+  refs.featuresForProjects,
+  featuresForProjectsHBS,
+  addValueCoordination
+);
+useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
 
 // refs.hero.insertAdjacentHTML('beforeend', heroHBS(heroCoordination));
 // refs.howWeWork.insertAdjacentHTML('beforeend', howWeWorkHBS(howCoordination));
