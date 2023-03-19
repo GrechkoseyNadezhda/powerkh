@@ -15,3 +15,5 @@ if (current === '') {
     }
   }
 }
+
+import './burgerMenu';
