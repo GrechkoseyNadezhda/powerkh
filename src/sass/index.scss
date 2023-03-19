@@ -21,14 +21,21 @@
 @import './templates/architecAndStructBim';
 @import './templates/impactOnBusiness';
 
-@import './templates/bimModelingProjects';
+@import './templates/sectionProjects';
 
 //Components
 
 @import './components/header';
 @import './components/burgerMenu';
 @import './components/haveBIMproject';
-@import './templates/FAQ.scss';
+@import './templates/faq.scss';
 @import './components/ourCaseStudies';
+@import './templates/processTemplate';
+
 @import './components/joinTeam';
 @import './components/footer';
+@import './components/contacts-section';
+
+// Layout
+
+@import './layout/contacts';
