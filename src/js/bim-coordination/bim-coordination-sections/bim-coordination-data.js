@@ -80,7 +80,3 @@ export const addValueCoordination = {
     },
   ],
 };
-
-// test
-export const addValuePrefabrication = {};
-export const contactUsPrefabrication = {};
