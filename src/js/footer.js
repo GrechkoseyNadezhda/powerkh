@@ -1,6 +1,6 @@
 const getPath = path => path.split('/').pop().split('.')[0];
 
-var current = getPath(location.pathname);
+const current = getPath(location.pathname);
 if (current === '')
   document
     .querySelector('.footer__nav')
