@@ -1,0 +1,186 @@
+// /* Слайдер */
+// .slick-slider{}
+// /* Слайдер запущен */
+// .slick-slider.slick-initialized{}
+// /* Слайдер с точками */
+// .slick-slider.slick-dotted{}
+// /* Ограничивающая оболочка */
+// .slick-list {
+// }
+// /* Лента слайдов */
+// .slick-track{
+// }
+// /* Слайд */
+// .slick-slide{}
+// /* Слайд активный (показывается) */
+// .slick-slide.slick-active{}
+// /* Слайд основной */
+// .slick-slide.slick-current{}
+// /* Слайд по центру */
+// .slick-slide.slick-center{}
+// /* Клонированный слайд */
+// .slick-slide.slick-cloned{}
+// /* Стрелка */
+// .slick-arrow{}
+// /* Стрелка влево */
+// .slick-arrow.slick-prev{}
+// /* Стрелка вправо */
+// .slick-arrow.slick-next{}
+// /* Стрелка не активная */
+// .slick-arrow.slick-disabled{}
+// /* Точки (булиты) */
+// .slick-dots{}
+// .slick-dots li{}
+// /* Активная точка */
+// .slick-dots li.slick-active{}
+// /* Элемент точки */
+// .slick-dots li button{}
+
+
+
+/* BIM MODELING PROJECTS SLIDER */
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+
+.section-projects {
+    box-sizing: border-box;
+    padding: 40px 0 90px;
+
+    background-color: var(--pure-white-color);
+
+    @media screen and (min-width: 768px) {
+        padding: 60px 0 122px;
+    }
+    @media screen and (min-width: 1440px) {
+        padding: 80px 0 122px;
+    }
+}
+
+// .section-projects__block {
+
+// }
+
+.section-projects__title{
+    @include font-title;
+
+}
+
+.section-projects__desc{
+    @include font-body-reg;
+    margin-top: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 52px;
+    }
+    @media screen and (min-width: 1440px) {
+        margin-top: 52px;
+    }
+}
+
+
+
+.section-projects__slider {
+    margin-top: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 52px;
+    }
+    @media screen and (min-width: 1440px) {
+        margin-top: 52px;
+    }
+}
+
+.section-projects__slider-item {
+    box-sizing: border-box;
+
+    width: 320px;
+    height: 160px;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        width: 704px;
+        height: 328px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 1136px;
+        height: 560px;
+    }
+}
+
+.section-projects__slider-item img{
+    
+    width: 320px;
+    height: 160px;
+
+    @media screen and (min-width: 768px) {
+        width: 704px;
+        height: 328px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 1136px;
+        height: 560px;
+    }
+}
+
+// .section-projects__slider-item .slick-arrow {
+//     position: absolute;
+//     top: 50%;
+//     z-index: 10;
+// }
+
+// .section-projects__slider-item .slick-arrow.slick-prev {
+//     left: 0;
+// }
+
+// .section-projects__slider-item .slick-arrow.slick-next {
+//     right: 0;
+// }
+
+/* Точки (булиты) */
+.section-projects__slider-item .slick-dots{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+
+    margin-top: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 52px;
+    }
+    @media screen and (min-width: 1440px) {
+        margin-top: 52px;
+    }
+}
+.section-projects__slider-item .slick-dots li{
+    list-style: none;
+    
+}
+
+/* Активная точка */
+.section-projects__slider-item .slick-dots li.slick-active {
+    padding: 2px 0;
+}
+
+.section-projects__slider-item .slick-dots li.slick-active button{
+    width: 6px;
+    height: 6px;
+}
+/* Элемент точки */
+.section-projects__slider-item .slick-dots li button{
+    display: block;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0E0E0E;
+    border: none;
+    padding: 0;
+    
+}
