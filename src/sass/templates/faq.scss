@@ -1,0 +1,73 @@
+.faq {
+  background-color: var(--pure-white-color);
+  color: var(--dark-grey-color);
+}
+
+.faq__container {
+  @include mq(desk) {
+    display: flex;
+  }
+}
+
+.faq__title {
+  @include font-title;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+
+  @include mq(tab) {
+    margin-bottom: 52px;
+  }
+
+  @include mq(desk) {
+    margin-bottom: 0;
+  }
+}
+
+.faq__questions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+  @include mq(desk) {
+    margin: 0 auto;
+    width: 741px;
+  }
+}
+
+.faq__question {
+  padding-left: 32px;
+  position: relative;
+  display: block;
+  @include font-title-14;
+  text-transform: uppercase;
+}
+
+.faq__answer {
+  @include font-body-reg;
+  padding-top: 16px;
+}
+
+.faq__question::before {
+  position: absolute;
+  top: calc(50% - 4px);
+  left: 0;
+  display: block;
+  width: 12px;
+  height: 8px;
+  content: '';
+  background-image: url('../images/vectors/Polygon 3.svg');
+}
+
+.faq__question.open::before {
+  transform: scaleY(-1);
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

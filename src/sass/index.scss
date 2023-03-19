@@ -7,19 +7,30 @@
 @import './utils/mixins';
 @import './utils/reset';
 @import './utils/common_classes';
+@import './utils/body_classes';
 
 //Templates
+
 @import './templates/hero';
 @import './templates/howWeWork';
 @import './templates/HerBIMAndVDCServices.scss';
 @import './templates/contactUs';
+
+@import './templates/outsourceProjects';
+
 @import './templates/architecAndStructBim';
 @import './templates/impactOnBusiness';
 
+@import './templates/bimModelingProjects';
+
 //Components
+
 @import './components/header';
 @import './components/burgerMenu';
 @import './components/haveBIMproject';
+@import './templates/faq.scss';
 @import './components/ourCaseStudies';
 @import './templates/processTemplate';
 
+@import './components/joinTeam';
+@import './components/footer';

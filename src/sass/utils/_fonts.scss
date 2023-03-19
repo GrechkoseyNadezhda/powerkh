@@ -12,6 +12,14 @@
   font-size: 20px;
   line-height: calc(22 / 20);
 }
+
+@mixin font-title-14 {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+}
 @mixin font-button {
   font-family: 'PT Mono';
   font-style: normal;
