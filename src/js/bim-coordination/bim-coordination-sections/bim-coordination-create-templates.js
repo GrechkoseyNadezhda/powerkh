@@ -4,14 +4,15 @@ import heroHBS from '../../../templates/hero.hbs';
 import featuresForProjectsHBS from '../../../templates/outsourceProjects.hbs';
 import contactUsHBS from '../../../templates/contactUs.hbs';
 import {
-  addValueCoordination,
   heroCoordination,
   howCoordination,
   servicesCoordination,
+  addValueCoordination,
   contactUsCoordination,
 } from './bim-coordination-data';
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
+import { fetchDatabaseFAQ } from '../../common/fetchDatabaseFAQ';
 
 // export const refs = {
 //   hero: document.querySelector('.hero__content'),
@@ -35,3 +36,16 @@ useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
 //   'beforeend',
 //   servicesHBS(servicesCoordination)
 // );
+// const BASEURL = 'https://poverkh-default-rtdb.firebaseio.com/';
+// async function fetchDatabaseFAQ(endpoint) {
+//   const response = await fetch(BASEURL + endpoint);
+//   const answer = await response.json();
+//   let answerArr = [];
+//   for (let key in answer) {
+//     answerArr.push(answer[key]);
+//   }
+//   console.log(answerArr);
+//   return answerArr;
+// }
+
+fetchDatabaseFAQ('/faq/bimCoordination.json');
