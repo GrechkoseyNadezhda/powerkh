@@ -7,8 +7,8 @@ import {
   heroPrefabrication,
   howPrefabrication,
   servicesPrefabrication,
-  contactUsCoordination,
-  addValueCoordination,
+  contactUsPrefabrication,
+  addValuePrefabrication,
 } from './prefabrication-data';
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
@@ -19,7 +19,6 @@ useTemplate(refs.services, servicesHBS, servicesPrefabrication);
 useTemplate(
   refs.featuresForProjects,
   featuresForProjectsHBS,
-  addValueCoordination
+  addValuePrefabrication
 );
-useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
-
+useTemplate(refs.contactUs, contactUsHBS, contactUsPrefabrication);
