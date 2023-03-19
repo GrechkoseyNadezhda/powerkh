@@ -25,7 +25,7 @@ const questExample = [
   },
 ];
 const faqSection = document.querySelector('.faq');
-faqSection.insertAdjacentHTML('beforeend', FAQ(questExample));
+// faqSection.insertAdjacentHTML('beforeend', FAQ(questExample));
 const questionsEls = document.querySelectorAll('.faq__questBlock');
 questionsEls.forEach(question =>
   question.addEventListener('click', e => {
