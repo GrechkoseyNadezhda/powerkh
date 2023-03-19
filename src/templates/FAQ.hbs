@@ -2,7 +2,11 @@
   <h2 class='faq__title'>FAQ</h2>
   <ul class='faq__questions'>
     {{#each this}}
-      <li class='faq__question'>{{this}}</li>
+      <li class='faq__questBlock' onclick=''>
+        <h3 class='faq__question'>{{this.question}}</h3>
+        <p class='faq__answer visually-hidden'>{{this.answer}}</p>
+
+      </li>
     {{/each}}
   </ul>
 </div>
