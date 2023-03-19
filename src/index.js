@@ -2,6 +2,8 @@ import './js/outsourceProjects';
 
 // header
 import './js/header/burgerMenu';
+import './js/header/header';
+
 import './js/HerBIMandVDC';
 
 //FAQ
