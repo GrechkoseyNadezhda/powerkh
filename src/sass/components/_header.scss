@@ -55,32 +55,6 @@
   transform: scaleX(1);
 }
 
-// .footer__navItem,
-// .footer__servItem {
-//   position: relative;
-//   width: max-content;
-//   margin-bottom: 4px;
-// }
-
-// .footer__navItem::after,
-// .footer__servItem::after {
-//   display: block;
-//   position: absolute;
-//   right: 50%;
-//   width: 0;
-//   content: '';
-//   transition: width 300ms linear, right 300ms linear;
-// }
-
-// .footer__navItem.active::after,
-// .footer__servItem.active::after,
-// .footer__navItem:hover::after,
-// .footer__servItem:hover::after {
-//   right: 0;
-//   width: 100%;
-//   border: 1px solid var(--pure-black-color);
-// }
-
 .main-navigation__link {
   display: block;
   padding-top: 22px;
