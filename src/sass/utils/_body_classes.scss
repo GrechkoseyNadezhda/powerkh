@@ -1,4 +1,5 @@
-.bim-coordination-page {
+.bim-coordination-page,
+.scan-to-bim-page {
   background-color: var(--dark-grey-color);
   background-image: linear-gradient(
       180deg,
@@ -37,5 +38,20 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url('../images/hero/prefabrication@2x.jpg');
+  }
+}
+
+.scan-to-bim-page {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('../images/hero/scan-to-bim@1x.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/hero/scan-to-bim@2x.jpg');
   }
 }
