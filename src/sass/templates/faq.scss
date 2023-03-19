@@ -1,17 +1,14 @@
 .faq {
-  background-color: white;
+  background-color: var(--pure-white-color);
   color: var(--dark-grey-color);
-  padding: 0 20px;
+}
 
-  @include mq(tab) {
-    padding: 0 32px;
-  }
-
+.faq__container {
   @include mq(desk) {
     display: flex;
-    padding: 0 0 0 152px;
   }
 }
+
 .faq__title {
   @include font-title;
   text-transform: uppercase;
@@ -19,6 +16,10 @@
 
   @include mq(tab) {
     margin-bottom: 52px;
+  }
+
+  @include mq(desk) {
+    margin-bottom: 0;
   }
 }
 
@@ -34,11 +35,16 @@
 }
 
 .faq__question {
+  padding-left: 32px;
   position: relative;
   display: block;
   @include font-title-14;
   text-transform: uppercase;
-  padding-left: 32px;
+}
+
+.faq__answer {
+  @include font-body-reg;
+  padding-top: 16px;
 }
 
 .faq__question::before {
@@ -50,5 +56,18 @@
   height: 8px;
   content: '';
   background-image: url('../images/vectors/Polygon 3.svg');
-  margin-right: 20px;
+}
+
+.faq__question.open::before {
+  transform: scaleY(-1);
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
