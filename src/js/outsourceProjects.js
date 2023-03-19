@@ -1,6 +1,6 @@
 import sectionTemplate from '../templates/outsourceProjects.hbs';
 
-console.log(sectionTemplate);
+// console.log(sectionTemplate);
 const dataSectionExample = {
   title: 'Powerkh for BIM Outsourcing Projects',
   description:
@@ -34,4 +34,4 @@ const section = document.querySelector('.outsourceProjects');
 export function sectionMarkup(dataArr, element) {
   element.insertAdjacentHTML('beforeend', sectionTemplate(dataArr));
 }
-sectionMarkup(dataSectionExample, section);
+// sectionMarkup(dataSectionExample, section);

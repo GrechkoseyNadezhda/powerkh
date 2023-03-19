@@ -38,6 +38,6 @@ const dataExample = [
   },
 ];
 const exampleList = document.querySelector('.howWeWork__list');
-console.log(templateExample);
+// console.log(templateExample);
 
-exampleList.insertAdjacentHTML('beforeend', templateExample(dataExample));
+// exampleList.insertAdjacentHTML('beforeend', templateExample(dataExample));
