@@ -1,4 +1,4 @@
-import FAQ from '../templates/FAQ.hbs';
+import FAQ from '../templates/faq.hbs';
 const questExample = [
   {
     question: 'How long does it take to produce an architectural 3D render?',
