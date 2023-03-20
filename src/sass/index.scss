@@ -9,7 +9,7 @@
 @import './utils/common_classes';
 @import './utils/body_classes';
 
-//Templates
+//Templates-services
 
 @import './templates/hero';
 @import './templates/howWeWork';
@@ -22,16 +22,17 @@
 @import './templates/impactOnBusiness';
 
 @import './templates/sectionProjects';
+//Templates-caseStudies
+
+@import './templates/hero3';
 @import './templates/processTemplate';
 
 //Components
-
 @import './components/header';
 @import './components/burgerMenu';
 @import './components/haveBIMproject';
 @import './templates/faq.scss';
 @import './components/ourCaseStudies';
-
 
 @import './components/joinTeam';
 @import './components/footer';

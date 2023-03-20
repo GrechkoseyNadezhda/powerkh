@@ -15,7 +15,7 @@ import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { fetchDatabaseFAQ } from '../../common/fetchDatabaseFAQ';
 
-useTemplate(refs.hero, heroHBS, heroCoordination);
+// useTemplate(refs.hero, heroHBS, heroCoordination);
 useTemplate(refs.howWeWork, howWeWorkHBS, howCoordination);
 useTemplate(refs.services, servicesHBS, servicesCoordination);
 useTemplate(
