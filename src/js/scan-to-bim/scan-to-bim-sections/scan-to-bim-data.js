@@ -99,3 +99,46 @@ export const contactUsScanToBIM = {
   description:
     'Do you want an interactive 3D BIM model? Powerkh can recreate your Point Cloud data as a highly accurate Revit geometry. Contact us to get a free quote!',
 };
+
+export const shareBim = {
+  title: 'Share:',
+  list: [
+    {
+      link: '#',
+      // img: '/facebook.8841507d.svg',
+      class: 'share__facebook',
+    },
+    {
+      link: '#',
+      // img: './linkedin.svg',
+      class: 'share__linkedin',
+    },
+  ],
+};
+
+export const contentsBim = {
+  title: 'Contents',
+  list: [
+    'What problems can you solve with BIM services?',
+    'Benefits of BIM',
+    'Disadvantages of BIM',
+    'Conclusion',
+  ],
+};
+
+export const contentsInformBim = [
+  'The traditional approach to construction is rarely the best one. Projects depending on shop drawings, flat schemes, and tracing paper often do not go according to plan.',
+  'Technological advances in modeling can offer many advantages for the industry. For this reason, many US construction companies are using BIM to save costs on their projects.',
+  "Do you want to learn how BIM helps in the construction industry? Keep reading to find out! While we're at it, we'll go through the potential disadvantages of BIM modeling and see how you can avoid them with the right company.",
+];
+
+export const whatProblemsBim = {
+  list: [
+    'Unrealistic estimates',
+    'High risks of going over budget',
+    'Time-consuming manual operations',
+    'Ineffective communication tools',
+    'Constructability issues in mechanical, electrical, and plumbing systems',
+    'Unexpected design clashes at later stages of construction',
+  ],
+};

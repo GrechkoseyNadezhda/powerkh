@@ -1,0 +1,22 @@
+.hero-part-four__title {
+  padding-top: 80px;
+  padding-left: 166px;
+  @include mq(tab) {
+    padding-top: 80px;
+    padding-left: 146px;
+  }
+  @include mq(tab) {
+    padding-top: 200px;
+    padding-left: 168px;
+  }
+}
+
+.hero-part-four__title {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  color: #ffffff;
+  text-align: center;
+}

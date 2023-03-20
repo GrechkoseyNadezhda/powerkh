@@ -1,0 +1,60 @@
+.what-problems {
+  &__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    @include mq(tab) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    @include mq(desk) {
+      padding-left: 249px;
+      padding-right: 441px;
+    }
+  }
+  &__title {
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    color: #0e0e0e;
+    text-align: center;
+  }
+  &__paragraph {
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #0e0e0e;
+  }
+  &__list {
+    margin-top: 20px;
+    margin-bottom: 1px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__item {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #0e0e0e;
+    position: relative;
+  }
+}
+
+.what-problems__item::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 9px;
+  top: 7px;
+  left: -20px;
+
+  background-image: url(../images/vectors/arrow-right-black.svg);
+  background-repeat: no-repeat;
+}

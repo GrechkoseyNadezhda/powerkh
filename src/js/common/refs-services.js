@@ -5,4 +5,8 @@ export const refs = {
   services: document.querySelector('.bim-automation-services'),
   featuresForProjects: document.querySelector('.outsourceProjects'),
   contactUs: document.querySelector('.contact-us'),
+  share: document.querySelector('.share'),
+  contents: document.querySelector('.contents'),
+  contentsInform: document.querySelector('.contents-information'),
+  whatProblems: document.querySelector('.what-problems__list'),
 };

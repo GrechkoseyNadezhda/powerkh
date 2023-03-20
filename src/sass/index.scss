@@ -22,6 +22,7 @@
 @import './templates/impactOnBusiness';
 
 @import './templates/bimModelingProjects';
+@import './templates/contents';
 
 //Components
 
@@ -33,8 +34,11 @@
 @import './templates/processTemplate';
 
 @import './components/joinTeam';
-@import './components/footer';
 @import './components/contacts-section';
+
+@import './components/whatProblems';
+
+@import './components/footer';
 
 // Layout
 
