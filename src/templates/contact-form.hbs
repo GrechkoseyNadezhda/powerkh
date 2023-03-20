@@ -1,0 +1,38 @@
+{{! підставити об'єкт }}
+{{! приклад об'єкта: {subtitle: 'текст заголовка',  btnText: 'текс на кнопці зі стрілкою'
+} }}
+
+<h2 class='hero__title'>{{this.subtitle}}</h2>
+<form class='contact-form' name='contact-form'>
+
+  <div>
+    <input
+      type='text'
+      class='contact-form__input'
+      name='name'
+      required
+      placeholder=''
+    />
+    <label class='contact-form__label'>{{this.firstFieldPlaceholder}}</label>
+  </div>
+
+  <div>
+    <input
+      type='text'
+      class='contact-form__input'
+      name='phone'
+      required
+      placeholder=''
+    />
+    <label class='contact-form__label'>{{this.secondFieldPlaceholder}}</label>
+  </div>
+
+  <label class='contact-form__label'>
+    {{this.textAreaTitle}}
+    <textarea
+      class='contact-form__textarea'
+      name='message'
+      placeholder=' '
+    ></textarea>
+  </label>
+</form>
