@@ -10,3 +10,7 @@ export const refs = {
   heroBtn: document.querySelector('.hero__btn'),
   heroBlock: document.querySelector('.hero__block'),
 };
+export const refsCase = {
+  heroTextBlock: document.querySelector('.case-description__text-block'),
+  heroSlider: document.querySelector('.swiper-wrapper'),
+};
