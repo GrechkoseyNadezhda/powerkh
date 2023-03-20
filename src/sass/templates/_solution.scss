@@ -2,9 +2,11 @@
   @include font-title;
   margin-bottom: 52px;
 }
-.solution__img {
-  margin-bottom: 20px;
+.solution__img-container {
+  display: flex;
+  justify-content: center;
 }
 .solution__gif-container {
-  border: 1px solid red;
+  display: flex;
+  justify-content: center;
 }
