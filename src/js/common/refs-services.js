@@ -11,6 +11,7 @@ export const refs = {
   contentsInform: document.querySelector('.contents-information'),
   whatProblems: document.querySelector('.what-problems__list'),
   faq: document.querySelector('.faq'),
+  heroPartFour: document.querySelector('.hero-part-four'),
 };
 export const refsCase = {
   heroTextBlock: document.querySelector('.case-description__text-block'),

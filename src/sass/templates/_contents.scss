@@ -1,31 +1,37 @@
-.main__wrapper {
-  background-color: white;
+.contents-with-author {
   padding-top: 40px;
 
-  @include mq(tab) {
+  @include mq(desk) {
+    padding-top: 80px;
   }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    @include mq(tab) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    @include mq(desk) {
+      padding-left: 249px;
+      padding-right: 441px;
+    }
+  }
+}
+.main__wrapper {
+  padding-top: 40px;
+
   @include mq(desk) {
     padding-top: 80px;
   }
 }
 .blog-top {
-  max-width: 1136px;
-  padding-left: 20px;
-  padding-right: 20px;
   position: relative;
-  @include mq(tab) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @include mq(desk) {
-    padding-left: 97px;
-    padding-right: 289px;
-  }
 }
 
 .share {
   position: absolute;
-  left: 0px;
+  left: 152px;
   width: 73px;
   display: none;
 
@@ -142,8 +148,7 @@
 
 .author {
   position: static;
-  top: 0;
-  right: 0;
+
   width: 320px;
   display: none;
   margin: 0 auto;
@@ -153,6 +158,8 @@
   @include mq(desk) {
     position: absolute;
     display: block;
+    top: 0;
+    right: 152px;
   }
 
   &__img-wrapper {
