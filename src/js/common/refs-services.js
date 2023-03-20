@@ -6,4 +6,5 @@ export const refs = {
   featuresForProjects: document.querySelector('.outsourceProjects'),
   slider: document.querySelector('.section-projects__slider-item'),
   contactUs: document.querySelector('.contact-us'),
+  faq: document.querySelector('.faq'),
 };
