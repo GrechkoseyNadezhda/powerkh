@@ -1,0 +1,21 @@
+{{! підставити масив об'єктів }}
+{{! приклад масиву: 
+[{question: 'текст запитання1', answer: 'текст відповіді1'}, 
+{question: 'текст запитання2', answer: 'текст відповіді2'}, ...
+]}}
+
+{{! <section class="section faq"></section> }}
+{{!<script type="module" src="../js/faq/faq.js"></script>}}
+
+<div class='container faq__container'>
+  <h2 class='faq__title'>FAQ</h2>
+  <ul class='faq__questions'>
+    {{#each this}}
+      <li class='faq__questBlock' onclick=''>
+        <h3 class='faq__question'>{{this.question}}</h3>
+        <p class='faq__answer visually-hidden'>{{this.answer}}</p>
+
+      </li>
+    {{/each}}
+  </ul>
+</div>

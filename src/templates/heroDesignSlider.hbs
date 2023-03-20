@@ -1,0 +1,18 @@
+ {{!-- <div class="swiper slider-hero">
+      <div class="swiper-wrapper">
+        Шаблон сюди
+      </div>
+    <div class="swiper-pagination"></div>
+    </div> --}}
+ {{!-- потрібно підставити  масив--}}
+{{!-- приклад об'єкта: [ { img1x: фото, img2x: фото на 2х }] --}}
+
+ {{#each this}}
+     
+        <div class="swiper-slide">
+          <img
+          srcset='{{this.img1x}} 1x, {{this.img2x}} 2x'
+            src={{this.img1x}} alt="Slider"
+          />
+        </div>
+       {{/each}}

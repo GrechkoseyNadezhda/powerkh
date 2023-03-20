@@ -9,18 +9,13 @@ import {
   servicesCoordination,
   addValueCoordination,
   contactUsCoordination,
+  projectCoordination,
 } from './bim-coordination-data';
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { fetchDatabaseFAQ } from '../../common/fetchDatabaseFAQ';
 
-// export const refs = {
-//   hero: document.querySelector('.hero__content'),
-//   howWeWork: document.querySelector('.howWeWork'),
-//   services: document.querySelector('.bim-automation-services'),
-// };
-
-useTemplate(refs.hero, heroHBS, heroCoordination);
+// useTemplate(refs.hero, heroHBS, heroCoordination);
 useTemplate(refs.howWeWork, howWeWorkHBS, howCoordination);
 useTemplate(refs.services, servicesHBS, servicesCoordination);
 useTemplate(
@@ -30,22 +25,23 @@ useTemplate(
 );
 useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
 
-// refs.hero.insertAdjacentHTML('beforeend', heroHBS(heroCoordination));
-// refs.howWeWork.insertAdjacentHTML('beforeend', howWeWorkHBS(howCoordination));
-// refs.services.insertAdjacentHTML(
-//   'beforeend',
-//   servicesHBS(servicesCoordination)
-// );
-// const BASEURL = 'https://poverkh-default-rtdb.firebaseio.com/';
-// async function fetchDatabaseFAQ(endpoint) {
-//   const response = await fetch(BASEURL + endpoint);
-//   const answer = await response.json();
-//   let answerArr = [];
-//   for (let key in answer) {
-//     answerArr.push(answer[key]);
-//   }
-//   console.log(answerArr);
-//   return answerArr;
-// }
+// import $ from 'jquery';
+// // window.$ = window.jQuery = $;
+// import 'slick-carousel';
+
+// $(function () {
+//   $('.section-projects__slider-item').slick({
+//     arrows: false,
+//     dots: true,
+//     infinite: true,
+//     fade: true,
+//     cssEase: 'linear',
+//     autoplay: true,
+//     autoplaySpeed: 1500,
+//     draggable: true,
+//     swipe: true,
+//     touchMove: true,
+//   });
+// });
 
 fetchDatabaseFAQ('/faq/bimCoordination.json');

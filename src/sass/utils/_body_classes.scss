@@ -1,17 +1,19 @@
-.bim-coordination-page,
-.scan-to-bim-page {
+body {
   background-color: var(--dark-grey-color);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.bim-coordination-page {
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
     url('../images/hero/bim-coordination@1x.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -21,18 +23,12 @@
 }
 
 .prefabrication-page {
-  background-color: var(--dark-grey-color);
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
     url('../images/hero/prefabrication@1x.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -54,4 +50,34 @@
     screen and (min-resolution: 2dppx) {
     background-image: url('../images/hero/scan-to-bim@2x.jpg');
   }
+}
+
+.career-page {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('../images/hero/career@1x.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/hero/career@2x.jpg');
+  }
+}
+
+.BIM-page {
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ),
+  url('../images/hero/bim-modeling@1x.jpg');
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  background-image: url('../images/hero/bim-modeling@2x.jpg');
+}
 }
