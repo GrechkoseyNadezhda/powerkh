@@ -4,25 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bim Automation</title>
+    <title>Document</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../sass/index.scss" />
-    <script type="module" src="../js/bim-automation/bim-automation.js"></script>
+    <script type="module" src="../js/suspended-case/suspended-case.js"></script>
   </head>
-  <body>
+  <body class="bim-coordination-page">
     <include src="./partials/components/header/header.html"></include>
+
     <include
-      src="./partials/bim-automation/bim-automation-services.html"
+      src="./partials/suspended-case/suspended-case-structure.html"
     ></include>
-    <!-- ************************************************************* -->
-    <!-- Під'єднав для тестування -->
-    <!-- <include
-      src="./partials/components/automate-repetitive-design.html"
-    ></include> -->
-    <!-- ************************************************************* -->
+    <include src="./partials/components/ourCaseStudies.html"></include>
+
     <include src="./partials/components/footer.html"></include>
   </body>
 </html>

@@ -1,6 +1,4 @@
-import architecAndStructBim from '../../../templates/architecAndStructBim.hbs';
-
-const architecAndStructObject = {
+export const architecAndStruct = {
   title: 'Our BIM Automation Services',
   text: 'Powerkh can replace manual, tedious operations with automated processes via advanced scripts and proven methodologies.',
   topic: 'We offer:',
@@ -14,10 +12,3 @@ const architecAndStructObject = {
     'Enhanced generative design in Revit',
   ],
 };
-
-const architecAndStructSection = document.querySelector(
-  '.bim-automation-services'
-);
-
-const architecAndStructTemplate = architecAndStructBim(architecAndStructObject);
-architecAndStructSection.innerHTML = architecAndStructTemplate;
