@@ -1,5 +1,12 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
-import { sliderPicture } from './bim-coordination-data';
+
+import hero3HBS from '../../../templates/heroDesignText.hbs';
+import sliderHBS from '../../../templates/heroDesignSlider.hbs';
+import { useTemplate } from '../../common/use-template';
+import {
+  textHeroSuspended,
+  sliderPictures,
+} from '../../suspended-case/suspended-case-section/suspended-case-data';
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Pagination],
 
@@ -9,7 +16,9 @@ const swiper = new Swiper('.swiper', {
     dynamicBullets: true,
   },
 });
-console.log(sliderPicture);
-const slider = document.querySelector('.swiper-wrapper');
-const sliderHTML = `<div class="swiper-slide"><img src=${sliderPicture.img} /></div>`;
-slider.insertAdjacentHTML('beforeend', sliderHTML);
+
+const hero3 = document.querySelector('.case-description__text-block');
+const sliderSwapper = document.querySelector('.swiper-wrapper');
+
+useTemplate(hero3, hero3HBS, textHeroSuspended);
+useTemplate(sliderSwapper, sliderHBS, sliderPictures);
