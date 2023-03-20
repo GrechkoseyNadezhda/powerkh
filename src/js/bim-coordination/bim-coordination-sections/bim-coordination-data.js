@@ -1,3 +1,4 @@
+import img from '../../../images/hero3-slider/suspended-ceiling/suspended11x.jpg';
 export const heroCoordination = {
   subtitle: 'BIM Coordination',
   text: 'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
@@ -86,3 +87,6 @@ export const projectCoordination = [
   '../images/coordination/image-133.jpg',
   '../images/coordination/image-134.jpg',
 ];
+export const sliderPicture = {
+  img,
+};
