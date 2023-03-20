@@ -29,6 +29,36 @@ export const archiRenderingHero = {
   text: 'Powerkh — your trusted partner for BIM/VDC and architectural rendering outsourcing projects. See details!',
 };
 
+export const BIMservices = {
+  title: 'Architectural Rendering Services',
+  listText: [
+    'The latest rendering software can easily visualize real estate in a photorealistic environment. However, capable hands can make buildings, apartments, and product designs shine in a whole new light. Literally.',
+    'Our experts can model your project in the tiniest details with impeccable lighting and camera angles.',
+    'Architectural visualization is a significant part of our business. We are dynamically developing in this niche, which led us to create Jazzrender — a stand-alone architectural visualization company. You can learn more about our architectural rendering services at',
+    'Powerkh is a digital design consultancy company with a profound experience and architectural background. We offer various services, including BIM, VDC, and architectural 3d rendering.',
+  ],
+  smallTitle: 'Our Scan to BIM services will allow you to get:',
+  list: [
+    {
+      boldText: "Enhance your project's presentation.",
+      text: '',
+    },
+    {
+      boldText: 'Win design contests and architectural competitions.',
+      text: '',
+    },
+    {
+      boldText: 'Sell your real estate objects and other products faster.',
+      text: '',
+    },
+    {
+      boldText:
+        'Get your projects on the public’s radar and attract new investors.',
+      text: '',
+    },
+  ],
+};
+
 export const howCreates = [
   {
     subtitle: 'The client reaches out to us.',
@@ -62,3 +92,21 @@ export const howCreates = [
   //     'You will get accurate fabrication drawings and a fully interactive 3D database that can tie construction and manufacturing sites for a significant productivity boost.',
   // },
 ];
+
+export const whatWeOffer = {
+  title: 'What We Offer:',
+  text: 'Powerkh offers a wide variety of 3D architectural rendering services for companies in the US, UK, and Europe.',
+  topic: 'You can order: ---',
+  list: [
+    'Interior Rendering. Our interior architectural rendering services include high-quality 3D models for offices and separate rooms.',
+    'Exterior Rendering. We can transform architectural plans and reference images into photorealistic digital models of buildings with wonderful lighting.',
+    'Floor Plans.  Add a new dimension to your shop drawings to reduce errors during construction and renovation.',
+    'House & Condo Rendering. We produce accurate architectural visualizations for private houses, apartments, and condominiums.',
+    '2D/3D Animations. See your project from a new perspective with stunning 2D and 3D walkthroughs and aerial animations.',
+    'Walkthroughs. We can deliver an interactive 360-degree viewing experience and virtual reality tours of your property.',
+    'Aerial Rendering. Our flythrough animations and aerial 3D renders can show how your building fits into the surrounding landscape.',
+    "Drafting & Modeling. We work with major software applications to create renderings from client's 3D models.",
+    'Product Rendering. Our experts can help you visualize product mockups, promo materials, and prototypes.',
+    'Night & Day View Rendering. Let prospective buyers see your real estate with near-perfect lighting and camera angles.',
+  ],
+};

@@ -1,17 +1,23 @@
 import heroTemplate from '../../../templates/hero.hbs';
+import herBIMAndVDC from '../../../templates/herBIMAndVDCServices.hbs';
 import howWeWorkTemplate from '../../../templates/howWeWork.hbs';
+import servicesTemplate from '../../../templates/architecAndStructBim.hbs';
 
 import faqTemplate from '../../../templates/faq.hbs';
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { toggleFaq } from '../../common/toggle-faq';
 import {
-  archiRenderingFaq,
   archiRenderingHero,
+  BIMservices,
   howCreates,
+  whatWeOffer,
+  archiRenderingFaq,
 } from './archi-rendering-data';
 
 useTemplate(refs.hero, heroTemplate, archiRenderingHero);
+useTemplate(refs.herBIMAndVDC, herBIMAndVDC, BIMservices);
 useTemplate(refs.howWeWork, howWeWorkTemplate, howCreates);
+useTemplate(refs.services, servicesTemplate, whatWeOffer);
 useTemplate(refs.faq, faqTemplate, archiRenderingFaq);
 toggleFaq();
