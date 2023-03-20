@@ -1,5 +1,5 @@
 import heroHBS from '../../../templates/hero.hbs';
-import herBIMAndVDCHBS from '../../../templates/HerBIMAndVDCServices.hbs';
+import herBIMAndVDCHBS from '../../../templates/herBIMAndVDCServices.hbs';
 import howWeWorkHBS from '../../../templates/howWeWork.hbs';
 import servicesHBS from '../../../templates/architecAndStructBim.hbs';
 // import featuresForProjectsHBS from '../../../templates/outsourceProjects.hbs';
