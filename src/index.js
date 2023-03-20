@@ -1,13 +1,11 @@
 import './js/outsourceProjects';
 
 // header
-import './js/header/burgerMenu';
-import './js/HerBIMandVDC';
+import './js/components/header/header';
 
-//FAQ
-import './js/faq';
+
 
 // BIM-Modeling
-import './js/bim-modeling/bim-modeling';
+// import './js/bim-modeling/bim-modeling';
 
-import './js/footer';
+import './js/components/footer';

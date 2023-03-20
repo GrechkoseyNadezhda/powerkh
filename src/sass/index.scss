@@ -9,11 +9,11 @@
 @import './utils/common_classes';
 @import './utils/body_classes';
 
-//Templates
+//Templates-services
 
 @import './templates/hero';
 @import './templates/howWeWork';
-@import './templates/HerBIMAndVDCServices.scss';
+@import './templates/herBIMAndVDCServices.scss';
 @import './templates/contactUs';
 
 @import './templates/outsourceProjects';
@@ -23,18 +23,22 @@
 
 @import './templates/bimModelingProjects';
 @import './templates/contents';
+@import './templates/sectionProjects';
+//Templates-caseStudies
+
+@import './templates/heroDesign';
+@import './templates/processTemplate';
 
 //Components
-
 @import './components/header';
 @import './components/burgerMenu';
 @import './components/haveBIMproject';
 @import './templates/faq.scss';
 @import './components/ourCaseStudies';
-@import './templates/processTemplate';
 
 @import './components/joinTeam';
 @import './components/contacts-section';
+@import './components/automate-repetitive-design';
 
 @import './components/whatProblems';
 

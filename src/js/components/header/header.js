@@ -1,15 +1,17 @@
 const getPath = path => path.split('/').pop().split('.')[0];
 
-var current = getPath(location.pathname);
-if (current === '')
+let current = getPath(location.pathname);
+if (current === '') {
   document
-    .querySelector('.footer__nav')
+    .querySelector('.burger-menu__list')
     .firstElementChild.classList.add('active');
-else {
-  const navElements = document.querySelectorAll(`.footer a`);
+} else {
+  const navElements = document.querySelectorAll(`.main-navigation a`);
   for (let el of navElements) {
     if (getPath(el.href) === current) {
       el.parentElement.classList.add('active');
     }
   }
 }
+
+import './burgerMenu';

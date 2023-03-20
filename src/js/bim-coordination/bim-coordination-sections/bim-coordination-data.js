@@ -3,38 +3,42 @@ export const heroCoordination = {
   text: 'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
 };
 export const briefDescriptCoordination = {};
-export const howCoordination = [
-  {
-    subtitle: 'The client uploads flat drawings and templates.',
-    description:
-      'You will send us blueprints for your project’s structural, architectural, and MEP systems.',
-  },
-  {
-    subtitle: 'Our team can prepare a 3D model of your project (upon request).',
-    description:
-      'Powerkh transforms flat drawings into an interactive 3D database.',
-  },
-  {
-    subtitle: 'We will verify the drawings.',
-    description:
-      'Our team will check how the construction disciplines coordinate with each other.',
-  },
-  {
-    subtitle: 'We will check your project for clashes.',
-    description:
-      'We flag interfering elements using various advanced BIM modeling tools, including Revit and Navisworks clash detection software.',
-  },
-  {
-    subtitle: 'The client receives exhaustive reports.',
-    description:
-      'We will notify you about clashes and suggest how to resolve them.',
-  },
-  {
-    subtitle: 'We will guide you through the project.',
-    description:
-      'Our team can coordinate your efforts during the construction phase to reduce the project’s turnaround time and production expenses.',
-  },
-];
+export const howCoordination = {
+  title: 'BIM Coordination Process at Powerkh',
+  list: [
+    {
+      subtitle: 'The client uploads flat drawings and templates.',
+      description:
+        'You will send us blueprints for your project’s structural, architectural, and MEP systems.',
+    },
+    {
+      subtitle:
+        'Our team can prepare a 3D model of your project (upon request).',
+      description:
+        'Powerkh transforms flat drawings into an interactive 3D database.',
+    },
+    {
+      subtitle: 'We will verify the drawings.',
+      description:
+        'Our team will check how the construction disciplines coordinate with each other.',
+    },
+    {
+      subtitle: 'We will check your project for clashes.',
+      description:
+        'We flag interfering elements using various advanced BIM modeling tools, including Revit and Navisworks clash detection software.',
+    },
+    {
+      subtitle: 'The client receives exhaustive reports.',
+      description:
+        'We will notify you about clashes and suggest how to resolve them.',
+    },
+    {
+      subtitle: 'We will guide you through the project.',
+      description:
+        'Our team can coordinate your efforts during the construction phase to reduce the project’s turnaround time and production expenses.',
+    },
+  ],
+};
 export const servicesCoordination = {
   title: 'Our BIM Coordination & Clash Detection Services',
   text: 'Powerkh’s team uses Autodesk Revit models for coordination in Navisworks clash detection software to create accurate construction plans.',
@@ -47,11 +51,7 @@ export const servicesCoordination = {
     'Clash detection reports. Our reports help stakeholders avoid recurring design errors during the project’s life span.',
   ],
 };
-export const contactUsCoordination = {
-  title: 'Reduce Construction Costs with BIM Coordination Services',
-  description:
-    'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
-};
+
 export const addValueCoordination = {
   title: 'Powerkh Adds Value to Your Project',
   description:
@@ -80,3 +80,13 @@ export const addValueCoordination = {
     },
   ],
 };
+export const contactUsCoordination = {
+  title: 'Reduce Construction Costs with BIM Coordination Services',
+  description:
+    'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
+};
+export const projectCoordination = [
+  '../images/coordination/image-132.jpg',
+  '../images/coordination/image-133.jpg',
+  '../images/coordination/image-134.jpg',
+];
