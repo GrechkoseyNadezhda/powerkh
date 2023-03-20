@@ -1,6 +1,6 @@
 export const refs = {
   hero: document.querySelector('.hero__content'),
-  herBIMAndVDC: document.querySelector('.BIMServices__list'),
+  herBIMAndVDC: document.querySelector('.BIM-modeling'),
   howWeWork: document.querySelector('.howWeWork'),
   services: document.querySelector('.bim-automation-services'),
   featuresForProjects: document.querySelector('.outsourceProjects'),
