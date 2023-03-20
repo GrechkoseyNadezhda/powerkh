@@ -1,0 +1,172 @@
+body.blog-page {
+    background-image: none;
+    background-color: var(--pure-white-color);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: none;
+      background-color: var(--pure-white-color);
+    }
+}
+  
+.blog-section {
+  margin-top: 140px;
+}
+
+.blog-section__title {
+  @include font-h1
+}
+
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+  display: flex;
+}
+
+.blog-section__slider {
+  margin-top: 50px;
+  position: relative;
+}
+
+.blog-section__slider-item {
+  
+  display: flex;
+  gap: 28px;
+}
+
+// .section-projects__slider-item {
+//   display: block;
+// }
+
+.blog-section__slider-picture {
+  width: 552px;
+  height: 357px;
+  position: relative;
+}
+
+.blog-section__slider-frame{
+  position: absolute;
+  z-index: 0;
+  box-sizing: border-box;
+
+  width: 516px;
+  height: 320px;
+  // left: 153px;
+  // top: 217px;
+
+  border: 2px solid #000000;
+}
+
+.blog-section__slider-img {
+  position: relative;
+  z-index: 10;
+  margin-top: 36px;
+  margin-left: 37px;
+  width: 516px;
+  height: 320px;
+}
+
+
+
+.blog-section__slider-text {
+  width: 554px;
+}
+
+.blog-section__slider-badge {
+  @include font-body-reg;
+
+  margin-top: 34px;
+  // font-weight: 400;
+}
+
+.blog-section__slider-title {
+  @include font-title;
+  width: 360px;
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+
+.blog-section__slider-author{
+  @include font-body-reg;
+
+  margin-top: 8px;
+  // font-weight: 400;
+}
+
+.blog-section__slider-desc {
+  @include font-body-reg;
+
+  margin-top: 24px;
+}
+
+.points {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.blog-section__slider-btn {
+  @include font-button;
+
+  display: block;
+  margin-top: 24px;
+}
+
+
+
+
+/* Точки (булиты) */
+.blog-section__slider .slick-dots{
+  position: relative;
+  z-index: 1;
+  // top: -100;
+  // left: 338px;
+  top: -18px;
+  left: 582px;
+  display: flex;
+  height: 18px;
+
+  align-items: center;
+  justify-content: flex-start;
+  gap: 36px;
+
+  // margin-top: 40px;
+
+  @media screen and (min-width: 768px) {
+      // margin-top: 52px;
+  }
+  @media screen and (min-width: 1440px) {
+      // margin-top: 52px;
+  }
+}
+.blog-section__slider .slick-dots li{
+  list-style: none;
+  
+}
+
+/* Активная точка */
+.blog-section__slider .slick-dots li.slick-active {
+  padding: 2px 0;
+}
+
+.blog-section__slider .slick-dots li.slick-active button{
+  width: 6px;
+  height: 6px;
+}
+/* Элемент точки */
+.blog-section__slider .slick-dots li button{
+  display: block;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #0E0E0E;
+  border: none;
+  padding: 0;
+  
+}
+
+
