@@ -37,7 +37,7 @@ import 'slick-carousel'
 
 
 $(function(){
-    $('.bim-modeling-projects__slider-item').slick({
+    $('.section-projects__slider-item').slick({
         arrows: false,
         dots: true,
         infinite: true,

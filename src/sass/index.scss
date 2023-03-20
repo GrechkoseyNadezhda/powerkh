@@ -21,7 +21,7 @@
 @import './templates/architecAndStructBim';
 @import './templates/impactOnBusiness';
 
-@import './templates/bimModelingProjects';
+@import './templates/sectionProjects';
 
 //Components
 
@@ -34,3 +34,8 @@
 
 @import './components/joinTeam';
 @import './components/footer';
+@import './components/contacts-section';
+
+// Layout
+
+@import './layout/contacts';

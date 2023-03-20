@@ -1,3 +1,3 @@
-import './bim-modeling-projects/bim-modeling-projects';
+import './contacts-sections/contacts-create-template';
 import '../components/header/header';
 import '../components/footer';
