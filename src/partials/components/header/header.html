@@ -1,5 +1,5 @@
 <header class="site-header">
-  <a href="/" class="site-header__logo">
+  <a href="./" class="site-header__logo">
     <svg class="site-header__icon" width="54" height="44">
       <use href="../images/vectors/sprite.svg#icon-logo"></use>
     </svg>
@@ -9,38 +9,51 @@
   <nav class="main-navigation">
     <ul class="main-navigation__list">
       <li class="main-navigation__item has-dropdown">
-        <a class="main-navigation__link" href="#"
+        <a
+          class="main-navigation__link main-navigation__link--disabled"
+          href="/"
           >Services
           <svg class="main-navigation__triangle-icon" width="12" height="9">
             <use href="../images/vectors/sprite.svg#icon-polygon-down"></use>
           </svg>
         </a>
         <ul class="main-navigation__dropdown">
-          <li><a href="./bim-modeling.html">BIM Modeling</a></li>
-          <li><a href="./bim-coordination.html">BIM Coordination</a></li>
-
-          <li><a href="./bim-content.html">BIM Content</a></li>
-          <li><a href="./scan-to-bim.html">Scan to BIM</a></li>
-          <li>
+          <li class="main-navigation__dropdown-item">
+            <a href="./bim-modeling.html">BIM Modeling</a>
+          </li>
+          <li class="main-navigation__dropdown-item">
+            <a href="./bim-coordination.html">BIM Coordination</a>
+          </li>
+          <li class="main-navigation__dropdown-item">
+            <a href="./bim-content.html">BIM Content</a>
+          </li>
+          <li class="main-navigation__dropdown-item">
+            <a href="./scan-to-bim.html">Scan to BIM</a>
+          </li>
+          <li class="main-navigation__dropdown-item">
             <a href="./bim-automation.html">BIM Automation</a>
           </li>
-          <li>
+          <li class="main-navigation__dropdown-item">
             <a href="./prefabrication.html">Prefabrication & Fabrication</a>
           </li>
-          <li><a href="/structural-detailing">Structural detailing</a></li>
-          <li>
-            <a href="/architectural-rendering">Architectural Rendering</a>
+          <li class="main-navigation__dropdown-item">
+            <a href="./structural-detailing.html">Structural detailing</a>
+          </li>
+          <li class="main-navigation__dropdown-item">
+            <a href="./architectural-rendering.html">Architectural Rendering</a>
           </li>
         </ul>
       </li>
       <li class="main-navigation__item">
-        <a class="main-navigation__link" href="/case-studies">Case Studies</a>
+        <a class="main-navigation__link" href="./case-studies.html"
+          >Case Studies</a
+        >
       </li>
       <li class="main-navigation__item">
-        <a class="main-navigation__link" href="/blog">Blog</a>
+        <a class="main-navigation__link" href="./blog.html">Blog</a>
       </li>
       <li class="main-navigation__item">
-        <a class="main-navigation__link" href="/about">About</a>
+        <a class="main-navigation__link" href="./about.html">About</a>
       </li>
       <li class="main-navigation__item">
         <!-- Contact Us modal trigger -->

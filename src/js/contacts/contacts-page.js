@@ -1,2 +1,3 @@
 import './contacts-sections/contacts-create-template';
-import '../../js/header/burgerMenu';
+import '../components/header/header';
+import '../components/footer';

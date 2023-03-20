@@ -47,11 +47,7 @@ export const servicesCoordination = {
     'Clash detection reports. Our reports help stakeholders avoid recurring design errors during the project’s life span.',
   ],
 };
-export const contactUsCoordination = {
-  title: 'Reduce Construction Costs with BIM Coordination Services',
-  description:
-    'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
-};
+
 export const addValueCoordination = {
   title: 'Powerkh Adds Value to Your Project',
   description:
@@ -80,3 +76,13 @@ export const addValueCoordination = {
     },
   ],
 };
+export const contactUsCoordination = {
+  title: 'Reduce Construction Costs with BIM Coordination Services',
+  description:
+    'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
+};
+export const projectCoordination = [
+  '../images/coordination/image-132.jpg',
+  '../images/coordination/image-133.jpg',
+  '../images/coordination/image-134.jpg',
+];
