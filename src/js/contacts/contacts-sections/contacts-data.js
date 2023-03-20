@@ -1,5 +1,5 @@
 export const formContacts = {
-  subtitle: 'CONTACTS',
+  subtitle: 'contacts',
   firstFieldPlaceholder: 'How can we call you?',
   secondFieldPlaceholder: 'Phone or E-mail*',
   textAreaTitle: 'Message',

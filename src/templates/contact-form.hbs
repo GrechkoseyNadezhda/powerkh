@@ -1,8 +1,13 @@
 {{! підставити об'єкт }}
-{{! приклад об'єкта: {subtitle: 'текст заголовка',  btnText: 'текс на кнопці зі стрілкою'
-} }}
+{{! приклад об'єкта: {
+  subtitle: 'contacts',
+  firstFieldPlaceholder: 'How can we call you?',
+  secondFieldPlaceholder: 'Phone or E-mail*',
+  textAreaTitle: 'Message',
+  btnText: 'Send',
+}; }}
 
-<h2 class='hero__title'>{{this.subtitle}}</h2>
+<h2 class='contact-form__title'>{{this.subtitle}}</h2>
 <form class='contact-form' name='contact-form'>
 
   <div class='contact-form__input-wrap'>

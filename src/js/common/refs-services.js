@@ -8,4 +8,5 @@ export const refs = {
   contactUs: document.querySelector('.contact-us'),
   faq: document.querySelector('.faq'),
   heroBtn: document.querySelector('.hero__btn'),
+  heroBlock: document.querySelector('.hero__block'),
 };

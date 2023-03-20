@@ -9,3 +9,4 @@ useTemplate(refs.hero, contactFormHBS, formContacts);
 
 refs.heroBtn.innerHTML = `${formContacts.btnText} <img src="${arrow}" />`;
 refs.heroBtn.setAttribute('type', 'submit');
+refs.heroBlock.classList.add('hero__block--contacts');

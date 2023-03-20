@@ -76,6 +76,12 @@
 //   @include font-button;
 //   color: var(--dark-grey-color);
 // }
+
+.hero__block.hero__block--contacts {
+  @include mq(tab) {
+    padding-top: 24px;
+  }
+}
 // ===================CONTACTS SECTION===========================
 
 .contacts-section-paragraph {
