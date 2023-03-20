@@ -1,10 +1,27 @@
 <div class='container solution'>
   <h2 class='solution__title'>{{this.title}}</h2>
-  <img class='solution__img' src='../images/solution/image 121.png' alt='' />
-  <figure class='solution__gif-container'><img
+  <div class='solution__img-container'>
+    <img
+      srcset='
+            ../images/solution/formwork/formwork-lar@1x.jpg 356w,
+            ../images/solution/formwork/formwork-lar@2x.jpg 712w,
+            ../images/solution/formwork/formwork-mid@1x.jpg 338w,
+            ../images/solution/formwork/formwork-mid@2x.jpg 676w,
+            ../images/solution/formwork/formwork-sm@1x.jpg  316w,
+            ../images/solution/formwork/formwork-sm@2x.jpg  632w
+          '
+      sizes='(min-width: 1440px) 356px, (min-width: 768px) 338px,
+    (min-width: 360px) 316px, 100vw'
+      src='../images/solution/formwork/formwork-sm@1x.jpg'
+      alt='formwork pic'
+      class='solution__img'
+    />
+  </div>
+  <div class='solution__gif-container'>
+    <img
       class='solution__gif'
-      src='../images/gifs/_2018.gif'
-      alt=''
-    /></figure>
-
+      src='../images/solution/formwork/formwork-gif.gif'
+      alt='gif'
+    />
+  </div>
 </div>
