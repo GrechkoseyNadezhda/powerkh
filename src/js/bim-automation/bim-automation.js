@@ -1,3 +1,3 @@
-import './bim-automation-sections/bim-automation-services';
-import '../../js/header/header';
-import '../../js/footer';
+import './bim-automation-sections/bim-automation-create-template';
+import '../components/header/header';
+import '../components/footer';

@@ -1,0 +1,43 @@
+{{! підставити об'єкт }}
+{{! приклад об'єкта: {
+  subtitle: 'contacts',
+  firstFieldPlaceholder: 'How can we call you?',
+  secondFieldPlaceholder: 'Phone or E-mail*',
+  textAreaTitle: 'Message',
+  btnText: 'Send',
+}; }}
+
+<h2 class='contact-form__title'>{{this.subtitle}}</h2>
+<form class='contact-form' name='contact-form'>
+
+  <div class='contact-form__input-wrap'>
+    <input
+      type='text'
+      class='contact-form__input'
+      name='name'
+      required
+      placeholder=''
+    />
+    <label class='contact-form__label'>{{this.firstFieldPlaceholder}}</label>
+  </div>
+
+  <div class='contact-form__input-wrap'>
+    <input
+      type='text'
+      class='contact-form__input'
+      name='phone'
+      required
+      placeholder=''
+    />
+    <label class='contact-form__label'>{{this.secondFieldPlaceholder}}</label>
+  </div>
+
+  <label class='contact-form__text-area-label'>
+    {{this.textAreaTitle}}
+    <textarea
+      class='contact-form__textarea'
+      name='message'
+      placeholder=' '
+    ></textarea>
+  </label>
+</form>

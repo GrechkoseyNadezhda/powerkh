@@ -34,6 +34,10 @@
   }
 }
 
+.faq__questBlock {
+  cursor: pointer;
+}
+
 .faq__question {
   padding-left: 32px;
   position: relative;
@@ -55,7 +59,7 @@
   width: 12px;
   height: 8px;
   content: '';
-  background-image: url('../images/vectors/Polygon 3.svg');
+  background-image: url('../images/vectors/Polygon-3.svg');
 }
 
 .faq__question.open::before {
