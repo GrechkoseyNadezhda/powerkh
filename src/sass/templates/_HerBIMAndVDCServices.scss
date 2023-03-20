@@ -14,7 +14,7 @@
   list-style: none;
   @include font-body-reg;
   margin-top: 40px;
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     margin-top: 32px;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@
     flex-wrap: wrap;
     gap: 20px;
   }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     gap: 28px;
   }
 
@@ -44,21 +44,17 @@
     background-size: cover;
     color: #CDCDCD; 
  }
-  @media screen and (min-width: 768px) {
-
-  }
   
 }
 
 .benefits__description {
   @include font-body-reg;
   width: 260px;
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     width: 282px;
   }
-  @media screen and (min-width: 1440px) {
-   width: 478px;
-
+  @include mq(desk) {
+    width: 478px;
   }
 }
 
