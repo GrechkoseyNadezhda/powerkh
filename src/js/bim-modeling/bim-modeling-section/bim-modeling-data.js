@@ -1,115 +1,132 @@
-//  import BIMlist from '../../../templates/HerBIMAndVDCServices.hbs'
-// const dataBIM = [
-//     {
-//       boldText: 'Boost design speed. ',
-//       description:
-//         'BIM modeling and clash detection eliminate up to 90% of design errors, increasing productivity up to fivefold.',
 
-//     },
-//     {
-//         boldText: 'Create an accurate cost plan. ',
-//       description:
-//         'We can help you identify precise budget, cashflow, and time estimates for your projects.',
-//     },
-//     {
-//         boldText: 'Save time and money. ',
-//       description:
-//         'Innovative coordination software and expertise help us detect soft (access) and hard (geometry) clashes to reduce expenses during the modeling, construction, and maintenance stages.',
-//     },
-//     {
-//         boldText: 'Improve collaboration. ',
-//       description:
-//         'Architects, engineers, designers, and clients can coordinate changes in real-time using proven workflow designs and cloud solutions.',
-//     },
-//   ];
-
-  
-// const cardList = document.querySelector('.BIMServices__list')
-// export function appendCardMarkup(dataArr, element) {
-//     element.insertAdjacentHTML('beforeend', BIMlist(dataArr));
-//   }
-//   appendCardMarkup(dataBIM, cardList);
-
-  export const heroCoordination = {
-    subtitle: 'BIM Coordination',
-    text: 'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
+  export const heroModeling = {
+    subtitle: 'BIM Modeling',
+    text: 'Do you want to enhance your construction project? Our experts can resolve your challenges and build a detailed 3D BIM model.',
   };
-  export const briefDescriptCoordination = {};
-  export const howCoordination = [
-    {
-      subtitle: 'The client uploads flat drawings and templates.',
-      description:
-        'You will send us blueprints for your project’s structural, architectural, and MEP systems.',
+
+  export const BIMservices = {
+    title: 'BIM Modeling Services',
+    listText: [
+      'Most shop drawings and 2D plans contain inaccuracies, and just one oversight in the design is enough to halt the project. How can you make sure that your construction documentation doesn’t have errors? ',
+      'You won’t have to worry that a design overlap will lead to corrections and costly expenses! We will correct clashes and produce a comprehensible and accurate 3D BIM model for engineers, architects, fabricators, and construction teams.',
+      'Powerkh can transform your flat drawing into a fully interactive visual 3D database with exhaustive information about the project’s architecture, dimensions, materials, and systems.',
+    ],
+    smallTitle: 'Our 3D BIM modeling services can help you:',
+    list: [ 
+      {
+      boldText:'Boost design speed. ',
+     text:' BIM modeling and clash detection eliminate up to 90% of design errors, increasing productivity up to fivefold.',
     },
     {
-      subtitle: 'Our team can prepare a 3D model of your project (upon request).',
-      description:
-        'Powerkh transforms flat drawings into an interactive 3D database.',
+      boldText:'Create an accurate cost plan. ',
+     text:'We can help you identify precise budget, cashflow, and time estimates for your projects.',
     },
     {
-      subtitle: 'We will verify the drawings.',
-      description:
-        'Our team will check how the construction disciplines coordinate with each other.',
+      boldText:'Save time and money. ',
+     text:'Innovative coordination software and expertise help us detect soft (access) and hard (geometry) clashes to reduce expenses during the modeling, construction, and maintenance stages.',
     },
     {
-      subtitle: 'We will check your project for clashes.',
+      boldText:'Improve collaboration. ',
+     text:'Architects, engineers, designers, and clients can coordinate changes in real-time using proven workflow designs and cloud solutions.',
+    },
+
+    ],
+
+  }
+
+  export const howModeling = [
+    {
+      subtitle: 'The client sends the brief and technical documentation.',
       description:
-        'We flag interfering elements using various advanced BIM modeling tools, including Revit and Navisworks clash detection software.',
+        'We discuss minute details of the construction project and analyze drawings, 2D plans, blueprints, photos, and visuals references.',
     },
     {
-      subtitle: 'The client receives exhaustive reports.',
+      subtitle: 'We import 2D drawings into the 3D model.',
       description:
-        'We will notify you about clashes and suggest how to resolve them.',
+        'Our team transforms flat drawings into a 3D model using Autodesk Revit software.',
     },
     {
-      subtitle: 'We will guide you through the project.',
+      subtitle: 'We build the framework and design elements.',
       description:
-        'Our team can coordinate your efforts during the construction phase to reduce the project’s turnaround time and production expenses.',
+        'We digitalize all structural elements — from walls and MEP (mechanical, electrical, and plumbing) systems to door handles. Moreover, we will group objects in data libraries that contain Revit families to simplify stakeholders’ collaboration.',
+    },
+    {
+      subtitle: 'Our team identifies inconsistencies.',
+      description:
+        'Our team runs clash detection software to find and flag design conflicts.',
+    },
+    {
+      subtitle: 'We help resolve problems.',
+      description:
+        'We will send reports about the flaws in the design and propose solutions. Your team members will be able to work on a project simultaneously from a single file.',
+    },
+    {
+      subtitle: 'The client receives interactive 3D BIM models and shop drawings.',
+      description:
+        'You will get accurate fabrication drawings and a fully interactive 3D database that can tie construction and manufacturing sites for a significant productivity boost.',
     },
   ];
-  export const servicesCoordination = {
-    title: 'Our BIM Coordination & Clash Detection Services',
-    text: 'Powerkh’s team uses Autodesk Revit models for coordination in Navisworks clash detection software to create accurate construction plans.',
-    topic: 'The BIM and Revit coordination services we provide include:',
+
+ 
+
+  export const servicesModeling = {
+    title: 'Architectural and Structural BIM Modeling Services',
+    text: 'Powerkh uses the latest digital design tools to help engineers, manufacturers, and suppliers transform their vision into fully-realized projects without exceeding the budget.',
+    topic: 'We offer:',
     list: [
-      'BIM clash detection. Our experts will run Autodesk Revit software to flag inconsistencies in your project, ensuring all building elements work perfectly.',
-      'Coordination meetings. We hold meetings with engineers, consultants, and architects to help them resolve interferences with BIM modeling software.',
-      'Coordinated construction model. We can produce an accurate, coordinated project blueprint that will help you finish your project faster with fewer resources.',
-      'MEP elements coordination. Powerkh can resolve constructability issues in mechanical, electrical, plumbing, and fire protection systems.',
-      'Clash detection reports. Our reports help stakeholders avoid recurring design errors during the project’s life span.',
+      '3D BIM modeling',
+      'Support of various levels of model elements details (LOD 100 to LOD 400/500)',
+      'Clash detection & resolution',
+      'BIM & Revit automation',
+      'BIM prefabrication for CNC manufacturing',
+      'Converting 2D layout into 3D models in Revit',
+      'Drafting services (schematic design and shop drawings)',
+      'Constructability reviews and structural detailing',
+      'Scan to BIM with Point Cloud data'
+
     ],
   };
-  export const contactUsCoordination = {
-    title: 'Reduce Construction Costs with BIM Coordination Services',
+
+  export const addValueModeling = {
+    title: 'How Powerkh Improves Your Construction Project',
     description:
-      'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
-  };
-  export const addValueCoordination = {
-    title: 'Powerkh Adds Value to Your Project',
-    description:
-      'We do more than detecting clashes and generating reports — we know how to resolve your problems and improve the construction project. Powerkh will coordinate your project to help you reduce expenses and improve turnaround time.',
-    listDescription: 'What sets us apart from the competition?',
+      'Our BIM modeling services fit any construction project — from apartments and residential buildings to industrial complexes.',
+    listDescription: 'With Powerkh at your side, you get:',
     items: [
       {
-        subtitle: 'Engineering expertise',
+        subtitle: 'Innovative software',
         subtitleDescription:
-          'Our professionals have a wide range of engineering qualifications to optimize drawings and 3D construction models.',
+          'We work with Autodesk Revit, Dynamo, SYNCHRO Pro, Solibri, Tekla, and automation software to deliver fast results with minimal error.',
       },
       {
-        subtitle: 'Technological proficiency',
+        subtitle: 'Engineering qualification',
         subtitleDescription:
-          'We use advanced BIM modeling and clash detection software to eliminate design errors before construction begins.',
+          'Our expertise allows us to understand the design intent and transform 2D drawings into 3D models without sacrificing initial functionality.',
       },
       {
-        subtitle: 'Legislative framework',
+        subtitle: 'Cost-efficiency',
         subtitleDescription:
-          'Our experts will ensure that your project’s elements adhere to governmental requirements and standards.',
+          'We will detect problems and clashes during modeling to help you stay within budget.',
       },
       {
-        subtitle: 'Customer satisfaction',
+        subtitle: 'Designing experience',
         subtitleDescription:
-          'Many companies reduced work hours and production costs by following our proven methodologies and software solutions.',
+          'We don’t just find problems — we know how to resolve them and are willing to help our clients find optimal solutions.',
       },
+      {
+        subtitle: 'Solid background',
+        subtitleDescription:
+          'Our team has experience in delivering architectural and structural modeling from schematic designs to shop drawing and even supporting manufacturing.',
+      }
     ],
   };
+
+
+
+  export const contactUsModeling = {
+    title: 'Expertise-Driven BIM Modeling Services',
+    description:
+      'Do you want to enhance your construction project?Our experts can resolve your challenges and build a detailed 3D BIM model.Contact us to learn more about our services!',
+  };
+  
   
