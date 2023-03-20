@@ -1,28 +1,29 @@
-export const advantages = {
-  title: 'Powerkh Adds Value to Your Project',
+export const advantagesObj = {
+  title: 'Advantages of Revit Content Creation Services at Powerkh',
   description:
-    'We do more than detecting clashes and generating reports — we know how to resolve your problems and improve the construction project. Powerkh will coordinate your project to help you reduce expenses and improve turnaround time.',
-  listDescription: 'What sets us apart from the competition?',
+    'Powerkh can create BIM models and object libraries for any construction project.',
+  listDescription:
+    'If you outsource your Revit Creation project to us, you’ll get:',
   items: [
     {
-      subtitle: 'Engineering expertise',
+      subtitle: 'Broad Experience',
       subtitleDescription:
-        'Our professionals have a wide range of engineering qualifications to optimize drawings and 3D construction models.',
+        'Our vetted professionals know how to create high-quality BIM models with varying detail levels (LOD 100 to LOD 400/500).',
     },
     {
-      subtitle: 'Technological proficiency',
+      subtitle: 'Fast and Accurate Turnaround',
       subtitleDescription:
-        'We use advanced BIM modeling and clash detection software to eliminate design errors before construction begins.',
+        'Revit family creation is a rudimentary process, but our expertise helps us deliver results faster than the competition.',
     },
     {
-      subtitle: 'Legislative framework',
+      subtitle: 'Custom-Tailored Families',
       subtitleDescription:
-        'Our experts will ensure that your project’s elements adhere to governmental requirements and standards.',
+        'We find pre-built solutions based on your specifications and build custom Revit families if there are no available options according to cutsheets.',
     },
     {
-      subtitle: 'Customer satisfaction',
+      subtitle: 'Scalable Models',
       subtitleDescription:
-        'Many companies reduced work hours and production costs by following our proven methodologies and software solutions.',
+        'You can use our accurate and easily adjustable models in other BIM projects, allowing you to save resources and improve productivity.',
     },
   ],
 };
