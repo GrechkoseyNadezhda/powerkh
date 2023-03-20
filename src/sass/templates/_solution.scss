@@ -1,0 +1,10 @@
+.solution__title {
+  @include font-title;
+  margin-bottom: 52px;
+}
+.solution__img {
+  margin-bottom: 20px;
+}
+.solution__gif-container {
+  border: 1px solid red;
+}
