@@ -2,13 +2,12 @@
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: var(--pure-white-color);
-
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--pure-white-color);
   }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     padding-top: 80px;
     padding-bottom: 80px;
     background-color: var(--pure-white-color);
@@ -27,9 +26,7 @@
   margin-top: 53px;
   list-style: none;
   @include font-body-reg;
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     display: flex;
     gap: 24px;
   }
@@ -49,10 +46,7 @@
     background-size: cover;
     margin-right: 14px;
   }
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     gap: 12px;
     margin-bottom: 12px;
     &::before {
@@ -83,7 +77,8 @@
     background-size: cover;
     margin-right: 14px;
   }
-  @media screen and (min-width: 1440px) {
+
+  @include mq(desk) {
     margin-bottom: 12px;
     gap: 12px;
     &::before {
@@ -115,7 +110,7 @@
     background-size: cover;
     margin-right: 14px;
   }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     margin-bottom: 12px;
     gap: 12px;
     &::before {
@@ -145,7 +140,8 @@
     background-size: cover;
     margin-right: 14px;
   }
-  @media screen and (min-width: 1440px) {
+
+  @include mq(desk) {
     margin-bottom: 12px;
     gap: 12px;
     &::before {
@@ -177,7 +173,8 @@
     background-size: cover;
     margin-right: 14px;
   }
-  @media screen and (min-width: 1440px) {
+
+  @include mq(desk) {
     margin-bottom: 12px;
     gap: 12px;
     &::before {
@@ -198,7 +195,7 @@
     background-size: cover;
     margin-right: 14px;
   }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     @include font-body-reg;
 
     &::after {
