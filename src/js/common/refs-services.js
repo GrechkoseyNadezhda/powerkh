@@ -8,3 +8,7 @@ export const refs = {
   contactUs: document.querySelector('.contact-us'),
   faq: document.querySelector('.faq'),
 };
+export const refsCase = {
+  heroTextBlock: document.querySelector('.case-description__text-block'),
+  heroSlider: document.querySelector('.swiper-wrapper'),
+};

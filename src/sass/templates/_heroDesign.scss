@@ -65,6 +65,10 @@
 }
 .case-description__description {
   @include font-body-reg;
+  &--list {
+    @include font-body-reg;
+    position: relative;
+  }
 }
 
 .swiper {
