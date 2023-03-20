@@ -1,8 +1,12 @@
-import heroHBS from '../../../templates/hero.hbs';
+import arrow from '../../../images/vectors/arrow.svg';
 
-import { heroContacts } from './contacts-data';
-
+import { formContacts } from './contacts-data';
+import contactFormHBS from '../../../templates/contact-form.hbs';
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 
-useTemplate(refs.hero, heroHBS, heroContacts);
+useTemplate(refs.hero, contactFormHBS, formContacts);
+
+refs.heroBtn.innerHTML = `${formContacts.btnText} <img src="${arrow}" />`;
+refs.heroBtn.setAttribute('type', 'submit');
+refs.heroBlock.classList.add('hero__block--contacts');
