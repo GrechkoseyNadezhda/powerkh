@@ -1,0 +1,33 @@
+.automate-repetitive-design {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.automate-repetitive-design__block {
+  padding: 40px 20px;
+  background-color: var(--background-color);
+  text-align: center;
+
+  @include mq(tab) {
+    padding: 40 112px;
+  }
+
+  @include mq(desk) {
+    padding: 40 328px;
+  }
+}
+
+.automate-repetitive-design__text {
+  @include font-title;
+  margin-bottom: 40px;
+  color: var(--dark-grey-color);
+}
+
+.automate-repetitive-design__button {
+  @include font-title-14;
+  text-transform: uppercase;
+  padding: 16px;
+  color: var(--pure-white-color);
+  background-color: var(--dark-grey-color);
+  border: none;
+}
