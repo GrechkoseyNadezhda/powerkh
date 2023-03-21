@@ -1,0 +1,10 @@
+<div class='container'>
+  <h2 class="process__main-title">Process</h2>
+  <ul class="process__list">
+    {{#each this}}
+    <li class="process__item">
+    <h3 class="process__title-audit">{{this.name}}</h3>
+    <p class="process__description">{{this.description}}</p>
+    </li>
+     {{/each}}
+  </ul>

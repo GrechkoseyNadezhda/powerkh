@@ -7,6 +7,7 @@ export const refs = {
   slider: document.querySelector('.section-projects__slider-item'),
   contactUs: document.querySelector('.contact-us'),
   faq: document.querySelector('.faq'),
+  process:  document.querySelector('.processTemplate'),
 };
 export const refsCase = {
   heroTextBlock: document.querySelector('.case-description__text-block'),
