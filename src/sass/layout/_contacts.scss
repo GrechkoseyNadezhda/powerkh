@@ -102,14 +102,25 @@
 }
 
 .contacts-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
 }
 .contacts-section__list-item {
 }
-.contacts-phone-wrap {
+.contacts-section__list-item--phones {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .contacts-section__link {
 }
-.social-links-block {
+.contacts-section__open-hrs {
+  max-width: 141px;
+}
+.contacts-page__social-links-block {
+  margin-bottom: 24px;
 }
 .contacts-section__plain-text-block {
 }

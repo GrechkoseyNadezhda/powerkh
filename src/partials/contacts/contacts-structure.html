@@ -2,34 +2,41 @@
   <div class="container">
     <div class="contacts-section__wrapper">
       <ul class="contacts-section__list">
-        <li class="contacts-section__list-item contacts-phone-wrap">
-          <a href="tel:+380971952109" class="contacts-section__link">
-            <!-- <svg class="contacts__icon" width="10" height="16">
-              <use href="./images/sprite.svg#tel"></use>
-            </svg> -->
-            +380971952109</a
-          >
-          <a href="tel:+380989764637" class="contacts-section__link">
-            +380989764637</a
-          >
+        <li class="contacts-section__list-item">
+          <svg class="contacts-section__icon" width="24" height="24">
+            <use href="../images/vectors/sprite.svg#icon-phone"></use>
+          </svg>
+          <div class="contacts-section__list-item--phones">
+            <a href="tel:+380971952109" class="contacts-section__link">
+              +380971952109</a
+            >
+            <a href="tel:+380989764637" class="contacts-section__link">
+              +380989764637</a
+            >
+          </div>
         </li>
         <li class="contacts-section__list-item">
-          <a href="/" class="contacts-section__link">
-            <!-- <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/sprite.svg#mail"></use>
-              </svg> -->
-            Kharkiv, Moskovsky AVE</a
-          >
+          <svg class="contacts-section__icon" width="24" height="24">
+            <use href="../images/vectors/sprite.svg#icon-geotag"></use>
+          </svg>
+          <a href="/" class="contacts-section__link"> Kharkiv, Moskovsky AVE</a>
         </li>
         <li class="contacts-section__list-item">
+          <svg class="contacts-section__icon" width="24" height="24">
+            <use href="../images/vectors/sprite.svg#icon-e-mail"></use>
+          </svg>
           <a href="mailto:krp@powerkh.com" class="contacts-section__link">
-            <!-- <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/sprite.svg#mail"></use>
-              </svg> -->
             krp@powerkh.com</a
           >
         </li>
-        <li class="contacts-section__list-item"></li>
+        <li class="contacts-section__list-item">
+          <svg class="contacts-section__icon" width="24" height="24">
+            <use href="../images/vectors/sprite.svg#icon-clock"></use>
+          </svg>
+          <p class="contacts-section__open-hrs">
+            Open hours (UTC+3) MON-FRI: 9AM-7PM SAT: 10AM-5PM
+          </p>
+        </li>
       </ul>
       <div class="contacts-page__social-links-block">
         <include src="./partials/components/socialNetworkLinks.html"></include>
