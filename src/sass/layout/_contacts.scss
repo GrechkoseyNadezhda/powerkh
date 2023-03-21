@@ -84,6 +84,75 @@
 }
 // ===================CONTACTS SECTION===========================
 
-.contacts-section-paragraph {
-  color: tomato;
+.contacts-section {
+  background-color: #ffffff;
+  padding: 40px 0px;
+
+  @include font-body-reg;
+
+  @include mq(tab) {
+    padding: 60px 0px;
+  }
+  @include mq(desk) {
+    padding: 80px 0px;
+  }
+}
+
+.contacts-section__wrapper {
+  @include mq(desk) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.contacts-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+
+  @include mq(tab) {
+    margin-bottom: 52px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include mq(desk) {
+    flex-basis: calc(50% - 15px);
+  }
+}
+.contacts-section__list-item {
+  display: flex;
+  gap: 24px;
+
+  @include mq(tab) {
+    flex-basis: 263px;
+  }
+}
+
+.contacts-section__icon {
+  flex-shrink: 0;
+}
+
+.contacts-section__list-item--phones {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contacts-section__link {
+}
+.contacts-section__open-hrs {
+  max-width: 141px;
+}
+
+.contacts-section__socials-wrap {
+  @include mq(desk) {
+    flex-basis: calc(50% - 15px);
+  }
+}
+
+.contacts-page__social-links-block {
+  margin-bottom: 24px;
+}
+.contacts-section__plain-text-block {
 }
