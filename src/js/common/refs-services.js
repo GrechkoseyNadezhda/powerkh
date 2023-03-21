@@ -21,4 +21,5 @@ export const refsCase = {
   heroSlider: document.querySelector('.swiper-wrapper'),
   impactOnBusiness: document.querySelector('.impact-on-business'),
   blogSlider: document.querySelector('.blog-section__slider'),
+  bmpSlider: document.querySelector('.section-projects__slider-item.bmp'),
 };

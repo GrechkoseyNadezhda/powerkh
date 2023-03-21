@@ -4,6 +4,8 @@ import img21x from '../../../images/slider/blog/blog-02@1x.jpg';
 import img22x from '../../../images/slider/blog/blog-02@2x.jpg';
 import link1 from '../../../pages/architectural-rendering.html';
 import link2 from '../../../pages/seven-benefits-of-bim.html';
+import iconEye from '../../../images/vectors/sprite.svg#icon-eye';
+
 
 
 
@@ -16,6 +18,7 @@ export const blogSliderData = [
         link: link1,
         img1x: img11x,
         img2x: img12x,
+        icon: iconEye,
     },
     {
         badge: 'Most Popular Blogs',
@@ -25,6 +28,7 @@ export const blogSliderData = [
         link: link2,
         img1x: img21x,
         img2x: img22x,
+        icon: iconEye,
     }    
 ];
 

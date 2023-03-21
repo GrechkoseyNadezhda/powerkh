@@ -4,9 +4,13 @@
  {{!-- потрібно підставити  масив--}}
 {{!-- приклад об'єкта: 
 
+Також не забудь завантажити кастомний скрипт для БлогСлайдера 
+import '../../components/blogSlider/slick'; -> без нього слайдер працюватиме неправильно!
+
 import top30link from './top30architect-companies.html'
 import photo1x from './img/slider/photo1x.jpg'
 import photo2x from './img/slider/photox.jpg'
+import icon from './img/vectors/sprite.svg#icon-eye'
 
 [{
     badge: 'Most Popular Blogs',
@@ -16,6 +20,7 @@ import photo2x from './img/slider/photox.jpg'
     link: top30link,
     img1x: photo1x,
     img2x: photo2x,
+    icon: icon,
 }]
 --}}
 --}}
@@ -40,7 +45,7 @@ import photo2x from './img/slider/photox.jpg'
             <a class="blog-section__slider-readMore" href={{this.link}}>Read more...</a>
             <a class="blog-section__slider-seeProject" href={{this.link}}>
                 <svg class="blog-section__slider-seeIcon" width="22" height="16">
-                    <use href="../images/vectors/sprite.svg#icon-eye"></use>
+                    <use href={{this.icon}}></use>
                 </svg>
                 See Project
             </a>
