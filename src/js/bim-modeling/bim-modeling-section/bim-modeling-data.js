@@ -128,29 +128,29 @@
       'Do you want to enhance your construction project?Our experts can resolve your challenges and build a detailed 3D BIM model.Contact us to learn more about our services!',
   };
 
-  export const BIMmodelingFaq = [
-    {
-      question: 'How fast can I get a fully-realized BIM model?',
-      answer:
-        'Our delivery time depends on the project’s complexity (LOD), your standards, techniques, and the documentation we receive. Nonetheless, our team has extensive knowledge of BIM modeling software and can build an interactive model in the fastest possible time.',
-    },
-    {
-      question: 'Can you provide estimates for BIM modeling services?',
-      answer:
-        'We will provide a free quote with estimates based on our hourly fee. Furthermore, we will charge only after completing our work.',
-    },
-    {
-      question: 'Do you work in metric or imperial units?',
+  // export const BIMmodelingFaq = [
+  //   {
+  //     question: 'How fast can I get a fully-realized BIM model?',
+  //     answer:
+  //       'Our delivery time depends on the project’s complexity (LOD), your standards, techniques, and the documentation we receive. Nonetheless, our team has extensive knowledge of BIM modeling software and can build an interactive model in the fastest possible time.',
+  //   },
+  //   {
+  //     question: 'Can you provide estimates for BIM modeling services?',
+  //     answer:
+  //       'We will provide a free quote with estimates based on our hourly fee. Furthermore, we will charge only after completing our work.',
+  //   },
+  //   {
+  //     question: 'Do you work in metric or imperial units?',
      
-    },
-    {
-      question: 'How will we communicate during drafting?',
+  //   },
+  //   {
+  //     question: 'How will we communicate during drafting?',
       
-    },
-    {
-      question: 'What BIM modeling software do you use?',
+  //   },
+  //   {
+  //     question: 'What BIM modeling software do you use?',
      
-    },
-  ];
+  //   },
+  // ];
   
   
