@@ -2,7 +2,27 @@ export const heroPrefabrication = {
   subtitle: 'Prefabrication & Fabrication',
   text: 'Do you want to improve your manufacturing process and speed up the design? Our BIM prefabrication & coordination services can become an indispensable tool for your project’s success! Don’t put off your call — contact Powerkh to learn how we can improve your workflow.',
 };
-export const briefDescriptCoordination = {};
+export const briefDescriptPrefabrication = {
+title: 'Digital Prefabrication & Fabrication',
+listText: [
+  'BIM is an integral part of modular construction. Prefabricated (modular) construction is a holistic approach that allows teams to produce and assemble any structure in components ("modules"). However, the design must be impeccable if you want the parts of your construction to fit.',
+  'Thankfully, you can automate most rudimentary processes and get accurate virtual prototypes with BIM for prefabrication and fabrication services. Powerkh can create a superset of parametric 3D models and shop drawings for all building elements, including the architectural, structural, and MEP.',
+],
+smallTitle: 'Our prefabrication BIM services have undeniable advantages for architects, engineers, and structural consultants. We can help you improve:',
+
+list: [
+  {boldText: 'Turnaround time.', 
+  text:' The manufacturing and on-site works happen simultaneously in modular construction, improving productivity by up to 50 percent.',
+},
+{boldText: 'Turnaround time.', 
+text:' The manufacturing and on-site works happen simultaneously in modular construction, improving productivity by up to 50 percent.',
+},
+{boldText: 'Turnaround time.', 
+text:' The manufacturing and on-site works happen simultaneously in modular construction, improving productivity by up to 50 percent.',
+}
+
+]
+};
 export const howPrefabrication = {
   title: 'How We Deliver BIM Prefabrication & Fabrication',
 list: [
