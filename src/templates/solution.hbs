@@ -1,27 +1,24 @@
-<div class='container solution'>
-  <h2 class='solution__title'>{{this.title}}</h2>
-  <div class='solution__img-container'>
-    <img
-      srcset='
-            ../images/solution/formwork/formwork-lar@1x.jpg 356w,
-            ../images/solution/formwork/formwork-lar@2x.jpg 712w,
-            ../images/solution/formwork/formwork-mid@1x.jpg 338w,
-            ../images/solution/formwork/formwork-mid@2x.jpg 676w,
-            ../images/solution/formwork/formwork-sm@1x.jpg  316w,
-            ../images/solution/formwork/formwork-sm@2x.jpg  632w
+{{! Приймає об'єкт {title: назва, imgSm1x: відповідна картинка,imgSm2x: відповідна картинка, imgMid1x: відповідна картинка,imgMid2x: відповідна картинка,imgLar1x: відповідна картинка,imgLar2x: відповідна картинка, gif: шлях до гіфки} }}
+{{! <div class='container solution'> }}
+<h2 class='solution__title'>{{this.title}}</h2>
+<div class='solution__img-container'>
+  <img
+    srcset='
+            {{this.imgLar1x}} 356w,
+            {{this.imgLar2x}} 712w,
+            {{this.imgMid1x}} 338w,
+            {{this.imgMid2x}} 676w,
+            {{this.imgSm1x}}  316w,
+            {{this.imgSm2x}}  632w
           '
-      sizes='(min-width: 1440px) 356px, (min-width: 768px) 338px,
+    sizes='(min-width: 1440px) 356px, (min-width: 768px) 338px,
     (min-width: 360px) 316px, 100vw'
-      src='../images/solution/formwork/formwork-sm@1x.jpg'
-      alt='formwork pic'
-      class='solution__img'
-    />
-  </div>
-  <div class='solution__gif-container'>
-    <img
-      class='solution__gif'
-      src='../images/solution/formwork/formwork-gif.gif'
-      alt='gif'
-    />
-  </div>
+    src={{this.imgSm1x}}
+    alt='formwork pic'
+    class='solution__img'
+  />
 </div>
+<div class='solution__gif-container'>
+  <img class='solution__gif' src={{this.gif}} alt='gif' />
+</div>
+{{! </div> }}
