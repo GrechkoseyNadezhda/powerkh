@@ -53,10 +53,6 @@
     filter: grayscale(0);
   }
 
-  &:hover .caseStudies__img__color {
-    display: inline;
-  }
-
   @include mq(tab) {
     width: 342px;
 
@@ -95,32 +91,12 @@
   }
 }
 
-.caseStudies__img__3 {
-  width: 100%;
-  @include mq(tab) {
-    height: 204px;
-  }
-}
-
 .caseStudies__imgCard3 {
   position: relative;
   display: inline-block;
   width: 100%;
   @include mq(tab) {
     height: 201px;
-  }
-}
-
-.caseStudies__img__color {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 100%;
-
-  @include mq(tab) {
-    height: 204px;
   }
 }
 

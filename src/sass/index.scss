@@ -21,11 +21,15 @@
 @import './templates/architecAndStructBim';
 @import './templates/impactOnBusiness';
 
+@import './templates/contents';
 @import './templates/sectionProjects';
+@import './templates/hero-part4';
+
 //Templates-caseStudies
 
 @import './templates/heroDesign';
 @import './templates/processTemplate';
+@import './templates/contactForm';
 
 //Components
 @import './components/header';
@@ -35,11 +39,18 @@
 @import './components/ourCaseStudies';
 
 @import './components/joinTeam';
+
+@import './components/automate-repetitive-design';
 @import './components/footer';
 @import './components/main/bimServices';
 @import './components/main/ourServicesGrid';
 @import './components/main/customers';
 @import './components/main/ousource';
+@import './components/main/hero-main';
+
+@import './components/whatProblems';
+
+@import './components/footer';
 
 // Layout
 
