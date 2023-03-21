@@ -6,11 +6,14 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 40px;
+  @include mq(tab) {
+    margin-bottom: 60px;
+  }
   @include mq(desk) {
     flex-direction: row;
     flex-wrap: wrap;
-
-    margin-bottom: 20px;
+    margin-bottom: 80px;
   }
 }
 
@@ -35,9 +38,7 @@
     width: 554px;
   }
 }
-.BIM__benefits-subtitle {
-  margin-top: 40px;
-}
+
 
 .BIM__benefits-mainpage {
   margin-top: 40px;

@@ -34,38 +34,37 @@
 
   }
 
-  export const howModeling = [
-    {
-      subtitle: 'The client sends the brief and technical documentation.',
-      description:
-        'We discuss minute details of the construction project and analyze drawings, 2D plans, blueprints, photos, and visuals references.',
-    },
-    {
-      subtitle: 'We import 2D drawings into the 3D model.',
-      description:
-        'Our team transforms flat drawings into a 3D model using Autodesk Revit software.',
-    },
-    {
-      subtitle: 'We build the framework and design elements.',
-      description:
-        'We digitalize all structural elements — from walls and MEP (mechanical, electrical, and plumbing) systems to door handles. Moreover, we will group objects in data libraries that contain Revit families to simplify stakeholders’ collaboration.',
-    },
-    {
-      subtitle: 'Our team identifies inconsistencies.',
-      description:
-        'Our team runs clash detection software to find and flag design conflicts.',
-    },
-    {
-      subtitle: 'We help resolve problems.',
-      description:
-        'We will send reports about the flaws in the design and propose solutions. Your team members will be able to work on a project simultaneously from a single file.',
-    },
-    {
-      subtitle: 'The client receives interactive 3D BIM models and shop drawings.',
-      description:
-        'You will get accurate fabrication drawings and a fully interactive 3D database that can tie construction and manufacturing sites for a significant productivity boost.',
-    },
-  ];
+  export const howModeling = {
+    title: 'BIM Coordination Process at Powerkh',
+    list: [
+      {
+        subtitle: 'The client sends the brief and technical documentation.',
+        description:
+          'We discuss minute details of the construction project and analyze drawings, 2D plans, blueprints, photos, and visuals references.',
+      },
+      {
+        subtitle:
+          'We import 2D drawings into the 3D model.',
+        description:
+          'Our team transforms flat drawings into a 3D model using Autodesk Revit software.',
+      },
+      {
+        subtitle: 'We build the framework and design elements.',
+        description:
+          'We digitalize all structural elements — from walls and MEP (mechanical, electrical, and plumbing) systems to door handles. Moreover, we will group objects in data libraries that contain Revit families to simplify stakeholders’ collaboration.',
+      },
+      {
+        subtitle: 'Our team identifies inconsistencies.',
+        description:
+          'Our team runs clash detection software to find and flag design conflicts.',
+      },
+      {
+        subtitle: 'We help resolve problems.',
+        description:
+          'We will send reports about the flaws in the design and propose solutions. Your team members will be able to work on a project simultaneously from a single file.',
+      }
+    ],
+  };
 
  
 
@@ -128,5 +127,30 @@
     description:
       'Do you want to enhance your construction project?Our experts can resolve your challenges and build a detailed 3D BIM model.Contact us to learn more about our services!',
   };
+
+  export const BIMmodelingFaq = [
+    {
+      question: 'How fast can I get a fully-realized BIM model?',
+      answer:
+        'Our delivery time depends on the project’s complexity (LOD), your standards, techniques, and the documentation we receive. Nonetheless, our team has extensive knowledge of BIM modeling software and can build an interactive model in the fastest possible time.',
+    },
+    {
+      question: 'Can you provide estimates for BIM modeling services?',
+      answer:
+        'We will provide a free quote with estimates based on our hourly fee. Furthermore, we will charge only after completing our work.',
+    },
+    {
+      question: 'Do you work in metric or imperial units?',
+     
+    },
+    {
+      question: 'How will we communicate during drafting?',
+      
+    },
+    {
+      question: 'What BIM modeling software do you use?',
+     
+    },
+  ];
   
   
