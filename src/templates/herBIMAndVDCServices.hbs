@@ -1,0 +1,29 @@
+{{!-- {{! потрібно підставити об'єкти }}
+title: заголовок 
+listText: [список текстів на вашій сторінці в масиві] 
+smallTitle: 'Текст до ваших Benefits перед списком зі стрілочками'
+list: [{{!масив обєктів}},{{!масив обєктів}}]
+Використовується для тих в кого є жирним виділено текст в списку переваг.
+{{!boldText: "i love my team", text:"I love u"}} 
+<section class="BIM-modeling"></section>--}}
+
+
+
+<div class='container'>
+  <h2 class='BIM__title'>{{this.title}}</h2>
+  <ul class="BIM__text-list">
+    {{#each this.listText}}
+    <li><p class='BIM__subtitle'>{{this}}</p></li>
+     {{/each}}
+  </ul>
+  <p class='BIM__benefits-mainpage'><b>{{this.textForMainpage}}</b></p>
+       <p class='BIM__benefits-subtitle'>{{this.smallTitle}}</p>
+  <ul class='BIMServices__list'>
+    {{#each this.list}}
+      <li class='benefits__item'>
+        <p class='benefits__description'><b>{{this.boldText}}</b>{{this.text}}
+        </p>
+      </li>
+    {{/each}}
+  </ul>
+</div>

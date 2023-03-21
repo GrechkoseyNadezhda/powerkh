@@ -1,14 +1,158 @@
-body.contacts-page {
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url('../images/hero/contacts@1x.jpg');
+// ===================HERO-CONTACTS===========================
+// .hero {
+//   padding-top: 206px;
+//   padding-left: 18px;
+//   height: 100vh;
+//   @include mq(tab) {
+//     padding-top: 192px;
+//     padding-left: 34px;
+//   }
+// }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/contacts@2x.jpg');
+// .hero__block {
+//   position: relative;
+//   width: 288px;
+//   padding: 24px 16px;
+//   background: var(--pure-white-color);
+//   @include mq(tab) {
+//     padding: 52px 40px 24px;
+//     width: 632px;
+//   }
+// }
+
+// .hero__frame-down-left {
+//   position: absolute;
+//   bottom: -16px;
+//   left: -16px;
+// }
+
+// .hero__frame-up-left {
+//   position: absolute;
+//   top: -16px;
+//   left: -16px;
+// }
+
+// .hero__frame-down-right {
+//   position: absolute;
+//   bottom: -16px;
+//   right: -16px;
+// }
+
+// .hero__frame-up-right {
+//   position: absolute;
+//   top: -16px;
+//   right: -16px;
+// }
+
+// .hero__title {
+//   @include font-title;
+//   font-size: 24px;
+//   line-height: 1.12;
+//   text-transform: uppercase;
+//   color: var(--dark-grey-color);
+//   margin-bottom: 24px;
+//   @include mq(tab) {
+//     margin-bottom: 32px;
+//   }
+// }
+
+// .hero__text {
+//   @include font-body-reg;
+//   color: var(--dark-grey-color);
+//   margin-bottom: 16px;
+//   @include mq(tab) {
+//     margin-bottom: 24px;
+//   }
+// }
+
+// .hero__btn {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-left: auto;
+//   gap: 8px;
+//   background: var(--pure-white-color);
+//   border: none;
+//   @include font-button;
+//   color: var(--dark-grey-color);
+// }
+
+.hero__block.hero__block--contacts {
+  @include mq(tab) {
+    padding-top: 24px;
   }
+}
+// ===================CONTACTS SECTION===========================
+
+.contacts-section {
+  background-color: #ffffff;
+  padding: 40px 0px;
+
+  @include font-body-reg;
+
+  @include mq(tab) {
+    padding: 60px 0px;
+  }
+  @include mq(desk) {
+    padding: 80px 0px;
+  }
+}
+
+.contacts-section__wrapper {
+  @include mq(desk) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.contacts-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+
+  @include mq(tab) {
+    margin-bottom: 52px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include mq(desk) {
+    flex-basis: calc(50% - 15px);
+  }
+}
+.contacts-section__list-item {
+  display: flex;
+  gap: 24px;
+
+  @include mq(tab) {
+    flex-basis: 263px;
+  }
+}
+
+.contacts-section__icon {
+  flex-shrink: 0;
+}
+
+.contacts-section__list-item--phones {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contacts-section__link {
+}
+.contacts-section__open-hrs {
+  max-width: 141px;
+}
+
+.contacts-section__socials-wrap {
+  @include mq(desk) {
+    flex-basis: calc(50% - 15px);
+  }
+}
+
+.contacts-page__social-links-block {
+  margin-bottom: 24px;
+}
+.contacts-section__plain-text-block {
 }

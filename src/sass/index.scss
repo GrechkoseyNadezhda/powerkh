@@ -1,7 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 // Utils
-@import './main.scss';
 @import './utils/variables';
 @import './utils/fonts';
 @import './utils/mixins';
@@ -9,11 +8,11 @@
 @import './utils/common_classes';
 @import './utils/body_classes';
 
-//Templates
+//Templates-services
 
 @import './templates/hero';
 @import './templates/howWeWork';
-@import './templates/HerBIMAndVDCServices.scss';
+@import './templates/herBIMAndVDCServices.scss';
 @import './templates/contactUs';
 
 @import './templates/outsourceProjects';
@@ -21,20 +20,33 @@
 @import './templates/architecAndStructBim';
 @import './templates/impactOnBusiness';
 
+@import './templates/contents';
 @import './templates/sectionProjects';
+@import './templates/hero-part4';
+
+//Templates-caseStudies
+
+@import './templates/heroDesign';
+@import './templates/processTemplate';
+@import './templates/contactForm';
+
+@import './templates/solution';
 
 //Components
-
 @import './components/header';
 @import './components/burgerMenu';
 @import './components/haveBIMproject';
 @import './templates/faq.scss';
 @import './components/ourCaseStudies';
-@import './templates/processTemplate';
+@import './components/socialNetworkLinks';
 
 @import './components/joinTeam';
+
+@import './components/automate-repetitive-design';
+
+@import './components/whatProblems';
+
 @import './components/footer';
-@import './components/contacts-section';
 
 // Layout
 

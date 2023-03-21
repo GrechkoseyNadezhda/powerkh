@@ -1,5 +1,65 @@
 <section class="contacts-section">
   <div class="container">
-    <p class="contacts-section-paragraph">Я унікальна секція контактів</p>
+    <div class="contacts-section__wrapper">
+      <ul class="contacts-section__list">
+        <li class="contacts-section__list-item">
+          <svg class="contacts-section__icon" width="24" height="24">
+            <use href="../images/vectors/sprite.svg#icon-phone"></use>
+          </svg>
+          <div class="contacts-section__list-item--phones">
+            <a href="tel:+380971952109" class="contacts-section__link">
+              +380971952109</a
+            >
+            <a href="tel:+380989764637" class="contacts-section__link">
+              +380989764637</a
+            >
+          </div>
+        </li>
+        <li class="contacts-section__list-item">
+          <svg class="contacts-section__icon" width="24" height="24">
+            <use href="../images/vectors/sprite.svg#icon-geotag"></use>
+          </svg>
+          <a
+            href="https://goo.gl/maps/gnEJ1sQa4uK1xZqW9"
+            class="contacts-section__link"
+          >
+            Kharkiv, Heroes of Kharkov AVE</a
+          >
+        </li>
+        <li class="contacts-section__list-item">
+          <svg class="contacts-section__icon" width="24" height="24">
+            <use href="../images/vectors/sprite.svg#icon-e-mail"></use>
+          </svg>
+          <a href="mailto:krp@powerkh.com" class="contacts-section__link">
+            krp@powerkh.com</a
+          >
+        </li>
+        <li class="contacts-section__list-item">
+          <svg class="contacts-section__icon" width="24" height="24">
+            <use href="../images/vectors/sprite.svg#icon-clock"></use>
+          </svg>
+          <p class="contacts-section__open-hrs">
+            Open hours (UTC+3) MON-FRI: 9AM-7PM SAT: 10AM-5PM
+          </p>
+        </li>
+      </ul>
+      <div class="contacts-section__socials-wrap">
+        <div class="contacts-page__social-links-block">
+          <include
+            src="./partials/components/socialNetworkLinks.html"
+          ></include>
+        </div>
+        <div class="contacts-section__plain-text-block">
+          <p>
+            Powerkh is a digital design consultancy which offers BIM,
+            computational design, structural detailing and digital fabrication
+            expertise. We work with project owners, architects, contractors,
+            developers and engineers to improve the way buildings are designed,
+            built, and operated through the use of digital design tools "Powerkh
+            is a digital design company.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
