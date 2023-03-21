@@ -26,14 +26,36 @@ body.blog-page {
 }
 
 .blog-section__slider {
-  margin-top: 50px;
+  margin-top: 40px;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+  }
+}
+
+.blog-section__slider:hover {
+  .blog-section__slider-img{
+    filter:grayscale(0);
+  }
+}
+.blog-section__slider:focus {
+  .blog-section__slider-img{
+    filter:grayscale(0);
+  }
 }
 
 .blog-section__slider-item {
+  display: block;
+  // flex-direction: column;
+  // gap: 0px;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+  }
   
-  display: flex;
-  gap: 28px;
+
 }
 
 // .section-projects__slider-item {
@@ -41,9 +63,19 @@ body.blog-page {
 // }
 
 .blog-section__slider-picture {
-  width: 552px;
-  height: 357px;
   position: relative;
+
+  width: 297px;
+  height: 181px;
+
+  @media screen and (min-width: 768px) {
+    width: 548px;
+    height: 352px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 552px;
+    height: 357px;
+  }
 }
 
 .blog-section__slider-frame{
@@ -51,27 +83,67 @@ body.blog-page {
   z-index: 0;
   box-sizing: border-box;
 
-  width: 516px;
-  height: 320px;
+  width: 280px;
+  height: 164px;
   // left: 153px;
   // top: 217px;
-
   border: 2px solid #000000;
+
+  @media screen and (min-width: 768px) {
+    width: 516px;
+    height: 320px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 516px;
+    height: 320px;
+  }
 }
 
 .blog-section__slider-img {
   position: relative;
   z-index: 10;
-  margin-top: 36px;
-  margin-left: 37px;
-  width: 516px;
-  height: 320px;
+
+  // margin-top: 17px;
+  // margin-left: 17px;
+  top: 17px;
+  left: 17px;
+  width: 280px;
+  height: 164px;
+
+  filter: grayscale(1);
+  transition: all 0.5s ease;
+
+  @media screen and (min-width: 768px) {
+    top: 32;
+    left: 32;
+    // margin-top: 32px;
+    // margin-left: 32px;
+    width: 516px;
+    height: 320px;
+  }
+  @media screen and (min-width: 1440px) {
+    top: 0;
+    left: 0;
+    margin-top: 36px;
+    margin-left: 37px;
+    width: 516px;
+    height: 320px;
+  }
+
 }
 
 
 
+
+
 .blog-section__slider-text {
-  width: 554px;
+  width: 320px;
+  @media screen and (min-width: 768px) {
+    width: 704px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 554px;
+  }
 }
 
 .blog-section__slider-badge {
@@ -83,9 +155,16 @@ body.blog-page {
 
 .blog-section__slider-title {
   @include font-title;
-  width: 360px;
+  width: 246px;
   margin-top: 24px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 360px;
+  }
 }
 
 .blog-section__slider-author{
@@ -99,39 +178,76 @@ body.blog-page {
   @include font-body-reg;
 
   margin-top: 24px;
+
+  width: 320px;
+  @media screen and (min-width: 768px) {
+    width: 704px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 554px;
+  }
 }
 
 .points {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+
+  @media screen and (min-width: 768px) {
+    -webkit-line-clamp: 3;
+  }
+  @media screen and (min-width: 1440px) {
+    -webkit-line-clamp: 4;
+  }
 }
 
-.blog-section__slider-btn {
+.blog-section__slider-readMore {
   @include font-button;
 
-  display: block;
+  display: none;
   margin-top: 24px;
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+  }
 }
 
+.blog-section__slider-seeProject {
+  @include font-button;
+
+  display: flex;
+
+  margin-top: 24px;
+
+  gap: 14px;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+
+
+}
 
 
 
 /* Точки (булиты) */
 .blog-section__slider .slick-dots{
-  position: relative;
+  // position: relative;
   z-index: 1;
   // top: -100;
   // left: 338px;
-  top: -18px;
-  left: 582px;
+  // top: -18px;
+  // left: 582px;
+  margin-top: 16px;
   display: flex;
   height: 18px;
 
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 36px;
 
   // margin-top: 40px;
@@ -141,6 +257,11 @@ body.blog-page {
   }
   @media screen and (min-width: 1440px) {
       // margin-top: 52px;
+      position: relative;
+      margin-top: 0;
+      top: -18px;
+      left: 582px;
+      justify-content: flex-start;
   }
 }
 .blog-section__slider .slick-dots li{
