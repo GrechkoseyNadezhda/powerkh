@@ -27,6 +27,55 @@ export const contentCreationObj = {
   ],
 };
 
+export const objLibraryCreationObj = {
+  title: 'BIM Object Library Creation Process at Powerkh',
+  list: [
+    {
+      subtitle: 'The client sends the technical documentation.',
+      description:
+        'Powerkh will analyze your drawings, templates, blueprints, PDF files, and reference images.',
+    },
+    {
+      subtitle: 'Our team will define the family subcategories.',
+      description:
+        'You can select a suitable template category or order a custom family creation.',
+    },
+    {
+      subtitle: 'We will create the model geometry.',
+      description:
+        'We will plan the parameters and build an accurate model geometry according to your specifications.',
+    },
+    {
+      subtitle: 'We will check your project for clashes.',
+      description:
+        'We flag interfering elements using various advanced BIM modeling tools, including Revit and Navisworks clash detection software.',
+    },
+    {
+      subtitle: 'We will assign categories and subcategories.',
+      description:
+        'Every object will belong to a Revit family type that shares the basic logic.',
+    },
+    {
+      subtitle: 'The client receives Revit family models.',
+      description:
+        'You will get a library of objects with easily adjustable parameters that can be imported to other projects.',
+    },
+  ],
+};
+
+export const servicesCreationObj = {
+  title: 'Custom Revit Content Creation Services',
+  text: 'The geometric of the Revit model isn’t just precise. It should be parametric, so your team members can easily adjust the setting for any object and category. Powerkh stands at the forefront of BIM family creation and content library management.',
+  topic: 'Our Revit content creation services include:',
+  list: [
+    'Structural families (walls, columns, steel sections, beams, joints, stiffeners).',
+    'Mechanical families (pipes, heating, ventilation, air conditioning units).',
+    'Architectural families (casework, doors, windows, partitions, railing, furniture).',
+    'MEP families (pumps, valves, fire dampers, electrical devices, cabinets).',
+    'Import and management of BIM families.',
+  ],
+};
+
 export const advantagesObj = {
   title: 'Advantages of Revit Content Creation Services at Powerkh',
   description:
