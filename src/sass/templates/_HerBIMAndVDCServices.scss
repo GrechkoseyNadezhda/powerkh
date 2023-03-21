@@ -31,11 +31,16 @@
 
 .BIM__subtitle {
   @include font-body-reg;
-  @include mq(desk) {
-    width: 554px;
-  }
+  margin-bottom: 40px;
 }
+
+.BIM__subtitle-title {
+  @extend .BIM__benefits-subtitle;
+  @include font-body-bold;
+}
+
 .BIM__benefits-subtitle {
+  @include font-body-reg;
   margin-top: 40px;
 }
 
@@ -58,17 +63,19 @@
 
 .benefits__item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
   margin-bottom: 24px;
   &::before {
     content: ' ';
     display: inline-block;
-    background-image: url(../images/vectors/vector-right.svg);
+    background-image: url(../images/vectors/grey-arrow-right.svg);
     width: 40px;
     height: 40px;
     background-size: cover;
     color: #cdcdcd;
+  }
+  @media screen and (min-width: 768px) {
   }
 }
 
@@ -78,7 +85,7 @@
   @include mq(tab) {
     width: 282px;
   }
-  @include mq(desk) {
+  @media screen and (min-width: 1440px) {
     width: 478px;
   }
 }

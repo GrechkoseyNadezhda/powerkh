@@ -1,6 +1,5 @@
-import sectionTemplate from '../templates/outsourceProjects.hbs';
+import sectionTemplate from '../../templates/outsourceProjects.hbs';
 
-// console.log(sectionTemplate);
 const dataSectionExample = {
   title: 'Powerkh for BIM Outsourcing Projects',
   description:
@@ -13,19 +12,19 @@ const dataSectionExample = {
         'Our specialists understand the design intent and Powerkh for BIM Outsourcing Projects',
     },
     {
-      subtitle: 'Engineering and design experience',
+      subtitle: 'Innovative technological solutions',
       subtitleDescription:
-        'Our specialists understand the design intent and Powerkh for BIM Outsourcing Projects',
+        'We handle complex modeling software to build accurate 3D BIM databases with high detail levels (up to LOD 500).',
     },
     {
-      subtitle: 'Engineering and design experience',
+      subtitle: 'Fast turnaround time',
       subtitleDescription:
-        'Our specialists understand the design intent and Powerkh for BIM Outsourcing Projects',
+        'We use BIM automation and scripting tools to deliver quick results and enhance your productivity.',
     },
     {
-      subtitle: 'Engineering and design experience',
+      subtitle: 'Established workflow',
       subtitleDescription:
-        'Our specialists understand the design intent and Powerkh for BIM Outsourcing Projects',
+        'Powerkh always stays in touch — our team quickly adjusts to deadline shifts and requirement changes.',
     },
   ],
 };
@@ -34,4 +33,4 @@ const section = document.querySelector('.outsourceProjects');
 export function sectionMarkup(dataArr, element) {
   element.insertAdjacentHTML('beforeend', sectionTemplate(dataArr));
 }
-// sectionMarkup(dataSectionExample, section);
+sectionMarkup(dataSectionExample, section);
