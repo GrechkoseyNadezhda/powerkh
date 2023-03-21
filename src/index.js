@@ -1,9 +1,7 @@
-import './js/outsourceProjects';
+// import './js/outsourceProjects';
 
 // header
 import './js/components/header/header';
-
-
 
 // BIM-Modeling
 // import './js/bim-modeling/bim-modeling';

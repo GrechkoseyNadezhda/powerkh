@@ -3,7 +3,9 @@ export const heroPrefabrication = {
   text: 'Do you want to improve your manufacturing process and speed up the design? Our BIM prefabrication & coordination services can become an indispensable tool for your project’s success! Don’t put off your call — contact Powerkh to learn how we can improve your workflow.',
 };
 export const briefDescriptCoordination = {};
-export const howPrefabrication = [
+export const howPrefabrication = {
+  title: 'How We Deliver BIM Prefabrication & Fabrication',
+list: [
   {
     subtitle: 'The client sends technical documentation.',
     description:
@@ -25,7 +27,9 @@ export const howPrefabrication = [
     description:
       'Powerkh can coordinate your construction project and boost your productivity by automating repetitive tasks.',
   },
-];
+]
+}
+
 export const servicesPrefabrication = {
   title: 'Our BIM Services for Prefabrication & Fabrication',
   text: 'Powerkh offers a wide range of BIM services for modular construction projects. Our team can create an exhaustive 3D object database for the entire project — from walls and beams to the tiniest screw.',
