@@ -1,0 +1,22 @@
+import heroPartFourHBS from '../../../templates/hero-part-four.hbs';
+import shareHBS from '../../../templates/share.hbs';
+import contentsHBS from '../../../templates/contents.hbs';
+import contentsInformationHBS from '../../../templates/contentsInformation.hbs';
+import whatProblemsHBS from '../../../templates/whatProblems.hbs';
+
+import {
+  heroPartFourData,
+  shareBim,
+  contentsBim,
+  contentsInformBim,
+  whatProblemsBim,
+} from './seven-benefits-of-bim-data';
+
+import { refs } from '../../common/refs-services';
+import { useTemplate } from '../../common/use-template';
+
+useTemplate(refs.heroPartFour, heroPartFourHBS, heroPartFourData);
+useTemplate(refs.share, shareHBS, shareBim);
+useTemplate(refs.contents, contentsHBS, contentsBim);
+useTemplate(refs.contentsInform, contentsInformationHBS, contentsInformBim);
+useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
