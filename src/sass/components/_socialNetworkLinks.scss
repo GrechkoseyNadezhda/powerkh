@@ -1,0 +1,16 @@
+.social__icons {
+  display: flex;
+  gap: 32px;
+
+  @include mq(tab) {
+    gap: 24px;
+  }
+}
+
+.social__icon:hover {
+  opacity: 0.7;
+}
+
+.contacts-page__social-links-block > .social__icons {
+  gap: 24px;
+}
