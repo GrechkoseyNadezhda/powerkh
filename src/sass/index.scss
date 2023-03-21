@@ -21,7 +21,10 @@
 @import './templates/architecAndStructBim';
 @import './templates/impactOnBusiness';
 
+@import './templates/contents';
 @import './templates/sectionProjects';
+@import './templates/hero-part4';
+
 //Templates-caseStudies
 
 @import './templates/heroDesign';
@@ -36,9 +39,12 @@
 @import './components/ourCaseStudies';
 
 @import './components/joinTeam';
-@import './components/footer';
 
 @import './components/automate-repetitive-design';
+
+@import './components/whatProblems';
+
+@import './components/footer';
 
 // Layout
 
