@@ -17,7 +17,7 @@ import {
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { createFAQsection } from '../../common/createFaqSection';
-
+import { toggleFaq } from '../../common/toggle-faq';
 const ENDPOINT_COORDINATION = '/faq/bimCoordination.json';
 
 useTemplate(refs.hero, heroHBS, heroCoordination);
@@ -31,7 +31,7 @@ useTemplate(
 );
 useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
 createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);
-
+toggleFaq();
 // useTemplate(refs.faq, faqHBS, faqCoordination);
 // import $ from 'jquery';
 // // window.$ = window.jQuery = $;

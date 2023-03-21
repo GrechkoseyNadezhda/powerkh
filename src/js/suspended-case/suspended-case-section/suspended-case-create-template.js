@@ -1,12 +1,14 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
-
-import hero3HBS from '../../../templates/heroDesignText.hbs';
+import impactHBS from '../../../templates/impactOnBusiness.hbs';
+import herotextHBS from '../../../templates/heroDesignText.hbs';
 import sliderHBS from '../../../templates/heroDesignSlider.hbs';
 import { useTemplate } from '../../common/use-template';
 import {
   textHeroSuspended,
   sliderPictures,
+  impactSuspended,
 } from '../../suspended-case/suspended-case-section/suspended-case-data';
+import { refsCase } from '../../common/refs-services';
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Pagination],
 
@@ -17,8 +19,6 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const hero3 = document.querySelector('.case-description__text-block');
-const sliderSwapper = document.querySelector('.swiper-wrapper');
-
-useTemplate(hero3, hero3HBS, textHeroSuspended);
-useTemplate(sliderSwapper, sliderHBS, sliderPictures);
+useTemplate(refsCase.heroTextBlock, herotextHBS, textHeroSuspended);
+useTemplate(refsCase.heroSlider, sliderHBS, sliderPictures);
+useTemplate(refsCase.impactOnBusiness, impactHBS, impactSuspended);
