@@ -11,16 +11,26 @@ listText: [
 smallTitle: 'Our prefabrication BIM services have undeniable advantages for architects, engineers, and structural consultants. We can help you improve:',
 
 list: [
-  {boldText: 'Turnaround time.', 
-  text:' The manufacturing and on-site works happen simultaneously in modular construction, improving productivity by up to 50 percent.',
+  {
+    boldText: 'Turnaround time.', 
+  text:'The manufacturing and on-site works happen simultaneously in modular construction, improving productivity by up to 50 percent.',
 },
-{boldText: 'Turnaround time.', 
-text:' The manufacturing and on-site works happen simultaneously in modular construction, improving productivity by up to 50 percent.',
+{
+  boldText: 'Flexibility.', 
+text:'Your project won’t slow down because of a materials shortage or lack of construction specialists with relevant qualifications near your site.',
 },
-{boldText: 'Turnaround time.', 
-text:' The manufacturing and on-site works happen simultaneously in modular construction, improving productivity by up to 50 percent.',
-}
-
+{
+  boldText: 'Sustainability.', 
+text:' Preplanned assembly cuts down site disturbance and the amount of waste produced.',
+},
+{
+  boldText: 'Safety.', 
+text:' Prefabrication construction reduces the risk of accidents because most of the work will be done off-site in factory-controlled environments.',
+},
+{
+  boldText: 'Accuracy.', 
+text:'Prefab BIM modeling delivers 3D models and 2D drawings for CNC (Computer Numerical Control) manufacturing.',
+},
 ]
 };
 export const howPrefabrication = {
@@ -93,7 +103,7 @@ export const addValuePrefabrication = {
   ],
 };
 export const contactUsPrefabrication = {
-  title: 'Reduce Construction Costs with BIM Coordination Services',
+  title: 'Streamlined Workflow with BIM Prefabrication Services',
   description:
-    'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
+    'Do you want to improve your manufacturing process and speed up the design? Our BIM prefabrication & coordination services can become an indispensable tool for your project’s success! Don’t put off your call — contact Powerkh to learn how we can improve your workflow.',
 };
