@@ -1,0 +1,22 @@
+.blog-preview__section {
+  background-color: var(--pure-white-color);
+}
+
+.blog-preview__section-list {
+  @extend .caseStudies__list;
+  gap: 27px;
+
+  @include mq(desk) {
+    justify-content: flex-start;
+  }
+}
+
+.blog-preview-section__body {
+  @extend .caseStudies__item;
+  &:hover p::after {
+    background-position: center;
+    width: 20px;
+    height: 24px;
+    margin-left: auto;
+  }
+}

@@ -1,10 +1,31 @@
 .hero-main {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient();
   padding-top: 84px;
+  background-image: url(../images/hero/main@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-main {
+      background-image: -webkit-gradient(
+          linear,
+          180deg,
+          rgba(0, 0, 0, 0.8) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url(../images/hero/main@2x.jpg);
+      background-image: linear-gradient(
+          to bottom,
+          180deg,
+          rgba(0, 0, 0, 0.8) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url(../images/hero/main@2x.jpg);
+    }
+  }
 }
 
 .container_main-hero {

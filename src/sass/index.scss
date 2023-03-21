@@ -1,7 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 // Utils
-@import './main.scss';
 @import './utils/variables';
 @import './utils/fonts';
 @import './utils/mixins';
@@ -31,12 +30,15 @@
 @import './templates/processTemplate';
 @import './templates/contactForm';
 
+@import './templates/solution';
+
 //Components
 @import './components/header';
 @import './components/burgerMenu';
 @import './components/haveBIMproject';
 @import './templates/faq.scss';
 @import './components/ourCaseStudies';
+@import './components/socialNetworkLinks';
 
 @import './components/joinTeam';
 
@@ -47,6 +49,11 @@
 @import './components/main/customers';
 @import './components/main/ousource';
 @import './components/main/hero-main';
+
+//Blog
+
+@import './components/blog/blog-grid-preview';
+@import './components/automate-repetitive-design';
 
 @import './components/whatProblems';
 

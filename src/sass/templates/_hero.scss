@@ -1,9 +1,7 @@
 .hero {
-  padding-top: 206px;
   padding-left: 18px;
   height: 100vh;
   @include mq(tab) {
-    padding-top: 192px;
     padding-left: 34px;
   }
 }
@@ -12,10 +10,17 @@
   position: relative;
   width: 288px;
   padding: 24px 16px;
+  margin: 0 auto;
+  margin-top: 238px;
   background: var(--pure-white-color);
   @include mq(tab) {
     padding: 52px 40px 24px;
     width: 632px;
+    margin-top: 268px;
+  }
+  @include mq(desk) {
+    padding: 52px 40px 24px;
+    margin-left: 0;
   }
 }
 
@@ -65,6 +70,7 @@
 }
 
 .hero__btn {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,4 +80,24 @@
   border: none;
   @include font-button;
   color: var(--dark-grey-color);
+}
+
+.hero__btn::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: calc(50% - 10px);
+
+  display: block;
+  width: 70%;
+  height: 2px;
+  background-color: #000000;
+
+  transform: scaleX(0);
+  transition: transform 300ms linear;
+}
+
+.hero__btn:hover::after {
+  transform: scaleX(1);
 }

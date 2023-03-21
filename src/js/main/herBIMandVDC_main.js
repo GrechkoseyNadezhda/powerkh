@@ -1,5 +1,5 @@
 import { refs } from '../common/refs-services';
-import bimVdc from '../../templates/HerBIMAndVDCServices.hbs';
+import bimVdc from '../../templates/herBIMAndVDCServices.hbs';
 
 const dataObject = {
   title: 'BIM & VDC Services',

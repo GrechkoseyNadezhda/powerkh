@@ -1,0 +1,17 @@
+.solution__title {
+  @include font-title;
+  margin-bottom: 52px;
+}
+.solution__img-container {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 20px;
+  @include mq(tab) {
+    padding-bottom: 40px;
+  }
+}
+.solution__gif-container {
+  display: flex;
+  justify-content: center;
+}
