@@ -1,10 +1,18 @@
+import { heroContentObj } from './bim-content-data';
 import { advantagesObj } from './bim-content-data';
+import { contentCreationObj } from './bim-content-data';
 
-import featuresForProjectsHBS from '../../../templates/outsourceProjects.hbs';
+import heroHBS from '../../../templates/hero.hbs';
+import contentCreationHBS from '../../../templates/herBIMAndVDCServices.hbs';
+import advantagesHBS from '../../../templates/outsourceProjects.hbs';
 
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 
-useTemplate(refs.featuresForProjects, featuresForProjectsHBS, advantagesObj);
+useTemplate(refs.hero, heroHBS, heroContentObj);
+// console.log(refs.herBIMAndVDC);
+// console.log(contentCreationObj);
+// console.log(contentCreationObj);
 
-console.log('hello creation');
+useTemplate(refs.herBIMAndVDC, contentCreationHBS, contentCreationObj);
+useTemplate(refs.featuresForProjects, advantagesHBS, advantagesObj);
