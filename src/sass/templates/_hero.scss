@@ -65,7 +65,19 @@
   }
 }
 
+// .hero__btn {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-left: auto;
+//   gap: 8px;
+//   background: var(--pure-white-color);
+//   border: none;
+//   @include font-button;
+//   color: var(--dark-grey-color);
+// }
 .hero__btn {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +89,25 @@
   color: var(--dark-grey-color);
 }
 
+.hero__btn::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: calc(50% - 10px);
+
+  display: block;
+  width: 70%;
+  height: 2px;
+  background-color: #000000;
+
+  transform: scaleX(0);
+  transition: transform 300ms linear;
+}
+
+.hero__btn:hover::after {
+  transform: scaleX(1);
+}
 
 
 
