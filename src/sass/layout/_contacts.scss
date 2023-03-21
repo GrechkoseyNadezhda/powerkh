@@ -84,6 +84,32 @@
 }
 // ===================CONTACTS SECTION===========================
 
-.contacts-section-paragraph {
-  color: tomato;
+.contacts-section {
+  background-color: #ffffff;
+  padding: 40px 0px;
+
+  @include font-body-reg;
+
+  @include mq(tab) {
+    padding: 60px 0px;
+  }
+  @include mq(desk) {
+    padding: 80px 0px;
+  }
+}
+
+.contacts-section__wrapper {
+}
+
+.contacts-section__list {
+}
+.contacts-section__list-item {
+}
+.contacts-phone-wrap {
+}
+.contacts-section__link {
+}
+.social-links-block {
+}
+.contacts-section__plain-text-block {
 }
