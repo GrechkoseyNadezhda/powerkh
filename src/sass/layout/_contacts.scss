@@ -99,6 +99,10 @@
 }
 
 .contacts-section__wrapper {
+  @include mq(desk) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .contacts-section__list {
@@ -106,9 +110,30 @@
   flex-direction: column;
   gap: 24px;
   margin-bottom: 40px;
+
+  @include mq(tab) {
+    margin-bottom: 52px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include mq(desk) {
+    flex-basis: calc(50% - 15px);
+  }
 }
 .contacts-section__list-item {
+  display: flex;
+  gap: 24px;
+
+  @include mq(tab) {
+    flex-basis: 263px;
+  }
 }
+
+.contacts-section__icon {
+  flex-shrink: 0;
+}
+
 .contacts-section__list-item--phones {
   display: flex;
   flex-direction: column;
@@ -119,6 +144,13 @@
 .contacts-section__open-hrs {
   max-width: 141px;
 }
+
+.contacts-section__socials-wrap {
+  @include mq(desk) {
+    flex-basis: calc(50% - 15px);
+  }
+}
+
 .contacts-page__social-links-block {
   margin-bottom: 24px;
 }
