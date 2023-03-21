@@ -17,8 +17,8 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const hero3 = document.querySelector('.case-description__text-block');
-const sliderSwapper = document.querySelector('.swiper-wrapper');
+// const hero3 = document.querySelector('.case-description__text-block');
+// const sliderSwapper = document.querySelector('.swiper-wrapper');
 
-useTemplate(hero3, hero3HBS, textHeroSuspended);
-useTemplate(sliderSwapper, sliderHBS, sliderPictures);
+// useTemplate(hero3, hero3HBS, textHeroSuspended);
+// useTemplate(sliderSwapper, sliderHBS, sliderPictures);
