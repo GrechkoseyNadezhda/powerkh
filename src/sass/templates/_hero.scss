@@ -70,6 +70,7 @@
 }
 
 .hero__btn {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +90,7 @@
   bottom: calc(50% - 10px);
 
   display: block;
-  width: 100%;
+  width: 70%;
   height: 2px;
   background-color: #000000;
 
