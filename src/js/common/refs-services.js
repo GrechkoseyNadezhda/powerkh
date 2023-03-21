@@ -19,4 +19,5 @@ export const refs = {
 export const refsCase = {
   heroTextBlock: document.querySelector('.case-description__text-block'),
   heroSlider: document.querySelector('.swiper-wrapper'),
+  impactOnBusiness: document.querySelector('.impact-on-business'),
 };
