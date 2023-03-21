@@ -1,4 +1,8 @@
 .outsourceProjects {
+  background-color: var(--pure-white-color);
+}
+
+.outsourceProjects {
   padding-bottom: 40px;
   @include mq(tab) {
     padding-bottom: 60px;
@@ -67,7 +71,7 @@
   }
   @include mq(desk) {
     margin-left: 0;
-    max-width: 495px;
+    max-width: 520px;
   }
 }
 
