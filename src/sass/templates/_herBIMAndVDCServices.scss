@@ -6,11 +6,14 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 40px;
+  @include mq(tab) {
+    margin-bottom: 60px;
+  }
   @include mq(desk) {
     flex-direction: row;
     flex-wrap: wrap;
-
-    margin-bottom: 20px;
+    margin-bottom: 80px;
   }
 }
 
@@ -35,8 +38,18 @@
     width: 554px;
   }
 }
-.BIM__benefits-subtitle {
+
+
+.BIM__benefits-mainpage {
   margin-top: 40px;
+  @include mq(tab) {
+    margin-top: 60px;
+    margin-bottom: 52px;
+  }
+  @include mq(desk) {
+    margin-top: 52px;
+    margin-bottom: 52px;
+  }
 }
 
 .BIMServices__list {
@@ -47,7 +60,6 @@
     margin-top: 32px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
   }

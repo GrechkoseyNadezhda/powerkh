@@ -93,7 +93,7 @@ export const howCreates = {
 export const whatWeOffer = {
   title: 'What We Offer:',
   text: 'Powerkh offers a wide variety of 3D architectural rendering services for companies in the US, UK, and Europe.',
-  topic: 'You can order: ---',
+  topic: 'You can order:',
   list: [
     'Interior Rendering. Our interior architectural rendering services include high-quality 3D models for offices and separate rooms.',
     'Exterior Rendering. We can transform architectural plans and reference images into photorealistic digital models of buildings with wonderful lighting.',
@@ -106,4 +106,10 @@ export const whatWeOffer = {
     'Product Rendering. Our experts can help you visualize product mockups, promo materials, and prototypes.',
     'Night & Day View Rendering. Let prospective buyers see your real estate with near-perfect lighting and camera angles.',
   ],
+};
+
+export const archiRenderingContact = {
+  title: 'Outsource 3D & Architectural Rendering Projects to Powerkh',
+  description:
+    'Do you want to engage your customers on a whole new level? Powerkh can add significant value to your projects with its spectacular, accurate 2D & 3D renderings. Contact us today to get your project going!',
 };
