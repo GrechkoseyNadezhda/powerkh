@@ -1,7 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 // Utils
-@import './main.scss';
 @import './utils/variables';
 @import './utils/fonts';
 @import './utils/mixins';
@@ -30,6 +29,8 @@
 @import './templates/heroDesign';
 @import './templates/processTemplate';
 @import './templates/contactForm';
+
+@import './templates/solution';
 
 //Components
 @import './components/header';
