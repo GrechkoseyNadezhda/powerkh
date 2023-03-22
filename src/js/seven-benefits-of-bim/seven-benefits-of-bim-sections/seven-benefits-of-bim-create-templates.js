@@ -19,21 +19,30 @@ import {
 
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
-import { makeBoldFirst } from '../../common/make-bold-first';
 
 
 $('.section-ourCases__slider.b7b').slick({
   arrows: true,
   cssEase: 'linear',
   infinite: true,
-  // slidesToShow: 3,
-  // slidesToScroll: 3,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 1500,
   draggable: true,
   swipe: true,
   touchMove: true,
-  dots: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    }
+  ],
+  mobileFirst: true,
+  // dots: true,
 });
 
 
@@ -42,5 +51,3 @@ useTemplate(refs.share, shareHBS, shareBim);
 useTemplate(refs.contents, contentsHBS, contentsBim);
 useTemplate(refs.contentsInform, contentsInformationHBS, contentsInformBim);
 useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
-makeBoldFirst('.whereToFind__text__list');
-
