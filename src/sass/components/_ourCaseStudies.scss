@@ -1,6 +1,16 @@
+.ourCaseStudies__section {
+  background-color: var(--pure-white-color);
+  padding-bottom: 59px;
+}
+
 .caseStudies__subtitle {
   margin-bottom: 52px;
   @include font-title;
+}
+
+.caseStudies__subBody {
+  @include font-body-reg;
+  margin-bottom: 52px;
 }
 
 .caseStudies__list {
@@ -39,6 +49,10 @@
     background-image: url(../images/vectors/vector-right.svg);
   }
 
+  &:hover img {
+    filter: grayscale(0);
+  }
+
   @include mq(tab) {
     width: 342px;
 
@@ -70,8 +84,20 @@
 }
 
 .caseStudies__img {
-  object-fit: contain;
+  filter: grayscale(1);
   width: 100%;
+  @include mq(tab) {
+    height: 204px;
+  }
+}
+
+.caseStudies__imgCard3 {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  @include mq(tab) {
+    height: 201px;
+  }
 }
 
 .caseStudies__body {
@@ -80,7 +106,6 @@
 
 .caseStudies__all-arrow {
   @include font-button;
-  margin-bottom: 59px;
   display: flex;
   justify-content: end;
   align-items: center;
