@@ -11,10 +11,11 @@ export const refs = {
   contentsInform: document.querySelector('.contents-information'),
   whatProblems: document.querySelector('.what-problems__list'),
   faq: document.querySelector('.faq'),
-  process:  document.querySelector('.processTemplate'),
+  process: document.querySelector('.processTemplate'),
   heroPartFour: document.querySelector('.hero-part-four'),
   heroBtn: document.querySelector('.hero__btn'),
   heroBlock: document.querySelector('.hero__block'),
+  author: document.querySelector('.author'),
 };
 export const refsCase = {
   heroTextBlock: document.querySelector('.case-description__text-block'),

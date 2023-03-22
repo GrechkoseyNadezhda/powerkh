@@ -12,11 +12,7 @@
 }
 
 .hero-part-four__title {
-  font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.1;
-  color: #ffffff;
+  @include font-title;
+  color: var(--pure-white-color);
   text-align: center;
 }

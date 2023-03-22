@@ -1,8 +1,11 @@
-const BASEURL = 'https://poverkh-default-rtdb.firebaseio.com';
-export async function fetchDatabaseAuthor(endpoint) {
-  const response = await fetch(BASEURL + endpoint);
-  const result = await response.json();
+import { useTemplate } from '../common/use-template';
 
-  console.log(result);
-  return result;
+const BASEURL = 'https://poverkh-default-rtdb.firebaseio.com';
+
+export async function fetchDatabaseAuthor(endpoint, refs, template) {
+  const result = await fetch(BASEURL + endpoint).then(response =>
+    response.json()
+  );
+  const data = Object.values(result)[0];
+  useTemplate(refs, template, data);
 }
