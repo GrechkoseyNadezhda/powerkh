@@ -75,23 +75,33 @@
   }
 }
 
+.outsourceProjects__list-description {
+  @include font-body-reg;
+  margin: 40px auto;
+  @include mq(tab) {
+    margin: 52px auto;
+  }
+}
+
 .outsourceProjects__list {
   @include font-body-reg;
 }
 
 .outsourceProjects__item {
-  margin-top: 32px;
   position: relative;
-  @include mq(tab) {
-    margin-top: 40px;
+  // @include mq(tab) {
+  //   margin-top: 40px;
+  // }
+  &:not(:first-child) {
+    margin-top: 32px;
   }
   @include mq(desk) {
     display: flex;
     align-items: center;
   }
-  &:first-child {
-    @include mq(tab) {
-      margin-top: 52px;
-    }
-  }
+  // &:first-child {
+  //   @include mq(tab) {
+  //     margin-top: 52px;
+  //   }
+  // }
 }

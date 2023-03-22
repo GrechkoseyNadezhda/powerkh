@@ -23,6 +23,7 @@ export const contentCreationObj = {
     {
       text: 'Assessing the functionality and space management for the MEP system',
     },
+
     { text: 'Importing reusable libraries between multiple BIM projects' },
   ],
 };
@@ -72,6 +73,7 @@ export const servicesCreationObj = {
     'Mechanical families (pipes, heating, ventilation, air conditioning units).',
     'Architectural families (casework, doors, windows, partitions, railing, furniture).',
     'MEP families (pumps, valves, fire dampers, electrical devices, cabinets).',
+    'Sophisticated families based on client’s specifications.',
     'Import and management of BIM families.',
   ],
 };
