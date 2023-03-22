@@ -12,12 +12,9 @@
   padding: 8px 0 40px;
 }
 
-.disadvantages__text {
-  @include font-body-reg;
-  padding-bottom: 20px;
-}
-
+.disadvantages__text,
 .disadvantages__softItems {
+  @include font-body-reg;
   padding-bottom: 20px;
 }
 
