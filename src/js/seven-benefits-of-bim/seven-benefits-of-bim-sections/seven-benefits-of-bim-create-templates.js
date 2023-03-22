@@ -54,11 +54,7 @@ useTemplate(refs.heroPartFour, heroPartFourHBS, heroPartFourData);
 useTemplate(refs.share, shareHBS, shareBim);
 useTemplate(refs.contents, contentsHBS, contentsBim);
 useTemplate(refs.contentsInform, contentsInformationHBS, contentsInformBim);
-<<<<<<< HEAD
-useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
-=======
 useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
 
 fetchDatabaseAuthor('/authors/KostiaRapina.json', refs.author, authorHBS);
 makeBoldFirst('.whereToFind__text__list');
->>>>>>> dev
