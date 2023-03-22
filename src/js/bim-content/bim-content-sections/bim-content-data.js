@@ -105,3 +105,9 @@ export const advantagesObj = {
     },
   ],
 };
+
+export const contactUsContentObj = {
+  title: 'Powerkh Expertise Can Save Your Time and Money',
+  description:
+    'Are you looking for a company that can create accurate and easily adjustable Revit families? Powerkh can ensure superior quality and quick turnaround time at a reasonable price. We will be glad to assist you!',
+};
