@@ -1,4 +1,10 @@
 .what-problems {
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    padding-bottom: 32px;
+  }
+
   &__container {
     padding-left: 20px;
     padding-right: 20px;
