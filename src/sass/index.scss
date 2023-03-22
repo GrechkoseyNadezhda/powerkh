@@ -57,8 +57,14 @@
 
 @import './components/whatProblems';
 
+@import './components/sevenBenefitsOfBim/disadvantages';
+@import './components/sevenBenefitsOfBim/whereToFind';
+@import './components/sevenBenefitsOfBim/conclusion';
+
 @import './components/footer';
 
 // Layout
 
 @import './layout/contacts';
+@import './layout/blog';
+@import './layout/blog7Benefits';

@@ -1,0 +1,35 @@
+ {{!-- <div class="blog-section__slider">
+        Шаблон сюди
+       </div>
+ {{!-- потрібно підставити  масив--}}
+{{!-- приклад об'єкта: 
+
+Також не забудь завантажити кастомний скрипт для БлогСлайдера 
+import '../../components/blogSlider/slick'; -> без нього слайдер працюватиме неправильно!
+
+import top30link from './top30architect-companies.html'
+import photo1x from './img/slider/photo1x.jpg'
+import photo2x from './img/slider/photox.jpg'
+import icon from './img/vectors/sprite.svg#icon-eye'
+
+[{
+    badge: 'Most Popular Blogs',
+    title: 'Top 30 Architectural Rendering Companies',
+    author: 'Tatiana Rapina',
+    description: 'Introduced in the 2000s, architectural visualization empowers designers...',
+    link: top30link,
+    img1x: photo1x,
+    img2x: photo2x,
+    icon: icon,
+}]
+--}}
+--}}
+
+
+{{#each this}}
+     <img 
+        class="section-ourCases__slider-img" 
+        srcset='{{this.img1x}} 1x, {{this.img2x}} 2x' 
+        src={{this.img1x}}
+        alt="Slide">    
+{{/each}}

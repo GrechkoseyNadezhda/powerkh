@@ -16,6 +16,7 @@ import {
   archiRenderingFaq,
   archiRenderingContact,
 } from './archi-rendering-data';
+import { makeBoldFirst } from '../../common/make-bold-first';
 
 useTemplate(refs.hero, heroTemplate, archiRenderingHero);
 useTemplate(refs.herBIMAndVDC, herBIMAndVDC, BIMservices);
@@ -24,3 +25,4 @@ useTemplate(refs.services, servicesTemplate, whatWeOffer);
 useTemplate(refs.contactUs, contactUsTemplate, archiRenderingContact);
 useTemplate(refs.faq, faqTemplate, archiRenderingFaq);
 toggleFaq();
+makeBoldFirst('.bim-automation-services__item');
