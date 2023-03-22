@@ -7,8 +7,7 @@ import shareHBS from '../../../templates/share.hbs';
 import contentsHBS from '../../../templates/contents.hbs';
 import contentsInformationHBS from '../../../templates/contentsInformation.hbs';
 import whatProblemsHBS from '../../../templates/whatProblems.hbs';
-
-
+import authorHBS from '../../../templates/author.hbs';
 
 import {
   heroPartFourData,
@@ -20,7 +19,8 @@ import {
 
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
-
+import { fetchDatabaseAuthor } from '../../common/fetchDatabaseAuthor';
+import { makeBoldFirst } from '../../common/make-bold-first';
 
 $('.section-ourCases__slider.b7b').slick({
   arrows: true,
@@ -50,9 +50,15 @@ $('.section-ourCases__slider.b7b').slick({
   // dots: true,
 });
 
-
 useTemplate(refs.heroPartFour, heroPartFourHBS, heroPartFourData);
 useTemplate(refs.share, shareHBS, shareBim);
 useTemplate(refs.contents, contentsHBS, contentsBim);
 useTemplate(refs.contentsInform, contentsInformationHBS, contentsInformBim);
+<<<<<<< HEAD
 useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
+=======
+useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
+
+fetchDatabaseAuthor('/authors/KostiaRapina.json', refs.author, authorHBS);
+makeBoldFirst('.whereToFind__text__list');
+>>>>>>> dev
