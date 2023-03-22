@@ -2,14 +2,35 @@
   padding-bottom: 20px;
 }
 
+.container__blog {
+  @include mq(desk) {
+    margin: 0;
+    padding: 0;
+    margin-left: 249px;
+    width: 750px;
+  }
+}
+
 .disadvantages__title {
   @include font-title-14;
   padding-bottom: 12px;
+
+  @include mq(tab) {
+    padding-bottom: 20px;
+  }
 }
 
 .disadvantages__img {
   min-width: 320px;
   padding: 8px 0 40px;
+
+  @include mq(tab) {
+    min-width: 704px;
+  }
+
+  @include mq(desk) {
+    min-width: 748px;
+  }
 }
 
 .disadvantages__text,
