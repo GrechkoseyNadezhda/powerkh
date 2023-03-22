@@ -102,3 +102,20 @@
 .hero__btn:hover::after {
   transform: scaleX(1);
 }
+
+.hero__btn::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: calc(50% - 10px);
+
+  display: block;
+  width: 70%;
+  height: 2px;
+  background-color: #000000;
+
+  transform: scaleX(0);
+  transition: transform 300ms linear;
+}
+
