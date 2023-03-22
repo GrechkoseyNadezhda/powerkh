@@ -1,5 +1,4 @@
 .hero {
-  padding-left: 18px;
   height: 100vh;
   @include mq(tab) {
     padding-left: 34px;
@@ -12,6 +11,7 @@
   padding: 24px 16px;
   margin: 0 auto;
   margin-top: 238px;
+  margin-left: 18px;
   background: var(--pure-white-color);
   @include mq(tab) {
     padding: 52px 40px 24px;
