@@ -12,7 +12,7 @@ export const refs = {
   contentsInform: document.querySelector('.contents-information'),
   whatProblems: document.querySelector('.what-problems__list'),
   faq: document.querySelector('.faq'),
-  process:  document.querySelector('.processTemplate'),
+  process: document.querySelector('.processTemplate'),
   heroPartFour: document.querySelector('.hero-part-four'),
   heroBtn: document.querySelector('.hero__btn'),
   heroBlock: document.querySelector('.hero__block'),
@@ -23,4 +23,4 @@ export const refsCase = {
   impactOnBusiness: document.querySelector('.impact-on-business'),
   blogSlider: document.querySelector('.blog-section__slider'),
   bmpSlider: document.querySelector('.section-projects__slider-item.bmp'),
-  };
+};
