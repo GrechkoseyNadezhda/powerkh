@@ -1,26 +1,27 @@
-.hero {
-  padding-left: 18px;
+.hero .container {
+  position: relative;
   height: 100vh;
-  @include mq(tab) {
-    padding-left: 34px;
-  }
 }
 
 .hero__block {
-  position: relative;
-  width: 288px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 72px);
   padding: 24px 16px;
-  margin: 0 auto;
-  margin-top: 238px;
+  transform:translate(-50%, -50%);
+  
   background: var(--pure-white-color);
   @include mq(tab) {
     padding: 52px 40px 24px;
     width: 632px;
-    margin-top: 268px;
-  }
+    margin: 0 auto;
+    }
   @include mq(desk) {
+    left: 152px;
     padding: 52px 40px 24px;
-    margin-left: 0;
+    margin-left: 16px;
+    transform:translate(0, -50%);
   }
 }
 
