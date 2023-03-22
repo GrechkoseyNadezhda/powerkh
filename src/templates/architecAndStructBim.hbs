@@ -1,8 +1,11 @@
 {{! потрібно підставити об'єкт }}
-{{! приклад об'єкта: {title: 'текст заголовка', text: 'опис', topic: 'заголовок переліку',
+{{! приклад об'єкта: {title: 'текст заголовка', text: 'опис', topic: 'заголовок переліку', extraInfo: 'якщо є на сторінці цей додатковий текст',
 list: ['массив рядків']
 } }}
+{{! властивість "extraInfo" потрібно додавати у об'єкт data, лише якщо є це додаткове поле }}
+
 {{! доступ до класу секції - <section class="bim-automation-services"> }}
+
 {{! якщо комусь потрібно зробити жирним текстом перше речення в абзаці зі
 стрілочками, то імпортуйте скрипт { make-bold-first.js } за таким шляхом
 '../../common/make-bold-first'. Після використання цього шаблону(architecAndStructBim.hbs), викликайте
@@ -11,6 +14,9 @@ list: ['массив рядків']
 <div class='bim-automation-services__block'>
   <h2 class='bim-automation-services__title'>{{this.title}}</h2>
   <p class='bim-automation-services__text'>{{this.text}}</p>
+  {{#if this.extraInfo}}<p
+      class='bim-automation-services__extra'
+    >{{this.extraInfo}}</p>{{/if}}
   <p class='bim-automation-services__topic'>{{this.topic}}</p>
   <ul class='bim-automation-services__list'>
     {{#each this.list}}
