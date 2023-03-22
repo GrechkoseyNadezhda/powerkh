@@ -14,10 +14,6 @@
 .disadvantages__title {
   @include font-title-14;
   padding-bottom: 12px;
-
-  @include mq(tab) {
-    padding-bottom: 20px;
-  }
 }
 
 .disadvantages__img {
