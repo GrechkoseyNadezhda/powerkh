@@ -2,7 +2,7 @@ export const heroCoordination = {
   subtitle: 'BIM Coordination',
   text: 'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
 };
-export const briefDescriptCoordination = {
+export const briefDescriptPrefabrication = {
   title: 'BIM Coordination & Clash Detection',
   listText: [
     'Back in the day, design specialists used tracing paper to check the compatibility of architectural, structural, and MEP systems. As a result, many clashes become known on-site, which leads to re-works, slows projects, and inflates the budget.',
