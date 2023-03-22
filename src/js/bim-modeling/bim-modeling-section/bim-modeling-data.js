@@ -1,3 +1,9 @@
+// import img11x from '../../../images/slider/bim-modeling/bimModelingImg-01@1x.png';
+// import img12x from '../../../images/slider/bim-modeling/bimModelingImg-01@2x.png';
+// import img21x from '../../../images/slider/bim-modeling/bimModelingImg-02@1x.png';
+// import img22x from '../../../images/slider/bim-modeling/bimModelingImg-02@2x.png';
+// import img31x from '../../../images/slider/bim-modeling/bimModelingImg-03@1x.png';
+// import img32x from '../../../images/slider/bim-modeling/bimModelingImg-03@2x.png';
 
   export const heroModeling = {
     subtitle: 'BIM Modeling',
@@ -127,6 +133,12 @@
     description:
       'Do you want to enhance your construction project?Our experts can resolve your challenges and build a detailed 3D BIM model.Contact us to learn more about our services!',
   };
+
+  export const projectsSliderImg = [
+    { img1x: img11x, img2x: img12x },
+    { img1x: img21x, img2x: img22x },
+    { img1x: img31x, img2x: img32x },
+  ];
 
   // export const BIMmodelingFaq = [
   //   {

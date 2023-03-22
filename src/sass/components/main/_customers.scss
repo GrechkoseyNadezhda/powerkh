@@ -1,0 +1,14 @@
+.customers__list {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin-top: 52px;
+}
+
+.customers__section {
+  @extend .bimServices__section;
+  padding-bottom: 80px;
+  padding-top: 0;
+}
+
+// .customers__list

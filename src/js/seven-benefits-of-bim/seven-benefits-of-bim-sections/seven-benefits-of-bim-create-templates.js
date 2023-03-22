@@ -1,3 +1,6 @@
+import $ from 'jquery';
+// window.$ = window.jQuery = $;
+import 'slick-carousel';
 import heroPartFourHBS from '../../../templates/hero-part-four.hbs';
 import shareHBS from '../../../templates/share.hbs';
 import contentsHBS from '../../../templates/contents.hbs';
@@ -16,6 +19,21 @@ import {
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { fetchDatabaseAuthor } from '../../common/fetchDatabaseAuthor';
+import { makeBoldFirst } from '../../common/make-bold-first';
+
+$('.section-ourCases__slider.b7b').slick({
+  arrows: true,
+  cssEase: 'linear',
+  infinite: true,
+  // slidesToShow: 3,
+  // slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 1500,
+  draggable: true,
+  swipe: true,
+  touchMove: true,
+  dots: true,
+});
 
 useTemplate(refs.heroPartFour, heroPartFourHBS, heroPartFourData);
 useTemplate(refs.share, shareHBS, shareBim);
@@ -24,3 +42,4 @@ useTemplate(refs.contentsInform, contentsInformationHBS, contentsInformBim);
 useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
 
 fetchDatabaseAuthor('/authors/KostiaRapina.json', refs.author, authorHBS);
+makeBoldFirst('.whereToFind__text__list');

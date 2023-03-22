@@ -1,0 +1,180 @@
+.bimServices_grid__section {
+  @extend .bimServices__section;
+}
+
+.bimServices__body {
+  @include font-body-reg;
+  margin-bottom: 52px;
+}
+
+.bimServices__list {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.bimServices__list-item1 {
+  width: 374px;
+  height: 250px;
+  border-width: 2px 2px 0px 2px;
+  border-style: solid;
+  border-color: var(--ligth-grey-color);
+  transition: all 0.35s ease-out;
+  background-position: 0 250px;
+  background-image: url(../images/hero/bim-modeling@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 380px;
+
+  &:hover {
+    color: var(--pure-white-color);
+    background-position: 100% 146px;
+  }
+
+  &:hover .bimServices__list-item-img2 {
+    background: url(../images/hero/bim-coordination@1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 104px;
+  }
+  &:hover .bimServices__list-item-img3 {
+    background: url(../images/hero/bim-content@1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 104px;
+  }
+  &:hover .bimServices__list-item-img4 {
+    background: url(../images/hero/scan-to-bim@1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 104px;
+  }
+  &:hover .bimServices__list-item-img5 {
+    background: url(../images/hero/bim-automation@1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 104px;
+  }
+
+  &:hover .bimServices__list-item-img6 {
+    background: url(../images/hero/prefabrication@1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 104px;
+  }
+
+  &:hover .bimServices__list-item-img7 {
+    background: url(../images/hero/structural-detailing@1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 100px;
+  }
+
+  &:hover .bimServices__list-item-img8 {
+    background: url(../images/hero/architectural-rendering@1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 100px;
+  }
+
+  &:hover .bimServices__infoDivP {
+    background-color: var(--pure-black-color);
+  }
+
+  &:hover .bimServices__list-item-body::after {
+    content: '';
+    filter: invert(100%);
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 56px;
+    width: 36px;
+    background-size: contain;
+    background-image: url(../images/vectors/vector-right.svg);
+  }
+}
+
+.bimServices__list-item2 {
+  @extend .bimServices__list-item1;
+  border-width: 2px 2px 0px 0px;
+}
+
+.bimServices__infoDivP {
+  margin-bottom: 0;
+  display: block;
+  padding: 20px 17px;
+}
+
+.bimServices__list-item-heading {
+  @include font-button;
+  margin-bottom: 32px;
+}
+
+.bimServices__list-item-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bimServices__list-item-img,
+.bimServices__list-item-img2,
+.bimServices__list-item-img3,
+.bimServices__list-item-img4,
+.bimServices__list-item-img5,
+.bimServices__list-item-img6,
+.bimServices__list-item-img7,
+.bimServices__list-item-img8 {
+  background: var(--pure-white-color);
+}
+
+.bimServices__list-item-last {
+  @include font-button;
+  @extend .bimServices__list-item1;
+  height: fit-content;
+  border-bottom: 2px solid var(--pure-black-color);
+  border-color: var(--pure-black-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 44px 27px 16px;
+  transition: 350ms;
+
+  &:hover .bim_list-item-lasr-arrow {
+    filter: invert(100%);
+  }
+}
+
+.bimServices__list-item-heading-last {
+  @extend .bimServices__list-item-heading;
+  margin-bottom: 0;
+}
+
+.bimServices__list-item7 {
+  @extend .bimServices__list-item1;
+  border-bottom: 2px solid var(--ligth-grey-color);
+}
+.bimServices__list-item8 {
+  @extend .bimServices__list-item1;
+  border-bottom: 2px solid var(--ligth-grey-color);
+  border-left: 0;
+}
+
+.bim_list-item-lasr-arrow {
+  background-image: url(../images/vectors/vector-right.svg);
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 31px;
+  width: 32px;
+  background-size: contain;
+}

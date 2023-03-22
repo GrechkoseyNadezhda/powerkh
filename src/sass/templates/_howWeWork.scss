@@ -49,11 +49,11 @@
   // padding-left: 89px;
 
   padding-top: 35px;
-  height: 289px;
+  min-height: 289px;
   position: relative;
   @include mq(tab) {
     padding-left: 92px;
-    height: 168px;
+    min-height: 168px;
   }
   @include mq(desk) {
     padding-left: 97px;
@@ -97,6 +97,7 @@
     height: 78px;
     @include mq(tab) {
       bottom: 42px;
+      top: 49px;
     }
     @include mq(desk) {
       bottom: 48px;
@@ -119,9 +120,14 @@
   }
 }
 .howWeWork__description {
+  padding-bottom: 109px;
   @include font-body-reg;
   max-width: 750px;
   @include mq(tab) {
     width: 424px;
+    padding-bottom: 35px;
+  }
+  @include mq(desk) {
+    width: 763px;
   }
 }

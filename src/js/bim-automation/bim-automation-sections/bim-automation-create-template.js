@@ -1,6 +1,22 @@
+import howWeWorkHBS from '../../../templates/howWeWork.hbs';
 import servicesHBS from '../../../templates/architecAndStructBim.hbs';
+import heroHBS from '../../../templates/hero.hbs';
+import featuresForProjectsHBS from '../../../templates/outsourceProjects.hbs';
+import contactUsHBS from '../../../templates/contactUs.hbs';
+import briefDescriptHBS from '../../../templates/herBIMAndVDCServices.hbs';
+import faqHBS from '../../../templates/faq.hbs';
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
-import { architecAndStruct } from './bim-automation-data';
+import { heroAutomation, briefDescriptAutomation, howAutomation, architecAndStruct, advantagesAutomation, contactUsAutomation } from './bim-automation-data';
+import { createFAQsection } from '../../common/createFaqSection';
 
+const ENDPOINT_COORDINATION = '/faq/bimAutomation.json';
+
+useTemplate(refs.hero, heroHBS, heroAutomation);
+useTemplate(refs.herBIMAndVDC, briefDescriptHBS, briefDescriptAutomation);
+useTemplate(refs.howWeWork, howWeWorkHBS, howAutomation);
 useTemplate(refs.services, servicesHBS, architecAndStruct);
+useTemplate(refs.featuresForProjects, featuresForProjectsHBS, advantagesAutomation);
+useTemplate(refs.contactUs, contactUsHBS, contactUsAutomation);
+
+createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);

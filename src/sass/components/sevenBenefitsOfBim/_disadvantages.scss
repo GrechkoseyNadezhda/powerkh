@@ -1,0 +1,45 @@
+.disadvantages {
+  padding-bottom: 20px;
+}
+
+.container__blog {
+  @include mq(desk) {
+    margin: 0;
+    padding: 0;
+    margin-left: 249px;
+    width: 750px;
+  }
+}
+
+.disadvantages__title {
+  @include font-title-14;
+  padding-bottom: 12px;
+}
+
+.disadvantages__img {
+  min-width: 320px;
+  padding: 8px 0 40px;
+
+  @include mq(tab) {
+    min-width: 704px;
+  }
+
+  @include mq(desk) {
+    min-width: 748px;
+  }
+}
+
+.disadvantages__text,
+.disadvantages__softItems {
+  @include font-body-reg;
+  padding-bottom: 20px;
+}
+
+.disadvantages__softItems::before {
+  display: inline-block;
+  margin-right: 10px;
+  content: '';
+  width: 10px;
+  height: 9px;
+  background-image: url('../images/vectors/arrow-right-black.svg');
+}

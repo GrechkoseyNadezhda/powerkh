@@ -1,24 +1,21 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-import hero3HBS from '../../../templates/heroDesignText.hbs';
+// import Swiper, { Navigation, Pagination } from 'swiper';
+import impactHBS from '../../../templates/impactOnBusiness.hbs';
+import herotextHBS from '../../../templates/heroDesignText.hbs';
+import processHBS from '../../../templates/processTemplate.hbs';
+import solutionHBS from '../../../templates/solution.hbs';
 import sliderHBS from '../../../templates/heroDesignSlider.hbs';
 import { useTemplate } from '../../common/use-template';
 import {
   textHeroSuspended,
-  sliderPictures,
+  sliderPicturesSuspended,
+  processSuspended,
+  impactSuspended,
+  solutionSuspended,
 } from '../../suspended-case/suspended-case-section/suspended-case-data';
-const swiper = new Swiper('.swiper', {
-  modules: [Navigation, Pagination],
+import { refsCase } from '../../common/refs-services';
 
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-});
-
-const hero3 = document.querySelector('.case-description__text-block');
-const sliderSwapper = document.querySelector('.swiper-wrapper');
-
-useTemplate(hero3, hero3HBS, textHeroSuspended);
-useTemplate(sliderSwapper, sliderHBS, sliderPictures);
+useTemplate(refsCase.heroTextBlock, herotextHBS, textHeroSuspended);
+useTemplate(refsCase.heroSlider, sliderHBS, sliderPicturesSuspended);
+useTemplate(refsCase.process, processHBS, processSuspended);
+useTemplate(refsCase.solution, solutionHBS, solutionSuspended);
+useTemplate(refsCase.impactOnBusiness, impactHBS, impactSuspended);
