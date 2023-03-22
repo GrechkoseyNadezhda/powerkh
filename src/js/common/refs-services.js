@@ -20,6 +20,8 @@ export const refs = {
 export const refsCase = {
   heroTextBlock: document.querySelector('.case-description__text-block'),
   heroSlider: document.querySelector('.swiper-wrapper'),
+  process: document.querySelector('.processTemplate'),
+  solution: document.querySelector('.solution'),
   impactOnBusiness: document.querySelector('.impact-on-business'),
   blogSlider: document.querySelector('.blog-section__slider'),
   bmpSlider: document.querySelector('.section-projects__slider-item.bmp'),
