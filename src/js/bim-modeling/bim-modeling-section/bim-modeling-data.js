@@ -1,9 +1,9 @@
-import img11x from '../../../images/slider/bim-modeling/bimModelingImg-01@1x.png';
-import img12x from '../../../images/slider/bim-modeling/bimModelingImg-01@2x.png';
-import img21x from '../../../images/slider/bim-modeling/bimModelingImg-02@1x.png';
-import img22x from '../../../images/slider/bim-modeling/bimModelingImg-02@2x.png';
-import img31x from '../../../images/slider/bim-modeling/bimModelingImg-03@1x.png';
-import img32x from '../../../images/slider/bim-modeling/bimModelingImg-03@2x.png';
+// import img11x from '../../../images/slider/bim-modeling/bimModelingImg-01@1x.png';
+// import img12x from '../../../images/slider/bim-modeling/bimModelingImg-01@2x.png';
+// import img21x from '../../../images/slider/bim-modeling/bimModelingImg-02@1x.png';
+// import img22x from '../../../images/slider/bim-modeling/bimModelingImg-02@2x.png';
+// import img31x from '../../../images/slider/bim-modeling/bimModelingImg-03@1x.png';
+// import img32x from '../../../images/slider/bim-modeling/bimModelingImg-03@2x.png';
 
   export const heroModeling = {
     subtitle: 'BIM Modeling',
