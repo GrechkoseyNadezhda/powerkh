@@ -1,4 +1,5 @@
 export const refs = {
+  heroSection: document.querySelector('.hero'),
   hero: document.querySelector('.hero__content'),
   herBIMAndVDC: document.querySelector('.BIM-modeling'),
   howWeWork: document.querySelector('.howWeWork'),
