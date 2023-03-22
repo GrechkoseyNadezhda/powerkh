@@ -28,6 +28,10 @@
     margin-bottom: 20px;
   }
 
+  &__last-paragraph {
+    margin-bottom: 0;
+  }
+
   &__subtitle {
     margin-bottom: 20px;
     @include font-title-20;
