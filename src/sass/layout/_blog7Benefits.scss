@@ -1,1 +1,170 @@
-.section-ourCases__title {}
+.section-ourCases {
+    
+    box-sizing: border-box;
+    // padding: 40px 0 90px;
+    // padding: 40px 152px;
+
+    background-color: var(--pure-white-color);
+
+}
+.section-ourCases__block {
+    // position: relative;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media screen and (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @media screen and (min-width: 1440px) {
+        padding-left: 249px;
+        padding-right: 441px;
+    }
+}
+
+.section-ourCases__sliderBlock {
+    margin-top: 28px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 180px;
+    background-color: #F5F5F5;
+    @media screen and (min-width: 768px) {
+        width: 704px;
+        height: 180px;
+
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 748px;
+        height: 180px;
+
+    }
+}
+
+.section-ourCases__title{
+    @include font-title;
+
+}
+
+.section-ourCases__slider {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content:space-around;
+    min-width: 0;
+    position: relative;
+    height: 180px;
+
+    @media screen and (min-width: 768px) {
+        width: 616px;
+        height: 180px;
+        margin-left: 4px;
+
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 648px;
+        height: 180px;
+        margin-left: 12px;
+    }
+    
+}
+
+.section-ourCases__slider-item {
+    display: block;
+    position: relative;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 200px;
+    height: 132px;
+
+    @media screen and (min-width: 768px) {
+    margin: 0;
+    width: 200px;
+    height: 132px;
+    }
+
+}
+
+.section-ourCases__slider-img {
+    box-sizing: border-box;
+    width: 200px;
+    height: 132px;
+    align-items: center;
+
+}
+.section-ourCases__slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    background-image: linear-gradient(180deg, rgba(13, 13, 13, 0.95) 0%, rgba(13, 13, 13, 0.04) 100%);
+
+    border: 2px solid #CDCDCD;
+}
+
+.section-ourCases__slider-insideTitle {
+    @include font-button;
+    display: block;
+    padding-top: 22px;
+    padding-left: 17px;
+    color: #fff;
+}
+
+.section-ourCases__slider-insideText {
+    @include font-body-reg;
+    padding-top: 5px;
+    padding-left: 17px;
+    width: 125px;
+    color: #fff;
+   
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-start;
+    // gap: 24px;
+    // margin: 0 auto;
+}
+
+.section-ourCases__sliderArrow .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    z-index: 10;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    fill: #919191;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+.section-ourCases__sliderArrow .slick-arrow.slick-prev {
+    left: 0;
+    background: url('../images/vectors/slider-arrow.svg') 0 0 / 100% no-repeat;
+    transform: rotate(-180deg);
+    fill: #919191;
+    margin-left: 6px;
+}
+
+.section-ourCases__sliderArrow .slick-arrow.slick-next {
+    right: 0;
+    margin-right: 6px;
+    background: url('../images/vectors/slider-arrow.svg') 0 0 / 100% no-repeat;
+}

@@ -1,6 +1,7 @@
 import $ from 'jquery';
 // window.$ = window.jQuery = $;
 import 'slick-carousel';
+import '../../components/ourCasesSlider/slick';
 import heroPartFourHBS from '../../../templates/hero-part-four.hbs';
 import shareHBS from '../../../templates/share.hbs';
 import contentsHBS from '../../../templates/contents.hbs';
@@ -25,21 +26,39 @@ $('.section-ourCases__slider.b7b').slick({
   arrows: true,
   cssEase: 'linear',
   infinite: true,
-  // slidesToShow: 3,
-  // slidesToScroll: 3,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 1500,
   draggable: true,
   swipe: true,
   touchMove: true,
-  dots: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    }
+  ],
+  mobileFirst: true,
+  centerPadding: '100px',
+  appendArrows: $('.section-ourCases__sliderArrow'),
+  // variableWidth: true,
+  // centerMode: true,
+  // dots: true,
 });
 
 useTemplate(refs.heroPartFour, heroPartFourHBS, heroPartFourData);
 useTemplate(refs.share, shareHBS, shareBim);
 useTemplate(refs.contents, contentsHBS, contentsBim);
 useTemplate(refs.contentsInform, contentsInformationHBS, contentsInformBim);
+<<<<<<< HEAD
+useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
+=======
 useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
 
 fetchDatabaseAuthor('/authors/KostiaRapina.json', refs.author, authorHBS);
 makeBoldFirst('.whereToFind__text__list');
+>>>>>>> dev
