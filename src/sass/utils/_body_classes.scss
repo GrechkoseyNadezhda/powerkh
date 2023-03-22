@@ -21,7 +21,20 @@ body {
     background-image: url('../images/hero/bim-coordination@2x.jpg');
   }
 }
+.bim-content-page {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('../images/hero/bim-content@1x.jpg');
 
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/hero/bim-content@2x.jpg');
+  }
+}
 .prefabrication-page {
   background-image: linear-gradient(
       180deg,
@@ -132,4 +145,7 @@ body {
     screen and (min-resolution: 2dppx) {
     background-image: url('../images/hero/contacts@2x.jpg');
   }
+}
+.suspended-case-page {
+  background-color: var(--pure-white-color);
 }
