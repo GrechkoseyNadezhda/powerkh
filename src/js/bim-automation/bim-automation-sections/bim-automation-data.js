@@ -21,8 +21,7 @@ export const howAutomation = {
         'Powerkh will analyze the design process and workflow according to your specifications.',
     },
     {
-      subtitle:
-        'Our team will identify shortcomings.',
+      subtitle: 'Our team will identify shortcomings.',
       description:
         'We will pinpoint repetitive tasks and rudimentary processes.',
     },

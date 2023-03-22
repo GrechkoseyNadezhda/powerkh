@@ -1,7 +1,8 @@
-const contactUsButtons = document.querySelectorAll('.contact-us-btn');
+const contactUsButtons = document.querySelectorAll('.js-btn-modal');
 const backdrop = document.querySelector('.backdrop');
 const closeBtn = document.querySelector('.contact-modal__close-btn');
 const contactUsSubmit = document.querySelector('.contact-modal__btn');
+const form = document.querySelector('.contact-modal__form');
 const body = document.body;
 
 if (contactUsButtons.length > 0) {
@@ -32,6 +33,7 @@ function closeModal(e) {
   backdrop.classList.remove('active-modal');
   body.removeEventListener('keyup', onEsc);
   backdrop.removeEventListener('click', onBackdropClick);
+  form.reset();
   console.log('close');
 }
 
