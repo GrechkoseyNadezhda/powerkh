@@ -23,6 +23,7 @@ export const contentCreationObj = {
     {
       text: 'Assessing the functionality and space management for the MEP system',
     },
+
     { text: 'Importing reusable libraries between multiple BIM projects' },
   ],
 };
@@ -72,6 +73,7 @@ export const servicesCreationObj = {
     'Mechanical families (pipes, heating, ventilation, air conditioning units).',
     'Architectural families (casework, doors, windows, partitions, railing, furniture).',
     'MEP families (pumps, valves, fire dampers, electrical devices, cabinets).',
+    'Sophisticated families based on client’s specifications.',
     'Import and management of BIM families.',
   ],
 };
@@ -104,4 +106,10 @@ export const advantagesObj = {
         'You can use our accurate and easily adjustable models in other BIM projects, allowing you to save resources and improve productivity.',
     },
   ],
+};
+
+export const contactUsContentObj = {
+  title: 'Powerkh Expertise Can Save Your Time and Money',
+  description:
+    'Are you looking for a company that can create accurate and easily adjustable Revit families? Powerkh can ensure superior quality and quick turnaround time at a reasonable price. We will be glad to assist you!',
 };
