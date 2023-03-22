@@ -7,6 +7,11 @@ body {
   background-attachment: fixed;
   height: 100vh;
 }
+
+body._lock {
+  overflow: hidden;
+}
+
 .bim-coordination-page {
   background-image: linear-gradient(
       180deg,
