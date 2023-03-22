@@ -220,8 +220,8 @@ body.blog-page {
   display: flex;
 
   margin-top: 24px;
-
-  gap: 14px;
+  
+  // gap: 14px;
   align-items: center;
   justify-content: flex-start;
 
@@ -229,8 +229,16 @@ body.blog-page {
     display: none;
   }
 
-
+  &::before {
+    display: block;
+    content: '';
+    width: 22px;
+    height: 16px;
+    background-image: url('../images/vectors/eye.svg');
+    margin-right: 14px;
+  }
 }
+
 
 
 

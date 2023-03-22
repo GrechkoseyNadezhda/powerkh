@@ -22,4 +22,4 @@ export const refsCase = {
   impactOnBusiness: document.querySelector('.impact-on-business'),
   blogSlider: document.querySelector('.blog-section__slider'),
   bmpSlider: document.querySelector('.section-projects__slider-item.bmp'),
-};
+  };

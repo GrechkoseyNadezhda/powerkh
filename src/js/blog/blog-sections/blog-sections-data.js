@@ -4,7 +4,8 @@ import img21x from '../../../images/slider/blog/blog-02@1x.jpg';
 import img22x from '../../../images/slider/blog/blog-02@2x.jpg';
 import link1 from '../../../pages/architectural-rendering.html';
 import link2 from '../../../pages/seven-benefits-of-bim.html';
-import iconEye from '../../../images/vectors/sprite.svg#icon-eye';
+// import iconEye from '../../../images/vectors/sprite.svg#icon-eye';
+import iconEye from '../../../images/vectors/eye.svg';
 
 
 
