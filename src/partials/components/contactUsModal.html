@@ -1,54 +1,61 @@
-<div class="container">
-  <div class="hero__block">
-    <img
-      class="hero__frame-down-left"
-      src="../images/vectors/frame-down-left.svg"
-      alt="decorative element"
-    />
-    <img
-      class="hero__frame-up-left"
-      src="../images/vectors/frame-up-left.svg"
-      alt="decorative element"
-    />
-    <img
-      class="hero__frame-down-right"
-      src="../images/vectors/frame-down-right.svg"
-      alt="decorative element"
-    />
-    <img
-      class="hero__frame-up-right"
-      src="../images/vectors/frame-up-right.svg"
-      alt="decorative element"
-    />
-    <div class="hero__content">
-      <h2 class="contact-form__title">HAVE ANY QUESTIONS? CONTACT US!</h2>
-      <form class="contact-form" name="contact-form">
-        <div class="contact-form__input-wrap">
-          <input
-            type="text"
-            class="contact-form__input"
-            name="name"
-            required
-            placeholder=""
-          />
-          <label class="contact-form__label">How can we call you?</label>
-        </div>
+<div class="backdrop">
+  <div class="container">
+    <div class="contact-modal__block">
+      <img
+        class="contact-modal__frame-down-left"
+        src="../images/vectors/frame-down-left.svg"
+        alt="decorative element"
+      />
+      <img
+        class="contact-modal__frame-up-left"
+        src="../images/vectors/frame-up-left.svg"
+        alt="decorative element"
+      />
+      <img
+        class="contact-modal__frame-down-right"
+        src="../images/vectors/frame-down-right.svg"
+        alt="decorative element"
+      />
+      <img
+        class="contact-modal__frame-up-right"
+        src="../images/vectors/frame-up-right.svg"
+        alt="decorative element"
+      />
+      <div class="contact-modal__content">
+        <button type="button" class="contact-modal__close-btn">
+          <svg class="contact-modal__close-icon" width="24" height="24">
+            <use href="../images/vectors/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="contact-modal__title">HAVE ANY QUESTIONS? CONTACT US!</h2>
+        <form class="contact-modal__form" name="contact-modal-form">
+          <div class="contact-modal__input-wrap">
+            <input
+              type="text"
+              class="contact-modal__input"
+              name="name"
+              required
+              placeholder=""
+            />
+            <label class="contact-modal__label">How can we call you?</label>
+          </div>
 
-        <div class="contact-form__input-wrap">
-          <input
-            type="text"
-            class="contact-form__input"
-            name="phone"
-            required
-            placeholder=""
-          />
-          <label class="contact-form__label">Phone or E-mail*</label>
-        </div>
-      </form>
+          <div class="contact-modal__input-wrap">
+            <input
+              type="text"
+              class="contact-modal__input"
+              name="phone"
+              required
+              placeholder=""
+            />
+            <label class="contact-modal__label">Phone or E-mail*</label>
+          </div>
+        </form>
+        <button class="contact-modal__btn" type="submit">
+          Send
+          <img src="../images/vectors/arrow.svg" alt="arrow" />
+        </button>
+      </div>
     </div>
-    <button class="hero__btn" type="submit">
-      Send
-      <img src="../images/vectors/arrow.svg" alt="arrow" />
-    </button>
   </div>
 </div>
