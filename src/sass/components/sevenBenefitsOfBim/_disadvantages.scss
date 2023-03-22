@@ -1,0 +1,31 @@
+.disadvantages {
+  padding-bottom: 20px;
+}
+
+.disadvantages__title {
+  @include font-title-14;
+  padding-bottom: 12px;
+}
+
+.disadvantages__img {
+  min-width: 320px;
+  padding: 8px 0 40px;
+}
+
+.disadvantages__text {
+  @include font-body-reg;
+  padding-bottom: 20px;
+}
+
+.disadvantages__softItems {
+  padding-bottom: 20px;
+}
+
+.disadvantages__softItems::before {
+  display: inline-block;
+  margin-right: 10px;
+  content: '';
+  width: 10px;
+  height: 9px;
+  background-image: url('../images/vectors/arrow-right-black.svg');
+}

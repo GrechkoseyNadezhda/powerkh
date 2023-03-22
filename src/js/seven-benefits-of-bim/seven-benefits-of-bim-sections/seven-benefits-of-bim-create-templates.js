@@ -14,9 +14,11 @@ import {
 
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
+import { makeBoldFirst } from '../../common/make-bold-first';
 
 useTemplate(refs.heroPartFour, heroPartFourHBS, heroPartFourData);
 useTemplate(refs.share, shareHBS, shareBim);
 useTemplate(refs.contents, contentsHBS, contentsBim);
 useTemplate(refs.contentsInform, contentsInformationHBS, contentsInformBim);
 useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
+makeBoldFirst('.whereToFind__text__list');
