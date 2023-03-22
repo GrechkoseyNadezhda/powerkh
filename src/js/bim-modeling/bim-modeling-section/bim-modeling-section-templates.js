@@ -17,6 +17,7 @@ import {
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { createFAQsection } from '../../common/createFaqSection';
+import { toggleFaq } from '../../common/toggle-faq';
 
 const ENDPOINT_COORDINATION = '/faq/bimModeling.json';
 
@@ -29,3 +30,4 @@ useTemplate(refs.featuresForProjects, featuresForProjectsHBS, addValueModeling);
 useTemplate(refs.contactUs, contactUsHBS, contactUsModeling);
 
 createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqTemplate);
+toggleFaq();
