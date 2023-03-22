@@ -31,26 +31,27 @@
 
 .bim-automation-services__text,
 .bim-automation-services__topic,
-.bim-automation-services__item {
+.bim-automation-services__item,
+.bim-automation-services__extra {
   @include font-body-reg;
 }
 
 .bim-automation-services__text {
-  margin-bottom: 40px;
-
-  @include mq(tab) {
-    margin-bottom: 52px;
-  }
-
   @include mq(desk) {
     max-width: 768px;
   }
 }
 
+.bim-automation-services__extra {
+  margin-top: 19px;
+}
+
 .bim-automation-services__topic {
+  margin-top: 40px;
   margin-bottom: 50px;
 
   @include mq(tab) {
+    margin-top: 52px;
     margin-bottom: 62px;
   }
 

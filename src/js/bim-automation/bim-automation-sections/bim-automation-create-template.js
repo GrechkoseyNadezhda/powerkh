@@ -14,6 +14,11 @@ const ENDPOINT_COORDINATION = '/faq/bimAutomation.json';
 
 useTemplate(refs.hero, heroHBS, heroAutomation);
 useTemplate(refs.herBIMAndVDC, briefDescriptHBS, briefDescriptAutomation);
+const hidden = document.querySelector('.hidden');
+const bimTextList = document.querySelector('.BIM__text-list');
+
+hidden.style.display = 'none';
+bimTextList.style.marginBottom = '0px';
 useTemplate(refs.howWeWork, howWeWorkHBS, howAutomation);
 useTemplate(refs.services, servicesHBS, architecAndStruct);
 useTemplate(refs.featuresForProjects, featuresForProjectsHBS, advantagesAutomation);
