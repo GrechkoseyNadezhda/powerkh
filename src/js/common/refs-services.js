@@ -16,10 +16,13 @@ export const refs = {
   heroPartFour: document.querySelector('.hero-part-four'),
   heroBtn: document.querySelector('.hero__btn'),
   heroBlock: document.querySelector('.hero__block'),
+  author: document.querySelector('.author'),
 };
 export const refsCase = {
   heroTextBlock: document.querySelector('.case-description__text-block'),
   heroSlider: document.querySelector('.swiper-wrapper'),
+  process: document.querySelector('.processTemplate'),
+  solution: document.querySelector('.solution'),
   impactOnBusiness: document.querySelector('.impact-on-business'),
   blogSlider: document.querySelector('.blog-section__slider'),
   bmpSlider: document.querySelector('.section-projects__slider-item.bmp'),

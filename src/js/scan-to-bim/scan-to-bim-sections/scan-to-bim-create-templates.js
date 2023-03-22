@@ -6,8 +6,8 @@ import outsourceProjectsHBS from '../../../templates/outsourceProjects.hbs';
 import faqHBS from '../../../templates/faq.hbs';
 import contactUsHBS from '../../../templates/contactUs.hbs';
 
-import { fetchDatabaseAuthor } from '../../common/fetchDatabaseAuthor';
-import { fetchDatabaseFAQ } from '../../common/fetchDatabaseAuthor';
+import { createFAQsection } from '../../common/createFaqSection';
+import { toggleFaq } from '../../common/toggle-faq';
 import {
   heroScanToBIM,
   herBIMAndVDCScanToBIM,
@@ -32,5 +32,5 @@ useTemplate(
 
 useTemplate(refs.contactUs, contactUsHBS, contactUsScanToBIM);
 
-// fetchDatabaseAuthor('/authors/KostiaRapina.json');
-// fetchDatabaseFAQ('/faq/scanToBim.json');
+createFAQsection('/faq/scanToBim.json', refs.faq, faqHBS);
+toggleFaq();
