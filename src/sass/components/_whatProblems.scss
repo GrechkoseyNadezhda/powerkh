@@ -12,21 +12,14 @@
     }
   }
   &__title {
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1;
-    color: #0e0e0e;
+    @include font-title-20;
+    color: var(--dark-grey-color);
     text-align: center;
   }
   &__paragraph {
     margin-top: 20px;
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.43;
-    color: #0e0e0e;
+    @include font-body-reg;
+    color: var(--dark-grey-color);
   }
   &__list {
     margin-top: 20px;
@@ -37,11 +30,8 @@
     gap: 20px;
   }
   &__item {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.43;
-    color: #0e0e0e;
+    @include font-body-reg;
+    color: var(--dark-grey-color);
     position: relative;
   }
 }
