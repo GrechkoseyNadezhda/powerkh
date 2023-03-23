@@ -1,3 +1,9 @@
+import img1L1x from '../../../images/slider/bim-automation/bim-automation-1@1x.jpg';
+import img1L2x from '../../../images/slider/bim-automation/bim-automation-1@2x.jpg';
+import img2L1x from '../../../images/slider/bim-automation/bim-automation-2@1x.jpg';
+import img2L2x from '../../../images/slider/bim-automation/bim-automation-2@2x.jpg';
+import img3L1x from '../../../images/slider/bim-automation/bim-automation-3@1x.jpg';
+import img3L2x from '../../../images/slider/bim-automation/bim-automation-3@2x.jpg';
 export const heroAutomation = {
   subtitle: 'BIM Automation',
   text: 'Do you want to improve the design and management processes for your BIM projects? Powerkh can find the gaps in your workflow and enhance them with cost-effective solutions. Talk with our experts to learn more about our BIM automation & scripting services!',
@@ -92,3 +98,8 @@ export const contactUsAutomation = {
   description:
     'Do you want to improve the design and management processes for your BIM projects? Powerkh can find the gaps in your workflow and enhance them with cost-effective solutions. Talk with our experts to learn more about our BIM automation & scripting services!',
 };
+export const projectAutomation = [
+  { img1x: img1L1x, img2x: img1L2x },
+  { img1x: img2L1x, img2x: img2L2x },
+  { img1x: img3L1x, img2x: img3L2x },
+];
