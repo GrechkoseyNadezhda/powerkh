@@ -2,7 +2,8 @@ const CLIENT_ID = '6470a82847485b68ac08488d3fec73e5';
 
 const CLIENT_SECRET = '0341379192191645a243aac4938e3c93';
 const BASEURL_SENDPULSE = 'https://api.sendpulse.com';
-
+const BASEURL_AUTO360 =
+  'https://events.sendpulse.com/events/id/ecc62b30695e496ddd8b5bc361a4afc5/8268220';
 const bodyAuthObj = {
   grant_type: 'client_credentials',
   client_id: CLIENT_ID,
@@ -62,4 +63,14 @@ export async function createContact(firstNameForm, lastNameForm, emailForm) {
       emails: [emailForm],
     }),
   }).then(response => response.json());
+}
+export async function createDealAndContact(dataRequest) {
+  const result = fetch(BASEURL_AUTO360, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(dataRequest),
+  }).then(response => response.json());
+  return result;
 }
