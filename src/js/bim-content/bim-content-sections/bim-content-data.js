@@ -66,7 +66,9 @@ export const objLibraryCreationObj = {
 
 export const servicesCreationObj = {
   title: 'Custom Revit Content Creation Services',
-  text: 'The geometric of the Revit model isn’t just precise. It should be parametric, so your team members can easily adjust the setting for any object and category. Powerkh stands at the forefront of BIM family creation and content library management.',
+  text: 'The geometric of the Revit model isn’t just precise. It should be parametric, so your team members can easily adjust the setting for any object and category. ',
+  extraInfo:
+    'Powerkh stands at the forefront of BIM family creation and content library management.',
   topic: 'Our Revit content creation services include:',
   list: [
     'Structural families (walls, columns, steel sections, beams, joints, stiffeners).',
