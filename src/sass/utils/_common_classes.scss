@@ -23,3 +23,7 @@
   @include font-button;
   background-color: var(--dark-grey-color);
 }
+
+.disable-interaction {
+  pointer-events: none;
+}
