@@ -4,10 +4,8 @@
 
 .container__blog {
   @include mq(desk) {
-    margin: 0;
-    padding: 0;
-    margin-left: 249px;
-    width: 750px;
+    padding-left: 249px;
+    padding-right: 441px;
   }
 }
 
