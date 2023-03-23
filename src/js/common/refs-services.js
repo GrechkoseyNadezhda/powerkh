@@ -18,6 +18,7 @@ export const refs = {
   heroBlock: document.querySelector('.hero__block'),
   solution: document.querySelector('.solution'),
   author: document.querySelector('.author'),
+  architectRendServ: document.querySelector('.architect-rend-serv'),
 };
 export const refsCase = {
   heroTextBlock: document.querySelector('.case-description__text-block'),

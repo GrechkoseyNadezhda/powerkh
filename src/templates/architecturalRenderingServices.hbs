@@ -1,0 +1,10 @@
+{{! Додавати у секцію <section class="architect-rend-serv"></section> }}
+{{! Data має бути об'єктом у вигляді {title: 'заголовок', description: 'текст', link: 'посилання на сторінку'} }}
+
+<div class='container architect-rend-serv__container'>
+  <div class='architect-rend-serv__wrap'>
+    <h2 class='architect-rend-serv__title'>{{this.title}}</h2>
+    <p class='architect-rend-serv__paragraph'>{{this.description}}</p>
+    <a class='architect-rend-serv__link' href='{{this.link}}'>Read more</a>
+  </div>
+</div>

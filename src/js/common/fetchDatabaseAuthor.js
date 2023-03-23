@@ -7,5 +7,6 @@ export async function fetchDatabaseAuthor(endpoint, refs, template) {
     response.json()
   );
   const data = Object.values(result)[0];
+  console.log(data);
   useTemplate(refs, template, data);
 }
