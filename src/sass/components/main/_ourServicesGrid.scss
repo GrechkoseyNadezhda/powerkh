@@ -147,6 +147,11 @@
     border-bottom: 0;
     border-top: 0;
   }
+  @include mq(desk) {
+    border-left: 0;
+    border-top: 2px solid var(--ligth-grey-color);
+    border-bottom: 2px solid var(--ligth-grey-color);
+  }
 }
 
 .bimServices__infoDivP {
