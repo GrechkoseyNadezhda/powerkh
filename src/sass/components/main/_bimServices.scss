@@ -1,20 +1,27 @@
 .bim_main_whoBenefits {
-  padding-top: 52px;
-  margin-top: 0;
+  padding-top: 40px;
   justify-content: flex-start;
+  text-align: start;
+  display: flex;
+
+  @include mq(mob-only) {
+    gap: 16px;
+    flex-direction: column;
+  }
+  @include mq(tab) {
+    flex-direction: column;
+    margin-top: 52px;
+    padding-top: 0;
+    row-gap: 32px;
+    column-gap: 20px;
+    height: 260px;
+  }
+
+  @include mq(desk) {
+    row-gap: 32px;
+    column-gap: 125px;
+  }
 }
-
-// .bim_main_list {
-//   margin-top: 0;
-//   gap: 32px;
-//   justify-content: flex-start;
-
-//   @include mq(tab) {
-//     flex-wrap: wrap;
-//     height: 256px;
-//     column-gap: 20px;
-//   }
-// }
 
 .bim_main_benefits {
   margin-bottom: 0;
@@ -22,14 +29,20 @@
 
 .bimServices__section {
   background-color: var(--pure-white-color);
-  padding-top: 80px;
-  padding-bottom: 80px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+  @include mq(tab) {
+    margin-top: 60px;
+
+    margin-bottom: 60px;
+  }
+  @include mq(desk) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
 }
 
-// .bimServices__heding {
-//   @include font-title;
-//   margin-bottom: 52px;
-// }
 .BIM__subtitle-main {
   @include mq(desk) {
     max-width: 554px;
@@ -40,17 +53,24 @@
 .bimServices__infoDiv {
   @include font-body-reg;
   display: flex;
-  flex-direction: row;
-  gap: 28px;
-  margin-bottom: 52px;
+  flex-direction: column;
+  margin-bottom: 40px;
+  gap: 20px;
+  @include mq(tab) {
+    margin-bottom: 60px;
+    gap: 24px;
+  }
+  @include mq(desk) {
+    gap: 28px;
+    flex-direction: row;
+    margin-bottom: 52px;
+  }
 }
-
-// .bimServices__emptySpan {
-//   display: block;
-//   height: 14px;
-// }
 
 .bimServices__subheading {
   @include font-body-bold;
-  margin-bottom: 52px;
+  margin-bottom: 40px;
+  @include mq(tab) {
+    margin-bottom: 52px;
+  }
 }

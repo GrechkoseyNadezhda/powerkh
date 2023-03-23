@@ -3,3 +3,4 @@ import '../components/header/header';
 import '../components/footer';
 import '../components/sliderSection';
 import '../components/modal-question/modal';
+import '../components/contactUsModal/contactUsModal';
