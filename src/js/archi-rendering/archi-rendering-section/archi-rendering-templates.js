@@ -25,6 +25,8 @@ useTemplate(refs.herBIMAndVDC, herBIMAndVDC, BIMservices);
 useTemplate(refs.howWeWork, howWeWorkTemplate, howCreates);
 useTemplate(refs.services, servicesTemplate, whatWeOffer);
 useTemplate(refsCase.bmpSlider, sliderTemplate, projectCoordination);
+useTemplate(refs.contactUs, contactUsTemplate, archiRenderingContact);
+useTemplate(refs.faq, faqTemplate, archiRenderingFaq);
 //
 toggleFaq();
 makeBoldFirst('.bim-automation-services__item');
