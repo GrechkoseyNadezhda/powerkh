@@ -5,9 +5,10 @@ import servicesHBS from '../../../templates/architecAndStructBim.hbs';
 import outsourceProjectsHBS from '../../../templates/outsourceProjects.hbs';
 import faqHBS from '../../../templates/faq.hbs';
 import contactUsHBS from '../../../templates/contactUs.hbs';
+import sliderHBS from '../../../templates/ourProjectsSlider.hbs';
 
-import { fetchDatabaseAuthor } from '../../common/fetchDatabaseAuthor';
-import { fetchDatabaseFAQ } from '../../common/fetchDatabaseAuthor';
+import { createFAQsection } from '../../common/createFaqSection';
+import { toggleFaq } from '../../common/toggle-faq';
 import {
   heroScanToBIM,
   herBIMAndVDCScanToBIM,
@@ -15,6 +16,7 @@ import {
   servicesScanToBIM,
   advantagesOfScanYoBIM,
   contactUsScanToBIM,
+  scanToBimSliderData,
 } from './scan-to-bim-data';
 
 import { refs } from '../../common/refs-services';
@@ -29,8 +31,8 @@ useTemplate(
   outsourceProjectsHBS,
   advantagesOfScanYoBIM
 );
-
+useTemplate(refs.slider, sliderHBS, scanToBimSliderData);
 useTemplate(refs.contactUs, contactUsHBS, contactUsScanToBIM);
 
-// fetchDatabaseAuthor('/authors/KostiaRapina.json');
-// fetchDatabaseFAQ('/faq/scanToBim.json');
+createFAQsection('/faq/scanToBim.json', refs.faq, faqHBS);
+toggleFaq();

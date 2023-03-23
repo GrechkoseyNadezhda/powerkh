@@ -1,0 +1,51 @@
+.architectural__list{
+list-style: decimal;
+}
+
+.architectural__table{
+    border-spacing: 2px;
+	border-collapse: separate;
+    margin-bottom: 20px;
+   
+}
+.architectural__name{
+text-align: center;
+}
+
+.architectural__left-block {
+   width: 144px;
+   display: flex;
+   align-items: flex-start;
+   padding-top: 12px;
+   padding-left: 12px ;
+   padding-bottom:12px ;
+   font-size: 9px;
+}
+.architectural__right-block {
+    width: 174px;
+    padding-top: 12px;
+    padding-left: 12px ;
+    padding-bottom:12px ;
+    font-size: 9px;
+ }
+
+th,td {
+    border: 1px solid #909090;
+}
+
+.architectural__description{
+margin-bottom: 20px;
+}
+
+.architectural__item {
+    &::before {
+      content: ' ';
+      display: inline-block;
+      background-image: url(../images/vectors/vector-right.svg);
+      width: 10px;
+      height: 9px;
+      background-size: cover;
+      color: #cdcdcd;
+      margin-right: 10px;
+    }
+}

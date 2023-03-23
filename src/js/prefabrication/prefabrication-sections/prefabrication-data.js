@@ -1,3 +1,10 @@
+import img1L1x from '../../../images/slider/prefabrication/prefabrication-1@1x.jpg';
+import img1L2x from '../../../images/slider/prefabrication/prefabrication-1@2x.jpg';
+import img2L1x from '../../../images/slider/prefabrication/prefabrication-2@1x.jpg';
+import img2L2x from '../../../images/slider/prefabrication/prefabrication-2@2x.jpg';
+import img3L1x from '../../../images/slider/prefabrication/prefabrication-3@1x.jpg';
+import img3L2x from '../../../images/slider/prefabrication/prefabrication-3@2x.jpg';
+
 export const heroPrefabrication = {
   subtitle: 'Prefabrication & Fabrication',
   text: 'Do you want to improve your manufacturing process and speed up the design? Our BIM prefabrication & coordination services can become an indispensable tool for your project’s success! Don’t put off your call — contact Powerkh to learn how we can improve your workflow.',
@@ -107,3 +114,8 @@ export const contactUsPrefabrication = {
   description:
     'Do you want to improve your manufacturing process and speed up the design? Our BIM prefabrication & coordination services can become an indispensable tool for your project’s success! Don’t put off your call — contact Powerkh to learn how we can improve your workflow.',
 };
+export const projectPrefabrication = [
+  { img1x: img1L1x, img2x: img1L2x },
+  { img1x: img2L1x, img2x: img2L2x },
+  { img1x: img3L1x, img2x: img3L2x },
+];

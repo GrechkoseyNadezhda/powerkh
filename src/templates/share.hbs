@@ -1,12 +1,37 @@
-<div class='share__wrapper'>
-  <h3 class='share__title'>{{this.title}}</h3>
-  <ul class='share__list'>
-    {{#each this.list}}
-      <li class='share__item {{this.class}}'>
-        <a class='share__link' href='{{this.link}}'>
+{{! для підключення трьох компонентів (share, contents і author) требя прописати
+таку структуру }}
 
-        </a>
-      </li>
-    {{/each}}
+{{! <section class="contents-with-author">
+  <div class="container blog-top">
+    <div class="share"></div>
+    <section class="contents"></section>
+    <div class="author"></div>
+  </div>
+</section> }}
+
+{{! потрібно передати рядок з адресою сторінки якою буде ділитися користувач }}
+
+<div class='share__wrapper'>
+  <h3 class='share__title'>Share:</h3>
+  <ul class='share__list'>
+
+    <li class='share__item share__facebook'>
+      <a
+        target='_blank'
+        class='share__link'
+        href='https://www.facebook.com/sharer/sharer.php?u={{this}}'
+      >
+
+      </a>
+    </li>
+    <li class='share__item share__linkedin'>
+      <a
+        target='_blank'
+        class='share__link'
+        href='https://www.linkedin.com/shareArticle?url={{this}}'
+      >
+
+      </a>
+    </li>
   </ul>
 </div>
