@@ -22,6 +22,7 @@ import { makeBoldFirst } from '../../common/make-bold-first';
 
 useTemplate(refs.hero, heroTemplate, archiRenderingHero);
 useTemplate(refs.herBIMAndVDC, herBIMAndVDC, BIMservices);
+useTemplate(refs.renderSlider, sliderTemplate, projectCoordination);
 useTemplate(refs.howWeWork, howWeWorkTemplate, howCreates);
 useTemplate(refs.services, servicesTemplate, whatWeOffer);
 useTemplate(refsCase.bmpSlider, sliderTemplate, projectCoordination);
