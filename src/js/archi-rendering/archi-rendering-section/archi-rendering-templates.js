@@ -30,4 +30,3 @@ useTemplate(refs.faq, faqTemplate, archiRenderingFaq);
 //
 toggleFaq();
 makeBoldFirst('.bim-automation-services__item');
-console.log(refsCase.bmpSlider);
