@@ -1,4 +1,5 @@
 const BASEURL = 'https://poverkh-default-rtdb.firebaseio.com/';
+import { toggleFaq } from './toggle-faq';
 import { useTemplate } from './use-template';
 // ендпоінт брати в ТЗбекенд відповідно до своєї сторінки
 export async function createFAQsection(endpoint, el, template) {
@@ -11,4 +12,5 @@ export async function createFAQsection(endpoint, el, template) {
     answerArr.push(response[key]);
   }
   useTemplate(el, template, answerArr);
+  toggleFaq();
 }
