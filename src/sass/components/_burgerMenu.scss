@@ -58,7 +58,11 @@
   visibility: visible;
 }
 .burger-menu__list {
-  padding: 96px 20px 96px 20px;
+  padding: 96px 20px;
+
+  @include mq(tab) {
+    padding: 96px 28px;
+  }
 }
 
 .burger-menu__el {
