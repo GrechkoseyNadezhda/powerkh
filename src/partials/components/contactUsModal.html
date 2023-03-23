@@ -1,4 +1,4 @@
-<div class="backdrop">
+<div class="backdrop question">
   <div class="container">
     <div class="contact-modal__block">
       <img
@@ -28,8 +28,13 @@
           </svg>
         </button>
         <h2 class="contact-modal__title">HAVE ANY QUESTIONS? CONTACT US!</h2>
-        <form class="contact-modal__form" name="contact-modal-form">
-          <div class="contact-modal__input-wrap">
+        <form
+          class="contact-modal__form question-form"
+          name="contact-modal-form"
+        >
+          <div
+            class="contact-modal__input-wrap contact-modal__input-wrap--first"
+          >
             <input
               type="text"
               class="contact-modal__input"
@@ -40,7 +45,9 @@
             <label class="contact-modal__label">How can we call you?</label>
           </div>
 
-          <div class="contact-modal__input-wrap">
+          <div
+            class="contact-modal__input-wrap contact-modal__input-wrap--second"
+          >
             <input
               type="text"
               class="contact-modal__input"
@@ -49,8 +56,11 @@
               placeholder=""
             />
             <label class="contact-modal__label">Phone or E-mail*</label>
+            <span class="error-message visually-hidden"
+              >Please, input validate contact</span
+            >
           </div>
-          <button class="contact-modal__btn" type="submit">
+          <button class="contact-modal__btn modal-submit" type="submit">
             Send
             <img src="../images/vectors/arrow.svg" alt="arrow" />
           </button>
