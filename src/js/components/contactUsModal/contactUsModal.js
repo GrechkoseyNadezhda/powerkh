@@ -1,52 +1,63 @@
-const contactUsButtons = document.querySelectorAll('.js-btn-modal');
-const backdrop = document.querySelector('.backdrop');
-const closeBtn = document.querySelector('.contact-modal__close-btn');
-const contactUsSubmit = document.querySelector('.contact-modal__btn');
-const form = document.querySelector('.contact-modal__form');
-const body = document.body;
+import { createDealAndContact } from '../../common/crm-sendpulse';
+import { openModal, closeModal } from './contactUs-functions';
+import { refsModal } from './contactUs-refs';
 
-if (contactUsButtons.length > 0) {
-  for (let i = 0; i < contactUsButtons.length; i++) {
-    const contactUsBtn = contactUsButtons[i];
-    contactUsBtn.addEventListener('click', openModal);
+if (refsModal.contactUsButtons.length > 0) {
+  for (let i = 0; i < refsModal.contactUsButtons.length; i++) {
+    const contactUsBtn = refsModal.contactUsButtons[i];
+    contactUsBtn.addEventListener('click', () =>
+      openModal(refsModal.backdropQuestion)
+    );
   }
 }
+refsModal.closeBtn.addEventListener('click', closeModal);
 
-closeBtn.addEventListener('click', closeModal);
-contactUsSubmit.addEventListener('click', closeModal);
+refsModal.form.addEventListener('submit', formSubmit);
 
-function openModal(e) {
+const PHONE_REGEXP = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+
+const EMAIL_REGEXP =
+  /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+
+function validateEmail(value) {
+  return EMAIL_REGEXP.test(value);
+}
+
+function validatePhone(phone) {
+  return PHONE_REGEXP.test(phone);
+}
+
+async function formSubmit(e) {
   e.preventDefault();
-  body.classList.add('_lock');
-  backdrop.classList.add('active-modal');
-  body.addEventListener('keyup', onEsc);
-  backdrop.addEventListener('click', onBackdropClick);
-  console.log('open');
-}
+  const nameInput = e.currentTarget.elements[0].value;
+  const contactInput = e.currentTarget.elements[1].value;
+  const isValidateEmail = validateEmail(contactInput);
+  const isValidatePhone = validatePhone(contactInput);
 
-function closeModal(e) {
-  if (e) {
-    e.preventDefault();
-    console.log('prevent');
-  }
-  body.classList.remove('_lock');
-  backdrop.classList.remove('active-modal');
-  body.removeEventListener('keyup', onEsc);
-  backdrop.removeEventListener('click', onBackdropClick);
-  form.reset();
-  console.log('close');
-}
-
-function onEsc(e) {
-  if (e.keyCode == 27) {
-    console.log('escape');
+  if (isValidateEmail || isValidatePhone) {
+    refsModal.contactUsSubmit.setAttribute('disabled', 'disabled');
+    const modalRequest = {
+      name: nameInput,
+      phone: isValidatePhone ? contactInput : '',
+      email: isValidateEmail ? contactInput : '',
+    };
+    const result = await createDealAndContact(modalRequest);
+    console.log(result.result, result);
     closeModal();
+    if (result.result) {
+      openModal(refsModal.backdropSuccess);
+      return;
+    }
+    if (!result.result && result.message === 'Duplicate data') {
+      openModal(refsModal.backdropDuplicate);
+      return;
+    }
+    if (!result.result && result.message !== 'Duplicate data') {
+      openModal(refsModal.backdropFail);
+      return;
+    }
   }
-}
 
-function onBackdropClick(e) {
-  if (e.target === e.currentTarget) {
-    console.log('backdrop');
-    closeModal();
-  }
+  refsModal.errorMessage.classList.remove('visually-hidden');
+  refsModal.contactUsSubmit.removeAttribute('disabled');
 }
