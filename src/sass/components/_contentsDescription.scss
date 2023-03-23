@@ -1,0 +1,34 @@
+.contents-description {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
+
+  &__container {
+    padding-left: 249px;
+    padding-right: 443px;
+  }
+
+  &__paragraph {
+    @include font-body-reg;
+    color: var(--dark-grey-color);
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    &-italic {
+      font-style: italic;
+      color: #747474;
+    }
+
+    &-bold {
+      font-weight: 700;
+    }
+  }
+}

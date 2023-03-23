@@ -1,3 +1,15 @@
+// import img11x from '../../../images/slider/bim-modeling/bim-coordination-1@1x.jpg';
+// import img12x from '../../../images/slider/bim-modeling/bim-coordination-1@2x.jpg';
+// import img21x from '../../../images/slider/bim-modeling/bim-coordination-2@1x.jpg';
+// import img22x from '../../../images/slider/bim-modeling/bim-coordination-2@2x.jpg';
+// import img31x from '../../../images/slider/bim-modeling/bim-coordination-3@1x.jpg';
+// import img32x from '../../../images/slider/bim-modeling/bim-coordination-3@2x.jpg';
+import img1L1x from '../../../images/slider/bim-coordination/bim-coordination-1@1x.jpg';
+import img1L2x from '../../../images/slider/bim-coordination/bim-coordination-1@2x.jpg';
+import img2L1x from '../../../images/slider/bim-coordination/bim-coordination-2@1x.jpg';
+import img2L2x from '../../../images/slider/bim-coordination/bim-coordination-2@2x.jpg';
+import img3L1x from '../../../images/slider/bim-coordination/bim-coordination-3@1x.jpg';
+import img3L2x from '../../../images/slider/bim-coordination/bim-coordination-3@2x.jpg';
 
   export const heroModeling = {
     subtitle: 'BIM Modeling',
@@ -127,6 +139,18 @@
     description:
       'Do you want to enhance your construction project?Our experts can resolve your challenges and build a detailed 3D BIM model.Contact us to learn more about our services!',
   };
+
+  export const projectCoordination = [
+    { img1x: img1L1x, img2x: img1L2x },
+    { img1x: img2L1x, img2x: img2L2x },
+    { img1x: img3L1x, img2x: img3L2x },
+  ];
+
+  // export const projectsSliderImg = [
+  //   { img1x: img11x, img2x: img12x },
+  //   { img1x: img21x, img2x: img22x },
+  //   { img1x: img31x, img2x: img32x },
+  // ];
 
   // export const BIMmodelingFaq = [
   //   {

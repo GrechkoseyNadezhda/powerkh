@@ -23,6 +23,8 @@
 @import './templates/contents';
 @import './templates/sectionProjects';
 @import './templates/hero-part4';
+@import './templates/author';
+@import './templates/share';
 
 //Templates-caseStudies
 
@@ -43,22 +45,35 @@
 @import './components/joinTeam';
 
 @import './components/automate-repetitive-design';
+@import './components/contentsDescription';
 @import './components/footer';
 @import './components/main/bimServices';
 @import './components/main/ourServicesGrid';
 @import './components/main/customers';
 @import './components/main/ousource';
 @import './components/main/hero-main';
+@import './components/contactUsModal';
+@import './components/top-thirty-architectural/top-ten-architectural';
+
 
 //Blog
 
 @import './components/blog/blog-grid-preview';
 @import './components/automate-repetitive-design';
+@import './components/neverMiss';
+
 
 @import './components/whatProblems';
+
+@import './components/sevenBenefitsOfBim/disadvantages';
+@import './components/sevenBenefitsOfBim/whereToFind';
+@import './components/sevenBenefitsOfBim/conclusion';
+@import './components/sevenBenefitsOfBim/benefitsOfBim';
 
 @import './components/footer';
 
 // Layout
 
 @import './layout/contacts';
+@import './layout/blog';
+@import './layout/blog7Benefits';

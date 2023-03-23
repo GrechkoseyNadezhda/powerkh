@@ -1,0 +1,27 @@
+.conclusion {
+  padding-bottom: 20px;
+}
+
+.conclusion__title {
+  @include font-title-20;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.conclusion__img {
+  min-width: 320px;
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    min-width: 704px;
+  }
+
+  @include mq(desk) {
+    min-width: 748px;
+  }
+}
+
+.conclusion__text {
+  @include font-body-reg;
+  padding-bottom: 20px;
+}

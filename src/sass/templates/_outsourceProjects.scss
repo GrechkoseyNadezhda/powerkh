@@ -2,15 +2,15 @@
   background-color: var(--pure-white-color);
 }
 
-.outsourceProjects {
-  padding-bottom: 40px;
-  @include mq(tab) {
-    padding-bottom: 60px;
-  }
-  @include mq(desk) {
-    padding-bottom: 80px;
-  }
-}
+// .outsourceProjects {
+//   padding-bottom: 40px;
+//   @include mq(tab) {
+//     padding-bottom: 60px;
+//   }
+//   @include mq(desk) {
+//     padding-bottom: 80px;
+//   }
+// }
 
 .outsourceProjects__title {
   @include font-title;
@@ -71,7 +71,15 @@
   }
   @include mq(desk) {
     margin-left: 0;
-    max-width: 520px;
+    max-width: 552px;
+  }
+}
+
+.outsourceProjects__list-description {
+  @include font-body-reg;
+  margin: 40px auto;
+  @include mq(tab) {
+    margin: 52px auto;
   }
 }
 
@@ -80,18 +88,13 @@
 }
 
 .outsourceProjects__item {
-  margin-top: 32px;
   position: relative;
-  @include mq(tab) {
-    margin-top: 40px;
+
+  &:not(:first-child) {
+    margin-top: 32px;
   }
   @include mq(desk) {
     display: flex;
     align-items: center;
-  }
-  &:first-child {
-    @include mq(tab) {
-      margin-top: 52px;
-    }
   }
 }

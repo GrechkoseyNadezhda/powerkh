@@ -1,8 +1,45 @@
+import img1L1x from '../../../images/slider/prefabrication/prefabrication-1@1x.jpg';
+import img1L2x from '../../../images/slider/prefabrication/prefabrication-1@2x.jpg';
+import img2L1x from '../../../images/slider/prefabrication/prefabrication-2@1x.jpg';
+import img2L2x from '../../../images/slider/prefabrication/prefabrication-2@2x.jpg';
+import img3L1x from '../../../images/slider/prefabrication/prefabrication-3@1x.jpg';
+import img3L2x from '../../../images/slider/prefabrication/prefabrication-3@2x.jpg';
+
 export const heroPrefabrication = {
   subtitle: 'Prefabrication & Fabrication',
   text: 'Do you want to improve your manufacturing process and speed up the design? Our BIM prefabrication & coordination services can become an indispensable tool for your project’s success! Don’t put off your call — contact Powerkh to learn how we can improve your workflow.',
 };
-export const briefDescriptCoordination = {};
+export const briefDescriptPrefabrication = {
+title: 'Digital Prefabrication & Fabrication',
+listText: [
+  'BIM is an integral part of modular construction. Prefabricated (modular) construction is a holistic approach that allows teams to produce and assemble any structure in components ("modules"). However, the design must be impeccable if you want the parts of your construction to fit.',
+  'Thankfully, you can automate most rudimentary processes and get accurate virtual prototypes with BIM for prefabrication and fabrication services. Powerkh can create a superset of parametric 3D models and shop drawings for all building elements, including the architectural, structural, and MEP.',
+],
+smallTitle: 'Our prefabrication BIM services have undeniable advantages for architects, engineers, and structural consultants. We can help you improve:',
+
+list: [
+  {
+    boldText: 'Turnaround time.', 
+  text:'The manufacturing and on-site works happen simultaneously in modular construction, improving productivity by up to 50 percent.',
+},
+{
+  boldText: 'Flexibility.', 
+text:'Your project won’t slow down because of a materials shortage or lack of construction specialists with relevant qualifications near your site.',
+},
+{
+  boldText: 'Sustainability.', 
+text:' Preplanned assembly cuts down site disturbance and the amount of waste produced.',
+},
+{
+  boldText: 'Safety.', 
+text:' Prefabrication construction reduces the risk of accidents because most of the work will be done off-site in factory-controlled environments.',
+},
+{
+  boldText: 'Accuracy.', 
+text:'Prefab BIM modeling delivers 3D models and 2D drawings for CNC (Computer Numerical Control) manufacturing.',
+},
+]
+};
 export const howPrefabrication = {
   title: 'How We Deliver BIM Prefabrication & Fabrication',
 list: [
@@ -73,7 +110,12 @@ export const addValuePrefabrication = {
   ],
 };
 export const contactUsPrefabrication = {
-  title: 'Reduce Construction Costs with BIM Coordination Services',
+  title: 'Streamlined Workflow with BIM Prefabrication Services',
   description:
-    'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
+    'Do you want to improve your manufacturing process and speed up the design? Our BIM prefabrication & coordination services can become an indispensable tool for your project’s success! Don’t put off your call — contact Powerkh to learn how we can improve your workflow.',
 };
+export const projectPrefabrication = [
+  { img1x: img1L1x, img2x: img1L2x },
+  { img1x: img2L1x, img2x: img2L2x },
+  { img1x: img3L1x, img2x: img3L2x },
+];

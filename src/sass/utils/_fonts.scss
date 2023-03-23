@@ -13,6 +13,14 @@
   line-height: calc(22 / 20);
 }
 
+@mixin font-title-20 {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(20 / 20);
+}
+
 @mixin font-title-14 {
   font-family: 'PT Mono';
   font-style: normal;
@@ -27,6 +35,22 @@
   font-size: 16px;
   line-height: calc(18 / 16);
 }
+
+@mixin font-mono-reg-20 {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(22 / 20);
+}
+@mixin font-mono-reg-14 {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(16 / 14);
+}
+
 @mixin font-body-bold {
   font-family: 'Montserrat';
   font-style: normal;
@@ -40,4 +64,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: calc(20 / 14);
-} ;
+}
+
+@mixin font-body-reg-16 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(18 / 16);
+}

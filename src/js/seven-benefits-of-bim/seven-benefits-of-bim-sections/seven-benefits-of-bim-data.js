@@ -2,19 +2,7 @@ export const heroPartFourData = {
   title: '7 Benefits of BIM Services in Construction',
 };
 
-export const shareBim = {
-  title: 'Share:',
-  list: [
-    {
-      link: '#',
-      class: 'share__facebook',
-    },
-    {
-      link: '#',
-      class: 'share__linkedin',
-    },
-  ],
-};
+export const shareBim = 'https://yuriy0790.github.io/powerkh/scan-to-bim.html';
 
 export const contentsBim = {
   title: 'Contents',

@@ -1,0 +1,43 @@
+.whereToFind {
+  padding-bottom: 20px;
+}
+
+.whereToFind__title {
+  @include font-title-20;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.whereToFind__img {
+  min-width: 320px;
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    min-width: 704px;
+  }
+
+  @include mq(desk) {
+    min-width: 748px;
+  }
+}
+
+.whereToFind__text,
+.whereToFind__text__list {
+  @include font-body-reg;
+  padding-bottom: 20px;
+}
+
+.whereToFind__text__list {
+  padding-left: 20px;
+  position: relative;
+}
+
+.whereToFind__text__list::before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  content: '';
+  width: 10px;
+  height: 9px;
+  background-image: url('../images/vectors/arrow-right-black.svg');
+}
