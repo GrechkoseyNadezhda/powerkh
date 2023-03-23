@@ -9,6 +9,7 @@ import contactUsHBS from '../../../templates/contactUs.hbs';
 import faqTemplate from '../../../templates/faq.hbs';
 import herBIMAndVDC from '../../../templates/herBIMAndVDCServices.hbs';
 import ourProjectsSliderHBS from '../../../templates/ourProjectsSlider.hbs';
+import sliderHBS from '../../../templates/ourProjectsSlider.hbs';
 
 import {
   heroModeling,
@@ -19,10 +20,12 @@ import {
   contactUsModeling,
   BIMmodelingFaq,
   projectsSliderImg,
+  projectCoordination
 } from './bim-modeling-data';
 import { refs, refsCase } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { createFAQsection } from '../../common/createFaqSection';
+import { toggleFaq } from '../../common/toggle-faq';
 
 const ENDPOINT_COORDINATION = '/faq/bimModeling.json';
 // Projects slider
@@ -51,6 +54,8 @@ useTemplate(refs.featuresForProjects, featuresForProjectsHBS, addValueModeling);
 // useTemplate(refs.faq, faqTemplate, BIMmodelingFaq);
 useTemplate(refs.contactUs, contactUsHBS, contactUsModeling);
 useTemplate(refsCase.bmpSlider, ourProjectsSliderHBS, projectsSliderImg);
+useTemplate(refs.slider, sliderHBS, projectCoordination);
 
 
 createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqTemplate);
+toggleFaq();

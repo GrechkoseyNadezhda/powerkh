@@ -16,6 +16,7 @@ export const refs = {
   heroPartFour: document.querySelector('.hero-part-four'),
   heroBtn: document.querySelector('.hero__btn'),
   heroBlock: document.querySelector('.hero__block'),
+  solution: document.querySelector('.solution'),
   author: document.querySelector('.author'),
 };
 export const refsCase = {
