@@ -18,6 +18,7 @@ export const refs = {
   heroBlock: document.querySelector('.hero__block'),
   solution: document.querySelector('.solution'),
   author: document.querySelector('.author'),
+  renderSlider: document.querySelector('.renderSlider'),
 };
 export const refsCase = {
   heroTextBlock: document.querySelector('.case-description__text-block'),
