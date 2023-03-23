@@ -1,3 +1,10 @@
+import img1L1x from '../../../images/slider/bim-coordination/bim-coordination-1@1x.jpg';
+import img1L2x from '../../../images/slider/bim-coordination/bim-coordination-1@2x.jpg';
+import img2L1x from '../../../images/slider/bim-coordination/bim-coordination-2@1x.jpg';
+import img2L2x from '../../../images/slider/bim-coordination/bim-coordination-2@2x.jpg';
+import img3L1x from '../../../images/slider/bim-coordination/bim-coordination-3@1x.jpg';
+import img3L2x from '../../../images/slider/bim-coordination/bim-coordination-3@2x.jpg';
+
 export const archiRenderingFaq = [
   {
     question: 'How long does it take to produce an architectural 3D render?',
@@ -107,6 +114,12 @@ export const whatWeOffer = {
     'Night & Day View Rendering. Let prospective buyers see your real estate with near-perfect lighting and camera angles.',
   ],
 };
+
+export const projectCoordination = [
+  { img1x: img1L1x, img2x: img1L2x },
+  { img1x: img2L1x, img2x: img2L2x },
+  { img1x: img3L1x, img2x: img3L2x },
+];
 
 export const archiRenderingContact = {
   title: 'Outsource 3D & Architectural Rendering Projects to Powerkh',
