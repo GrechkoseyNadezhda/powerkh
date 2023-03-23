@@ -193,6 +193,8 @@
   padding: 27px 40px 27px 16px;
   transition: 350ms;
   background-image: none;
+  background-color: var(--pure-white-color);
+  text-align: start;
 
   @include mq(mob-only) {
     padding-right: 32px;
