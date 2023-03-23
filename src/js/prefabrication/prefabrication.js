@@ -1,11 +1,5 @@
-import './prefabrication-sections/prefabrication-templates';
 import '../components/header/header';
+import './prefabrication-sections/prefabrication-templates';
+import '../components/sliderSection';
 import '../components/footer';
 
-
-
-// import './bim-coordination-sections/bim-coordination-create-templates';
-// import '../components/header/header';
-// import '../components/footer';
-// import './bim-coordination-sections/swiper';
-// import '../common/crm-sendpulse';
