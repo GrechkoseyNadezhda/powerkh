@@ -1,3 +1,10 @@
+import img1L1x from '../../../images/slider/bim-content/bim-content-1@1x.jpg';
+import img1L2x from '../../../images/slider/bim-content/bim-content-1@2x.jpg';
+import img2L1x from '../../../images/slider/bim-content/bim-content-2@1x.jpg';
+import img2L2x from '../../../images/slider/bim-content/bim-content-2@2x.jpg';
+import img3L1x from '../../../images/slider/bim-content/bim-content-3@1x.jpg';
+import img3L2x from '../../../images/slider/bim-content/bim-content-3@2x.jpg';
+
 export const heroContentObj = {
   subtitle: 'BIM Content',
   text: 'Are you looking for a company that can create accurate and easily adjustable Revit families? Powerkh can ensure superior quality and quick turnaround time at a reasonable price. We will be glad to assist you!',
@@ -66,7 +73,9 @@ export const objLibraryCreationObj = {
 
 export const servicesCreationObj = {
   title: 'Custom Revit Content Creation Services',
-  text: 'The geometric of the Revit model isn’t just precise. It should be parametric, so your team members can easily adjust the setting for any object and category. Powerkh stands at the forefront of BIM family creation and content library management.',
+  text: 'The geometric of the Revit model isn’t just precise. It should be parametric, so your team members can easily adjust the setting for any object and category. ',
+  extraInfo:
+    'Powerkh stands at the forefront of BIM family creation and content library management.',
   topic: 'Our Revit content creation services include:',
   list: [
     'Structural families (walls, columns, steel sections, beams, joints, stiffeners).',
@@ -113,3 +122,9 @@ export const contactUsContentObj = {
   description:
     'Are you looking for a company that can create accurate and easily adjustable Revit families? Powerkh can ensure superior quality and quick turnaround time at a reasonable price. We will be glad to assist you!',
 };
+
+export const samplesSliderObj = [
+  { img1x: img1L1x, img2x: img1L2x },
+  { img1x: img2L1x, img2x: img2L2x },
+  { img1x: img3L1x, img2x: img3L2x },
+];
