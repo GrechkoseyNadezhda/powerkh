@@ -3,5 +3,5 @@ import '../components/header/header';
 import '../components/footer';
 import '../components/sliderSection';
 import '../common/crm-sendpulse';
-import '../components/modal-question/modal';
-import '../components/contactUsModal/contactUsModal';
+// import '../components/modal-question/modal';
+// import '../components/contactUsModal/contactUsModal';
