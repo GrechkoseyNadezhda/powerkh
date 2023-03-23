@@ -44,5 +44,3 @@ useTemplate(refs.slider, sliderHBS, projectCoordination);
 useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
 
 createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);
-
-toggleFaq();

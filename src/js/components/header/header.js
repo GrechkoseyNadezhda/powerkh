@@ -12,6 +12,15 @@ if (current === '') {
       el.parentElement.classList.add('active');
     }
   }
+
+  const dropdownItems = document.querySelectorAll(
+    '.main-navigation__dropdown-item'
+  );
+  dropdownItems.forEach(item => {
+    if (item.classList.contains('active')) {
+      item.closest('.main-navigation__item').classList.add('active');
+    }
+  });
 }
 
 import './burgerMenu';
