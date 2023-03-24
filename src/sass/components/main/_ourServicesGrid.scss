@@ -2,92 +2,70 @@
   @extend .bimServices__section;
 }
 
+.bimServices__heading {
+  @extend .caseStudies__subtitle;
+  margin-bottom: 40px;
+  @include mq(tab) {
+    margin-bottom: 52px;
+  }
+}
+
 .bimServices__body {
   @include font-body-reg;
-  margin-bottom: 52px;
+  margin-bottom: 40px;
+  @include mq(tab) {
+    margin-bottom: 52px;
+  }
 }
 
 .bimServices__list {
-  display: flex;
-  gap: 0;
-  flex-wrap: wrap;
+  @include mq(tab) {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include mq(desk) {
+    justify-content: flex-start;
+  }
 }
 
 .bimServices__list-item1 {
-  width: 374px;
-  height: 250px;
   border-width: 2px 2px 0px 2px;
   border-style: solid;
   border-color: var(--ligth-grey-color);
   transition: all 0.35s ease-out;
-  background-position: 0 250px;
   background-image: url(../images/hero/bim-modeling@1x.jpg);
   background-repeat: no-repeat;
-  background-size: 380px;
+  width: 316px;
+  height: 206px;
+
+  @include mq(mob-only) {
+    background-position: 0 206px;
+    background-size: 380px;
+  }
+
+  @include mq(tab) {
+    width: 348px;
+    height: 250px;
+    background-position: 0 250px;
+    background-size: 380px;
+  }
+  @include mq(desk) {
+    width: 374px;
+    background-size: 380px;
+  }
 
   &:hover {
     color: var(--pure-white-color);
-    background-position: 100% 146px;
-  }
+    background-position: 0 20px;
 
-  &:hover .bimServices__list-item-img2 {
-    background: url(../images/hero/bim-coordination@1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 100%;
-    height: 104px;
-  }
-  &:hover .bimServices__list-item-img3 {
-    background: url(../images/hero/bim-content@1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 100%;
-    height: 104px;
-  }
-  &:hover .bimServices__list-item-img4 {
-    background: url(../images/hero/scan-to-bim@1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 100%;
-    height: 104px;
-  }
-  &:hover .bimServices__list-item-img5 {
-    background: url(../images/hero/bim-automation@1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 100%;
-    height: 104px;
-  }
-
-  &:hover .bimServices__list-item-img6 {
-    background: url(../images/hero/prefabrication@1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 100%;
-    height: 104px;
-  }
-
-  &:hover .bimServices__list-item-img7 {
-    background: url(../images/hero/structural-detailing@1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 100%;
-    height: 100px;
-  }
-
-  &:hover .bimServices__list-item-img8 {
-    background: url(../images/hero/architectural-rendering@1x.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 100%;
-    height: 100px;
+    @include mq(tab) {
+      background-position: 0 60px;
+    }
+    @include mq(desk) {
+      background-position: 0 50px;
+    }
   }
 
   &:hover .bimServices__infoDivP {
@@ -99,43 +77,108 @@
     filter: invert(100%);
     display: inline-block;
     background-repeat: no-repeat;
-    height: 56px;
-    width: 36px;
+    height: 40px;
+    width: 40px;
     background-size: contain;
     background-image: url(../images/vectors/vector-right.svg);
+    background-position: center;
+    @include mq(mob) {
+      width: 20px;
+      height: 24px;
+    }
   }
 }
 
 .bimServices__list-item2 {
   @extend .bimServices__list-item1;
   border-width: 2px 2px 0px 0px;
+  background-image: url(../images/hero/bim-coordination@1x.jpg);
+  @include mq(mob-only) {
+    border-left: 2px solid var(--ligth-grey-color);
+  }
+}
+
+.bimServices__list-item3 {
+  @extend .bimServices__list-item1;
+  background-image: url(../images/hero/bim-content@1x.jpg);
+  @include mq(desk) {
+    border-width: 2px 2px 0px 0px;
+  }
+}
+
+.bimServices__list-item4 {
+  @extend .bimServices__list-item2;
+  background-image: url(../images/hero/scan-to-bim@1x.jpg);
+  @include mq(desk) {
+    border-width: 2px 2px 0px 2px;
+  }
+}
+
+.bimServices__list-item5 {
+  @extend .bimServices__list-item1;
+  background-image: url(../images/hero/bim-automation@1x.jpg);
+  @include mq(desk) {
+    border-width: 2px 2px 0px 0px;
+  }
+}
+
+.bimServices__list-item6 {
+  @extend .bimServices__list-item2;
+  border-bottom: 2px solid var(--ligth-grey-color);
+  background-image: url(../images/hero/prefabrication@1x.jpg);
+  @include mq(mob) {
+    border-bottom: 0;
+  }
+}
+
+.bimServices__list-item7 {
+  @extend .bimServices__list-item1;
+  border-bottom: 2px solid var(--ligth-grey-color);
+  background-image: url(../images/hero/structural-detailing@1x.jpg);
+}
+
+.bimServices__list-item8 {
+  @extend .bimServices__list-item1;
+  border-bottom: 2px solid var(--ligth-grey-color);
+  border-left: 0;
+  background-image: url(../images/hero/architectural-rendering@1x.jpg);
+  @include mq(mob) {
+    border-left: 2px solid var(--ligth-grey-color);
+    border-bottom: 0;
+    border-top: 0;
+  }
+  @include mq(desk) {
+    border-left: 0;
+    border-top: 2px solid var(--ligth-grey-color);
+    border-bottom: 2px solid var(--ligth-grey-color);
+  }
 }
 
 .bimServices__infoDivP {
   margin-bottom: 0;
   display: block;
   padding: 20px 17px;
+
+  @include mq(mob-only) {
+    height: 130px;
+    padding-right: 13px;
+    padding-left: 20px;
+    padding-bottom: 19px;
+  }
 }
 
 .bimServices__list-item-heading {
   @include font-button;
   margin-bottom: 32px;
+  @include mq(mob-only) {
+    margin-bottom: 16px;
+  }
 }
 
 .bimServices__list-item-body {
+  font-size: 13px;
   display: flex;
   justify-content: space-between;
-}
-
-.bimServices__list-item-img,
-.bimServices__list-item-img2,
-.bimServices__list-item-img3,
-.bimServices__list-item-img4,
-.bimServices__list-item-img5,
-.bimServices__list-item-img6,
-.bimServices__list-item-img7,
-.bimServices__list-item-img8 {
-  background: var(--pure-white-color);
 }
 
 .bimServices__list-item-last {
@@ -147,10 +190,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 27px 44px 27px 16px;
+  padding: 27px 40px 27px 16px;
   transition: 350ms;
+  background-image: none;
+  background-color: var(--pure-white-color);
+  text-align: start;
 
-  &:hover .bim_list-item-lasr-arrow {
+  @include mq(mob-only) {
+    padding-right: 32px;
+  }
+
+  &:hover {
+    background-color: var(--pure-black-color);
+    color: var(--pure-white-color);
+    background-image: none;
+  }
+
+  &:hover .bim_list-item-last-arrow {
     filter: invert(100%);
   }
 }
@@ -160,17 +216,7 @@
   margin-bottom: 0;
 }
 
-.bimServices__list-item7 {
-  @extend .bimServices__list-item1;
-  border-bottom: 2px solid var(--ligth-grey-color);
-}
-.bimServices__list-item8 {
-  @extend .bimServices__list-item1;
-  border-bottom: 2px solid var(--ligth-grey-color);
-  border-left: 0;
-}
-
-.bim_list-item-lasr-arrow {
+.bim_list-item-last-arrow {
   background-image: url(../images/vectors/vector-right.svg);
   display: inline-block;
   background-repeat: no-repeat;

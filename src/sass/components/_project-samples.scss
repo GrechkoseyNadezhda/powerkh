@@ -1,0 +1,31 @@
+.section-projects.samples {
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
+
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
+}
+.section-projects__under-slider {
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 90px;
+  text-align: center;
+
+  @include mq(tab) {
+    padding-top: 114px;
+  }
+}
+
+.section-projects__www {
+  color: var(--www-color);
+}
+
+.section-projects__above-slider {
+  @include mq(desk) {
+    width: 582px;
+  }
+}

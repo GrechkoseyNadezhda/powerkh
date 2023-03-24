@@ -1,0 +1,71 @@
+.never-miss {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include mq(desk) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  &__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--pure-white-color);
+
+    @include mq(tab) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    @include mq(desk) {
+      padding-left: 249px;
+      padding-right: 441px;
+    }
+  }
+
+  &__wrapper {
+    padding: 40px 16px;
+    background-color: var(--background-color);
+  }
+
+  &__title {
+    @include font-title;
+    color: var(--dark-grey-color);
+    margin-bottom: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    @include mq(tab) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 288px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    padding-left: 16px;
+    border: none;
+    @include font-body-reg;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid var(--dark-grey-color);
+
+    @include mq(tab) {
+      width: 350px;
+    }
+  }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    width: 158px;
+    height: 48px;
+    color: var(--pure-white-color);
+    background-color: var(--dark-grey-color);
+    @include font-title-14;
+    text-transform: uppercase;
+    border: none;
+  }
+}

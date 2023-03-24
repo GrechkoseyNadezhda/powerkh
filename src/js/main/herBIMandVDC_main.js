@@ -46,8 +46,6 @@ const dataObject = {
 
 const mainHero = refs.herBIMAndVDC;
 
-mainHero.classList.add('bim_main_list');
-
 mainHero.insertAdjacentHTML('beforeend', bimVdc(dataObject));
 document.querySelectorAll('.benefits__item').forEach(el => {
   el.classList.add('bim_main_benefits');

@@ -2,16 +2,6 @@
   background-color: var(--pure-white-color);
 }
 
-.outsourceProjects {
-  padding-bottom: 40px;
-  @include mq(tab) {
-    padding-bottom: 60px;
-  }
-  @include mq(desk) {
-    padding-bottom: 80px;
-  }
-}
-
 .outsourceProjects__title {
   @include font-title;
   padding-bottom: 40px;
@@ -89,9 +79,7 @@
 
 .outsourceProjects__item {
   position: relative;
-  // @include mq(tab) {
-  //   margin-top: 40px;
-  // }
+
   &:not(:first-child) {
     margin-top: 32px;
   }
@@ -99,9 +87,4 @@
     display: flex;
     align-items: center;
   }
-  // &:first-child {
-  //   @include mq(tab) {
-  //     margin-top: 52px;
-  //   }
-  // }
 }

@@ -78,7 +78,7 @@ export const advantagesOfScanYoBIM = {
   title: 'Advantages of Scan to BIM services by Powerkh',
   description:
     'Powerkh is an experienced digital design company that offers Point Cloud modeling services to architects, contractors, engineers, and developers.',
-  list: 'Here’s what you can expect from our partnership:',
+  listDescription: 'Here’s what you can expect from our partnership:',
   items: [
     {
       subtitle: 'Expertise',
@@ -102,6 +102,19 @@ export const advantagesOfScanYoBIM = {
     },
   ],
 };
+
+import img11x from '../../../images/slider/scan-to-bim/scan-to-bim-1@1x.jpg';
+import img12x from '../../../images/slider/scan-to-bim/scan-to-bim-1@2x.jpg';
+import img21x from '../../../images/slider/scan-to-bim/scan-to-bim-2@1x.jpg';
+import img22x from '../../../images/slider/scan-to-bim/scan-to-bim-2@2x.jpg';
+import img31x from '../../../images/slider/scan-to-bim/scan-to-bim-3@1x.jpg';
+import img32x from '../../../images/slider/scan-to-bim/scan-to-bim-3@2x.jpg';
+
+export const scanToBimSliderData = [
+  { img1x: img11x, img2x: img12x },
+  { img1x: img21x, img2x: img22x },
+  { img1x: img31x, img2x: img32x },
+];
 
 export const contactUsScanToBIM = {
   title: 'Choose Powerkh for Scan to BIM Services!',
