@@ -1,0 +1,22 @@
+.case-studies {
+  background-color: var(--pure-white-color);
+  padding-top: 100px;
+
+  @include mq(tab) {
+    padding-top: 120px;
+  }
+
+  @include mq(desk) {
+    padding-top: 140px;
+  }
+}
+
+.case-studies__title {
+  @include font-h1-24;
+}
+
+.blog-section__slider-title {
+  @include mq(desk) {
+    width: 384px !important;
+  }
+}
