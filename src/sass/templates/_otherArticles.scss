@@ -79,4 +79,17 @@
       justify-content: end;
     }
   }
+  &__list {
+    margin-bottom: 0;
+  }
+  &__name {
+    @include mq(tab) {
+      margin-bottom: 7px;
+    }
+  }
+  &__profession {
+    @include mq(tab) {
+      margin-bottom: 8px;
+    }
+  }
 }
