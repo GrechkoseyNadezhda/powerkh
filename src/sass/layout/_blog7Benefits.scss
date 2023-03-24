@@ -137,13 +137,13 @@
   overflow: hidden;
 }
 
-.slick-track {
-  // display: flex;
-  // align-items: center;
-  // justify-content: flex-start;
-  // gap: 24px;
-  // margin: 0 auto;
-}
+// .slick-track {
+// display: flex;
+// align-items: center;
+// justify-content: flex-start;
+// gap: 24px;
+// margin: 0 auto;
+// }
 
 .section-ourCases__sliderArrow .slick-arrow {
   position: absolute;
@@ -171,4 +171,37 @@
   right: 0;
   margin-right: 6px;
   background: url('../images/vectors/slider-arrow.svg') 0 0 / 100% no-repeat;
+}
+
+.seven-benefits-of-bim-page,
+.top-thirty-architectural-rendering {
+  .blog-preview__section {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+      @include mq(tab) {
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+      @include mq(desk) {
+        padding-left: 249px;
+        padding-right: 441px;
+      }
+    }
+    &-list {
+      justify-content: center;
+    }
+  }
+  .blog-preview-section {
+    &__body {
+      width: 316px;
+
+      @include mq(tab) {
+        width: 338px;
+      }
+      @include mq(desk) {
+        width: 356px;
+      }
+    }
+  }
 }

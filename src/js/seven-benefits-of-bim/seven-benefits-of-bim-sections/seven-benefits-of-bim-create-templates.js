@@ -8,6 +8,7 @@ import contentsHBS from '../../../templates/contents.hbs';
 import contentsInformationHBS from '../../../templates/contentsInformation.hbs';
 import whatProblemsHBS from '../../../templates/whatProblems.hbs';
 import authorHBS from '../../../templates/author.hbs';
+import architectRendServHBS from '../../../templates/architecturalRenderingServices.hbs';
 
 import {
   heroPartFourData,
@@ -15,6 +16,7 @@ import {
   contentsBim,
   contentsInformBim,
   whatProblemsBim,
+  architectRendServData,
 } from './seven-benefits-of-bim-data';
 
 import { refs } from '../../common/refs-services';
@@ -39,8 +41,8 @@ $('.section-ourCases__slider.b7b').slick({
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-      }
-    }
+      },
+    },
   ],
   mobileFirst: true,
   centerPadding: '100px',
@@ -55,6 +57,11 @@ useTemplate(refs.share, shareHBS, shareBim);
 useTemplate(refs.contents, contentsHBS, contentsBim);
 useTemplate(refs.contentsInform, contentsInformationHBS, contentsInformBim);
 useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
+useTemplate(
+  refs.architectRendServ,
+  architectRendServHBS,
+  architectRendServData
+);
 
 fetchDatabaseAuthor('/authors/KostiaRapina.json', refs.author, authorHBS);
 makeBoldFirst('.whereToFind__text__list');

@@ -1,13 +1,12 @@
 .hero-part-four {
   padding-top: 140px;
-  padding-bottom: 166px;
-  height: auto;
+  height: 350px;
   @include mq(tab) {
-    padding-bottom: 146px;
+    height: 308px;
   }
   @include mq(tab) {
     padding-top: 260px;
-    padding-bottom: 168px;
+    height: 450px;
   }
 }
 
