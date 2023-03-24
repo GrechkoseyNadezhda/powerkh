@@ -35,7 +35,7 @@
     color: var(--dark-grey-color);
     margin-bottom: 32px;
     text-align: center;
-
+    text-transform: uppercase;
     @include mq(tab) {
       margin-bottom: 35px;
     }
