@@ -22,6 +22,13 @@ export const whatProblemsData = {
     'Increase your company’s online process.',
   ],
 };
+
+export const listOfArticles = {
+  title: "Other articles of this author",
+  list: [
+    { article: 'Enhancing Productivity in BIM Projects: Best Tips & Strategies', link: '#' }, { article: 'Boosting productivity for Scan to BIM Projects', link: '#' }],
+}
+
 export const architectRendServData = {
   title: 'Architectural Rendering Services',
   description:

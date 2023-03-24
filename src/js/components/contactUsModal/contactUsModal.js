@@ -1,21 +1,30 @@
 import { createDealAndContact } from '../../common/crm-sendpulse';
-import { openModal, closeModal } from './contactUs-functions';
+import {
+  openModal,
+  OnContactUsClick,
+  closeModal,
+  onBtnCloseClick,
+} from './contactUs-click-functions';
 import { refsModal } from './contactUs-refs';
+import arrow from '../../../images/vectors/arrow.svg';
+import {
+  openAnswerModal,
+  rewriteHeroBlockAnswer,
+} from './contactUs-submitModal';
+import { refsCase } from '../../common/refs-services';
 
 if (refsModal.contactUsButtons.length > 0) {
   for (let i = 0; i < refsModal.contactUsButtons.length; i++) {
     const contactUsBtn = refsModal.contactUsButtons[i];
-    contactUsBtn.addEventListener('click', () =>
-      openModal(refsModal.backdropQuestion)
-    );
+    contactUsBtn.addEventListener('click', OnContactUsClick);
   }
 }
-refsModal.closeBtn.addEventListener('click', closeModal);
 
-refsModal.form.addEventListener('submit', formSubmit);
+refsModal.closeBtn.addEventListener('click', onBtnCloseClick);
+
+refsModal.questionForm.addEventListener('submit', onFormSubmit);
 
 const PHONE_REGEXP = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
-
 const EMAIL_REGEXP =
   /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
 
@@ -27,37 +36,48 @@ function validatePhone(phone) {
   return PHONE_REGEXP.test(phone);
 }
 
-async function formSubmit(e) {
+export async function onFormSubmit(e) {
   e.preventDefault();
   const nameInput = e.currentTarget.elements[0].value;
   const contactInput = e.currentTarget.elements[1].value;
+  const messageInput = e.currentTarget.elements[2].value;
   const isValidateEmail = validateEmail(contactInput);
   const isValidatePhone = validatePhone(contactInput);
 
   if (isValidateEmail || isValidatePhone) {
     refsModal.contactUsSubmit.setAttribute('disabled', 'disabled');
     const modalRequest = {
-      name: nameInput,
+      name: messageInput ? nameInput + '_' + messageInput : nameInput,
       phone: isValidatePhone ? contactInput : '',
       email: isValidateEmail ? contactInput : '',
     };
+
     const result = await createDealAndContact(modalRequest);
-    console.log(result.result, result);
-    closeModal();
-    if (result.result) {
-      openModal(refsModal.backdropSuccess);
+
+    if (e.target.classList.value === 'contact-form') {
+      rewriteHeroBlockAnswer(result);
       return;
     }
-    if (!result.result && result.message === 'Duplicate data') {
-      openModal(refsModal.backdropDuplicate);
-      return;
-    }
-    if (!result.result && result.message !== 'Duplicate data') {
-      openModal(refsModal.backdropFail);
+
+    if (e.target.classList.value.includes('question-form')) {
+      openAnswerModal(result);
       return;
     }
   }
-
   refsModal.errorMessage.classList.remove('visually-hidden');
   refsModal.contactUsSubmit.removeAttribute('disabled');
+}
+export async function onSubscribeSubmit(e) {
+  e.preventDefault();
+  const modalRequest = {
+    email: e.currentTarget.elements[0].value,
+    name: 'Підписка на сторінку',
+  };
+
+  if (modalRequest.email) {
+    const result = await createDealAndContact(modalRequest);
+    refsCase.subscribeForm.reset();
+    openAnswerModal(result);
+    return;
+  }
 }
