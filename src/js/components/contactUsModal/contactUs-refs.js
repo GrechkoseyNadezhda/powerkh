@@ -1,10 +1,11 @@
 export const refsModal = {
   contactUsButtons: document.querySelectorAll('.js-btn-modal'),
   backdropQuestion: document.querySelector('.question'),
-  backdropSuccess: document.querySelector('.success'),
+  backdropAnswer: document.querySelector('.answer'),
   backdropDuplicate: document.querySelector('.duplicate'),
   backdropFail: document.querySelector('.fail'),
   closeBtn: document.querySelector('.contact-modal__close-btn'),
+  modalAnswerContent: document.querySelector('.contact-modal__content--answer'),
   contactUsSubmit: document.querySelector('.modal-submit'),
   form: document.querySelector('.question-form'),
   body: document.body,
