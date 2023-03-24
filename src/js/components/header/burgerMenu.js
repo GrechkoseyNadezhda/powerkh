@@ -1,7 +1,7 @@
 const iconMenu = document.querySelector('.burger-btn');
 const burgerMenu = document.querySelector('.burger-menu');
 const backdropBurger = document.querySelector('.backdrop-burger');
-body = document.body;
+const body = document.body;
 
 if (iconMenu) {
   iconMenu.addEventListener('click', openBurger);
