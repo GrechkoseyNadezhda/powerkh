@@ -21,6 +21,7 @@ export const refs = {
   otherArticlesLinks: document.querySelector('.other-articles__wrapper'),
   otherArticlesAuthor: document.querySelector('.other-articles__author-info'),
 
+  renderSlider: document.querySelector('.renderSlider'),
 };
 export const refsCase = {
   heroTextBlock: document.querySelector('.case-description__text-block'),

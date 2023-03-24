@@ -1,16 +1,27 @@
 .ourCaseStudies__section {
-  background-color: var(--pure-white-color);
-  padding-bottom: 59px;
+  margin-bottom: 40px;
+  @include mq(tab) {
+    margin-bottom: 60px;
+  }
+  @include mq(desk) {
+    margin-bottom: 80px;
+  }
 }
 
 .caseStudies__subtitle {
-  margin-bottom: 52px;
+  margin-bottom: 16px;
   @include font-title;
+  @include mq(tab) {
+    margin-bottom: 52px;
+  }
 }
 
 .caseStudies__subBody {
   @include font-body-reg;
-  margin-bottom: 52px;
+  margin-bottom: 40px;
+  @include mq(tab) {
+    margin-bottom: 52px;
+  }
 }
 
 .caseStudies__list {
@@ -97,6 +108,9 @@
   width: 100%;
   @include mq(tab) {
     height: 201px;
+  }
+  @include mq(mob-only) {
+    height: 175px;
   }
 }
 
