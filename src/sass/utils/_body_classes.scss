@@ -169,3 +169,26 @@ body._lock {
 .suspended-case-page {
   background-color: var(--pure-white-color);
 }
+
+.top-thirty-architectural-rendering {
+  background: none;
+  .hero-part-four {
+    background-color: var(--dark-grey-color);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/top-30-architectural@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/top-30-architectural@2x.jpg');
+    }
+  }
+}

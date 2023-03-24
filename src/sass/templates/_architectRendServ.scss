@@ -1,4 +1,4 @@
-.never-miss {
+.architect-rend-serv {
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -13,7 +13,6 @@
   &__container {
     padding-left: 20px;
     padding-right: 20px;
-    background-color: var(--pure-white-color);
 
     @include mq(tab) {
       padding-left: 32px;
@@ -24,48 +23,39 @@
       padding-right: 441px;
     }
   }
-
-  &__wrapper {
-    padding: 40px 16px;
+  &__wrap {
+    padding: 40px 20px;
     background-color: var(--background-color);
+    @include mq(tab) {
+      padding: 40px 32px;
+    }
+    @include mq(desk) {
+      padding: 40px 54px;
+    }
   }
-
   &__title {
+    text-align: center;
     @include font-title;
     color: var(--dark-grey-color);
-    margin-bottom: 32px;
+  }
+  &__paragraph {
     text-align: center;
-    text-transform: uppercase;
-    @include mq(tab) {
-      margin-bottom: 35px;
-    }
-  }
-
-  &__input {
-    display: block;
-    width: 288px;
-    margin: 0 auto;
-    margin-bottom: 32px;
-    padding-left: 16px;
-    border: none;
+    margin: 32px 0;
     @include font-body-reg;
-    background-color: transparent;
-    outline: none;
-    border-bottom: 1px solid var(--dark-grey-color);
-
-    @include mq(tab) {
-      width: 350px;
-    }
+    color: var(--dark-grey-color);
   }
-  &__btn {
+  &__link {
     display: block;
     margin: 0 auto;
-    width: 158px;
+    width: 108px;
     height: 48px;
-    color: var(--pure-white-color);
-    background-color: var(--dark-grey-color);
+    left: 298px;
+    top: 187px;
+
+    background: var(--dark-grey-color);
     @include font-title-14;
     text-transform: uppercase;
-    border: none;
+    color: var(--pure-white-color);
+    padding: 16px;
   }
 }

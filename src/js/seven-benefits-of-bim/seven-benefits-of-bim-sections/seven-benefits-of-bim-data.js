@@ -31,8 +31,17 @@ export const whatProblemsBim = {
   ],
 };
 
+
 export const listOfArticles = {
   title: "Other articles of this author",
   list: [
     'The Benefits of Using Laser Scanning in Construction You Can’t Miss', 'As-Built Drawings 101: All You Need to Know', 'BIM Outsourcing vs in-House Teams', 'Construction RFI: Template, Best Practices'],
 }
+
+export const architectRendServData = {
+  title: 'BIM Modeling Services',
+  description:
+    'Looking for a way to improve your design and manage your construction effectively? Powerkh - a trusted BIM & VDC services provider with extensive engineering experience and a portfolio of 200+ successful BIM & VDC projects.',
+  link: './bim-modeling.html',
+};
+

@@ -8,7 +8,7 @@ import contactUsHBS from '../../../templates/contactUs.hbs';
 import sliderHBS from '../../../templates/ourProjectsSlider.hbs';
 
 import { createFAQsection } from '../../common/createFaqSection';
-import { toggleFaq } from '../../common/toggle-faq';
+
 import {
   heroScanToBIM,
   herBIMAndVDCScanToBIM,
@@ -35,4 +35,3 @@ useTemplate(refs.slider, sliderHBS, scanToBimSliderData);
 useTemplate(refs.contactUs, contactUsHBS, contactUsScanToBIM);
 
 createFAQsection('/faq/scanToBim.json', refs.faq, faqHBS);
-toggleFaq();
