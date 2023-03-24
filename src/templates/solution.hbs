@@ -1,0 +1,45 @@
+{{! Приймає об'єкт {title: назва, imgSm1x: відповідна картинка,imgSm2x: відповідна картинка, imgMid1x: відповідна картинка,imgMid2x: відповідна картинка,imgLar1x: відповідна картинка,imgLar2x: відповідна картинка, gif: шлях до гіфки} }}
+{{! <section class='container solution'> }}
+
+{{! import imgLar1x from '../../../images/solution/floor-assembly/floor-assembly-lar@1x.jpg';
+import imgLar2x from '../../../images/solution/floor-assembly/floor-assembly-lar@2x.jpg';
+import imgMid1x from '../../../images/solution/floor-assembly/floor-assembly-mid@1x.jpg';
+import imgMid2x from '../../../images/solution/floor-assembly/floor-assembly-mid@2x.jpg';
+import imgSm1x from '../../../images/solution/floor-assembly/floor-assembly-sm@1x.jpg';
+import imgSm2x from '../../../images/solution/floor-assembly/floor-assembly-sm@2x.jpg';
+import gif from '../../../images/solution/floor-assembly/floor-assembly-gif.gif';
+
+export const solutionObj = {
+  title: 'Test-solution',
+  imgSm1x: imgSm1x,
+  imgSm2x: imgSm2x,
+  imgMid1x: imgMid1x,
+  imgMid2x: imgMid2x,
+  imgLar1x: imgLar1x,
+  imgLar2x: imgLar2x,
+  gif: gif,
+}; }}
+<div class="container">
+<h2 class='solution__title'>{{this.title}}</h2>
+<div class='solution__img-container'>
+  <img
+    srcset='
+            {{this.imgSm1x}} 320w,
+            {{this.imgSm2x}} 640w,
+            {{this.imgMid1x}} 704w,
+            {{this.imgMid2x}} 1408w,
+            {{this.imgLar1x}} 720w,
+            {{this.imgLar2x}} 1440w
+          '
+    sizes='(min-width: 1440px) 720px, (min-width: 768px) 704px,
+    (min-width: 360px) 316px, 100vw'
+    src={{this.imgSm1x}}
+    alt='formwork pic'
+    class='solution__img'
+  />
+</div>
+<div class='solution__gif-container'>
+  <img class='solution__gif' src={{this.gif}} alt='gif' />
+</div>
+</div>
+{{! </div> }}

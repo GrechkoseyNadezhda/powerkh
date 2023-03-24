@@ -11,19 +11,28 @@
     <link rel="stylesheet" href="../sass/index.scss" />
     <script type="module" src="../index.js"></script>
   </head>
-  <body>
-    <!-- <div class="container"> -->
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+  <body style="background-color: white">
     <include src="./partials/components/header/header.html"></include>
 
-    <include src="./partials/exampleOutsourceProjects.html"></include>
+    <include src="./partials/components/main/hero-main.html"></include>
+    <include
+      src="./partials/components/main/bimVDCservices-main.html"
+    ></include>
 
-    <include src="./partials/components/faq.html"></include>
+    <section class="howWeWork"></section>
+
+    <include src="./partials/components/main/ourServisesGrid.html"></include>
+
+    <include src="./partials/components/main/ourCustomers.html"></include>
+
+    <include src="./partials/exampleOutsourceProjects.html"></include>
 
     <include src="./partials/components/ourCaseStudies.html"></include>
 
     <include src="./partials/components/haveBIMproject.html"></include>
 
     <include src="./partials/components/footer.html"></include>
+    <include src="./partials/components/contactUsModal.html"></include>
+    <include src="./partials/components/header/burgerMenu.html"></include>
   </body>
 </html>

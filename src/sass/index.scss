@@ -1,7 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 // Utils
-@import './main.scss';
 @import './utils/variables';
 @import './utils/fonts';
 @import './utils/mixins';
@@ -20,13 +19,20 @@
 
 @import './templates/architecAndStructBim';
 @import './templates/impactOnBusiness';
-
+@import './templates/architectRendServ';
+@import './templates/contents';
 @import './templates/sectionProjects';
+@import './templates/hero-part4';
+@import './templates/author';
+@import './templates/share';
+
 //Templates-caseStudies
 
 @import './templates/heroDesign';
 @import './templates/processTemplate';
 @import './templates/contactForm';
+
+@import './templates/solution';
 
 //Components
 @import './components/header';
@@ -34,12 +40,45 @@
 @import './components/haveBIMproject';
 @import './templates/faq.scss';
 @import './components/ourCaseStudies';
+@import './components/socialNetworkLinks';
 
 @import './components/joinTeam';
-@import './components/footer';
+@import './components/project-samples';
 
 @import './components/automate-repetitive-design';
+@import './components/contentsDescription';
+@import './components/footer';
+@import './components/main/bimServices';
+@import './components/main/ourServicesGrid';
+@import './components/main/customers';
+@import './components/main/ousource';
+@import './components/main/hero-main';
+@import './components/contactUsModal';
+@import './components/top-thirty-architectural/top-ten-architectural';
+@import './components/archi-rendering-structure';
+@import './components/top-thirty-architectural/top-twenty-architectural';
+@import './components/top-thirty-architectural/final-thoughts';
+
+//Blog
+
+@import './components/blog/blog-grid-preview';
+@import './components/automate-repetitive-design';
+@import './components/neverMiss';
+
+@import './components/whatProblems';
+
+@import './components/sevenBenefitsOfBim/disadvantages';
+@import './components/sevenBenefitsOfBim/whereToFind';
+@import './components/sevenBenefitsOfBim/conclusion';
+@import './components/sevenBenefitsOfBim/benefitsOfBim';
+
+@import './templates/otherArticlesAuthor';
+@import './templates/otherArticlesLinks';
+
+@import './components/footer';
 
 // Layout
 
 @import './layout/contacts';
+@import './layout/blog';
+@import './layout/blog7Benefits';

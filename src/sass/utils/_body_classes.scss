@@ -7,6 +7,11 @@ body {
   background-attachment: fixed;
   height: 100vh;
 }
+
+body._lock {
+  overflow: hidden;
+}
+
 .bim-coordination-page {
   background-image: linear-gradient(
       180deg,
@@ -21,7 +26,20 @@ body {
     background-image: url('../images/hero/bim-coordination@2x.jpg');
   }
 }
+.bim-content-page {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('../images/hero/bim-content@1x.jpg');
 
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/hero/bim-content@2x.jpg');
+  }
+}
 .prefabrication-page {
   background-image: linear-gradient(
       180deg,
@@ -78,7 +96,7 @@ body {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/architectural-rendering@1x.jpg');
+    background-image: url('../images/hero/architectural-rendering@2x.jpg');
   }
 }
 
@@ -97,6 +115,28 @@ body {
   }
 }
 
+.seven-benefits-of-bim-page {
+  background: none;
+  .hero-part-four {
+    background-color: var(--dark-grey-color);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/benefits-of-bim-services@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/benefits-of-bim-services@2x.jpg');
+    }
+  }
+}
 .contacts-page {
   background-image: linear-gradient(
       180deg,
@@ -109,5 +149,46 @@ body {
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url('../images/hero/contacts@2x.jpg');
+  }
+}
+
+.bim-automation-page {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('../images/hero/bim-automation@1x.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/hero/bim-automation@2x.jpg');
+  }
+}
+.suspended-case-page {
+  background-color: var(--pure-white-color);
+}
+
+.top-thirty-architectural-rendering {
+  background: none;
+  .hero-part-four {
+    background-color: var(--dark-grey-color);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/top-30-architectural@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/top-30-architectural@2x.jpg');
+    }
   }
 }

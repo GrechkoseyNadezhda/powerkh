@@ -23,3 +23,25 @@
   @include font-button;
   background-color: var(--dark-grey-color);
 }
+
+.disable-interaction {
+  pointer-events: none;
+}
+.error-message {
+  position: relative;
+  display: inline-block;
+  margin-top: 5px;
+  padding-left: 19px;
+  color: var(--error-color);
+  &::before {
+    margin-right: 6px;
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: block;
+    width: 13px;
+    height: 12px;
+    background-image: url('../images/vectors/attantion.svg');
+  }
+}

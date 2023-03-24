@@ -16,6 +16,8 @@ list: [{{!масив обєктів}},{{!масив обєктів}}]
     <li><p class='BIM__subtitle'>{{this}}</p></li>
      {{/each}}
   </ul>
+  <div class="hidden">
+  <p class='BIM__benefits-mainpage'><b>{{this.textForMainpage}}</b></p>
        <p class='BIM__benefits-subtitle'>{{this.smallTitle}}</p>
   <ul class='BIMServices__list'>
     {{#each this.list}}
@@ -24,5 +26,5 @@ list: [{{!масив обєктів}},{{!масив обєктів}}]
         </p>
       </li>
     {{/each}}
-  </ul>
+  </ul></div>
 </div>

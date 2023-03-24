@@ -1,0 +1,31 @@
+.customers__list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @include mq(mob-only) {
+    row-gap: 40px;
+    justify-content: space-between;
+  }
+
+  @include mq(tab) {
+    gap: 103px;
+    margin-top: 52px;
+  }
+  @include mq(desk) {
+    flex-wrap: nowrap;
+    gap: 28px;
+    height: 84px;
+  }
+}
+
+.customers__section {
+  @extend .bimServices__section;
+  padding-top: 0;
+}
+
+.customers__list img {
+  width: 150px;
+}

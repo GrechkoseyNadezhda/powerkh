@@ -1,8 +1,21 @@
+import img1L1x from '../../../images/slider/bim-coordination/bim-coordination-1@1x.jpg';
+import img1L2x from '../../../images/slider/bim-coordination/bim-coordination-1@2x.jpg';
+import img2L1x from '../../../images/slider/bim-coordination/bim-coordination-2@1x.jpg';
+import img2L2x from '../../../images/slider/bim-coordination/bim-coordination-2@2x.jpg';
+import img3L1x from '../../../images/slider/bim-coordination/bim-coordination-3@1x.jpg';
+import img3L2x from '../../../images/slider/bim-coordination/bim-coordination-3@2x.jpg';
 export const heroCoordination = {
   subtitle: 'BIM Coordination',
   text: 'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
 };
-export const briefDescriptCoordination = {};
+export const briefDescriptCoordination = {
+  title: 'BIM Coordination & Clash Detection',
+  listText: [
+    'Back in the day, design specialists used tracing paper to check the compatibility of architectural, structural, and MEP systems. As a result, many clashes become known on-site, which leads to re-works, slows projects, and inflates the budget.',
+    'Powerkh can evaluate your entire construction according to the project’s documentation, visual references, and technical specifications. Our BIM coordination services include clash detection, constructability reviews, coordination meetings, and other solutions to keep your project on track.',
+    'BIM coordination allows designers to use interactive 3D models to eliminate conflicts in design and mitigate risks during the construction phase.',
+  ],
+};
 export const howCoordination = {
   title: 'BIM Coordination Process at Powerkh',
   list: [
@@ -86,7 +99,7 @@ export const contactUsCoordination = {
     'Powerkh delivers affordable off-site BIM coordination services for construction and design projects of varying complexity. We know how to keep the customer engaged with minimal participation. Drop us a call if you want to put the coordination of your project in capable hands!',
 };
 export const projectCoordination = [
-  '../images/coordination/image-132.jpg',
-  '../images/coordination/image-133.jpg',
-  '../images/coordination/image-134.jpg',
+  { img1x: img1L1x, img2x: img1L2x },
+  { img1x: img2L1x, img2x: img2L2x },
+  { img1x: img3L1x, img2x: img3L2x },
 ];

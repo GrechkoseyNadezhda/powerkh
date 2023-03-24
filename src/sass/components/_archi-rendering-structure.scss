@@ -1,0 +1,15 @@
+.renderService__slider {
+  background-color: var(--pure-white-color);
+}
+
+.howWeWork__underSlider {
+  padding-top: 90px;
+
+  @include mq(tab) {
+    padding-top: 122px;
+  }
+
+  @include mq(desk) {
+    padding-top: 151px;
+  }
+}

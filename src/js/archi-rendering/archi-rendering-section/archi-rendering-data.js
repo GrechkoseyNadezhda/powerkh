@@ -1,3 +1,23 @@
+import img1L1x from '../../../images/slider/architectural-rendering/render-services/architectural-rendering-1@1x.jpg';
+import img1L2x from '../../../images/slider/architectural-rendering/render-services/architectural-rendering-1@2x.jpg';
+import img2L1x from '../../../images/slider/architectural-rendering/render-services/architectural-rendering-2@1x.jpg';
+import img2L2x from '../../../images/slider/architectural-rendering/render-services/architectural-rendering-2@2x.jpg';
+import img3L1x from '../../../images/slider/architectural-rendering/render-services/architectural-rendering-3@1x.jpg';
+import img3L2x from '../../../images/slider/architectural-rendering/render-services/architectural-rendering-3@2x.jpg';
+import img4L1x from '../../../images/slider/architectural-rendering/render-services/architectural-rendering-4@1x.jpg';
+import img4L2x from '../../../images/slider/architectural-rendering/render-services/architectural-rendering-4@2x.jpg';
+
+import img5L1x from '../../../images/slider/architectural-rendering/project-samples/architectural-rendering-1@1x.jpg';
+import img5L2x from '../../../images/slider/architectural-rendering/project-samples/architectural-rendering-1@2x.jpg';
+import img6L1x from '../../../images/slider/architectural-rendering/project-samples/architectural-rendering-2@1x.jpg';
+import img6L2x from '../../../images/slider/architectural-rendering/project-samples/architectural-rendering-2@2x.jpg';
+import img7L1x from '../../../images/slider/architectural-rendering/project-samples/architectural-rendering-3@1x.jpg';
+import img7L2x from '../../../images/slider/architectural-rendering/project-samples/architectural-rendering-3@2x.jpg';
+import img8L1x from '../../../images/slider/architectural-rendering/project-samples/architectural-rendering-4@1x.jpg';
+import img8L2x from '../../../images/slider/architectural-rendering/project-samples/architectural-rendering-4@2x.jpg';
+import img9L1x from '../../../images/slider/architectural-rendering/project-samples/architectural-rendering-5@1x.jpg';
+import img9L2x from '../../../images/slider/architectural-rendering/project-samples/architectural-rendering-5@2x.jpg';
+
 export const archiRenderingFaq = [
   {
     question: 'How long does it take to produce an architectural 3D render?',
@@ -93,7 +113,7 @@ export const howCreates = {
 export const whatWeOffer = {
   title: 'What We Offer:',
   text: 'Powerkh offers a wide variety of 3D architectural rendering services for companies in the US, UK, and Europe.',
-  topic: 'You can order: ---',
+  topic: 'You can order:',
   list: [
     'Interior Rendering. Our interior architectural rendering services include high-quality 3D models for offices and separate rooms.',
     'Exterior Rendering. We can transform architectural plans and reference images into photorealistic digital models of buildings with wonderful lighting.',
@@ -106,4 +126,25 @@ export const whatWeOffer = {
     'Product Rendering. Our experts can help you visualize product mockups, promo materials, and prototypes.',
     'Night & Day View Rendering. Let prospective buyers see your real estate with near-perfect lighting and camera angles.',
   ],
+};
+
+export const renderServices = [
+  { img1x: img1L1x, img2x: img1L2x },
+  { img1x: img2L1x, img2x: img2L2x },
+  { img1x: img3L1x, img2x: img3L2x },
+  { img1x: img4L1x, img2x: img4L2x },
+];
+
+export const projectSamples = [
+  { img1x: img5L1x, img2x: img5L2x },
+  { img1x: img6L1x, img2x: img6L2x },
+  { img1x: img7L1x, img2x: img7L2x },
+  { img1x: img8L1x, img2x: img8L2x },
+  { img1x: img9L1x, img2x: img9L2x },
+];
+
+export const archiRenderingContact = {
+  title: 'Outsource 3D & Architectural Rendering Projects to Powerkh',
+  description:
+    'Do you want to engage your customers on a whole new level? Powerkh can add significant value to your projects with its spectacular, accurate 2D & 3D renderings. Contact us today to get your project going!',
 };

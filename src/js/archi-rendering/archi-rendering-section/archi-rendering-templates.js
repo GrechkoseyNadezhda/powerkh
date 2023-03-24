@@ -2,22 +2,31 @@ import heroTemplate from '../../../templates/hero.hbs';
 import herBIMAndVDC from '../../../templates/herBIMAndVDCServices.hbs';
 import howWeWorkTemplate from '../../../templates/howWeWork.hbs';
 import servicesTemplate from '../../../templates/architecAndStructBim.hbs';
-
+import sliderTemplate from '../../../templates/ourProjectsSlider.hbs';
+import contactUsTemplate from '../../../templates/contactUs.hbs';
 import faqTemplate from '../../../templates/faq.hbs';
-import { refs } from '../../common/refs-services';
+
+import { refs, refsCase } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
-import { toggleFaq } from '../../common/toggle-faq';
+
 import {
   archiRenderingHero,
   BIMservices,
   howCreates,
   whatWeOffer,
-  archiRenderingFaq,
+  archiRenderingContact,
+  projectSamples,
+  renderServices,
 } from './archi-rendering-data';
+import { makeBoldFirst } from '../../common/make-bold-first';
+import { createFAQsection } from '../../common/createFaqSection';
 
 useTemplate(refs.hero, heroTemplate, archiRenderingHero);
 useTemplate(refs.herBIMAndVDC, herBIMAndVDC, BIMservices);
+useTemplate(refsCase.renderSlider, sliderTemplate, renderServices);
 useTemplate(refs.howWeWork, howWeWorkTemplate, howCreates);
 useTemplate(refs.services, servicesTemplate, whatWeOffer);
-useTemplate(refs.faq, faqTemplate, archiRenderingFaq);
-toggleFaq();
+useTemplate(refsCase.sampleSlider, sliderTemplate, projectSamples);
+useTemplate(refs.contactUs, contactUsTemplate, archiRenderingContact);
+createFAQsection('/faq/bimAutomation.json', refs.faq, faqTemplate);
+makeBoldFirst('.bim-automation-services__item');

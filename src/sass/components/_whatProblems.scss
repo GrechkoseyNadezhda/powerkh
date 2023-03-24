@@ -1,0 +1,56 @@
+.what-problems {
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    padding-bottom: 32px;
+  }
+
+  &__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    @include mq(tab) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    @include mq(desk) {
+      padding-left: 249px;
+      padding-right: 441px;
+    }
+  }
+  &__title {
+    @include font-title-20;
+    color: var(--dark-grey-color);
+    text-align: center;
+  }
+  &__paragraph {
+    margin-top: 20px;
+    @include font-body-reg;
+    color: var(--dark-grey-color);
+  }
+  &__list {
+    margin-top: 20px;
+    margin-bottom: 1px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__item {
+    @include font-body-reg;
+    color: var(--dark-grey-color);
+    position: relative;
+  }
+}
+
+.what-problems__item::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 9px;
+  top: 7px;
+  left: -20px;
+
+  background-image: url(../images/vectors/arrow-right-black.svg);
+  background-repeat: no-repeat;
+}
