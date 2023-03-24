@@ -14,6 +14,14 @@ export const contentsData = {
   ],
 };
 
+export const whatProblemsData = {
+  list: [
+    'Communicate your ideas with ease',
+    'Stay relevant and competitive',
+    'Build an impressive portfolio',
+    'Increase your company’s online process.',
+  ],
+};
 export const architectRendServData = {
   title: 'Architectural Rendering Services',
   description:

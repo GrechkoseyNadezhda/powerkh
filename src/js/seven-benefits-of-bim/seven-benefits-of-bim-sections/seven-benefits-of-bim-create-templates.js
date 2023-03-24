@@ -8,7 +8,12 @@ import contentsHBS from '../../../templates/contents.hbs';
 import contentsInformationHBS from '../../../templates/contentsInformation.hbs';
 import whatProblemsHBS from '../../../templates/whatProblems.hbs';
 import authorHBS from '../../../templates/author.hbs';
+
+import otherArticlesLinksHBS from '../../../templates/otherArticlesLinks.hbs';
+import authorInfoHBS from '../../../templates/otherArticlesAuthor.hbs';
+
 import architectRendServHBS from '../../../templates/architecturalRenderingServices.hbs';
+
 
 import {
   heroPartFourData,
@@ -16,7 +21,11 @@ import {
   contentsBim,
   contentsInformBim,
   whatProblemsBim,
+
+  listOfArticles,
+
   architectRendServData,
+
 } from './seven-benefits-of-bim-data';
 
 import { refs } from '../../common/refs-services';
@@ -57,11 +66,16 @@ useTemplate(refs.share, shareHBS, shareBim);
 useTemplate(refs.contents, contentsHBS, contentsBim);
 useTemplate(refs.contentsInform, contentsInformationHBS, contentsInformBim);
 useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
+
+useTemplate(refs.otherArticlesLinks, otherArticlesLinksHBS, listOfArticles);
+
+fetchDatabaseAuthor('/authors/KostiaRapina.json', refs.author, refs.otherArticlesAuthor, authorHBS, authorInfoHBS);
+
 useTemplate(
   refs.architectRendServ,
   architectRendServHBS,
   architectRendServData
 );
 
-fetchDatabaseAuthor('/authors/KostiaRapina.json', refs.author, authorHBS);
+
 makeBoldFirst('.whereToFind__text__list');

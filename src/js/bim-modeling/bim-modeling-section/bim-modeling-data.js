@@ -1,15 +1,11 @@
-// import img11x from '../../../images/slider/bim-modeling/bim-coordination-1@1x.jpg';
-// import img12x from '../../../images/slider/bim-modeling/bim-coordination-1@2x.jpg';
-// import img21x from '../../../images/slider/bim-modeling/bim-coordination-2@1x.jpg';
-// import img22x from '../../../images/slider/bim-modeling/bim-coordination-2@2x.jpg';
-// import img31x from '../../../images/slider/bim-modeling/bim-coordination-3@1x.jpg';
-// import img32x from '../../../images/slider/bim-modeling/bim-coordination-3@2x.jpg';
-import img1L1x from '../../../images/slider/bim-coordination/bim-coordination-1@1x.jpg';
-import img1L2x from '../../../images/slider/bim-coordination/bim-coordination-1@2x.jpg';
-import img2L1x from '../../../images/slider/bim-coordination/bim-coordination-2@1x.jpg';
-import img2L2x from '../../../images/slider/bim-coordination/bim-coordination-2@2x.jpg';
-import img3L1x from '../../../images/slider/bim-coordination/bim-coordination-3@1x.jpg';
-import img3L2x from '../../../images/slider/bim-coordination/bim-coordination-3@2x.jpg';
+
+import img1L1x from '../../../images/slider/bim-modeling/bim-modeling-1@1x.jpg'
+import img1L2x from '../../../images/slider/bim-modeling/bim-modeling-1@2x.jpg';
+import img2L1x from '../../../images/slider/bim-modeling/bim-modeling-2@1x.jpg';
+import img2L2x from '../../../images/slider/bim-modeling/bim-modeling-2@2x.jpg';
+import img3L2x from '../../../images/slider/bim-modeling/bim-modeling-3@2x.jpg';
+import img3L1x from '../../../images/slider/bim-modeling/bim-modeling-3@1x.jpg';
+
 
   export const heroModeling = {
     subtitle: 'BIM Modeling',

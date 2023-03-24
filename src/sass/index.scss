@@ -56,6 +56,8 @@
 @import './components/contactUsModal';
 @import './components/top-thirty-architectural/top-ten-architectural';
 @import './components/archi-rendering-structure';
+@import './components/top-thirty-architectural/top-twenty-architectural';
+@import './components/top-thirty-architectural/final-thoughts';
 
 //Blog
 
@@ -69,6 +71,9 @@
 @import './components/sevenBenefitsOfBim/whereToFind';
 @import './components/sevenBenefitsOfBim/conclusion';
 @import './components/sevenBenefitsOfBim/benefitsOfBim';
+
+@import './templates/otherArticlesAuthor';
+@import './templates/otherArticlesLinks';
 
 @import './components/footer';
 
