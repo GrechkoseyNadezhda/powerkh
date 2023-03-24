@@ -5,8 +5,6 @@ export function OnContactUsClick(e) {
   if (e.currentTarget.classList.value.includes('js-btn-modal')) {
     openModal(refsModal.backdropQuestion);
   }
-
-  console.log('open');
 }
 export function openModal(typeModal) {
   refsModal.contactUsSubmit.removeAttribute('disabled');
@@ -18,6 +16,7 @@ export function openModal(typeModal) {
   }
   refsModal.body.classList.add('_lock');
   typeModal.classList.add('active-modal');
+
   refsModal.body.addEventListener('keyup', onEsc);
   typeModal.addEventListener('click', onBackdropClick);
 }
@@ -29,20 +28,20 @@ export function onBtnCloseClick(e) {
 
 export function closeModal(modalType) {
   refsModal.body.classList.remove('_lock');
-  console.log(modalType);
+
   modalType.classList.remove('active-modal');
   refsModal.body.removeEventListener('keyup', onEsc);
   modalType.removeEventListener('click', onBackdropClick);
 }
 function onEsc(e) {
   if (e.keyCode == 27) {
-    // console.log('escape');
-    closeModal();
+    closeModal(refsModal.backdropQuestion);
+    closeModal(refsModal.backdropAnswer);
   }
 }
 function onBackdropClick(e) {
   if (e.target === e.currentTarget) {
-    // console.log('backdrop');
-    closeModal();
+    closeModal(refsModal.backdropQuestion);
+    closeModal(refsModal.backdropAnswer);
   }
 }

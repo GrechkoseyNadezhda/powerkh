@@ -7,7 +7,7 @@ export const refsModal = {
   closeBtn: document.querySelector('.contact-modal__close-btn'),
   modalAnswerContent: document.querySelector('.contact-modal__content--answer'),
   contactUsSubmit: document.querySelector('.modal-submit'),
-  form: document.querySelector('.question-form'),
+  questionForm: document.querySelector('.question-form'),
   body: document.body,
   inputNameBlock: document.querySelector('.contact-modal__input-wrap--first'),
   inputContactBlock: document.querySelector(

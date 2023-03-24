@@ -14,25 +14,21 @@ import authorInfoHBS from '../../../templates/otherArticlesAuthor.hbs';
 
 import architectRendServHBS from '../../../templates/architecturalRenderingServices.hbs';
 
-
 import {
   heroPartFourData,
   shareBim,
   contentsBim,
   contentsInformBim,
   whatProblemsBim,
-
   listOfArticles,
-
   architectRendServData,
-
 } from './seven-benefits-of-bim-data';
 
-import { refs } from '../../common/refs-services';
+import { refs, refsCase } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { fetchDatabaseAuthor } from '../../common/fetchDatabaseAuthor';
 import { makeBoldFirst } from '../../common/make-bold-first';
-
+import { onSubscribeSubmit } from '../../components/contactUsModal/contactUsModal';
 $('.section-ourCases__slider.b7b').slick({
   arrows: true,
   cssEase: 'linear',
@@ -61,6 +57,8 @@ $('.section-ourCases__slider.b7b').slick({
   // dots: true,
 });
 
+refsCase.subscribeForm.addEventListener('submit', onSubscribeSubmit);
+
 useTemplate(refs.heroPartFour, heroPartFourHBS, heroPartFourData);
 useTemplate(refs.share, shareHBS, shareBim);
 useTemplate(refs.contents, contentsHBS, contentsBim);
@@ -69,13 +67,18 @@ useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
 
 useTemplate(refs.otherArticlesLinks, otherArticlesLinksHBS, listOfArticles);
 
-fetchDatabaseAuthor('/authors/KostiaRapina.json', refs.author, refs.otherArticlesAuthor, authorHBS, authorInfoHBS);
+fetchDatabaseAuthor(
+  '/authors/KostiaRapina.json',
+  refs.author,
+  refs.otherArticlesAuthor,
+  authorHBS,
+  authorInfoHBS
+);
 
 useTemplate(
   refs.architectRendServ,
   architectRendServHBS,
   architectRendServData
 );
-
 
 makeBoldFirst('.whereToFind__text__list');

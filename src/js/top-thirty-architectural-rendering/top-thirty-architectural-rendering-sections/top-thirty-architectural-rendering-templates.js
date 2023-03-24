@@ -13,9 +13,12 @@ import {
   architectRendServData,
 } from './top-thirty-architectural-rendering-data';
 
-import { refs } from '../../common/refs-services';
+import { refs, refsCase } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { fetchDatabaseAuthor } from '../../common/fetchDatabaseAuthor';
+import { onSubscribeSubmit } from '../../components/contactUsModal/contactUsModal';
+
+refsCase.subscribeForm.addEventListener('submit', onSubscribeSubmit);
 
 useTemplate(refs.heroPartFour, heroFourHBS, heroFourData);
 useTemplate(refs.share, shareHBS, shareData);
