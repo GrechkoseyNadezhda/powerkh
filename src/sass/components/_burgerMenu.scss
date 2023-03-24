@@ -24,6 +24,27 @@
   display: block;
 }
 
+.backdrop-burger {
+  @include mq(tab) {
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 998;
+
+    transition: 0.3s all;
+    &.active-burger {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
 .burger-menu {
   position: fixed;
   z-index: 999;
@@ -42,13 +63,13 @@
   @include font-button;
 
   @include mq(tab) {
-    left: auto;
-    right: 36px;
+    left: calc(50% - 74px);
     width: 390px;
+    max-height: 700px;
   }
 
   @include mq(desk) {
-    right: 20px;
+    left: calc(50% + 158px);
   }
 }
 

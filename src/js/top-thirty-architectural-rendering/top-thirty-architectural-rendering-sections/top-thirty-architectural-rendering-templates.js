@@ -30,4 +30,11 @@ useTemplate(
   architectRendServData
 );
 
-fetchDatabaseAuthor('/authors/TetianaRapina.json', refs.author, authorHBS);
+fetchDatabaseAuthor(
+  '/authors/TetianaRapina.json',
+  refs.author,
+  '',
+  authorHBS,
+
+  ''
+);
