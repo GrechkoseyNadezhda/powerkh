@@ -78,7 +78,7 @@ export const advantagesOfScanYoBIM = {
   title: 'Advantages of Scan to BIM services by Powerkh',
   description:
     'Powerkh is an experienced digital design company that offers Point Cloud modeling services to architects, contractors, engineers, and developers.',
-  list: 'Here’s what you can expect from our partnership:',
+  listDescription: 'Here’s what you can expect from our partnership:',
   items: [
     {
       subtitle: 'Expertise',
