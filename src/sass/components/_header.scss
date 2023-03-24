@@ -146,6 +146,10 @@
   }
 }
 
+.disable-component {
+  display: none;
+}
+
 @include mq(tab) {
   .site-header {
     max-width: 704px;
