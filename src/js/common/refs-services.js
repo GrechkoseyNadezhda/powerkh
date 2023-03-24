@@ -19,7 +19,6 @@ export const refs = {
   solution: document.querySelector('.solution'),
   author: document.querySelector('.author'),
   architectRendServ: document.querySelector('.architect-rend-serv'),
-  renderSlider: document.querySelector('.renderSlider'),
 };
 export const refsCase = {
   heroTextBlock: document.querySelector('.case-description__text-block'),
@@ -29,4 +28,8 @@ export const refsCase = {
   impactOnBusiness: document.querySelector('.impact-on-business'),
   blogSlider: document.querySelector('.blog-section__slider'),
   bmpSlider: document.querySelector('.section-projects__slider-item.bmp'),
+  sampleSlider: document.querySelector(
+    '.section-projects__slider-item.samples'
+  ),
+  renderSlider: document.querySelector('.renderSlider'),
 };
