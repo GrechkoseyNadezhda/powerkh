@@ -1,27 +1,38 @@
 body.blog-page {
+  background-image: none;
+  background-color: var(--pure-white-color);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: none;
     background-color: var(--pure-white-color);
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: none;
-      background-color: var(--pure-white-color);
-    }
+  }
 }
-  
+
 .blog-section {
-  margin-top: 140px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  @include mq(desk) {
+    padding-top: 140px;
+    padding-bottom: 80px;
+  }
 }
 
 .blog-section__title {
-  @include font-h1
+  @include font-h1;
 }
 
 .slick-list {
   overflow: hidden;
 }
 /* Лента слайдов */
-.slick-track{
+.slick-track {
   display: flex;
 }
 
@@ -35,13 +46,13 @@ body.blog-page {
 }
 
 .blog-section__slider:hover {
-  .blog-section__slider-img{
-    filter:grayscale(0);
+  .blog-section__slider-img {
+    filter: grayscale(0);
   }
 }
 .blog-section__slider:focus {
-  .blog-section__slider-img{
-    filter:grayscale(0);
+  .blog-section__slider-img {
+    filter: grayscale(0);
   }
 }
 
@@ -54,8 +65,6 @@ body.blog-page {
     flex-direction: row;
     gap: 28px;
   }
-  
-
 }
 
 // .section-projects__slider-item {
@@ -78,7 +87,7 @@ body.blog-page {
   }
 }
 
-.blog-section__slider-frame{
+.blog-section__slider-frame {
   position: absolute;
   z-index: 0;
   box-sizing: border-box;
@@ -129,12 +138,7 @@ body.blog-page {
     width: 516px;
     height: 320px;
   }
-
 }
-
-
-
-
 
 .blog-section__slider-text {
   width: 320px;
@@ -167,7 +171,7 @@ body.blog-page {
   }
 }
 
-.blog-section__slider-author{
+.blog-section__slider-author {
   @include font-body-reg;
 
   margin-top: 8px;
@@ -220,7 +224,7 @@ body.blog-page {
   display: flex;
 
   margin-top: 24px;
-  
+
   // gap: 14px;
   align-items: center;
   justify-content: flex-start;
@@ -239,11 +243,8 @@ body.blog-page {
   }
 }
 
-
-
-
 /* Точки (булиты) */
-.blog-section__slider .slick-dots{
+.blog-section__slider .slick-dots {
   // position: relative;
   z-index: 1;
   // top: -100;
@@ -261,20 +262,19 @@ body.blog-page {
   // margin-top: 40px;
 
   @media screen and (min-width: 768px) {
-      // margin-top: 52px;
+    // margin-top: 52px;
   }
   @media screen and (min-width: 1440px) {
-      // margin-top: 52px;
-      position: relative;
-      margin-top: 0;
-      top: -18px;
-      left: 582px;
-      justify-content: flex-start;
+    // margin-top: 52px;
+    position: relative;
+    margin-top: 0;
+    top: -18px;
+    left: 582px;
+    justify-content: flex-start;
   }
 }
-.blog-section__slider .slick-dots li{
+.blog-section__slider .slick-dots li {
   list-style: none;
-  
 }
 
 /* Активная точка */
@@ -282,20 +282,17 @@ body.blog-page {
   padding: 2px 0;
 }
 
-.blog-section__slider .slick-dots li.slick-active button{
+.blog-section__slider .slick-dots li.slick-active button {
   width: 6px;
   height: 6px;
 }
 /* Элемент точки */
-.blog-section__slider .slick-dots li button{
+.blog-section__slider .slick-dots li button {
   display: block;
   font-size: 0;
   width: 10px;
   height: 10px;
-  background-color: #0E0E0E;
+  background-color: #0e0e0e;
   border: none;
   padding: 0;
-  
 }
-
-
