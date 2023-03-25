@@ -1,3 +1,16 @@
+.table__container::-webkit-scrollbar {
+   
+    height: 2px;  
+    padding-top: 16px;        /* ширина всей полосы прокрутки */
+  }
+
+ 
+  
+  .table__container::-webkit-scrollbar-thumb {
+    background-color:#C4C4C4;   
+     
+  }
+
 .top-twenty-architectural{
     background-color: var(--pure-white-color);
 }
@@ -17,12 +30,16 @@
 
 .architectural__left-block-twenty {
     width: 144px;
-    display: flex;
+    // display: flex;
     align-items: flex-start;
     padding-top: 12px;
     padding-left: 12px ;
     padding-bottom:12px ;
     font-size: 9px;
+    @include mq(tab) {
+        font-size: 14px;
+        
+    }
 }
 .architectural__right-block-twenty{
     width: 174px;
@@ -30,6 +47,10 @@
     padding-left: 12px ;
     padding-bottom:12px ;
     font-size: 9px;
+    @include mq(tab) {
+        font-size: 14px;
+        width: 269px;
+    }
 }
 .architectural__table-twenty{
     border-spacing: 2px;
@@ -41,9 +62,25 @@ font-style: normal;
 font-weight: 400;
 font-size: 9px;
 line-height: calc(20/9);
+overflow-y: auto;
+@include mq(tab) {
+    overflow: hidden;
+}
 }
 .architectural__caption{
     padding-top: 12px;
     padding-bottom:12px ;
     font-size: 9px;
+    @include mq(tab) {
+        font-family: 'Montserrat';
+font-size: 14px;
+line-height: calc(17\14);
+    }
 }
+
+.table__container {
+   overflow-x: scroll;
+    padding-bottom: 16px;
+}
+
+

@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import 'slick-carousel';
+import '../../components/ourCasesSlider/slick';
 import heroFourHBS from '../../../templates/hero-part-four.hbs';
 import shareHBS from '../../../templates/share.hbs';
 import contentsHBS from '../../../templates/contents.hbs';
@@ -20,6 +23,33 @@ import { refs, refsCase } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { fetchDatabaseAuthor } from '../../common/fetchDatabaseAuthor';
 import { onSubscribeSubmit } from '../../components/contactUsModal/contactUsModal';
+$('.section-ourCases__slider.b7b').slick({
+  arrows: true,
+  cssEase: 'linear',
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1500,
+  draggable: true,
+  swipe: true,
+  touchMove: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      },
+    },
+  ],
+  mobileFirst: true,
+  centerPadding: '100px',
+  appendArrows: $('.section-ourCases__sliderArrow'),
+  // variableWidth: true,
+  // centerMode: true,
+  // dots: true,
+});
 
 refsCase.subscribeForm.addEventListener('submit', onSubscribeSubmit);
 
