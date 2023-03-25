@@ -1,13 +1,5 @@
 .footer {
   background-color: var(--pure-white-color);
-  padding-top: 40px;
-
-  @include mq(tab) {
-    padding-top: 60px;
-  }
-  @include mq(desk) {
-    padding-top: 80px;
-  }
 }
 
 .flex-container {
