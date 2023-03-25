@@ -1,6 +1,7 @@
 .case-description {
   padding-top: 100px;
   padding-bottom: 40px;
+  position: relative;
   @include mq(tab) {
     padding-top: 120px;
     padding-bottom: 60px;
@@ -11,6 +12,7 @@
   }
 }
 .case-description__link {
+  display: block;
   position: relative;
   padding-left: 15px;
   margin-bottom: 32px;
@@ -30,6 +32,11 @@
     -o-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     background-size: cover;
+  }
+  &:hover,
+  &:focus {
+    color: var(--dark-grey-color);
+    opacity: 0.7;
   }
 }
 .case-description__content {
@@ -75,11 +82,16 @@
 }
 
 .swiper {
+  // --swiper-pagination-bottom: -304px;
+
   @include mq(tab) {
     width: 554px;
     height: 300px;
+    // --swiper-pagination-bottom: -347px;
   }
+  position: static;
 }
+
 .swiper-pagination-bullet {
   border-radius: 0;
   background-color: black;

@@ -27,14 +27,17 @@
         Challenge
       </h3>
       <p
-        class="case-description__description case-description__description--challenge"
+        class="case-description__description case-description__description--challenge1"
       >{{this.challenge}}</p>
-       <span style="display:block; margin:20px 0"
-        class="case-description__description case-description__description--challenge"
-      >{{this.challenge2}}</span> 
-      <ul  >
+
+    {{#if this.challenge2}}<span 
+        class="case-description__description case-description__description--challenge2"
+      >{{this.challenge2}}</span> {{/if}}
+
+       {{#if this.list}}<ul  >
         {{#each this.list}}
         <li class="case-description__description--list">{{this}}</li>
         {{/each}}
-      </ul>
+      </ul>{{/if}}
+      
  
