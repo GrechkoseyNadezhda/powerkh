@@ -11,7 +11,9 @@
 // .slick-track{
 // }
 // /* Слайд */
-// .slick-slide{}
+.slick-slide{
+    z-index: 15 !important;
+}
 // /* Слайд активный (показывается) */
 // .slick-slide.slick-active{}
 // /* Слайд основной */

@@ -41,7 +41,6 @@ list-style: decimal;
 
 
 
-
 .architectural__table{
     border-spacing: 2px;
 	border-collapse: separate;
@@ -174,4 +173,30 @@ margin-bottom: 20px;
     @include mq(tab) {
         font-size: 14px;
     }
+}
+
+.architectural__item-last {
+    @include font-body-reg;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &::before {
+      content: ' ';
+      display: inline-flex;
+      background-image: url(../images/vectors/vector-right.svg);
+      width: 10px;
+      height: 9px;
+      background-size: cover;
+      color: #cdcdcd;
+      padding-right: 10px;
+      
+    }
+}
+.architectural__right-block-one {
+    width: 174px;
+    padding-top: 0px;
+    padding-left: 12px ;
+    padding-bottom:0px ;
+    font-size: 9px;
+    line-height: 1,8;
 }

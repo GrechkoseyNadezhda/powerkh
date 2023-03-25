@@ -1,0 +1,197 @@
+.about-section__info{
+    margin-top: 100px;
+
+    @include mq(tab) {
+        margin-top: 120px;
+    }
+    @include mq(desk) {
+    margin-top: 140px;
+    }
+}
+
+.about-section__info-topblock{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include mq(tab) {
+        flex-direction: row;
+        gap: 112px;
+    }
+    @include mq(desk) {
+        flex-direction: row;
+        gap: 219px;
+    }
+}
+
+.about-section__info-lowerblock{
+    margin-top: 40px;
+    @include mq(tab) {
+        margin-top: 40px;
+        width: 546px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include mq(desk) {
+        margin-top: 80px;
+        width: 1136px;
+    }
+}
+
+.about-section__info-datalist{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    @include mq(tab) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    @include mq(desk) {
+        gap: 28px;
+    }
+}
+
+.about-section__info-dataitem{
+    width: 320px;
+    text-align: start;
+
+    @include mq(tab) {
+        width: 263px;
+        text-align: center;
+    }
+    @include mq(desk) {
+    }
+}
+.about-section__info-title {
+    @include font-h1;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.about-section__info-desc {
+    @include font-body-reg;
+    width: 320px;
+
+    @include mq(tab) {
+        width: 520px;
+    }
+    @include mq(desk) {
+        width: 845px;
+    }
+}
+
+.about-section__info-datatitle{
+    @include font-title;
+}
+
+.about-section__info-datatext {
+    @include font-body-reg;
+    margin-top: 20px;
+}
+
+
+.about-section__team {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @include mq(tab) {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    @include mq(desk) {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+
+.about-section__teamlist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    
+    @include mq(tab) {
+        gap: 40px;
+    }
+    @include mq(desk) {
+        gap: 0;
+        row-gap: 60px;
+        column-gap: 28px;
+    }
+}
+
+.about-section__membercard {
+    width: 320px;
+    @include mq(tab) {
+        width: 704px;
+    }
+    @include mq(desk) {
+        width: 360px;
+    }
+}
+.about-section__membercard:hover {
+    .about-section__membercard-photo{
+        filter: grayscale(0);
+    }
+}
+.about-section__membercard:focus {
+    .about-section__membercard-photo{
+        filter: grayscale(0);
+    }
+}
+.about-section__membercard-photo{
+    width: 320px;
+    height: 420px;
+    filter: grayscale(1);
+    transition: all 0.5s ease;
+    
+    @include mq(tab) {
+        width: 704px;
+        height: 896px;
+    }
+    @include mq(desk) {
+        width: 360px;
+        height: 476px;
+    }
+}
+
+.about-section__membercard-name {
+    @include font-title;
+    margin-top: 20px;
+}
+
+.about-section__membercard-position {
+    @include font-body-reg;
+    margin-top: 16px;
+}
+
+.about-section__video{
+    display: none;
+
+    @include mq(desk) {
+        display: block;
+        margin-top: 60px;
+    }
+}
+.about-section__video-block {
+
+}
+
+.about-section__video-wrapper{
+    // min-height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+
+    // justify-content: center;
+    // align-items: center;
+}
+
+.about-section__video-item {
+    object-fit: cover;
+    width: 1136px;
+    height: 630px;
+    // padding: 0 0 50% 0;
+}

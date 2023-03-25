@@ -37,4 +37,5 @@ export const refsCase = {
     '.section-projects__slider-item.samples'
   ),
   renderSlider: document.querySelector('.renderSlider'),
+  sdSlider: document.querySelector('.section-projects__slider-item.sd'),
 };

@@ -46,11 +46,11 @@ body.blog-page {
 }
 
 .blog-section__slider-item {
-  display: block;
+  display: block !important;
   // flex-direction: column;
   // gap: 0px;
   @media screen and (min-width: 1440px) {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     gap: 28px;
   }
