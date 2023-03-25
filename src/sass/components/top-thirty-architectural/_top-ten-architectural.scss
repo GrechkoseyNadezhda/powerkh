@@ -89,13 +89,10 @@ margin-bottom: 20px;
 .architectural__image{
     display: block;
     margin: 0 auto;
-<<<<<<< HEAD
-=======
     margin-bottom: 20px;
     @include mq(tab) {
         margin-bottom: 40px;
     }
->>>>>>> dev
 }
 .architectural__web-site {
     text-decoration:underline;
@@ -105,20 +102,6 @@ color: #747474;
 font-weight: 400;
 font-size: 9px;
 line-height: calc(20/9);
-<<<<<<< HEAD
-
-}
-.architectural__web-paragraph {
-    text-decoration:underline;
-    font-family: 'Montserrat';
-font-style: italic;
-color: #747474;
-font-weight: 400;
-font-size: 14px;
-line-height: calc(20/14);
-}
-
-=======
 @include mq(tab) {
     font-size: 14px;
 line-height: calc(20/14);
@@ -135,7 +118,6 @@ font-size: 14px;
 line-height: calc(20/14);
 }
 
->>>>>>> dev
 
 .architectural__description{
 margin-bottom: 20px;
@@ -161,8 +143,6 @@ margin-bottom: 20px;
       color: #cdcdcd;
       padding-right: 10px;
       
-<<<<<<< HEAD
-=======
     }
 }
 
@@ -192,7 +172,6 @@ margin-bottom: 20px;
     line-height: 1,8;
     @include mq(tab) {
         font-size: 14px;
->>>>>>> dev
     }
 }
 
