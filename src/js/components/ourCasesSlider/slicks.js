@@ -88,7 +88,7 @@
                 vertical: false,
                 verticalSwiping: false,
                 waitForAnimate: true,
-                zIndex: 20
+                zIndex: 1000
             };
 
             _.initials = {
@@ -584,11 +584,11 @@
             _.$slider.empty().append(newSlides);
 
             
-            // _.$slider.children().children().children()
-            //     .css({
-            //         'width':(100 / _.options.slidesPerRow) + '%',
-            //         // 'display': 'flex'
-            //     });
+            _.$slider.children().children().children()
+                .css({
+                    'width':(100 / _.options.slidesPerRow) + '%',
+                    'display': 'flex'
+                });
 
         }
 
