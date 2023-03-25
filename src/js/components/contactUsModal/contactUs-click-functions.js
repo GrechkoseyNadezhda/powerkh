@@ -1,7 +1,12 @@
 import { refsModal } from './contactUs-refs';
-export function openModal(typeModal) {
+export function OnContactUsClick(e) {
   //   e.preventDefault();
-  console.log(typeModal);
+  // openModal(typeModal);
+  if (e.currentTarget.classList.value.includes('js-btn-modal')) {
+    openModal(refsModal.backdropQuestion);
+  }
+}
+export function openModal(typeModal) {
   refsModal.contactUsSubmit.removeAttribute('disabled');
   if (
     !refsModal.errorMessage.classList.value.includes('visually-hidden') &&
@@ -11,25 +16,32 @@ export function openModal(typeModal) {
   }
   refsModal.body.classList.add('_lock');
   typeModal.classList.add('active-modal');
+
   refsModal.body.addEventListener('keyup', onEsc);
   typeModal.addEventListener('click', onBackdropClick);
-  console.log('open');
 }
-export function closeModal(e) {
+export function onBtnCloseClick(e) {
+  if (e.currentTarget.classList.value.includes('contact-modal__close-btn')) {
+    closeModal(refsModal.backdropQuestion);
+  }
+}
+
+export function closeModal(modalType) {
   refsModal.body.classList.remove('_lock');
-  refsModal.backdropQuestion.classList.remove('active-modal');
+
+  modalType.classList.remove('active-modal');
   refsModal.body.removeEventListener('keyup', onEsc);
-  refsModal.backdropQuestion.removeEventListener('click', onBackdropClick);
+  modalType.removeEventListener('click', onBackdropClick);
 }
 function onEsc(e) {
   if (e.keyCode == 27) {
-    // console.log('escape');
-    closeModal();
+    closeModal(refsModal.backdropQuestion);
+    closeModal(refsModal.backdropAnswer);
   }
 }
 function onBackdropClick(e) {
   if (e.target === e.currentTarget) {
-    // console.log('backdrop');
-    closeModal();
+    closeModal(refsModal.backdropQuestion);
+    closeModal(refsModal.backdropAnswer);
   }
 }

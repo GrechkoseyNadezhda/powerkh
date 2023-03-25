@@ -32,6 +32,7 @@ export const refsCase = {
   impactOnBusiness: document.querySelector('.impact-on-business'),
   blogSlider: document.querySelector('.blog-section__slider'),
   bmpSlider: document.querySelector('.section-projects__slider-item.bmp'),
+  subscribeForm: document.querySelector('.never-miss__form'),
   sampleSlider: document.querySelector(
     '.section-projects__slider-item.samples'
   ),
