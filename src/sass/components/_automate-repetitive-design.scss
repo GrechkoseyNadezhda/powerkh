@@ -1,26 +1,29 @@
 .automate-repetitive-design {
-  padding-top: 40px;
   padding-bottom: 40px;
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
 }
 
 .automate-repetitive-design__block {
-  padding: 40px 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: var(--background-color);
   text-align: center;
-
-  @include mq(tab) {
-    padding: 40 112px;
-  }
-
-  @include mq(desk) {
-    padding: 40 328px;
-  }
 }
 
 .automate-repetitive-design__text {
-  @include font-title;
+  max-width: 280px;
+  margin: 0 auto;
   margin-bottom: 40px;
+  @include font-title;
   color: var(--dark-grey-color);
+  @include mq(tab) {
+    max-width: 480px;
+  }
 }
 
 .automate-repetitive-design__button {
