@@ -18,7 +18,6 @@ import {
   addValueModeling,
   contactUsModeling,
   BIMmodelingFaq,
-  projectsSliderImg,
   projectCoordination,
 } from './bim-modeling-data';
 import { refs, refsCase } from '../../common/refs-services';
@@ -43,7 +42,6 @@ $(function () {
   });
 });
 
-console.log(projectsSliderImg);
 useTemplate(refs.hero, heroHBS, heroModeling);
 useTemplate(refs.howWeWork, howWeWorkHBS, howModeling);
 useTemplate(refs.services, servicesHBS, servicesModeling);
