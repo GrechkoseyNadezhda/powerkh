@@ -18,7 +18,7 @@
 .contact-us__title {
   margin: 0 auto 32px;
   @include font-title;
-  text-transform: uppercase;
+
   color: var(--dark-grey-color);
   @include mq(mob-only) {
     max-width: 284px;
