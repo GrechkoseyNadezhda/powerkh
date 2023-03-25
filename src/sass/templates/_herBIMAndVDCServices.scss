@@ -1,14 +1,23 @@
 .BIM-modeling {
   background-color: var(--pure-white-color);
-  padding-top: 40px;
+
   padding-bottom: 40px;
   @include mq(tab) {
-    padding-top: 60px;
     padding-bottom: 60px;
   }
   @include mq(desk) {
-    padding-top: 80px;
     padding-bottom: 80px;
+  }
+}
+
+.hero + .BIM-modeling {
+  padding-top: 40px;
+
+  @include mq(tab) {
+    padding-top: 60px;
+  }
+  @include mq(desk) {
+    padding-top: 80px;
   }
 }
 
@@ -35,8 +44,6 @@
   }
 }
 
-
-
 .BIM__subtitle {
   @include font-body-reg;
   @include mq(desk) {
@@ -60,7 +67,7 @@
   list-style: none;
   @include font-body-reg;
   margin-top: 46px;
-    padding-left: 60px;
+  padding-left: 60px;
   @include mq(tab) {
     margin-top: 32px;
     display: flex;
@@ -68,7 +75,6 @@
     flex-direction: row;
     gap: 10px 80px;
     padding-left: 60px;
-
   }
   @include mq(desk) {
     margin-top: 46px;
@@ -89,7 +95,7 @@
     top: -11px;
     left: -60px;
     display: inline-block;
-    background-image: url(../images/vectors/grey-arrow-right.svg);
+    background-image: url(../images/vectors/grey-arrow-right-her-BIM.svg);
     width: 40px;
     height: 40px;
     background-size: cover;
@@ -114,13 +120,12 @@
       background-size: cover;
       color: #cdcdcd;
     }
-    
   }
 
   @include mq(desk) {
     width: 478px;
   }
-   &::before {
+  &::before {
     content: ' ';
     position: absolute;
     top: -11px;
@@ -132,7 +137,6 @@
     background-size: cover;
     color: #cdcdcd;
   }
-
 }
 
 .benefits__description {
