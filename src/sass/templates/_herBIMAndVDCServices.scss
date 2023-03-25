@@ -1,5 +1,15 @@
 .BIM-modeling {
   background-color: var(--pure-white-color);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include mq(tab) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include mq(desk) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .BIM__text-list {
@@ -38,7 +48,6 @@
     width: 554px;
   }
 }
-
 
 .BIM__benefits-mainpage {
   margin-top: 40px;
