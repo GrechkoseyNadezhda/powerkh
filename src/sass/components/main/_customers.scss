@@ -1,3 +1,18 @@
+.customers__section {
+  padding-top: 40px;
+
+  @include mq(tab) {
+    padding-top: 60px;
+  }
+  @include mq(desk) {
+    padding-top: 80px;
+  }
+}
+
+.customers__head {
+  @include font-title;
+}
+
 .customers__list {
   display: flex;
   flex-direction: row;
@@ -7,25 +22,25 @@
 
   @include mq(mob-only) {
     row-gap: 40px;
+    // column-gap: 20px;
     justify-content: space-between;
   }
 
   @include mq(tab) {
-    gap: 103px;
+    row-gap: 16px;
+    column-gap: 103px;
     margin-top: 52px;
   }
   @include mq(desk) {
     flex-wrap: nowrap;
+    margin-top: 59px;
     gap: 28px;
-    height: 84px;
   }
-}
-
-.customers__section {
-  @extend .bimServices__section;
-  padding-top: 0;
 }
 
 .customers__list img {
   width: 150px;
+  @include mq(tab) {
+    width: 166px;
+  }
 }
