@@ -59,6 +59,9 @@
 @import './components/top-thirty-architectural/top-twenty-architectural';
 @import './components/top-thirty-architectural/final-thoughts';
 
+//Case Studies
+@import './components/caseStudies';
+
 //Blog
 
 @import './components/blog/blog-grid-preview';
@@ -72,8 +75,7 @@
 @import './components/sevenBenefitsOfBim/conclusion';
 @import './components/sevenBenefitsOfBim/benefitsOfBim';
 
-@import './templates/otherArticlesAuthor';
-@import './templates/otherArticlesLinks';
+@import './templates/otherArticles';
 
 @import './components/footer';
 

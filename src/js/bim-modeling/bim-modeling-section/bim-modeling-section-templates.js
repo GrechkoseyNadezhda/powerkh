@@ -1,6 +1,6 @@
 import $ from 'jquery';
 // window.$ = window.jQuery = $;
-import 'slick-carousel'
+import 'slick-carousel';
 import howWeWorkHBS from '../../../templates/howWeWork.hbs';
 import servicesHBS from '../../../templates/architecAndStructBim.hbs';
 import heroHBS from '../../../templates/hero.hbs';
@@ -19,8 +19,8 @@ import {
   addValueModeling,
   contactUsModeling,
   BIMmodelingFaq,
-  projectsSliderImg,
-  projectCoordination
+  // projectsSliderImg,
+  projectCoordination,
 } from './bim-modeling-data';
 import { refs, refsCase } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
@@ -29,23 +29,22 @@ import { toggleFaq } from '../../common/toggle-faq';
 
 const ENDPOINT_COORDINATION = '/faq/bimModeling.json';
 // Projects slider
-$(function(){
+$(function () {
   $('.section-projects__slider-item').slick({
-      arrows: false,
-      dots: true,
-      infinite: true,
-      fade: true,
-      cssEase: 'linear',
-      autoplay: true,
-      autoplaySpeed: 1500,
-      draggable: true,
-      swipe: true,
-      touchMove: true,
-      
+    arrows: false,
+    dots: true,
+    infinite: true,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 1500,
+    draggable: true,
+    swipe: true,
+    touchMove: true,
   });
-})
+});
 
-console.log(projectsSliderImg)
+console.log(projectsSliderImg);
 useTemplate(refs.hero, heroHBS, heroModeling);
 useTemplate(refs.howWeWork, howWeWorkHBS, howModeling);
 useTemplate(refs.services, servicesHBS, servicesModeling);
@@ -55,7 +54,6 @@ useTemplate(refs.featuresForProjects, featuresForProjectsHBS, addValueModeling);
 useTemplate(refs.contactUs, contactUsHBS, contactUsModeling);
 useTemplate(refsCase.bmpSlider, ourProjectsSliderHBS, projectsSliderImg);
 useTemplate(refs.slider, sliderHBS, projectCoordination);
-
 
 createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqTemplate);
 toggleFaq();

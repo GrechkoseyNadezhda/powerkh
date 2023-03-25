@@ -77,6 +77,41 @@
   border: none;
   @include font-button;
   color: var(--dark-grey-color);
+  &--link {
+    width: 20%;
+    position: relative;
+    padding: 0;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    gap: 8px;
+    background: var(--pure-white-color);
+    border: none;
+    @include font-button;
+    color: var(--dark-grey-color);
+    &::after {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      bottom: calc(50% - 10px);
+
+      display: block;
+      width: 70%;
+      height: 2px;
+      background-color: #000000;
+
+      transform: scaleX(0);
+      transition: transform 300ms linear;
+    }
+    &--home {
+      width: 15%;
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
 }
 
 .contact-modal__btn::after {
@@ -114,7 +149,12 @@
   transform: scaleX(0);
   transition: transform 300ms linear;
 }
-
+.contact-modal__btn-block {
+  display: flex;
+}
+.contact-modal__icon {
+  transform: rotate(180deg);
+}
 .contact-modal__close-btn {
   position: absolute;
   padding: 0;

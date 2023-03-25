@@ -35,7 +35,7 @@ export const whatProblemsBim = {
 export const listOfArticles = {
   title: "Other articles of this author",
   list: [
-    'The Benefits of Using Laser Scanning in Construction You Can’t Miss', 'As-Built Drawings 101: All You Need to Know', 'BIM Outsourcing vs in-House Teams', 'Construction RFI: Template, Best Practices'],
+    { article: 'The Benefits of Using Laser Scanning in Construction You Can’t Miss', link: '#' }, { article: 'As-Built Drawings 101: All You Need to Know', link: '#' }, { article: 'BIM Outsourcing vs in-House Teams', link: '#' }, { article: 'Construction RFI: Template, Best Practices', link: '#' }],
 }
 
 export const architectRendServData = {
