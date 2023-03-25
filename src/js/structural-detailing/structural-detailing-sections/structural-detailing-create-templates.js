@@ -38,6 +38,8 @@ const ENDPOINT_STRUCTDETAILING= '/faq/structuralDetailing.json';
 //         draggable: true,
 //         swipe: true,
 //         touchMove: true,
+            // pauseOnFocus: false,
+            // pauseOnHover: false,
         
 //     });
 // })

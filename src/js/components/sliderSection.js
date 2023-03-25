@@ -14,5 +14,7 @@ $(function () {
     draggable: true,
     swipe: true,
     touchMove: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
   });
 });
