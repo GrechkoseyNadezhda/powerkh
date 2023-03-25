@@ -1,6 +1,18 @@
 .outsourceProjects {
   background-color: var(--pure-white-color);
+
+  padding-bottom: 40px;
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
+}
+
+.bim-automation-services + .outsourceProjects {
   padding-top: 40px;
+
   @include mq(tab) {
     padding-top: 60px;
   }

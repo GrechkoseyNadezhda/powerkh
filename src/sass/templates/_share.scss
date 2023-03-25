@@ -28,6 +28,10 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
   }
 
   &__facebook {

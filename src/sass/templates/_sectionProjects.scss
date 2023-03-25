@@ -11,8 +11,8 @@
 // .slick-track{
 // }
 // /* Слайд */
-.slick-slide{
-    z-index: 15 !important;
+.slick-slide {
+  z-index: 15 !important;
 }
 // /* Слайд активный (показывается) */
 // .slick-slide.slick-active{}
@@ -50,22 +50,29 @@
 
 .section-projects {
   box-sizing: border-box;
-  padding-top: 40px;
+
   padding-bottom: 90px;
 
   background-color: var(--pure-white-color);
 
   @include mq(tab) {
-    padding-top: 60px;
     padding-bottom: 122px;
   }
   @include mq(desk) {
-    padding: 80px 0px 142px;
-    padding-top: 80px;
     padding-bottom: 142px;
   }
 }
 
+.bim-automation-services + .section-projects {
+  padding-top: 40px;
+
+  @include mq(tab) {
+    padding-top: 60px;
+  }
+  @include mq(desk) {
+    padding-top: 80px;
+  }
+}
 // .section-projects__block {
 
 // }
