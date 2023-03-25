@@ -4,9 +4,25 @@
   @include mq(tab) {
     height: 308px;
   }
-  @include mq(tab) {
+
+  @include mq(desk) {
     padding-top: 260px;
     height: 450px;
+  }
+
+  .container__hero {
+    padding-right: 28px;
+    padding-left: 28px;
+
+    @include mq(tab) {
+      padding-right: 131px;
+      padding-left: 131px;
+    }
+
+    @include mq(desk) {
+      padding-right: 131px;
+      padding-left: 131px;
+    }
   }
 }
 
