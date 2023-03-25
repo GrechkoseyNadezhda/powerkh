@@ -18,7 +18,11 @@ export const refs = {
   heroBlock: document.querySelector('.hero__block'),
   solution: document.querySelector('.solution'),
   author: document.querySelector('.author'),
-  renderSlider: document.querySelector('.renderSlider'),
+
+  otherArticlesLinks: document.querySelector('.other-articles__wrapper'),
+  otherArticlesAuthor: document.querySelector('.other-articles__author-info'),
+
+  architectRendServ: document.querySelector('.architect-rend-serv'),
 };
 export const refsCase = {
   heroTextBlock: document.querySelector('.case-description__text-block'),
@@ -28,4 +32,10 @@ export const refsCase = {
   impactOnBusiness: document.querySelector('.impact-on-business'),
   blogSlider: document.querySelector('.blog-section__slider'),
   bmpSlider: document.querySelector('.section-projects__slider-item.bmp'),
+  subscribeForm: document.querySelector('.never-miss__form'),
+  sampleSlider: document.querySelector(
+    '.section-projects__slider-item.samples'
+  ),
+  renderSlider: document.querySelector('.renderSlider'),
+  sdSlider: document.querySelector('.section-projects__slider-item.sd'),
 };

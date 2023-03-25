@@ -1,0 +1,11 @@
+{{! доступ до класу секції - <div class="other-articles__wrapper"> }}
+{{! потрібно підставити об'єкт }}
+{{! приклад об'єкта: {title: 'текст заголовка', list: [{ article: 'назва статті', link: 'відповідне посилання на статтю'}]} }}
+<h3 class='other-articles__title'>{{this.title}}</h3>
+<ul class='other-articles__list-link list-link'>
+  {{#each this.list}}
+    <li class='list-link__item'>
+      <a href='{{this.link}}'>{{this.article}}</a>
+    </li>
+  {{/each}}
+</ul>

@@ -30,3 +30,18 @@ export const whatProblemsBim = {
     'Unexpected design clashes at later stages of construction',
   ],
 };
+
+
+export const listOfArticles = {
+  title: "Other articles of this author",
+  list: [
+    { article: 'The Benefits of Using Laser Scanning in Construction You Can’t Miss', link: '#' }, { article: 'As-Built Drawings 101: All You Need to Know', link: '#' }, { article: 'BIM Outsourcing vs in-House Teams', link: '#' }, { article: 'Construction RFI: Template, Best Practices', link: '#' }],
+}
+
+export const architectRendServData = {
+  title: 'BIM Modeling Services',
+  description:
+    'Looking for a way to improve your design and manage your construction effectively? Powerkh - a trusted BIM & VDC services provider with extensive engineering experience and a portfolio of 200+ successful BIM & VDC projects.',
+  link: './bim-modeling.html',
+};
+

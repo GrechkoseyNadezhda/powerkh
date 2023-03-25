@@ -1,52 +1,83 @@
-const contactUsButtons = document.querySelectorAll('.js-btn-modal');
-const backdrop = document.querySelector('.backdrop');
-const closeBtn = document.querySelector('.contact-modal__close-btn');
-const contactUsSubmit = document.querySelector('.contact-modal__btn');
-const form = document.querySelector('.contact-modal__form');
-const body = document.body;
+import { createDealAndContact } from '../../common/crm-sendpulse';
+import {
+  openModal,
+  OnContactUsClick,
+  closeModal,
+  onBtnCloseClick,
+} from './contactUs-click-functions';
+import { refsModal } from './contactUs-refs';
+import arrow from '../../../images/vectors/arrow.svg';
+import {
+  openAnswerModal,
+  rewriteHeroBlockAnswer,
+} from './contactUs-submitModal';
+import { refsCase } from '../../common/refs-services';
 
-if (contactUsButtons.length > 0) {
-  for (let i = 0; i < contactUsButtons.length; i++) {
-    const contactUsBtn = contactUsButtons[i];
-    contactUsBtn.addEventListener('click', openModal);
+if (refsModal.contactUsButtons.length > 0) {
+  for (let i = 0; i < refsModal.contactUsButtons.length; i++) {
+    const contactUsBtn = refsModal.contactUsButtons[i];
+    contactUsBtn.addEventListener('click', OnContactUsClick);
   }
 }
 
-closeBtn.addEventListener('click', closeModal);
-contactUsSubmit.addEventListener('click', closeModal);
+refsModal.closeBtn.addEventListener('click', onBtnCloseClick);
 
-function openModal(e) {
+refsModal.questionForm.addEventListener('submit', onFormSubmit);
+
+const PHONE_REGEXP = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+const EMAIL_REGEXP =
+  /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+
+function validateEmail(value) {
+  return EMAIL_REGEXP.test(value);
+}
+
+function validatePhone(phone) {
+  return PHONE_REGEXP.test(phone);
+}
+
+export async function onFormSubmit(e) {
   e.preventDefault();
-  body.classList.add('_lock');
-  backdrop.classList.add('active-modal');
-  body.addEventListener('keyup', onEsc);
-  backdrop.addEventListener('click', onBackdropClick);
-  console.log('open');
-}
+  const nameInput = e.currentTarget.elements[0].value;
+  const contactInput = e.currentTarget.elements[1].value;
+  const messageInput = e.currentTarget.elements[2].value;
+  const isValidateEmail = validateEmail(contactInput);
+  const isValidatePhone = validatePhone(contactInput);
 
-function closeModal(e) {
-  if (e) {
-    e.preventDefault();
-    console.log('prevent');
+  if (isValidateEmail || isValidatePhone) {
+    refsModal.contactUsSubmit.setAttribute('disabled', 'disabled');
+    const modalRequest = {
+      name: messageInput ? nameInput + '_' + messageInput : nameInput,
+      phone: isValidatePhone ? contactInput : '',
+      email: isValidateEmail ? contactInput : '',
+    };
+
+    const result = await createDealAndContact(modalRequest);
+
+    if (e.target.classList.value === 'contact-form') {
+      rewriteHeroBlockAnswer(result);
+      return;
+    }
+
+    if (e.target.classList.value.includes('question-form')) {
+      openAnswerModal(result);
+      return;
+    }
   }
-  body.classList.remove('_lock');
-  backdrop.classList.remove('active-modal');
-  body.removeEventListener('keyup', onEsc);
-  backdrop.removeEventListener('click', onBackdropClick);
-  form.reset();
-  console.log('close');
+  refsModal.errorMessage.classList.remove('visually-hidden');
+  refsModal.contactUsSubmit.removeAttribute('disabled');
 }
+export async function onSubscribeSubmit(e) {
+  e.preventDefault();
+  const modalRequest = {
+    email: e.currentTarget.elements[0].value,
+    name: 'Підписка на сторінку',
+  };
 
-function onEsc(e) {
-  if (e.keyCode == 27) {
-    console.log('escape');
-    closeModal();
-  }
-}
-
-function onBackdropClick(e) {
-  if (e.target === e.currentTarget) {
-    console.log('backdrop');
-    closeModal();
+  if (modalRequest.email) {
+    const result = await createDealAndContact(modalRequest);
+    refsCase.subscribeForm.reset();
+    openAnswerModal(result);
+    return;
   }
 }

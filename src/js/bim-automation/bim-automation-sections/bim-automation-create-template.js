@@ -35,4 +35,3 @@ useTemplate(refs.slider, sliderHBS, projectAutomation);
 useTemplate(refs.contactUs, contactUsHBS, contactUsAutomation);
 
 createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);
-toggleFaq();

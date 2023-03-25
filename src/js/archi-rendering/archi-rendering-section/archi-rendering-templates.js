@@ -8,26 +8,25 @@ import faqTemplate from '../../../templates/faq.hbs';
 
 import { refs, refsCase } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
-import { toggleFaq } from '../../common/toggle-faq';
+
 import {
   archiRenderingHero,
   BIMservices,
   howCreates,
   whatWeOffer,
-  archiRenderingFaq,
   archiRenderingContact,
-  projectCoordination,
+  projectSamples,
+  renderServices,
 } from './archi-rendering-data';
 import { makeBoldFirst } from '../../common/make-bold-first';
+import { createFAQsection } from '../../common/createFaqSection';
 
 useTemplate(refs.hero, heroTemplate, archiRenderingHero);
 useTemplate(refs.herBIMAndVDC, herBIMAndVDC, BIMservices);
-useTemplate(refs.renderSlider, sliderTemplate, projectCoordination);
+useTemplate(refsCase.renderSlider, sliderTemplate, renderServices);
 useTemplate(refs.howWeWork, howWeWorkTemplate, howCreates);
 useTemplate(refs.services, servicesTemplate, whatWeOffer);
-useTemplate(refsCase.bmpSlider, sliderTemplate, projectCoordination);
+useTemplate(refsCase.sampleSlider, sliderTemplate, projectSamples);
 useTemplate(refs.contactUs, contactUsTemplate, archiRenderingContact);
-useTemplate(refs.faq, faqTemplate, archiRenderingFaq);
-//
-toggleFaq();
+createFAQsection('/faq/bimAutomation.json', refs.faq, faqTemplate);
 makeBoldFirst('.bim-automation-services__item');
