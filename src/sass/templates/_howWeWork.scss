@@ -1,6 +1,13 @@
 .howWeWork {
   // ol потрібна для відображення цифр в кінці
   background-color: var(--pure-white-color);
+  padding-bottom: 40px;
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
   ol {
     counter-reset: ol-numbers;
     position: relative;

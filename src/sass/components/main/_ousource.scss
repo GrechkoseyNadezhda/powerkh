@@ -1,3 +1,10 @@
 .section_outsourcePrj {
   background-color: var(--pure-white-color);
+  padding-bottom: 40px;
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
 }
