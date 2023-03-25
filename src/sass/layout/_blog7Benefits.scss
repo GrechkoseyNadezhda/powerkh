@@ -77,18 +77,18 @@
 }
 
 .section-ourCases__slider-item {
-  display: block;
+  display: block !important; 
   position: relative;
   min-width: 0;
   margin-left: auto;
   margin-right: auto;
 
-  width: 200px;
+  width: 200px !important;
   height: 132px;
 
   @media screen and (min-width: 768px) {
     margin: 0;
-    width: 200px;
+    width: 200px !important;
     height: 132px;
   }
 }

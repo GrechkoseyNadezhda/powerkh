@@ -1,5 +1,13 @@
 .have-BIM-project {
   background-color: var(--pure-white-color);
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
 }
 .have-BIM-project__block {
   width: 320px;
