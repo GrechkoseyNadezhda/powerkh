@@ -36,97 +36,95 @@
 // /* Элемент точки */
 // .slick-dots li button{}
 
-
-
 /* BIM MODELING PROJECTS SLIDER */
 /* Ограничивающая оболочка */
 .slick-list {
-    overflow: hidden;
+  overflow: hidden;
 }
 /* Лента слайдов */
-.slick-track{
-    display: flex;
+.slick-track {
+  display: flex;
 }
 
 .section-projects {
-    box-sizing: border-box;
-    padding: 40px 0 90px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 90px;
 
-    background-color: var(--pure-white-color);
+  background-color: var(--pure-white-color);
 
-    @media screen and (min-width: 768px) {
-        padding: 60px 0 122px;
-    }
-    @media screen and (min-width: 1440px) {
-        padding: 80px 0 122px;
-    }
+  @include mq(tab) {
+    padding-top: 60px;
+    padding-bottom: 122px;
+  }
+  @include mq(desk) {
+    padding: 80px 0px 142px;
+    padding-top: 80px;
+    padding-bottom: 142px;
+  }
 }
 
 // .section-projects__block {
 
 // }
 
-.section-projects__title{
-    @include font-title;
-
+.section-projects__title {
+  @include font-title;
 }
 
-.section-projects__desc{
-    @include font-body-reg;
-    margin-top: 40px;
+.section-projects__desc {
+  @include font-body-reg;
+  margin-top: 40px;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 52px;
-        width: 457px;
-    }
-    @media screen and (min-width: 1440px) {
-        margin-top: 52px;
-    }
+  @include mq(tab) {
+    margin-top: 52px;
+    width: 457px;
+  }
+  @include mq(desk) {
+    margin-top: 52px;
+  }
 }
-
-
 
 .section-projects__slider {
-    margin-top: 40px;
+  margin-top: 40px;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 52px;
-    }
-    @media screen and (min-width: 1440px) {
-        margin-top: 52px;
-    }
+  @include mq(tab) {
+    margin-top: 52px;
+  }
+  @include mq(desk) {
+    margin-top: 52px;
+  }
 }
 
 .section-projects__slider-item {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    width: 320px;
-    height: 160px;
-    position: relative;
+  width: 320px;
+  height: 160px;
+  position: relative;
 
-    @media screen and (min-width: 768px) {
-        width: 704px;
-        height: 328px;
-    }
-    @media screen and (min-width: 1440px) {
-        width: 1136px;
-        height: 560px;
-    }
+  @include mq(tab) {
+    width: 704px;
+    height: 328px;
+  }
+  @include mq(desk) {
+    width: 1136px;
+    height: 560px;
+  }
 }
 
-.section-projects__slider-item img{
-    
-    width: 320px;
-    height: 160px;
+.section-projects__slider-item img {
+  width: 320px;
+  height: 160px;
 
-    @media screen and (min-width: 768px) {
-        width: 704px;
-        height: 328px;
-    }
-    @media screen and (min-width: 1440px) {
-        width: 1136px;
-        height: 560px;
-    }
+  @include mq(tab) {
+    width: 704px;
+    height: 328px;
+  }
+  @include mq(desk) {
+    width: 1136px;
+    height: 560px;
+  }
 }
 
 // .section-projects__slider-item .slick-arrow {
@@ -144,44 +142,42 @@
 // }
 
 /* Точки (булиты) */
-.section-projects__slider-item .slick-dots{
-    display: flex;
+.section-projects__slider-item .slick-dots {
+  display: flex;
 
-    align-items: center;
-    justify-content: center;
-    gap: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
 
-    margin-top: 40px;
+  margin-top: 40px;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 52px;
-    }
-    @media screen and (min-width: 1440px) {
-        margin-top: 52px;
-    }
+  @include mq(tab) {
+    margin-top: 52px;
+  }
+  @include mq(desk) {
+    margin-top: 52px;
+  }
 }
-.section-projects__slider-item .slick-dots li{
-    list-style: none;
-    
+.section-projects__slider-item .slick-dots li {
+  list-style: none;
 }
 
 /* Активная точка */
 .section-projects__slider-item .slick-dots li.slick-active {
-    padding: 2px 0;
+  padding: 2px 0;
 }
 
-.section-projects__slider-item .slick-dots li.slick-active button{
-    width: 6px;
-    height: 6px;
+.section-projects__slider-item .slick-dots li.slick-active button {
+  width: 6px;
+  height: 6px;
 }
 /* Элемент точки */
-.section-projects__slider-item .slick-dots li button{
-    display: block;
-    font-size: 0;
-    width: 10px;
-    height: 10px;
-    background-color: #0E0E0E;
-    border: none;
-    padding: 0;
-    
+.section-projects__slider-item .slick-dots li button {
+  display: block;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #0e0e0e;
+  border: none;
+  padding: 0;
 }
