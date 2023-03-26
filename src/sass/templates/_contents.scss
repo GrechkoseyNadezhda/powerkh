@@ -1,6 +1,6 @@
 .contents-with-author {
   padding-top: 40px;
-
+  padding-bottom: 40px;
   @include mq(desk) {
     padding-top: 80px;
   }
@@ -85,16 +85,6 @@
 
 .contents-author {
   padding-top: 40px;
-  padding-bottom: 40px;
-
-  @include mq(tab) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  @include mq(desk) {
-    padding-top: 40px;
-    padding-bottom: 32px;
-  }
 }
 .contents-information {
   display: none;

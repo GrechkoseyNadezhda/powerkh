@@ -1,12 +1,21 @@
 .top-thirty-architectural {
   background-color: var(--pure-white-color);
+
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
+
 }
 .top-thirty__section-container {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-
-  @include mq(tab) {
+    @include mq(tab) {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -15,6 +24,14 @@
     padding-right: 441px;
   }
 }
+
+
+.architectural__list {
+  list-style: decimal;
+}
+
+
+
 
 .architectural__list {
   list-style: decimal;
