@@ -1,13 +1,10 @@
 .architect-rend-serv {
-  padding-top: 40px;
   padding-bottom: 40px;
 
   @include mq(tab) {
-    padding-top: 60px;
     padding-bottom: 60px;
   }
   @include mq(desk) {
-    padding-top: 80px;
     padding-bottom: 80px;
   }
   &__container {

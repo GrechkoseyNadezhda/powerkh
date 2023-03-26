@@ -7,6 +7,7 @@
 @import './utils/reset';
 @import './utils/common_classes';
 @import './utils/body_classes';
+@import './utils/scrollbar';
 
 //Templates-services
 
@@ -28,7 +29,7 @@
 
 //Templates-caseStudies
 
-@import './templates/heroDesign';
+@import './templates/heroDescription';
 @import './templates/processTemplate';
 @import './templates/contactForm';
 
@@ -58,6 +59,9 @@
 @import './components/archi-rendering-structure';
 @import './components/top-thirty-architectural/top-twenty-architectural';
 @import './components/top-thirty-architectural/final-thoughts';
+@import './components/about';
+//Case Studies
+@import './components/caseStudies';
 
 //Blog
 
@@ -72,8 +76,7 @@
 @import './components/sevenBenefitsOfBim/conclusion';
 @import './components/sevenBenefitsOfBim/benefitsOfBim';
 
-@import './templates/otherArticlesAuthor';
-@import './templates/otherArticlesLinks';
+@import './templates/otherArticles';
 
 @import './components/footer';
 

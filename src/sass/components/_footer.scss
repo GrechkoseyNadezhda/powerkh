@@ -1,5 +1,4 @@
 .footer {
-  // padding: 0 20px 40px;
   background-color: var(--pure-white-color);
 }
 
@@ -110,6 +109,10 @@
   }
 }
 
+.scroll-up:hover {
+  opacity: 0.7;
+}
+
 .scroll-up::after {
   display: block;
   width: 14px;
@@ -126,7 +129,6 @@
 }
 
 .footer__slogan {
-  // padding-bottom: 40px;
   @include font-title-14;
   text-align: center;
   flex-basis: 100%;

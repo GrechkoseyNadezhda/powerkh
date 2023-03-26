@@ -1,8 +1,8 @@
 //popup
 .backdrop {
   opacity: 0;
-  visibility: hidden;
 
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -11,10 +11,11 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
 
-  transition: 0.3s all;
+  transition: opacity 600ms;
+
   &.active-modal {
+    pointer-events: all;
     opacity: 1;
-    visibility: visible;
   }
 }
 
@@ -26,9 +27,6 @@
   padding: 24px 20px;
   transform: translate(-50%, -50%);
   z-index: 1001;
-  // overflow-y: auto;
-  // overflow-x: hidden;
-  // transition: all 0.5s ease;
 
   background: var(--pure-white-color);
   @include mq(tab) {
@@ -77,6 +75,41 @@
   border: none;
   @include font-button;
   color: var(--dark-grey-color);
+  &--link {
+    width: 20%;
+    position: relative;
+    padding: 0;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    gap: 8px;
+    background: var(--pure-white-color);
+    border: none;
+    @include font-button;
+    color: var(--dark-grey-color);
+    &::after {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      bottom: calc(50% - 10px);
+
+      display: block;
+      width: 70%;
+      height: 2px;
+      background-color: #000000;
+
+      transform: scaleX(0);
+      transition: transform 300ms linear;
+    }
+    &--home {
+      width: 15%;
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
 }
 
 .contact-modal__btn::after {
@@ -114,7 +147,12 @@
   transform: scaleX(0);
   transition: transform 300ms linear;
 }
-
+.contact-modal__btn-block {
+  display: flex;
+}
+.contact-modal__icon {
+  transform: rotate(180deg);
+}
 .contact-modal__close-btn {
   position: absolute;
   padding: 0;
@@ -127,12 +165,6 @@
   &:hover {
     fill: red;
   }
-}
-
-.contact-modal__content {
-}
-
-.contact-modal__close-icon {
 }
 
 .contact-modal__title {
@@ -188,4 +220,13 @@
 .contact-modal__input:valid ~ .contact-modal__label {
   font-size: 12px;
   top: -16px;
+}
+
+@keyframes modalAnim {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3, 0.9);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1, 1);
+  }
 }

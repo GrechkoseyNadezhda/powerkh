@@ -17,13 +17,14 @@ list: [{{!масив обєктів}},{{!масив обєктів}}]
      {{/each}}
   </ul>
   <div class="hidden">
-  <p class='BIM__benefits-mainpage'><b>{{this.textForMainpage}}</b></p>
+    {{#if this.textForMainpage}}
+  <p class='BIM__benefits-mainpage'><b>{{textForMainpage}}</b></p>
+  {{/if}}
        <p class='BIM__benefits-subtitle'>{{this.smallTitle}}</p>
   <ul class='BIMServices__list'>
     {{#each this.list}}
       <li class='benefits__item'>
-        <p class='benefits__description'><b>{{this.boldText}}</b>{{this.text}}
-        </p>
+        <b>{{this.boldText}}</b>{{this.text}}
       </li>
     {{/each}}
   </ul></div>

@@ -40,7 +40,10 @@
   &__list {
     display: flex;
     gap: 12px;
-    margin-bottom: 36px;
+    margin-bottom: 0;
+    @include mq(desk) {
+      margin-bottom: 36px;
+    }
   }
 
   &__item {
@@ -49,6 +52,10 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
   }
 
   &__linkedin {

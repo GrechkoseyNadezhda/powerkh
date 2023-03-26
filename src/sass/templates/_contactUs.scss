@@ -1,5 +1,13 @@
 .contact-us {
   background-color: var(--pure-white-color);
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
 }
 
 .contact-us__block {
@@ -18,7 +26,7 @@
 .contact-us__title {
   margin: 0 auto 32px;
   @include font-title;
-  text-transform: uppercase;
+
   color: var(--dark-grey-color);
   @include mq(mob-only) {
     max-width: 284px;

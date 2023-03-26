@@ -1,9 +1,9 @@
 // import Swiper, { Navigation, Pagination } from 'swiper';
 import impactHBS from '../../../templates/impactOnBusiness.hbs';
-import herotextHBS from '../../../templates/heroDesignText.hbs';
+import herotextHBS from '../../../templates/heroDescriptionText.hbs';
 import processHBS from '../../../templates/processTemplate.hbs';
 import solutionHBS from '../../../templates/solution.hbs';
-import sliderHBS from '../../../templates/heroDesignSlider.hbs';
+import sliderHBS from '../../../templates/heroDescritionSlider.hbs';
 import { useTemplate } from '../../common/use-template';
 import {
   textHeroSuspended,

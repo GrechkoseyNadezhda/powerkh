@@ -12,6 +12,7 @@ const dataObject = {
   smallTitle:
     'Our virtual design and construction offerings bring benefits to:',
   smallTitle2: 'Who Can Benefit from BIM Outsourcing Services?',
+  textForMainpage: 'Who Can Benefit from BIM Outsourcing Services?',
   list: [
     {
       boldText: '',
@@ -48,12 +49,5 @@ const mainHero = refs.herBIMAndVDC;
 
 mainHero.insertAdjacentHTML('beforeend', bimVdc(dataObject));
 document.querySelectorAll('.benefits__item').forEach(el => {
-  el.classList.add('bim_main_benefits');
-});
-const bimMain = document.querySelector('.BIMServices__list');
-const bimMainTextList = document.querySelector('.BIM__text-list');
-bimMain.classList.add('bim_main_whoBenefits');
-bimMainTextList.classList.add('bimServices__infoDiv');
-document.querySelectorAll('.BIM__subtitle').forEach(el => {
-  el.classList.add('BIM__subtitle-main');
+  el.classList.add('bimServices__section_item-main');
 });

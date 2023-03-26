@@ -1,4 +1,5 @@
 .hero-main {
+  padding-top: 0px;
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -15,6 +16,7 @@
     url(../images/hero/main@1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -22,6 +24,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-main {
+    background-attachment: fixed;
     background-image: -webkit-gradient(
         linear,
         left top,
@@ -46,7 +49,25 @@
 }
 
 .hero__block-main {
-  @extend .hero__block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 72px);
+  padding: 24px 16px;
+  transform: translate(-50%, -50%);
+
+  background: var(--pure-white-color);
+  @include mq(tab) {
+    padding: 52px 40px 24px;
+    width: 632px;
+    margin: 0 auto;
+  }
+  @include mq(desk) {
+    left: 152px;
+    padding: 52px 40px 24px;
+    margin-left: 16px;
+    transform: translate(0, -50%);
+  }
 }
 
 .hero-main__aside {

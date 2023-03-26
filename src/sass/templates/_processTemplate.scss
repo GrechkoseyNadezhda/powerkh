@@ -1,5 +1,13 @@
 .processTemplate {
   background-color: var(--pure-white-color);
+
+  padding-bottom: 40px;
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
 }
 
 .sectionProject {
@@ -22,11 +30,14 @@
   }
 }
 
+.text-bolder {
+  font-weight: 700;
+}
+
 .process__main-title {
   font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
+  color: #0e0e0e;
   line-height: calc(22 / 20);
 }
 
@@ -205,6 +216,7 @@
   }
   @include mq(desk) {
     @include font-body-reg;
+    width: 162px;
 
     &::after {
       display: none;
