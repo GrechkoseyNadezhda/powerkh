@@ -9,19 +9,19 @@
   left: 50%;
   width: calc(100% - 72px);
   padding: 24px 16px;
-  transform:translate(-50%, -50%);
-  
+  transform: translate(-50%, -50%);
+
   background: var(--pure-white-color);
   @include mq(tab) {
     padding: 52px 40px 24px;
     width: 632px;
     margin: 0 auto;
-    }
+  }
   @include mq(desk) {
     left: 152px;
     padding: 52px 40px 24px;
     margin-left: 16px;
-    transform:translate(0, -50%);
+    transform: translate(0, -50%);
   }
 }
 
@@ -71,6 +71,7 @@
 }
 
 .hero__btn {
+  padding: 0;
   position: relative;
   display: flex;
   justify-content: center;
@@ -91,7 +92,7 @@
   bottom: calc(50% - 10px);
 
   display: block;
-  width: 70%;
+  width: 154px;
   height: 2px;
   background-color: #000000;
 
@@ -102,20 +103,3 @@
 .hero__btn:hover::after {
   transform: scaleX(1);
 }
-
-.hero__btn::after {
-  content: '';
-
-  position: absolute;
-  left: 0;
-  bottom: calc(50% - 10px);
-
-  display: block;
-  width: 70%;
-  height: 2px;
-  background-color: #000000;
-
-  transform: scaleX(0);
-  transition: transform 300ms linear;
-}
-

@@ -94,7 +94,9 @@
 }
 
 .join-team__btn {
+  position: relative;
   margin-top: 24px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,4 +107,24 @@
   border: none;
   @include font-button;
   color: var(--dark-grey-color);
+}
+
+.join-team__btn::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: calc(50% - 10px);
+
+  display: block;
+  width: 115px;
+  height: 2px;
+  background-color: #000000;
+
+  transform: scaleX(0);
+  transition: transform 300ms linear;
+}
+
+.join-team__btn:hover::after {
+  transform: scaleX(1);
 }
