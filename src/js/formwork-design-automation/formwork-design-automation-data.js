@@ -19,7 +19,7 @@ export const textHeroFormworkDesign = {
   list: [
     '1. Manually updated design',
     '2. Too much manual work with shoring calculations and BOM generation',
-    '3.Time-consuming 2D coordination and design QC',
+    '3. Time-consuming 2D coordination and design QC',
   ],
 };
 

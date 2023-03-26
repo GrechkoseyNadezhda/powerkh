@@ -42,6 +42,7 @@
 
 .caseStudies__item {
   width: 316px;
+  height: 354px;
   border: 2px solid var(--ligth-grey-color);
   &:hover {
     transition: 500ms;
@@ -88,9 +89,9 @@
 
 .caseStudies__infoDiv {
   @include font-body-bold;
-  padding: 18px 24px 36px 18px;
+  padding: 20px 24px 36px 18px;
+  height: 146px;
   @include mq(tab) {
-    height: 146px;
     padding-bottom: 28px;
   }
 }
@@ -98,9 +99,7 @@
 .caseStudies__img {
   filter: grayscale(1);
   width: 100%;
-  @include mq(tab) {
-    height: 204px;
-  }
+  height: 204px;
 }
 
 .caseStudies__imgCard3 {

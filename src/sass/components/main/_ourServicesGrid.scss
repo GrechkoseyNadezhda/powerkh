@@ -1,7 +1,3 @@
-.bimServices_grid__section {
-  @extend .bimServices__section;
-}
-
 .bimServices__heading {
   @extend .caseStudies__subtitle;
   margin-bottom: 40px;
@@ -28,6 +24,12 @@
   @include mq(desk) {
     justify-content: flex-start;
   }
+}
+
+.bimServices__list-item-link {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .bimServices__list-item1 {
