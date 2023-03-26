@@ -1,15 +1,24 @@
-.other-articles__container {
-  @include mq(tab) {
-    display: flex;
-    justify-content: space-between;
-  }
+.other-articles {
+  padding-bottom: 40px;
 
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
   @include mq(desk) {
-    padding-left: 249px;
-    padding-right: 441px;
+    padding-bottom: 80px;
+  }
+  &__container {
+    @include mq(tab) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include mq(desk) {
+      padding-left: 249px;
+      padding-right: 441px;
+    }
   }
 }
-
 .other-articles__wrapper {
   width: 300px;
 }

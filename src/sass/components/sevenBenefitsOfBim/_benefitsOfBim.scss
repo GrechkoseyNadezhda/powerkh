@@ -1,4 +1,13 @@
 .benefits-of-bim {
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
+
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
   &__container {
     padding-right: 20px;
     padding-left: 20px;
