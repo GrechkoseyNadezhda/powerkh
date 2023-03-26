@@ -21,20 +21,33 @@
   }
 }
 
-.BIM__text-list {
+.BIM__text-list{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 40px;
+
   @include mq(tab) {
-    margin-bottom: 60px;
+  
   }
   @include mq(desk) {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 80px;
+  
   }
 }
+
+// .BIM__text-list + .hidden{
+//   padding-top: 40px;
+//    @include mq(tab) {
+//     padding-top: 60px;
+//   }
+//    @include mq(desk) {
+//     padding-bottom: 80px;
+//   }
+// }
+
+
+
 
 .BIM__title {
   @include font-title;
@@ -51,18 +64,7 @@
   }
 }
 
-.BIM__benefits-mainpage {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  @include mq(tab) {
-    margin-top: 60px;
-    margin-bottom: 52px;
-  }
-  @include mq(desk) {
-    margin-top: 52px;
-    margin-bottom: 52px;
-  }
-}
+
 
 .BIMServices__list {
   list-style: none;
@@ -158,8 +160,13 @@
 }
 
 .BIM__benefits-subtitle{
+ padding-top: 40px;
   @include font-body-reg;
+  @include mq(tab) {
+    padding-top: 52px;
+  }
   @include mq(desk) {
     width: 793px;
+     padding-top: 52px;
   }
 }
