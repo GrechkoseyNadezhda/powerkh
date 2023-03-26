@@ -2,43 +2,6 @@
   background-color: var(--pure-white-color);
   padding-bottom: 40px;
 
-.table__container::-webkit-scrollbar {
-
-
-
-
-
-
-   
-    height: 2px;  
-    padding-top: 16px;        /* ширина всей полосы прокрутки */
-  }
-  
-  .table__container::-webkit-scrollbar-thumb {
-    background-color:#C4C4C4;   
-  }
-
-  .top-twenty__architectural-section {
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 40px;
-    
-    @include mq(tab) {
-        padding-top: 60px;
-padding-left: 32px;
-padding-right: 32px; 
-
-    }
-    @include mq(desk) {
-        padding-top: 80px;
-        padding-left: 249px;
-    padding-right: 441px;
-    
-    }
-  }
-
-
   @include mq(tab) {
     padding-bottom: 60px;
   }
@@ -46,6 +9,31 @@ padding-right: 32px;
     padding-bottom: 80px;
   }
 }
+
+.table__container::-webkit-scrollbar {
+  height: 2px;
+  padding-top: 16px; /* ширина всей полосы прокрутки */
+}
+
+.table__container::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+}
+
+.top-twenty__architectural-section {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include mq(tab) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include mq(desk) {
+    padding-left: 249px;
+    padding-right: 441px;
+  }
+}
+
 .architectural__title-twenty {
   text-align: center;
   margin-bottom: 20px;
@@ -110,15 +98,12 @@ padding-right: 32px;
 }
 
 .table__container {
-
-    
-   overflow-x: scroll;
-    padding-bottom: 16px;
-    @include mq(tab) {
-        padding-bottom: 0px;
-    }
-    @include mq(desk) {
-        padding-bottom: 0px;
-    }
-
+  overflow-x: scroll;
+  padding-bottom: 16px;
+  @include mq(tab) {
+    padding-bottom: 0px;
+  }
+  @include mq(desk) {
+    padding-bottom: 0px;
+  }
 }
