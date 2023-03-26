@@ -36,19 +36,6 @@
   }
 }
 
-// .BIM__text-list + .hidden{
-//   padding-top: 40px;
-//    @include mq(tab) {
-//     padding-top: 60px;
-//   }
-//    @include mq(desk) {
-//     padding-bottom: 80px;
-//   }
-// }
-
-
-
-
 .BIM__title {
   @include font-title;
   margin-bottom: 40px;
@@ -64,8 +51,6 @@
   }
 }
 
-
-
 .BIMServices__list {
   list-style: none;
   @include font-body-reg;
@@ -76,13 +61,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 10px 80px;
+    gap: 33px 80px;
     padding-left: 60px;
   }
   @include mq(desk) {
     margin-top: 46px;
     flex-direction: row;
-    gap: 24px 97px;
+    gap: 42px 97px;
     padding-left: 60px;
   }
 }
@@ -91,7 +76,7 @@
   position: relative;
   @include font-body-reg;
   width: 260px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   &::before {
     content: ' ';
     position: absolute;
@@ -111,6 +96,7 @@
   @include mq(tab) {
     width: 282px;
     position: relative;
+    margin-bottom: 0px;
     &::before {
       content: ' ';
       position: absolute;
@@ -168,5 +154,15 @@
   @include mq(desk) {
     width: 793px;
      padding-top: 52px;
+  }
+}
+
+.BIM__benefits-mainpage {
+  margin-top: 40px;
+  @include mq(tab) {
+    margin-top: 60px;
+  }
+  @include mq(desk) {
+    margin-top: 52px;
   }
 }
