@@ -30,6 +30,7 @@
 }
 
 .outsourceProjects__subtitle {
+  text-transform: uppercase;
   @include font-body-bold;
   margin-bottom: 34px;
   max-width: 240px;

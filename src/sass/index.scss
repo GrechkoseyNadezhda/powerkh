@@ -7,6 +7,7 @@
 @import './utils/reset';
 @import './utils/common_classes';
 @import './utils/body_classes';
+@import './utils/scrollbar';
 
 //Templates-services
 
@@ -28,7 +29,7 @@
 
 //Templates-caseStudies
 
-@import './templates/heroDesign';
+@import './templates/heroDescription';
 @import './templates/processTemplate';
 @import './templates/contactForm';
 

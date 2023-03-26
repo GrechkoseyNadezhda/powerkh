@@ -129,12 +129,12 @@
 .howWeWork__description {
   padding-bottom: 109px;
   @include font-body-reg;
-  max-width: 750px;
+
   @include mq(tab) {
     width: 424px;
     padding-bottom: 35px;
   }
   @include mq(desk) {
-    width: 763px;
+    width: 780px;
   }
 }

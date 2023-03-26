@@ -2,8 +2,8 @@
 import processTemplateHBS from '../../templates/processTemplate.hbs';
 import solutionTemplateHBS from '../../templates/solution.hbs';
 import impactProcessTemplateHBS from '../../templates/impactOnBusiness.hbs';
-import herotextHBS from '../../templates/heroDesignText.hbs';
-import sliderHBS from '../../templates/heroDesignSlider.hbs';
+import herotextHBS from '../../templates/heroDescriptionText.hbs';
+import sliderHBS from '../../templates/heroDescritionSlider.hbs';
 
 import {
   processTemplate,

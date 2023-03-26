@@ -1,0 +1,43 @@
+
+{{!-- <a href="./case-studies.html" class="case-description__link">/Case Studio</a>
+  <div class="case-description__content">
+    <div class="case-description__text-block"> Шаблон вставляється сюди</div> --}}
+   
+{{!-- потрібно підставити  об`єкт--}}
+{{!-- приклад об'єкта: {title : 'текст', client: 'текст ', challenge: 'текст'
+} 
+для сторінки formwork ще   challenge2: 'текс',
+  list: ['1. текст з цифрою'],
+--}}
+
+      <h2 class="case-description__title">
+        {{this.title}}
+      </h2>
+      <h3 class="case-description__subtitle case-description__subtitle--client">
+        Client
+      </h3>
+      <p
+        class="case-description__description case-description__description--client"
+      >
+        {{this.client}}
+      </p>
+      <h3
+        class="case-description__subtitle case-description__subtitle--challenge"
+      >
+        Challenge
+      </h3>
+      <p
+        class="case-description__description case-description__description--challenge1"
+      >{{this.challenge}}</p>
+
+    {{#if this.challenge2}}<span 
+        class="case-description__description case-description__description--challenge2"
+      >{{this.challenge2}}</span> {{/if}}
+
+       {{#if this.list}}<ul  >
+        {{#each this.list}}
+        <li class="case-description__description--list">{{this}}</li>
+        {{/each}}
+      </ul>{{/if}}
+      
+ 

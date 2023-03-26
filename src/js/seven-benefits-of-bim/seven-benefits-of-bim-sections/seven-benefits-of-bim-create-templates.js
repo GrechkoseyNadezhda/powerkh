@@ -1,7 +1,7 @@
 import $ from 'jquery';
 // window.$ = window.jQuery = $;
 import 'slick-carousel';
-// import '../../components/ourCasesSlider/slick';
+
 import heroPartFourHBS from '../../../templates/hero-part-four.hbs';
 import shareHBS from '../../../templates/share.hbs';
 import contentsHBS from '../../../templates/contents.hbs';
