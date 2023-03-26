@@ -9,36 +9,38 @@
 
 <h2 class='contact-form__title'>{{this.subtitle}}</h2>
 <form class='contact-form' name='contact-form'>
+  <div class='contact-form__inputs-block'>
+    <div class='contact-form__input-wrap'>
+      <input
+        type='text'
+        class='contact-form__input'
+        name='name'
+        required
+        placeholder=''
+      />
+      <label class='contact-form__label'>{{this.firstFieldPlaceholder}}</label>
+    </div>
 
-  <div class='contact-form__input-wrap'>
-    <input
-      type='text'
-      class='contact-form__input'
-      name='name'
-      required
-      placeholder=''
-    />
-    <label class='contact-form__label'>{{this.firstFieldPlaceholder}}</label>
+    <div class='contact-form__input-wrap'>
+      <input
+        type='text'
+        class='contact-form__input'
+        name='contact'
+        required
+        placeholder=''
+      />
+      <label class='contact-form__label'>{{this.secondFieldPlaceholder}}</label>
+    </div>
+
+    <label class='contact-form__text-area-label'>
+      {{this.textAreaTitle}}
+      <textarea
+        class='contact-form__textarea'
+        name='message'
+        placeholder=' '
+      ></textarea>
+    </label>
   </div>
-
-  <div class='contact-form__input-wrap'>
-    <input
-      type='text'
-      class='contact-form__input'
-      name='contact'
-      required
-      placeholder=''
-    />
-    <label class='contact-form__label'>{{this.secondFieldPlaceholder}}</label>
-  </div>
-
-  <label class='contact-form__text-area-label'>
-    {{this.textAreaTitle}}
-    <textarea
-      class='contact-form__textarea'
-      name='message'
-      placeholder=' '
-    ></textarea>
-  </label>
-  <button type="submit" class="contact-submit">Send</button>
+  <button type='submit' class='contact-submit'>Send
+  </button>
 </form>

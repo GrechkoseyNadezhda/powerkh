@@ -44,3 +44,13 @@
     width: 166px;
   }
 }
+
+.customers__list_partner-img {
+  filter: grayscale(100%);
+  opacity: 0.7;
+
+  &:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+}
