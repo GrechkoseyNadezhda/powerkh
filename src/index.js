@@ -7,5 +7,6 @@ import './js/components/contactUsModal/contactUsModal';
 import './js/components/footer';
 import './js/main/herBIMandVDC_main.js';
 import './js/main/howWeWorkMain.js';
+import './js/main/caseStudies_main';
 
 import './js/components/footer';
