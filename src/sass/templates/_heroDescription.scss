@@ -1,16 +1,18 @@
 .case-description {
   padding-top: 100px;
-  padding-bottom: 40px;
+  padding-bottom: 58px;
+  position: relative;
   @include mq(tab) {
     padding-top: 120px;
-    padding-bottom: 60px;
+    padding-bottom: 78px;
   }
   @include mq(desk) {
     padding-top: 140px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 }
 .case-description__link {
+  display: block;
   position: relative;
   padding-left: 15px;
   margin-bottom: 32px;
@@ -31,9 +33,13 @@
     -webkit-background-size: 100% 100%;
     background-size: cover;
   }
+  &:hover,
+  &:focus {
+    color: var(--dark-grey-color);
+    opacity: 0.7;
+  }
 }
 .case-description__content {
-  margin-top: 32px;
   @include mq(desk) {
     display: flex;
     gap: 24px;
@@ -43,41 +49,69 @@
   margin-bottom: 40px;
   @include mq(desk) {
     width: 558px;
+    margin-bottom: 0;
   }
 }
 .case-description__title {
+  margin-bottom: 24px;
   @include font-title;
   font-size: 24px;
   line-height: 22px;
   text-transform: uppercase;
 }
 .case-description__subtitle {
-  margin-top: 24px;
   margin-bottom: 24px;
   @include font-title;
   &--client {
     @include mq(tab-only) {
-      margin-bottom: 13px;
+      // margin-bottom: 13px;
     }
   }
   &--challenge {
     @include mq(tab) {
-      margin-top: 32px;
+      // margin-top: 32px;
     }
   }
 }
 .case-description__description {
   @include font-body-reg;
+  &--client {
+    margin-bottom: 32px;
+  }
+  &--challenge1 {
+  }
+  &--challenge2 {
+    display: block;
+    margin: 20px 0;
+  }
   &--list {
     @include font-body-reg;
     position: relative;
+    &:not(:last-of-type) {
+      margin-bottom: 4px;
+    }
   }
 }
 
 .swiper {
+  // --swiper-pagination-bottom: -304px;
+  --swiper-pagination-bottom: 44px;
   @include mq(tab) {
     width: 554px;
-    height: 300px;
+
+    --swiper-pagination-bottom: 64px;
+  }
+  @include mq(desk) {
+    --swiper-pagination-bottom: 84px;
+    padding-top: 46px;
+  }
+  position: static;
+}
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  @include mq(desk) {
+    left: 72%;
   }
 }
 .swiper-pagination-bullet {

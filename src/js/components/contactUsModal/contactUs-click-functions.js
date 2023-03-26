@@ -8,6 +8,9 @@ export function OnContactUsClick(e) {
 }
 export function openModal(typeModal) {
   refsModal.contactUsSubmit.removeAttribute('disabled');
+  refsModal.modal.style = `animation-name: modalAnim;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;`;
   if (
     !refsModal.errorMessage.classList.value.includes('visually-hidden') &&
     typeModal === refsModal.backdropQuestion
@@ -32,6 +35,7 @@ export function closeModal(modalType) {
   modalType.classList.remove('active-modal');
   refsModal.body.removeEventListener('keyup', onEsc);
   modalType.removeEventListener('click', onBackdropClick);
+  refsModal.modal.removeAttribute('style');
 }
 function onEsc(e) {
   if (e.keyCode == 27) {
