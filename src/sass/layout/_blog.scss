@@ -246,7 +246,7 @@ body.blog-page {
 /* Точки (булиты) */
 .blog-section__slider .slick-dots {
   // position: relative;
-  z-index: 1;
+  z-index: 21 !important;
   // top: -100;
   // left: 338px;
   // top: -18px;
