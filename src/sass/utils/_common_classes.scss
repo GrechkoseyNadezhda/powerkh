@@ -1,7 +1,3 @@
-body {
-  overflow-y: overlay;
-}
-
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -52,20 +48,4 @@ body {
     height: 12px;
     background-image: url('../images/vectors/attantion.svg');
   }
-}
-::-webkit-scrollbar {
-  width: 15px;
-  position: absolute;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: red;
-
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
 }
