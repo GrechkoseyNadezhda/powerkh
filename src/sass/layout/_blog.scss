@@ -40,7 +40,7 @@ body.blog-page {
   margin-top: 40px;
   position: relative;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     margin-top: 50px;
   }
 }
@@ -60,7 +60,7 @@ body.blog-page {
   display: block !important;
   // flex-direction: column;
   // gap: 0px;
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     display: flex !important;
     flex-direction: row;
     gap: 28px;
@@ -77,11 +77,11 @@ body.blog-page {
   width: 297px;
   height: 181px;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     width: 548px;
     height: 352px;
   }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     width: 552px;
     height: 357px;
   }
@@ -98,11 +98,11 @@ body.blog-page {
   // top: 217px;
   border: 2px solid #000000;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     width: 516px;
     height: 320px;
   }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     width: 516px;
     height: 320px;
   }
@@ -122,7 +122,7 @@ body.blog-page {
   filter: grayscale(1);
   transition: all 0.5s ease;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     top: 32;
     left: 32;
     // margin-top: 32px;
@@ -130,7 +130,7 @@ body.blog-page {
     width: 516px;
     height: 320px;
   }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     top: 0;
     left: 0;
     margin-top: 36px;
@@ -142,10 +142,10 @@ body.blog-page {
 
 .blog-section__slider-text {
   width: 320px;
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     width: 704px;
   }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     width: 554px;
   }
 }
@@ -163,10 +163,10 @@ body.blog-page {
   margin-top: 24px;
   text-transform: uppercase;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     width: 620px;
   }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     width: 360px;
   }
 }
@@ -184,10 +184,10 @@ body.blog-page {
   margin-top: 24px;
 
   width: 320px;
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     width: 704px;
   }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     width: 554px;
   }
 }
@@ -199,10 +199,10 @@ body.blog-page {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 7;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     -webkit-line-clamp: 3;
   }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     -webkit-line-clamp: 4;
   }
 }
@@ -213,7 +213,7 @@ body.blog-page {
   display: none;
   margin-top: 24px;
 
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     display: block;
   }
 }
@@ -229,7 +229,7 @@ body.blog-page {
   align-items: center;
   justify-content: flex-start;
 
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     display: none;
   }
 
@@ -251,6 +251,7 @@ body.blog-page {
   // left: 338px;
   // top: -18px;
   // left: 582px;
+
   margin-top: 16px;
   display: flex;
   height: 18px;
@@ -261,16 +262,17 @@ body.blog-page {
 
   // margin-top: 40px;
 
-  @media screen and (min-width: 768px) {
-    // margin-top: 52px;
+  @include mq(tab) {
+      // margin-top: 52px;
   }
-  @media screen and (min-width: 1440px) {
-    // margin-top: 52px;
-    position: relative;
-    margin-top: 0;
-    top: -18px;
-    left: 582px;
-    justify-content: flex-start;
+  @include mq(desk) {
+      // margin-top: 52px;
+      position: relative;
+      max-width: 554px;
+      margin-top: 0;
+      top: -18px;
+      left: 582px;
+      justify-content: flex-start;
   }
 }
 .blog-section__slider .slick-dots li {

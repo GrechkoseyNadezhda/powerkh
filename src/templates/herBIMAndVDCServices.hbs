@@ -17,7 +17,9 @@ list: [{{!масив обєктів}},{{!масив обєктів}}]
      {{/each}}
   </ul>
   <div class="hidden">
-  <p class='BIM__benefits-mainpage'><b>{{this.textForMainpage}}</b></p>
+    {{#if this.textForMainpage}}
+  <p class='BIM__benefits-mainpage'><b>{{textForMainpage}}</b></p>
+  {{/if}}
        <p class='BIM__benefits-subtitle'>{{this.smallTitle}}</p>
   <ul class='BIMServices__list'>
     {{#each this.list}}

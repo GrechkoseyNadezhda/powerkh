@@ -15,7 +15,7 @@ export const caseStudiesData = [
     author: 'California, USA',
     description:
       'The client struggled with a time-consuming workflow of floor assembly design. Our team implemented Dynamo scripts to speed up every subprocess and do quality control. In the end, the client got a smooth workflow and an efficient, error-free design process.',
-    link: './top-thirty-architectural-rendering.html',
+    link: './formwork-design-automation.html',
     img1x: img11x,
     img2x: img12x,
     icon: iconEye,
@@ -26,7 +26,7 @@ export const caseStudiesData = [
     author: 'New York, USA',
     description:
       'The client struggled with a time-consuming workflow of floor assembly design. Our team implemented Dynamo scripts to speed up every subprocess and do quality control. In the end, the client got a smooth workflow and an efficient, error-free design process.',
-    link: './seven-benefits-of-bim.html',
+    link: './suspended-case.html',
     img1x: img21x,
     img2x: img22x,
     icon: iconEye,
@@ -37,7 +37,7 @@ export const caseStudiesData = [
     author: 'California, USA',
     description:
       'The client struggled with a time-consuming workflow of floor assembly design. Our team implemented Dynamo scripts to speed up every subprocess and do quality control. In the end, the client got a smooth workflow and an efficient, error-free design process.',
-    link: './seven-benefits-of-bim.html',
+    link: './floor-assembly-design-automation.html',
     img1x: img31x,
     img2x: img32x,
     icon: iconEye,

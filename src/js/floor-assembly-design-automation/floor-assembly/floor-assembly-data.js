@@ -13,11 +13,11 @@ import imLg2 from '../../../images/hero3-slider/floor-assembly/floor-assembly2x.
 export const processTemplate = {
      template: { 
       description:{ 
-        one: 'By analyzing the client’s ceiling design process, we identified subprocesses that could be automated.',
-     two:'Using Dynamo, we made a script that created all drop ceiling elements according to the set of the main parameters in a single run.',
-     three: 'At this stage,we realized that it was more efficient to have human control over every subprocess.',
-     four: 'We created 4 scripts for every subprocess: framing grid, framing creation, hangers grid, and hangers and clips creation.',
-     five: 'Our engineering team took over the ceiling design process and its improvements.'
+        one: 'By analyzing the client’s design workflow, we determined the processes that could be automated.',
+     two:'Using Dynamo, we made 7 scripts for every subprocess: pattern grid creation, plywood division, parts marking and tagging, projecting elements on plywood panels, making cutouts on panels, exporting to STL and DXF, and deleting secondary elements.',
+     three: 'At this stage, we identified issues with scripts and decided which steps to take to correct them.',
+     four: 'We added 2 more scripts to do quality control and remove auxiliary elements.',
+     five: 'Our team of engineers became responsible for the workflow and its further improvements.'
     }
   
   }  
