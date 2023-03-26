@@ -1,3 +1,14 @@
+.solution {
+  background-color: var(--pure-white-color);
+  padding-bottom: 40px;
+  @include mq(tab) {
+    padding-bottom: 60px;
+  }
+  @include mq(desk) {
+    padding-bottom: 80px;
+  }
+}
+
 .solution__title {
   @include font-title;
   margin-bottom: 52px;

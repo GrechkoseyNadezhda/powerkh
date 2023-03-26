@@ -1,13 +1,16 @@
 .case-studies {
   background-color: var(--pure-white-color);
   padding-top: 100px;
+  padding-bottom: 40px;
 
   @include mq(tab) {
     padding-top: 120px;
+    padding-bottom: 60px;
   }
 
   @include mq(desk) {
     padding-top: 140px;
+    padding-bottom: 80px;
   }
 }
 
