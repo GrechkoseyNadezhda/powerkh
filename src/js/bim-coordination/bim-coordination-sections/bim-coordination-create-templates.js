@@ -19,6 +19,7 @@ import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { createFAQsection } from '../../common/createFaqSection';
 import { toggleFaq } from '../../common/toggle-faq';
+import { makeBoldFirst } from '../../common/make-bold-first';
 const ENDPOINT_COORDINATION = '/faq/bimCoordination.json';
 
 useTemplate(refs.hero, heroHBS, heroCoordination);
@@ -44,3 +45,4 @@ useTemplate(refs.slider, sliderHBS, projectCoordination);
 useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
 
 createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);
+makeBoldFirst('.bim-automation-services__item');
