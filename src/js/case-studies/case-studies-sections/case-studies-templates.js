@@ -25,3 +25,13 @@ $(function () {
 });
 
 useTemplate(refsCase.blogSlider, blogSliderHBS, caseStudiesData);
+
+const readMore = document.querySelectorAll(
+  '.case-studies .blog-section__slider-readMore'
+);
+readMore.forEach(el => el.classList.add('hide'));
+
+const seeProject = document.querySelectorAll(
+  '.case-studies .blog-section__slider-seeProject'
+);
+seeProject.forEach(el => el.classList.add('show'));
