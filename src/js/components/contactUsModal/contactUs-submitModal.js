@@ -15,7 +15,7 @@ We will contact you shortly.
 <a
 href="./"
 class="contact-modal__btn--link"
-type="button"
+
 style="justify-content: end"
 >
 Home
@@ -32,7 +32,7 @@ Sorry, but you submitted your request earlier
 <div class='contact-modal__btn-block'><a
 href="./.html"
 class="contact-modal__btn--link contact-modal__btn--link--home"
-type="button"
+
 style="justify-content: end"
 ><img src=${arrow} alt="arrow" class="contact-modal__icon"/>
 Home
@@ -40,7 +40,7 @@ Home
 </a> <a
 href="./contacts.html"
 class="contact-modal__btn--link contact-modal__btn--link--contacts "
-type="button"
+
 style="justify-content: end"
 >
 Contacts
@@ -57,7 +57,7 @@ const failContentModalHTML = `  <h2
   <div class='contact-modal__btn-block'><a
 href="./.html"
 class="contact-modal__btn--link contact-modal__btn--link--home"
-type="button"
+
 style="justify-content: end"
 ><img src=${arrow} alt="arrow" class="contact-modal__icon"/>
 Home
