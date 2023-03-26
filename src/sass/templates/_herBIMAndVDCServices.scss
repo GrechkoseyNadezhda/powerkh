@@ -53,6 +53,7 @@
 
 .BIM__benefits-mainpage {
   margin-top: 40px;
+  margin-bottom: 40px;
   @include mq(tab) {
     margin-top: 60px;
     margin-bottom: 52px;
@@ -154,4 +155,11 @@
   font-family: 'PT Mono';
   font-weight: 900;
   font-size: 20px;
+}
+
+.BIM__benefits-subtitle{
+  @include font-body-reg;
+  @include mq(desk) {
+    width: 793px;
+  }
 }

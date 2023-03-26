@@ -12,6 +12,7 @@ const dataObject = {
   smallTitle:
     'Our virtual design and construction offerings bring benefits to:',
   smallTitle2: 'Who Can Benefit from BIM Outsourcing Services?',
+  textForMainpage: 'Who Can Benefit from BIM Outsourcing Services?',
   list: [
     {
       boldText: '',
