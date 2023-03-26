@@ -119,18 +119,49 @@
   display: flex;
 }
 
-.caseStudies__all-arrow {
+.caseStudies__all-link {
+  position: relative;
+
+  display: block;
+  margin-left: auto;
+  width: 152px;
+  height: 56px;
+  padding: 19px 64px 19px 0px;
   @include font-button;
-  display: flex;
-  justify-content: end;
-  align-items: center;
+  // display: flex;
+  // justify-content: end;
+  // align-items: center;
   &::after {
     content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 56px;
     height: 56px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../images/vectors/vector-right.svg);
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: cover;
+    background-image: url(../images/vectors/arrow.svg);
+  }
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: calc(50% - 10px);
+
+    display: block;
+    width: 88px;
+    height: 2px;
+    background-color: #000000;
+
+    transform: scaleX(0);
+    transition: transform 300ms linear;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
   }
 
   @include mq(tab-only) {
@@ -139,10 +170,11 @@
   }
 }
 
-.caseStudies__all-link {
-  &:hover,
-  &:focus {
-    transition: 300ms;
-    opacity: 50%;
-  }
-}
+// .caseStudies__all-link {
+
+//   &:hover,
+//   &:focus {
+//     transition: 300ms;
+//     opacity: 50%;
+//   }
+// }
