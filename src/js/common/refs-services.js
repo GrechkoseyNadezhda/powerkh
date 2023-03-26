@@ -38,4 +38,5 @@ export const refsCase = {
   ),
   renderSlider: document.querySelector('.renderSlider'),
   sdSlider: document.querySelector('.section-projects__slider-item.sd'),
+  csSlider: document.querySelector('.blog-section__slider.cs'),
 };
