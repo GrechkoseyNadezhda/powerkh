@@ -22,7 +22,6 @@
 
   @include mq(mob-only) {
     row-gap: 40px;
-    // column-gap: 20px;
     justify-content: space-between;
   }
 
@@ -48,6 +47,7 @@
 .customers__list_partner-img {
   filter: grayscale(100%);
   opacity: 0.7;
+  transition: 350ms;
 
   &:hover {
     filter: grayscale(0);
