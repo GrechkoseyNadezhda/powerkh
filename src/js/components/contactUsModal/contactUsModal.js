@@ -1,12 +1,6 @@
 import { createDealAndContact } from '../../common/crm-sendpulse';
-import {
-  openModal,
-  OnContactUsClick,
-  closeModal,
-  onBtnCloseClick,
-} from './contactUs-click-functions';
+import { OnContactUsClick, onBtnCloseClick } from './contactUs-click-functions';
 import { refsModal } from './contactUs-refs';
-import arrow from '../../../images/vectors/arrow.svg';
 import {
   openAnswerModal,
   rewriteHeroBlockAnswer,
