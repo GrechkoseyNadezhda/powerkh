@@ -14,5 +14,6 @@ export const refsModal = {
     '.contact-modal__input-wrap--second'
   ),
   errorMessage: document.querySelector('.error-message'),
+
   modal: document.querySelector('.contact-modal__block'),
 };

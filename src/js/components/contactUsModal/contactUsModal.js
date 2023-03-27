@@ -64,6 +64,13 @@ export async function onFormSubmit(e) {
       return;
     }
   }
+
+  if (e.target.classList.value.includes('contact-form')) {
+    document
+      .querySelector('.error-message-contacts')
+      .classList.remove('visually-hidden');
+  }
+
   refsModal.errorMessage.classList.remove('visually-hidden');
   refsModal.contactUsSubmit.removeAttribute('disabled');
 }
