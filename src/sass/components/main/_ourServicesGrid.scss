@@ -42,6 +42,13 @@
   width: 316px;
   height: 206px;
 
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/bim-modeling@2x.jpg);
+  }
+
   @include mq(mob-only) {
     background-position: 0 206px;
     background-size: 380px;
@@ -100,6 +107,12 @@
   @include mq(mob-only) {
     border-left: 2px solid var(--ligth-grey-color);
   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/bim-coordination@2x.jpg);
+  }
 }
 
 .bimServices__list-item3 {
@@ -107,6 +120,12 @@
   background-image: url(../images/hero/bim-content@1x.jpg);
   @include mq(desk) {
     border-width: 2px 2px 0px 0px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/bim-content@2x.jpg);
   }
 }
 
@@ -116,6 +135,12 @@
   @include mq(desk) {
     border-width: 2px 2px 0px 2px;
   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/scan-to-bim@2x.jpg);
+  }
 }
 
 .bimServices__list-item5 {
@@ -123,6 +148,12 @@
   background-image: url(../images/hero/bim-automation@1x.jpg);
   @include mq(desk) {
     border-width: 2px 2px 0px 0px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/bim-automation@2x.jpg);
   }
 }
 
@@ -133,12 +164,24 @@
   @include mq(mob) {
     border-bottom: 0;
   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/prefabrication@2x.jpg);
+  }
 }
 
 .bimServices__list-item7 {
   @extend .bimServices__list-item1;
   border-bottom: 2px solid var(--ligth-grey-color);
   background-image: url(../images/hero/structural-detailing@1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/structural-detailing@2x.jpg);
+  }
 }
 
 .bimServices__list-item8 {
@@ -155,6 +198,12 @@
     border-left: 0;
     border-top: 2px solid var(--ligth-grey-color);
     border-bottom: 2px solid var(--ligth-grey-color);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/architectural-rendering@2x.jpg);
   }
 }
 
