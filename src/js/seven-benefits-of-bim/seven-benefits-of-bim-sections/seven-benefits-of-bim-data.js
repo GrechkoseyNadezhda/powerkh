@@ -7,10 +7,22 @@ export const shareBim = 'https://yuriy0790.github.io/powerkh/scan-to-bim.html';
 export const contentsBim = {
   title: 'Contents',
   list: [
-    'What problems can you solve with BIM services?',
-    'Benefits of BIM',
-    'Disadvantages of BIM',
-    'Conclusion',
+    {
+      subtitle: 'What problems can you solve with BIM services?',
+      link: 'what-problems',
+    },
+    {
+      subtitle: 'Benefits of BIM',
+      link: 'benefits-of-bim',
+    },
+    {
+      subtitle: 'Disadvantages of BIM',
+      link: 'disadvantages',
+    },
+    {
+      subtitle: 'Conclusion',
+      link: 'conclusion',
+    },
   ],
 };
 
@@ -31,12 +43,19 @@ export const whatProblemsBim = {
   ],
 };
 
-
 export const listOfArticles = {
-  title: "Other articles of this author",
+  title: 'Other articles of this author',
   list: [
-    { article: 'The Benefits of Using Laser Scanning in Construction You Can’t Miss', link: '#' }, { article: 'As-Built Drawings 101: All You Need to Know', link: '#' }, { article: 'BIM Outsourcing vs in-House Teams', link: '#' }, { article: 'Construction RFI: Template, Best Practices', link: '#' }],
-}
+    {
+      article:
+        'The Benefits of Using Laser Scanning in Construction You Can’t Miss',
+      link: '#',
+    },
+    { article: 'As-Built Drawings 101: All You Need to Know', link: '#' },
+    { article: 'BIM Outsourcing vs in-House Teams', link: '#' },
+    { article: 'Construction RFI: Template, Best Practices', link: '#' },
+  ],
+};
 
 export const architectRendServData = {
   title: 'BIM Modeling Services',
@@ -44,4 +63,3 @@ export const architectRendServData = {
     'Looking for a way to improve your design and manage your construction effectively? Powerkh - a trusted BIM & VDC services provider with extensive engineering experience and a portfolio of 200+ successful BIM & VDC projects.',
   link: './bim-modeling.html',
 };
-

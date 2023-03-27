@@ -32,6 +32,11 @@
     &-italic {
       font-style: italic;
       color: #747474;
+      text-decoration: underline;
+      &:hover,
+      &:focus {
+        color: var(--dark-grey-color);
+      }
     }
 
     &-bold {
