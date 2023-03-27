@@ -28,5 +28,5 @@ useTemplate(refs.howWeWork, howWeWorkTemplate, howCreates);
 useTemplate(refs.services, servicesTemplate, whatWeOffer);
 useTemplate(refsCase.sampleSlider, sliderTemplate, projectSamples);
 useTemplate(refs.contactUs, contactUsTemplate, archiRenderingContact);
-createFAQsection('/faq/bimAutomation.json', refs.faq, faqTemplate);
+createFAQsection('/faq/architecturalRendering.json', refs.faq, faqTemplate);
 makeBoldFirst('.bim-automation-services__item');
