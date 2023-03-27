@@ -43,7 +43,7 @@ import img3L1x from '../../../images/slider/bim-modeling/bim-modeling-3@1x.jpg';
   }
 
   export const howModeling = {
-    title: 'BIM Coordination Process at Powerkh',
+    title: 'How We Approach BIM Modeling Process',
     list: [
       {
         subtitle: 'The client sends the brief and technical documentation.',
