@@ -2,7 +2,13 @@
 <ul class='contents__list'>
   {{#each this.list}}
     <li class='contents__item'>
-      <p class='contents__subtitle'>{{this}}</p>
+      <a
+        target='_blank'
+        aria-label='content list'
+        class='contents__subtitle'
+        href='#{{this.link}}'
+      >{{this.subtitle}}</a>
+
     </li>
   {{/each}}
 </ul>

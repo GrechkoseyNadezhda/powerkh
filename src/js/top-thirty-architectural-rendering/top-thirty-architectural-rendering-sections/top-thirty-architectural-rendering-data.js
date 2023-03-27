@@ -8,9 +8,18 @@ export const shareData =
 export const contentsData = {
   title: 'Contents',
   list: [
-    'Top 10 Architectural Visualization Companies',
-    'Other 20 Popular Architectural Rendering Firms',
-    'Final Thoughts',
+    {
+      subtitle: 'Top 10 Architectural Visualization Companies',
+      link: 'top-ten-architectural',
+    },
+    {
+      subtitle: 'Other 20 Popular Architectural Rendering Firms',
+      link: 'top-twenty-architectural',
+    },
+    {
+      subtitle: 'Final Thoughts',
+      link: 'final-thoughts',
+    },
   ],
 };
 
@@ -24,10 +33,15 @@ export const whatProblemsData = {
 };
 
 export const listOfArticles = {
-  title: "Other articles of this author",
+  title: 'Other articles of this author',
   list: [
-    { article: 'Enhancing Productivity in BIM Projects: Best Tips & Strategies', link: '#' }, { article: 'Boosting productivity for Scan to BIM Projects', link: '#' }],
-}
+    {
+      article: 'Enhancing Productivity in BIM Projects: Best Tips & Strategies',
+      link: '#',
+    },
+    { article: 'Boosting productivity for Scan to BIM Projects', link: '#' },
+  ],
+};
 
 export const architectRendServData = {
   title: 'Architectural Rendering Services',
