@@ -2,6 +2,7 @@ import $ from 'jquery';
 // window.$ = window.jQuery = $;
 import 'slick-carousel';
 // import '../../components/blogSlider/slick';
+// import '../../components/blogSlider';
 import { useTemplate } from '../../common/use-template';
 import blogSliderHBS from '../../../templates/blogSlider.hbs';
 import { caseStudiesData } from './case-studies-data';
@@ -24,7 +25,8 @@ $(function () {
   });
 });
 
-useTemplate(refsCase.blogSlider, blogSliderHBS, caseStudiesData);
+useTemplate(refsCase.csSlider, blogSliderHBS, caseStudiesData);
+console.log(caseStudiesData);
 
 const readMore = document.querySelectorAll(
   '.case-studies .blog-section__slider-readMore'

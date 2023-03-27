@@ -17,11 +17,11 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     padding-left: 32px;
     padding-right: 32px;
   }
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     padding-left: 249px;
     padding-right: 441px;
   }
@@ -36,12 +36,12 @@
   width: 320px;
   height: 180px;
   background-color: #f5f5f5;
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     width: 704px;
     height: 180px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     width: 748px;
     height: 180px;
   }
@@ -60,13 +60,13 @@
   position: relative;
   height: 180px;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     width: 616px;
     height: 180px;
     margin-left: 4px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @include mq(desk) {
     width: 648px;
     height: 180px;
     margin-left: 12px;
@@ -83,7 +83,7 @@
   width: 200px !important;
   height: 132px;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tab) {
     margin: 0;
     width: 200px !important;
     height: 132px;
@@ -202,3 +202,28 @@
     }
   }
 }
+
+.slick-slide.slick-active {
+  z-index: 20 !important;
+}
+
+.blog-section__slider.cs .blog-section__slider-badge {
+  margin-top: 40px;
+
+
+  @include mq(desk) {
+    margin-top: 32px;
+  }
+}
+
+// .slick_slide {
+//   width: 320px !important;
+
+//   @include mq(tab) {
+//     width: 704px !important;
+//   }
+
+//   @include mq(desk) {
+//     width: 748px !important;
+//   }
+// }
