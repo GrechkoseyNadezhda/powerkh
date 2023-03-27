@@ -1,8 +1,5 @@
 import $ from 'jquery';
-// window.$ = window.jQuery = $;
 import 'slick-carousel';
-// import '../../components/blogSlider/slick';
-// import '../../components/blogSlider';
 import { useTemplate } from '../../common/use-template';
 import blogSliderHBS from '../../../templates/blogSlider.hbs';
 import { caseStudiesData } from './case-studies-data';
