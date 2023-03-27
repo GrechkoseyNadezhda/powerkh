@@ -54,7 +54,11 @@ useTemplate(refs.contactUs, contactUsHBS, contactUsStructuralDetailing);
 
 // useTemplate(refsCase.sdSlider, ourProjectsSliderHBS, projectImg);
 useTemplate(refs.slider, sliderHBS, projectStructuralDetailing);
+const hidden = document.querySelector('.hidden');
+const bimTextList = document.querySelector('.BIM__text-list');
 
+hidden.style.display = 'none';
+bimTextList.style.marginBottom = '0px';
 
 createFAQsection(ENDPOINT_STRUCTDETAILING, refs.faq, faqHBS);
 toggleFaq();
