@@ -70,6 +70,11 @@ import img3L1x from '../../../images/slider/bim-modeling/bim-modeling-3@1x.jpg';
         subtitle: 'We help resolve problems.',
         description:
           'We will send reports about the flaws in the design and propose solutions. Your team members will be able to work on a project simultaneously from a single file.',
+      },
+      {
+        subtitle: 'The client receives interactive 3D BIM models and shop drawings.',
+        description:
+          'You will get accurate fabrication drawings and a fully interactive 3D database that can tie construction and manufacturing sites for a significant productivity boost.',
       }
     ],
   };
