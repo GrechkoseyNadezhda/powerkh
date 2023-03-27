@@ -60,7 +60,9 @@
 .footer__navItem.active::after,
 .footer__servItem.active::after,
 .footer__navItem:hover::after,
-.footer__servItem:hover::after {
+.footer__servItem:hover::after,
+.footer__navItem:focus::after,
+.footer__servItem:focus::after {
   transform: scaleX(1);
 }
 
@@ -109,7 +111,8 @@
   }
 }
 
-.scroll-up:hover {
+.scroll-up:hover,
+.scroll-up:focus {
   opacity: 0.7;
 }
 
