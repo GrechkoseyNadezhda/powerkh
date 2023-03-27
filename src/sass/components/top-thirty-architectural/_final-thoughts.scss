@@ -4,20 +4,17 @@
 }
 
 .final-thoughts__container {
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 20px;
-    @include mq(tab) {
-padding-left: 32px;
-padding-right: 32px; 
-margin-bottom: 20px;
-    }
-    @include mq(desk) {
-        padding-left: 249px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  @include mq(tab) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include mq(desk) {
+    padding-left: 249px;
     padding-right: 441px;
-    margin-bottom: 20px;
-    }
+  }
 }
 
 .final-thoughts__title {
@@ -37,31 +34,29 @@ margin-bottom: 20px;
   @include font-body-reg;
 }
 
-.final-thoughts__item{
-    @include font-body-reg;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-    &::before {
-      content: ' ';
-      display: inline-flex;
-      background-image: url(../images/vectors/vector-right.svg);
-      width: 10px;
-      height: 9px;
-      background-size: cover;
-      color: #cdcdcd;
-      padding-right: 10px;
-      
-    }
+.final-thoughts__item {
+  @include font-body-reg;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  &::before {
+    content: ' ';
+    display: inline-flex;
+    background-image: url(../images/vectors/vector-right.svg);
+    width: 10px;
+    height: 9px;
+    background-size: cover;
+    color: #cdcdcd;
+    padding-right: 10px;
+  }
 }
 .final-thoughts__list {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-.final-thoughts__part{
-    @include mq(mob) {
-        display: contents;
-    }
-    display: block;
+.final-thoughts__part {
+  @include mq(mob) {
+    display: contents;
+  }
+  display: block;
 }
-

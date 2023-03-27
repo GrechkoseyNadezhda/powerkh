@@ -6,7 +6,7 @@ jQuery('.about-section__info-datatitle').each(function() {
     if (parts.length < 2) return;
     
     let scale = 20;
-    let delay = 50;
+    let delay = 7;
     let end = 0+parts[1];
     let next = 0;
     let suffix = parts[2];

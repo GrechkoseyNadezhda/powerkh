@@ -53,6 +53,12 @@
 .faq__answer {
   @include font-body-reg;
   padding-top: 16px;
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+.faq__answer.visually-hidden {
+  opacity: 0;
 }
 
 .faq__question::before {
@@ -64,18 +70,9 @@
   height: 8px;
   content: '';
   background-image: url('../images/vectors/Polygon-3.svg');
+  transition: transform 300ms linear;
 }
 
 .faq__question.open::before {
   transform: scaleY(-1);
-}
-
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
