@@ -18,7 +18,10 @@
         required
         placeholder=''
       />
-      <label class='contact-form__label'>{{this.firstFieldPlaceholder}}</label>
+      <label
+        htmlFor='name'
+        class='contact-form__label'
+      >{{this.firstFieldPlaceholder}}</label>
     </div>
 
     <div class='contact-form__input-wrap'>
@@ -29,10 +32,15 @@
         required
         placeholder=''
       />
-      <label class='contact-form__label'>{{this.secondFieldPlaceholder}}</label>
+      <label
+        htmlFor='contact'
+        class='contact-form__label'
+      >{{this.secondFieldPlaceholder}}</label>
+      <span class='error-message visually-hidden'>Please, enter a validate
+        contact</span>
     </div>
 
-    <label class='contact-form__text-area-label'>
+    <label htmlFor='message' class='contact-form__text-area-label'>
       {{this.textAreaTitle}}
       <textarea
         class='contact-form__textarea'
