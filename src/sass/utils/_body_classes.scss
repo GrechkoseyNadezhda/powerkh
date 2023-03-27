@@ -166,7 +166,9 @@ body._lock {
     background-image: url('../images/hero/bim-automation@2x.jpg');
   }
 }
-.suspended-case-page {
+.suspended-case-page,
+.floor-page,
+.formwork-page {
   background-color: var(--pure-white-color);
 }
 
@@ -211,5 +213,4 @@ body._lock {
 .about-page {
   background-image: none;
   background-color: var(--pure-white-color);
-  
 }
