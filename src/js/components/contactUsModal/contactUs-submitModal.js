@@ -33,7 +33,7 @@ Sorry, but you submitted your request earlier
 href="./.html"
 class="contact-modal__btn--link contact-modal__btn--link--home"
 
-style="justify-content: end"
+style="justify-content: flex-start"
 ><img src=${arrow} alt="arrow" class="contact-modal__icon"/>
 Home
 
@@ -58,7 +58,7 @@ const failContentModalHTML = `  <h2
 href="./.html"
 class="contact-modal__btn--link contact-modal__btn--link--home"
 
-style="justify-content: end"
+style="justify-content: flex-start"
 ><img src=${arrow} alt="arrow" class="contact-modal__icon"/>
 Home
 
