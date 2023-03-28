@@ -84,12 +84,12 @@ padding-right: 32px;
   width: 144px;
   // display: flex;
   align-items: flex-start;
-  padding-top: 12px;
   padding-left: 12px;
-  padding-bottom: 12px;
   font-size: 9px;
   @include mq(tab) {
     font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 .architectural__right-block-twenty {
