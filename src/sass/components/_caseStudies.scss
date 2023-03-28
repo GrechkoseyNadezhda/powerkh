@@ -32,6 +32,18 @@
   display: flex;
 }
 
+.case-studies .blog-section__slider-desc {
+  height: 120px;
+
+  @include mq(tab) {
+    height: 60px;
+  }
+
+  @include mq(desk) {
+    height: 80px;
+  }
+}
+
 .slick-slide.slick-active {
   z-index: 20 !important;
 }
