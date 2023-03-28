@@ -31,9 +31,9 @@
 
 .outsourceProjects__subtitle {
   text-transform: uppercase;
-  @include font-body-bold;
+  @include font-title-14;
   margin-bottom: 34px;
-  max-width: 240px;
+  max-width: 100%;
   padding-left: 80px;
   @include mq(tab) {
     max-width: 100%;
