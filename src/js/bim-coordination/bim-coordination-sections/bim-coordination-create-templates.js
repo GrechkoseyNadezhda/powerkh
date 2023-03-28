@@ -22,27 +22,65 @@ import { toggleFaq } from '../../common/toggle-faq';
 import { makeBoldFirst } from '../../common/make-bold-first';
 const ENDPOINT_COORDINATION = '/faq/bimCoordination.json';
 
-useTemplate(refs.hero, heroHBS, heroCoordination);
+const spinner = document.querySelector('.spinner-loading');
+document.addEventListener('DOMContentLoaded', () => {
+  contentLoad();
+});
 
-useTemplate(refs.herBIMAndVDC, briefDescriptHBS, briefDescriptCoordination);
+function contentLoad() {
+  spinner.classList.remove('visually-hidden');
 
-const hidden = document.querySelector('.hidden');
-const bimTextList = document.querySelector('.BIM__text-list');
+  document.body.style = 'overflow: hidden';
 
-hidden.style.display = 'none';
-bimTextList.style.marginBottom = '0px';
+  useTemplate(refs.hero, heroHBS, heroCoordination);
 
-useTemplate(refs.howWeWork, howWeWorkHBS, howCoordination);
+  useTemplate(refs.herBIMAndVDC, briefDescriptHBS, briefDescriptCoordination);
 
-useTemplate(refs.services, servicesHBS, servicesCoordination);
+  const hidden = document.querySelector('.hidden');
+  const bimTextList = document.querySelector('.BIM__text-list');
 
-useTemplate(
-  refs.featuresForProjects,
-  featuresForProjectsHBS,
-  addValueCoordination
-);
-useTemplate(refs.slider, sliderHBS, projectCoordination);
-useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
+  hidden.style.display = 'none';
+  bimTextList.style.marginBottom = '0px';
 
-createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);
-makeBoldFirst('.bim-automation-services__item');
+  useTemplate(refs.howWeWork, howWeWorkHBS, howCoordination);
+
+  useTemplate(refs.services, servicesHBS, servicesCoordination);
+
+  useTemplate(
+    refs.featuresForProjects,
+    featuresForProjectsHBS,
+    addValueCoordination
+  );
+  useTemplate(refs.slider, sliderHBS, projectCoordination);
+  useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
+
+  createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);
+  makeBoldFirst('.bim-automation-services__item');
+  spinner.classList.add('visually-hidden');
+  document.body.style = 'overflow: auto';
+}
+
+// useTemplate(refs.hero, heroHBS, heroCoordination);
+
+// useTemplate(refs.herBIMAndVDC, briefDescriptHBS, briefDescriptCoordination);
+
+// const hidden = document.querySelector('.hidden');
+// const bimTextList = document.querySelector('.BIM__text-list');
+
+// hidden.style.display = 'none';
+// bimTextList.style.marginBottom = '0px';
+
+// useTemplate(refs.howWeWork, howWeWorkHBS, howCoordination);
+
+// useTemplate(refs.services, servicesHBS, servicesCoordination);
+
+// useTemplate(
+//   refs.featuresForProjects,
+//   featuresForProjectsHBS,
+//   addValueCoordination
+// );
+// useTemplate(refs.slider, sliderHBS, projectCoordination);
+// useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
+
+// createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);
+// makeBoldFirst('.bim-automation-services__item');

@@ -65,3 +65,33 @@
   position: absolute;
   white-space: nowrap;
 }
+.spinner-loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loading {
+  display: inline-block;
+
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--dark-grey-color);
+  border-radius: 50%;
+  border-top-color: var(--ligth-grey-color);
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}

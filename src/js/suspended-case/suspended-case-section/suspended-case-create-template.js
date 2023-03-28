@@ -24,8 +24,8 @@ useTemplate(refsCase.process, processHBS, processSuspended);
 useTemplate(refsCase.solution, solutionHBS, solutionSuspended);
 useTemplate(refsCase.impactOnBusiness, impactHBS, impactSuspended);
 
-const lightboxImg = new SimpleLightbox('.solution__img', {
-  sourceAttr: 'data-l-size',
+const lightboxImg = new SimpleLightbox('img', {
+  sourceAttr: 'src',
   scrollZoom: false,
   disableScroll: false,
   close: false,
