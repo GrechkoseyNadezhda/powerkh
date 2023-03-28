@@ -32,19 +32,6 @@
   display: flex;
 }
 
-// .slick-slide {
-//   pointer-events: none;
-// }
-// .blog-section__slider-seeProject {
-//   pointer-events: none;
-// }
-
-
-// .slick-slide.slick-active .blog-section__slider-seeProject{
-//   pointer-events:auto;
-// }
-
 .slick-slide.slick-active {
   z-index: 20 !important;
 }
-

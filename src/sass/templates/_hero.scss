@@ -92,7 +92,7 @@
   bottom: calc(50% - 10px);
 
   display: block;
-  width: 154px;
+  width: 69%;
   height: 2px;
   background-color: #000000;
 
@@ -100,6 +100,7 @@
   transition: transform 300ms linear;
 }
 
-.hero__btn:hover::after {
+.hero__btn:hover::after,
+.hero__btn:focus::after {
   transform: scaleX(1);
 }

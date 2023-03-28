@@ -96,7 +96,7 @@
       bottom: calc(50% - 10px);
 
       display: block;
-      width: 8%;
+      width: 7%;
       height: 2px;
       background-color: #000000;
 
@@ -145,7 +145,10 @@
 
 .contact-modal__btn:hover::after,
 .contact-modal__btn--link:hover::after,
-.contact-modal__btn--home:hover::after {
+.contact-modal__btn--home:hover::after,
+.contact-modal__btn:focus::after,
+.contact-modal__btn--link:focus::after,
+.contact-modal__btn--home:focus::after {
   transform: scaleX(1);
 }
 
@@ -179,7 +182,8 @@
   right: 24px;
   border: none;
   background-color: transparent;
-  &:hover {
+  &:hover,
+  &:focus {
     fill: red;
   }
 }
