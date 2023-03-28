@@ -20,7 +20,7 @@ class="contact-modal__btn--link"
 style="justify-content: end"
 >
 Home
-<img src=${arrow} alt="arrow" />
+<img src=${arrow} loading="lazy" alt="arrow" />
 </a>`;
 
 const duplicateContentModalHTML = `   <h2
@@ -35,7 +35,7 @@ href="./.html"
 class="contact-modal__btn--link contact-modal__btn--link--home"
 
 style="justify-content: flex-start"
-><img src=${arrow} alt="arrow" class="contact-modal__icon"/>
+><img src=${arrow} loading="lazy" alt="arrow" class="contact-modal__icon"/>
 Home
 
 </a> <a
@@ -45,7 +45,7 @@ class="contact-modal__btn--link contact-modal__btn--link--contacts "
 style="justify-content: end"
 >
 Contacts
-<img src=${arrow} alt="arrow" />
+<img src=${arrow} loading="lazy" alt="arrow" />
 </a></div>
 `;
 
@@ -60,7 +60,7 @@ href="./.html"
 class="contact-modal__btn--link contact-modal__btn--link--home"
 
 style="justify-content: flex-start"
-><img src=${arrow} alt="arrow" class="contact-modal__icon"/>
+><img src=${arrow} alt="arrow" loading="lazy" class="contact-modal__icon"/>
 Home
 
 </a> <a
@@ -70,7 +70,7 @@ type="button"
 style="justify-content: end"
 >
 Contacts
-<img src=${arrow} alt="arrow" />
+<img src=${arrow} loading="lazy" alt="arrow" />
 </a></div>`;
 
 export function openAnswerModal(result) {
