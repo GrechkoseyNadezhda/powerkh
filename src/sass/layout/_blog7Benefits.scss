@@ -141,11 +141,11 @@
 // gap: 24px;
 // margin: 0 auto;
 // }
-.slick-track {
-  @include mq(tab-only) {
-    width: 3090px !important;
-  }
-}
+// .slick-track {
+//   @include mq(tab-only) {
+//     width: 3090px !important;
+//   }
+// }
 
 .section-ourCases__sliderArrow .slick-arrow {
   position: absolute;

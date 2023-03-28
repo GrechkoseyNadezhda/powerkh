@@ -18,12 +18,27 @@ body._lock {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url('../images/hero/bim-coordination@1x.jpg');
+    url('../images/hero/bim-coordination@1x-small.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/bim-coordination@2x.jpg');
+    background-image: url('../images/hero/bim-coordination@2x-small.jpg');
+  }
+
+  @include mq(tab) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/bim-coordination@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/bim-coordination@2x.jpg');
+    }
   }
 }
 .bim-content-page {
@@ -32,12 +47,27 @@ body._lock {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url('../images/hero/bim-content@1x.jpg');
+    url('../images/hero/bim-content@1x-small.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/bim-content@2x.jpg');
+    background-image: url('../images/hero/bim-content@2x-small.jpg');
+  }
+
+  @include mq(tab) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/bim-content@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/bim-content@2x.jpg');
+    }
   }
 }
 .prefabrication-page {
@@ -46,12 +76,27 @@ body._lock {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url('../images/hero/prefabrication@1x.jpg');
+    url('../images/hero/prefabrication@1x-small.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/prefabrication@2x.jpg');
+    background-image: url('../images/hero/prefabrication@2x-small.jpg');
+  }
+
+  @include mq(tab) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/prefabrication@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/prefabrication@2x.jpg');
+    }
   }
 }
 
@@ -61,12 +106,27 @@ body._lock {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url('../images/hero/scan-to-bim@1x.jpg');
+    url('../images/hero/scan-to-bim@1x-small.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/scan-to-bim@2x.jpg');
+    background-image: url('../images/hero/scan-to-bim@2x-small.jpg');
+  }
+
+  @include mq(tab) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/scan-to-bim@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/scan-to-bim@2x.jpg');
+    }
   }
 }
 
@@ -76,12 +136,27 @@ body._lock {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url('../images/hero/career@1x.jpg');
+    url('../images/hero/career@1x-small.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/career@2x.jpg');
+    background-image: url('../images/hero/career@2x-small.jpg');
+  }
+
+  @include mq(tab) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/career@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/career@2x.jpg');
+    }
   }
 }
 
@@ -91,12 +166,27 @@ body._lock {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url('../images/hero/architectural-rendering@1x.jpg');
+    url('../images/hero/architectural-rendering@1x-small.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/architectural-rendering@2x.jpg');
+    background-image: url('../images/hero/architectural-rendering@2x-small.jpg');
+  }
+
+  @include mq(tab) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/architectural-rendering@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/architectural-rendering@2x.jpg');
+    }
   }
 }
 
@@ -106,12 +196,27 @@ body._lock {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url('../images/hero/bim-modeling@1x.jpg');
+    url('../images/hero/bim-modeling@1x-small.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/bim-modeling@2x.jpg');
+    background-image: url('../images/hero/bim-modeling@2x-small.jpg');
+  }
+
+  @include mq(tab) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/bim-modeling@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/bim-modeling@2x.jpg');
+    }
   }
 }
 
@@ -128,12 +233,26 @@ body._lock {
         rgba(0, 0, 0, 0.8) 0%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url('../images/hero/benefits-of-bim-services@1x.jpg');
+      url('../images/hero/benefits-of-bim-services@1x-small.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/hero/benefits-of-bim-services@2x.jpg');
+      background-image: url('../images/hero/benefits-of-bim-services@2x-small.jpg');
+    }
+    @include mq(tab) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.8) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url('../images/hero/benefits-of-bim-services@1x.jpg');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/hero/benefits-of-bim-services@2x.jpg');
+      }
     }
   }
 }
@@ -143,12 +262,27 @@ body._lock {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url('../images/hero/contacts@1x.jpg');
+    url('../images/hero/contacts@1x-small.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/contacts@2x.jpg');
+    background-image: url('../images/hero/contacts@2x-small.jpg');
+  }
+
+  @include mq(tab) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/contacts@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/contacts@2x.jpg');
+    }
   }
 }
 
@@ -158,15 +292,32 @@ body._lock {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url('../images/hero/bim-automation@1x.jpg');
+    url('../images/hero/bim-automation@1x-small.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/bim-automation@2x.jpg');
+    background-image: url('../images/hero/bim-automation@2x-small.jpg');
+  }
+
+  @include mq(tab) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/bim-automation@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/bim-automation@2x.jpg');
+    }
   }
 }
-.suspended-case-page {
+.suspended-case-page,
+.floor-page,
+.formwork-page {
   background-color: var(--pure-white-color);
 }
 
@@ -183,12 +334,26 @@ body._lock {
         rgba(0, 0, 0, 0.8) 0%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url('../images/hero/top-30-architectural@1x.jpg');
+      url('../images/hero/top-30-architectural@1x-small.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/hero/top-30-architectural@2x.jpg');
+      background-image: url('../images/hero/top-30-architectural@2x-small.jpg');
+    }
+    @include mq(tab) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.8) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url('../images/hero/top-30-architectural@1x.jpg');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/hero/top-30-architectural@2x.jpg');
+      }
     }
   }
 }
@@ -199,17 +364,31 @@ body._lock {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url('../images/hero/structural-detailing@1x.jpg');
+    url('../images/hero/structural-detailing@1x-small.jpg');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero/structural-detailing@2x.jpg');
+    background-image: url('../images/hero/structural-detailing@2x-small.jpg');
+  }
+
+  @include mq(tab) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/hero/structural-detailing@1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/structural-detailing@2x.jpg');
+    }
   }
 }
 
 .about-page {
   background-image: none;
   background-color: var(--pure-white-color);
-  
 }

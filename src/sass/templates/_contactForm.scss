@@ -120,7 +120,8 @@
   transition: all 300ms linear;
 }
 
-.contact-submit:hover::after {
+.contact-submit:hover::after,
+.contact-submit:focus::after {
   transform: scaleX(1);
 }
 

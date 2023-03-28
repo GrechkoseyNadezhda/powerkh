@@ -15,13 +15,11 @@
         type='text'
         class='contact-form__input'
         name='name'
+        id="contact-form-name"
         required
         placeholder=''
       />
-      <label
-        htmlFor='name'
-        class='contact-form__label'
-      >{{this.firstFieldPlaceholder}}</label>
+      <label class='contact-form__label' for="contact-form-name">{{this.firstFieldPlaceholder}}</label>
     </div>
 
     <div class='contact-form__input-wrap'>
@@ -29,15 +27,14 @@
         type='text'
         class='contact-form__input'
         name='contact'
+        id="contact-form-contact"
         required
         placeholder=''
       />
-      <label
-        htmlFor='contact'
-        class='contact-form__label'
-      >{{this.secondFieldPlaceholder}}</label>
-      <span class='error-message visually-hidden'>Please, enter a validate
-        contact</span>
+      <label class='contact-form__label' for="contact-form-contact">{{this.secondFieldPlaceholder}}</label>
+       <span class="error-message error-message-contacts  visually-hidden"
+              >Please, enter a validate contact</span
+            >
     </div>
 
     <label htmlFor='message' class='contact-form__text-area-label'>
@@ -45,10 +42,11 @@
       <textarea
         class='contact-form__textarea'
         name='message'
+        id="contact-form-message"
         placeholder=' '
       ></textarea>
     </label>
   </div>
-  <button type='submit' class='contact-submit'>Send
+  <button type='submit' class='contact-submit' for="contact-form-message">Send
   </button>
 </form>
