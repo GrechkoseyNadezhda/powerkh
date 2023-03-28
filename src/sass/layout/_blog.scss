@@ -73,11 +73,12 @@ body.blog-page {
 
 .blog-section__slider-picture {
   position: relative;
-
+  margin: 0 auto;
   width: 297px;
   height: 181px;
 
   @include mq(tab) {
+    margin: 0 0;
     width: 548px;
     height: 352px;
   }
@@ -141,7 +142,7 @@ body.blog-page {
 }
 
 .blog-section__slider-text {
-  width: 320px;
+  width: 100%;
   @include mq(tab) {
     width: 704px;
   }
@@ -159,7 +160,7 @@ body.blog-page {
 
 .blog-section__slider-title {
   @include font-title;
-  width: 246px;
+  width: calc(100% - 74px);
   margin-top: 24px;
   text-transform: uppercase;
 
@@ -183,7 +184,7 @@ body.blog-page {
 
   margin-top: 24px;
 
-  width: 320px;
+  width: 100%;
   @include mq(tab) {
     width: 704px;
   }
@@ -263,16 +264,16 @@ body.blog-page {
   // margin-top: 40px;
 
   @include mq(tab) {
-      // margin-top: 52px;
+    // margin-top: 52px;
   }
   @include mq(desk) {
-      // margin-top: 52px;
-      position: relative;
-      max-width: 554px;
-      margin-top: 0;
-      top: -18px;
-      left: 582px;
-      justify-content: flex-start;
+    // margin-top: 52px;
+    position: relative;
+    max-width: 554px;
+    margin-top: 0;
+    top: -18px;
+    left: 582px;
+    justify-content: flex-start;
   }
 }
 .blog-section__slider .slick-dots li {

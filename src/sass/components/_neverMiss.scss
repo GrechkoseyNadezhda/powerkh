@@ -40,7 +40,8 @@
 
   &__input {
     display: block;
-    width: 288px;
+    width: 100%;
+    max-width: 350px;
     margin: 0 auto;
     margin-bottom: 32px;
     padding-left: 16px;
