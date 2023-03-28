@@ -1,5 +1,4 @@
 import $ from 'jquery';
-// window.$ = window.jQuery = $;
 import 'slick-carousel';
 import howWeWorkHBS from '../../../templates/howWeWork.hbs';
 import servicesHBS from '../../../templates/architecAndStructBim.hbs';
