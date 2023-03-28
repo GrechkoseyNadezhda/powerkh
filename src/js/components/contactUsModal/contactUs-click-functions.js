@@ -1,7 +1,6 @@
 import { refsModal } from './contactUs-refs';
 export function OnContactUsClick(e) {
-  //   e.preventDefault();
-  // openModal(typeModal);
+ 
   if (e.currentTarget.classList.value.includes('js-btn-modal')) {
     openModal(refsModal.backdropQuestion);
   }

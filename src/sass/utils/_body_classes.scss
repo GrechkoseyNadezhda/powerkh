@@ -315,7 +315,9 @@ body._lock {
     }
   }
 }
-.suspended-case-page {
+.suspended-case-page,
+.floor-page,
+.formwork-page {
   background-color: var(--pure-white-color);
 }
 

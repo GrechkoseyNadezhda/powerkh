@@ -22,7 +22,11 @@
         alt="decorative element"
       />
       <div class="contact-modal__content">
-        <button type="button" class="contact-modal__close-btn">
+        <button
+          type="button"
+          class="contact-modal__close-btn"
+          aria-label="close modal btn"
+        >
           <svg class="contact-modal__close-icon" width="24" height="24">
             <use href="../images/vectors/sprite.svg#icon-close"></use>
           </svg>
@@ -39,10 +43,13 @@
               type="text"
               class="contact-modal__input"
               name="name"
+              id="name-customer"
               required
               placeholder=""
             />
-            <label class="contact-modal__label">How can we call you?</label>
+            <label class="contact-modal__label" for="name-customer"
+              >How can we call you?</label
+            >
           </div>
 
           <div
@@ -52,10 +59,13 @@
               type="text"
               class="contact-modal__input"
               name="contact"
+              id="contacts-customer"
               required
               placeholder=""
             />
-            <label class="contact-modal__label">Phone or E-mail*</label>
+            <label class="contact-modal__label" for="contacts-customer"
+              >Phone or E-mail*</label
+            >
             <span class="error-message visually-hidden"
               >Please, enter a validate contact</span
             >

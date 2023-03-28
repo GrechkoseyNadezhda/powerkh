@@ -6,5 +6,15 @@ import { onFormSubmit } from '../../components/contactUsModal/contactUsModal';
 
 useTemplate(refs.hero, contactFormHBS, formContacts);
 
+if (
+  document
+    .querySelector('.error-message-contacts')
+    .classList.value.includes('visually-hidden')
+) {
+  document
+    .querySelector('.error-message-contacts')
+    .classList.add('visually-hidden');
+}
+
 const contactForm = document.querySelector('.contact-form');
 contactForm.addEventListener('submit', onFormSubmit);
