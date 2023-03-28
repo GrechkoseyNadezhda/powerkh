@@ -44,12 +44,14 @@
   width: 316px;
   height: 354px;
   border: 2px solid var(--ligth-grey-color);
-  &:hover {
+  &:hover,
+  &:focus {
     transition: 500ms;
     color: var(--pure-white-color);
     background-color: var(--pure-black-color);
   }
-  &:hover p::after {
+  &:hover p::after,
+  &:focus p::after {
     content: '';
     margin-left: 128px;
     filter: invert(100%);
@@ -62,14 +64,16 @@
     background-image: url(../images/vectors/vector-right.svg);
   }
 
-  &:hover img {
+  &:hover img,
+  &:focus img {
     filter: grayscale(0);
   }
 
   @include mq(tab) {
     width: 342px;
 
-    &:hover p::after {
+    &:hover p::after,
+    &:focus p::after {
       margin-left: 114px;
       width: 56px;
       height: 56px;
@@ -127,9 +131,7 @@
   height: 56px;
   padding: 19px 64px 19px 0px;
   @include font-button;
-  // display: flex;
-  // justify-content: end;
-  // align-items: center;
+
   &::after {
     content: '';
     position: absolute;
@@ -145,21 +147,19 @@
   }
   &::before {
     content: '';
-
     position: absolute;
     left: 0;
     bottom: calc(50% - 10px);
-
     display: block;
     width: 88px;
     height: 2px;
     background-color: #000000;
-
     transform: scaleX(0);
     transition: transform 300ms linear;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     transform: scaleX(1);
   }
 
@@ -168,12 +168,3 @@
     justify-content: start;
   }
 }
-
-// .caseStudies__all-link {
-
-//   &:hover,
-//   &:focus {
-//     transition: 300ms;
-//     opacity: 50%;
-//   }
-// }
