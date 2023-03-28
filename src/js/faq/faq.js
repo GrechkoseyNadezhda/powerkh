@@ -1,1 +1,1 @@
-import './faq-section/faq-template';
+// import './faq-section/faq-template';
