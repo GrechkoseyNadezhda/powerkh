@@ -3,7 +3,7 @@ import 'slick-carousel';
 import { useTemplate } from '../../common/use-template';
 import blogSliderHBS from '../../../templates/blogSlider.hbs';
 import { caseStudiesData } from './case-studies-data';
-import { refsCase } from '../../common/refs-services';
+import { refs, refsCase } from '../../common/refs-services';
 
 $(function () {
   $('.blog-section__slider').slick({
@@ -22,7 +22,6 @@ $(function () {
   });
 });
 
-useTemplate(refsCase.csSlider, blogSliderHBS, caseStudiesData);
 console.log(caseStudiesData);
 
 const readMore = document.querySelectorAll(
@@ -34,3 +33,13 @@ const seeProject = document.querySelectorAll(
   '.case-studies .blog-section__slider-seeProject'
 );
 seeProject.forEach(el => el.classList.add('show'));
+
+document.addEventListener('DOMContentLoaded', contentLoad());
+
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
+  useTemplate(refsCase.csSlider, blogSliderHBS, caseStudiesData);
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}

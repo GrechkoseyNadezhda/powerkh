@@ -43,7 +43,7 @@
   border-style: solid;
   border-color: var(--ligth-grey-color);
   transition: all 0.35s ease-out;
-  background-image: url(../images/hero/bim-modeling@1x.jpg);
+  background-image: url(../images/hero/bim-modeling@1x.webp);
   background-repeat: no-repeat;
   width: 316px;
   height: 206px;
@@ -52,7 +52,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/bim-modeling@2x.jpg);
+    background-image: url(../images/hero/bim-modeling@2x.webp);
   }
 
   @include mq(mob-only) {
@@ -112,7 +112,7 @@
 .bimServices__list-item2 {
   @extend .bimServices__list-item1;
   border-width: 2px 2px 0px 0px;
-  background-image: url(../images/hero/bim-coordination@1x.jpg);
+  background-image: url(../images/hero/bim-coordination@1x.webp);
   @include mq(mob-only) {
     border-left: 2px solid var(--ligth-grey-color);
   }
@@ -120,13 +120,13 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/bim-coordination@2x.jpg);
+    background-image: url(../images/hero/bim-coordination@2x.webp);
   }
 }
 
 .bimServices__list-item3 {
   @extend .bimServices__list-item1;
-  background-image: url(../images/hero/bim-content@1x.jpg);
+  background-image: url(../images/hero/bim-content@1x.webp);
   @include mq(desk) {
     border-width: 2px 2px 0px 0px;
   }
@@ -134,13 +134,13 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/bim-content@2x.jpg);
+    background-image: url(../images/hero/bim-content@2x.webp);
   }
 }
 
 .bimServices__list-item4 {
   @extend .bimServices__list-item2;
-  background-image: url(../images/hero/scan-to-bim@1x.jpg);
+  background-image: url(../images/hero/scan-to-bim@1x.webp);
   @include mq(desk) {
     border-width: 2px 2px 0px 2px;
   }
@@ -148,13 +148,13 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/scan-to-bim@2x.jpg);
+    background-image: url(../images/hero/scan-to-bim@2x.webp);
   }
 }
 
 .bimServices__list-item5 {
   @extend .bimServices__list-item1;
-  background-image: url(../images/hero/bim-automation@1x.jpg);
+  background-image: url(../images/hero/bim-automation@1x.webp);
   @include mq(desk) {
     border-width: 2px 2px 0px 0px;
   }
@@ -162,14 +162,14 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/bim-automation@2x.jpg);
+    background-image: url(../images/hero/bim-automation@2x.webp);
   }
 }
 
 .bimServices__list-item6 {
   @extend .bimServices__list-item2;
   border-bottom: 2px solid var(--ligth-grey-color);
-  background-image: url(../images/hero/prefabrication@1x.jpg);
+  background-image: url(../images/hero/prefabrication@1x.webp);
   @include mq(mob) {
     border-bottom: 0;
   }
@@ -177,19 +177,19 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/prefabrication@2x.jpg);
+    background-image: url(../images/hero/prefabrication@2x.webp);
   }
 }
 
 .bimServices__list-item7 {
   @extend .bimServices__list-item1;
   border-bottom: 2px solid var(--ligth-grey-color);
-  background-image: url(../images/hero/structural-detailing@1x.jpg);
+  background-image: url(../images/hero/structural-detailing@1x.webp);
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/structural-detailing@2x.jpg);
+    background-image: url(../images/hero/structural-detailing@2x.webp);
   }
 }
 
@@ -197,7 +197,7 @@
   @extend .bimServices__list-item1;
   border-bottom: 2px solid var(--ligth-grey-color);
   border-left: 0;
-  background-image: url(../images/hero/architectural-rendering@1x.jpg);
+  background-image: url(../images/hero/architectural-rendering@1x.webp);
   @include mq(mob) {
     border-left: 2px solid var(--ligth-grey-color);
     border-bottom: 0;
@@ -217,7 +217,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/architectural-rendering@2x.jpg);
+    background-image: url(../images/hero/architectural-rendering@2x.webp);
   }
 }
 

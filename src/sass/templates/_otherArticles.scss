@@ -26,6 +26,7 @@
 }
 .other-articles__wrapper {
   width: 100%;
+  margin-bottom: 20px;
   @include mq(tab) {
     width: 300px;
   }
@@ -50,13 +51,9 @@
 
 .other-articles__list-link {
   padding-left: 20px;
-  margin-bottom: 40px;
+
   @include font-body-bold-12;
   text-decoration: underline;
-
-  @include mq(tab) {
-    margin-bottom: 0;
-  }
 }
 
 .list-link__item {

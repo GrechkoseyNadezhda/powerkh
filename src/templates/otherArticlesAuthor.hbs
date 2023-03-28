@@ -3,7 +3,7 @@
 
 <div class='author__img-wrapper author-info__img-wrapper'>
   <img
-    class='author__img'
+    class='author__img' loading="lazy"
     srcset='https://storage.googleapis.com/poverkh{{this.avatar.md_1x}}, https://storage.googleapis.com/poverkh{{this.avatar.md_2x}}'
     src='https://storage.googleapis.com/poverkh{{this.avatar.md_1x}}'
     alt={{this.name}}
@@ -16,10 +16,13 @@
     <li class='author__item author__linkedin'><a
         class='author__link'
         href='https://www.linkedin.com/in/{{this.linkedin}}'
+        target='_blank'
+        aria-label="go to the author's linkedin"
       ></a></li>
     <li class='author__item author__email'><a
         class='author__link'
         href='mailto:{{this.email}}'
+        aria-label='send an email to the author of the article'
       ></a></li>
   </ul>
 </div>

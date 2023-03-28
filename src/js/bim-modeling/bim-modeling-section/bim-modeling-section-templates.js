@@ -1,5 +1,4 @@
 import $ from 'jquery';
-// window.$ = window.jQuery = $;
 import 'slick-carousel';
 import howWeWorkHBS from '../../../templates/howWeWork.hbs';
 import servicesHBS from '../../../templates/architecAndStructBim.hbs';
@@ -23,7 +22,6 @@ import {
 import { refs, refsCase } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { createFAQsection } from '../../common/createFaqSection';
-import { toggleFaq } from '../../common/toggle-faq';
 
 const ENDPOINT_COORDINATION = '/faq/bimModeling.json';
 // Projects slider
@@ -43,13 +41,25 @@ $(function () {
     pauseOnHover: false,
   });
 });
+document.addEventListener('DOMContentLoaded', contentLoad());
 
-useTemplate(refs.hero, heroHBS, heroModeling);
-useTemplate(refs.howWeWork, howWeWorkHBS, howModeling);
-useTemplate(refs.services, servicesHBS, servicesModeling);
-useTemplate(refs.herBIMAndVDC, herBIMAndVDC, BIMservices);
-useTemplate(refs.featuresForProjects, featuresForProjectsHBS, addValueModeling);
-useTemplate(refs.contactUs, contactUsHBS, contactUsModeling);
-useTemplate(refs.slider, sliderHBS, projectCoordination);
-createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqTemplate);
-toggleFaq();
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+
+  document.body.classList.add('_lock');
+  useTemplate(refs.hero, heroHBS, heroModeling);
+  useTemplate(refs.howWeWork, howWeWorkHBS, howModeling);
+  useTemplate(refs.services, servicesHBS, servicesModeling);
+  useTemplate(refs.herBIMAndVDC, herBIMAndVDC, BIMservices);
+  useTemplate(
+    refs.featuresForProjects,
+    featuresForProjectsHBS,
+    addValueModeling
+  );
+  useTemplate(refs.contactUs, contactUsHBS, contactUsModeling);
+  useTemplate(refs.slider, sliderHBS, projectCoordination);
+  createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqTemplate);
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}

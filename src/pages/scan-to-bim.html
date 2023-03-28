@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Scan to BIM</title>
     <link rel="icon" href="../images/favicon.png" />
     <link
@@ -15,12 +16,11 @@
   </head>
   <body class="scan-to-bim-page">
     <include src="./partials/components/header/header.html"></include>
+    <include src="./partials/components/spinner.html"></include>
     <include src="./partials/components/hero.html"></include>
-    <div class="main__wrapper">
-      <include
-        src="./partials/scan-to-bim/scan-to-bim-structure.html"
-      ></include>
-    </div>
+
+    <include src="./partials/scan-to-bim/scan-to-bim-structure.html"></include>
+
     <include src="./partials/components/ourCaseStudies.html"></include>
     <include src="./partials/components/haveBIMproject.html"></include>
     <include src="./partials/components/footer.html"></include>

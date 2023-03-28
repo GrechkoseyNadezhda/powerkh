@@ -35,6 +35,10 @@
     @include font-body-reg;
     color: var(--dark-grey-color);
     margin-bottom: 20px;
+
+    &-underline {
+      text-decoration: underline;
+    }
   }
 
   &__last-paragraph {

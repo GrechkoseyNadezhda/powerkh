@@ -34,13 +34,14 @@ export const solutionObj = {
     sizes='(min-width: 1440px) 720px, (min-width: 768px) 704px,
     (min-width: 360px) 316px, 100vw'
     src={{this.imgSm1x}}
+    loading="lazy"
     data-l-size={{this.imgLar2x}}
     alt='formwork pic'
-    class='solution__img'
+    class='solution__img case-picture'
   />
 </div>
 <div class='solution__gif-container'>
-  <img class='solution__gif' src={{this.gif}} alt='gif' />
+  <img class='solution__gif case-picture' loading="lazy"  data-l-size={{this.gif}} src={{this.gif}} alt='gif' />
 </div>
 </div>
 {{! </div> }}

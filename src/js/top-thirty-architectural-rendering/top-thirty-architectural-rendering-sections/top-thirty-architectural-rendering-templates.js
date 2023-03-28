@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import 'slick-carousel';
-// import '../../components/ourCasesSlider/slick';
 import heroFourHBS from '../../../templates/hero-part-four.hbs';
 import shareHBS from '../../../templates/share.hbs';
 import contentsHBS from '../../../templates/contents.hbs';
@@ -46,29 +45,36 @@ $('.section-ourCases__slider.b7b').slick({
   mobileFirst: true,
   centerPadding: '100px',
   appendArrows: $('.section-ourCases__sliderArrow'),
-  // variableWidth: true,
-  // centerMode: true,
-  // dots: true,
 });
 
 refsCase.subscribeForm.addEventListener('submit', onSubscribeSubmit);
 
-useTemplate(refs.heroPartFour, heroFourHBS, heroFourData);
-useTemplate(refs.share, shareHBS, shareData);
-useTemplate(refs.contents, contentsHBS, contentsData);
-useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsData);
-useTemplate(refs.otherArticlesLinks, otherArticlesLinksHBS, listOfArticles);
+document.addEventListener('DOMContentLoaded', contentLoad());
 
-useTemplate(
-  refs.architectRendServ,
-  architectRendServHBS,
-  architectRendServData
-);
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
 
-fetchDatabaseAuthor(
-  '/authors/TetianaRapina.json',
-  refs.author,
-  refs.otherArticlesAuthor,
-  authorHBS,
-  authorInfoHBS
-);
+  useTemplate(refs.heroPartFour, heroFourHBS, heroFourData);
+  useTemplate(refs.share, shareHBS, shareData);
+  useTemplate(refs.contents, contentsHBS, contentsData);
+  useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsData);
+  useTemplate(refs.otherArticlesLinks, otherArticlesLinksHBS, listOfArticles);
+
+  useTemplate(
+    refs.architectRendServ,
+    architectRendServHBS,
+    architectRendServData
+  );
+
+  fetchDatabaseAuthor(
+    '/authors/TetianaRapina.json',
+    refs.author,
+    refs.otherArticlesAuthor,
+    authorHBS,
+    authorInfoHBS
+  );
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}
