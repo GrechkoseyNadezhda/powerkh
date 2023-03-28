@@ -65,7 +65,8 @@
     background-size: 380px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--pure-white-color);
     background-position: 0 20px;
 
@@ -77,11 +78,13 @@
     }
   }
 
-  &:hover .bimServices__infoDivP {
+  &:hover .bimServices__infoDivP,
+  &:focus .bimServices__infoDivP {
     background-color: var(--pure-black-color);
   }
 
-  &:hover .bimServices__list-item-body::after {
+  &:hover .bimServices__list-item-body::after,
+  &:focus .bimServices__list-item-body::after {
     content: '';
     filter: invert(100%);
     background-repeat: no-repeat;
@@ -194,6 +197,11 @@
     border-bottom: 0;
     border-top: 0;
   }
+  @include mq(tab-only) {
+    border-top: 2px solid var(--ligth-grey-color);
+    border-bottom: 2px solid var(--ligth-grey-color);
+    border-left: 0;
+  }
   @include mq(desk) {
     border-left: 0;
     border-top: 2px solid var(--ligth-grey-color);
@@ -257,13 +265,15 @@
     padding-right: 32px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--pure-black-color);
     color: var(--pure-white-color);
     background-image: none;
   }
 
-  &:hover .bim_list-item-last-arrow {
+  &:hover .bim_list-item-last-arrow,
+  &:focus .bim_list-item-last-arrow {
     filter: invert(100%);
   }
 }
