@@ -12,8 +12,8 @@ export const briefDescriptCoordination = {
   title: 'BIM Coordination & Clash Detection',
   listText: [
     'Back in the day, design specialists used tracing paper to check the compatibility of architectural, structural, and MEP systems. As a result, many clashes become known on-site, which leads to re-works, slows projects, and inflates the budget.',
-    'Powerkh can evaluate your entire construction according to the project’s documentation, visual references, and technical specifications. Our BIM coordination services include clash detection, constructability reviews, coordination meetings, and other solutions to keep your project on track.',
     'BIM coordination allows designers to use interactive 3D models to eliminate conflicts in design and mitigate risks during the construction phase.',
+    'Powerkh can evaluate your entire construction according to the project’s documentation, visual references, and technical specifications. Our BIM coordination services include clash detection, constructability reviews, coordination meetings, and other solutions to keep your project on track.',
   ],
 };
 export const howCoordination = {
@@ -58,10 +58,10 @@ export const servicesCoordination = {
   topic: 'The BIM and Revit coordination services we provide include:',
   list: [
     'BIM clash detection. Our experts will run Autodesk Revit software to flag inconsistencies in your project, ensuring all building elements work perfectly.',
-    'Coordination meetings. We hold meetings with engineers, consultants, and architects to help them resolve interferences with BIM modeling software.',
-    'Coordinated construction model. We can produce an accurate, coordinated project blueprint that will help you finish your project faster with fewer resources.',
     'MEP elements coordination. Powerkh can resolve constructability issues in mechanical, electrical, plumbing, and fire protection systems.',
+    'Coordination meetings. We hold meetings with engineers, consultants, and architects to help them resolve interferences with BIM modeling software.',
     'Clash detection reports. Our reports help stakeholders avoid recurring design errors during the project’s life span.',
+    'Coordinated construction model. We can produce an accurate, coordinated project blueprint that will help you finish your project faster with fewer resources.',
   ],
 };
 
