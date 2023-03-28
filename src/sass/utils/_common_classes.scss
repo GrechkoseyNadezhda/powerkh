@@ -55,16 +55,17 @@
     background-image: url('../images/vectors/attantion.svg');
   }
 }
+// Перенесено в найнижчий файл scss в index для перебивання всіх стилів
+// .visually-hidden {
+//   clip: rect(0 0 0 0);
+//   clip-path: inset(50%);
+//   height: 1px;
+//   width: 1px;
+//   overflow: hidden;
+//   position: absolute;
+//   white-space: nowrap;
+// }
 
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-}
 .spinner-loading {
   width: 100vw;
   height: 100vh;

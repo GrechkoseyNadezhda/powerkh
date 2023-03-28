@@ -14,10 +14,6 @@ if (refsModal.contactUsButtons.length > 0) {
   }
 }
 
-refsModal.closeBtn.addEventListener('click', onBtnCloseClick);
-
-refsModal.questionForm.addEventListener('submit', onFormSubmit);
-
 const PHONE_REGEXP = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
 const EMAIL_REGEXP =
   /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;

@@ -2,6 +2,7 @@ import { closeModal, openModal } from './contactUs-click-functions';
 import { refsModal } from './contactUs-refs';
 import arrow from '../../../images/vectors/arrow.svg';
 import { refs } from '../../common/refs-services';
+import { onFormSubmit } from './contactUsModal';
 const successContentModalHTML = ` <h2
 class="contact-modal__title"
 style="text-transform: none; max-width: 100%"
@@ -77,17 +78,20 @@ export function openAnswerModal(result) {
   if (result.result) {
     refsModal.modalAnswerContent.innerHTML = successContentModalHTML;
     openModal(refsModal.backdropAnswer);
+    refsModal.questionForm.removeEventListener('submit', onFormSubmit);
     refsModal.questionForm.reset();
     return;
   }
   if (!result.result && result.message === 'Duplicate data') {
     refsModal.modalAnswerContent.innerHTML = duplicateContentModalHTML;
+    refsModal.questionForm.removeEventListener('submit', onFormSubmit);
     openModal(refsModal.backdropAnswer);
 
     return;
   }
   if (!result.result && result.message !== 'Duplicate data') {
     refsModal.modalAnswerContent.innerHTML = failContentModalHTML;
+    refsModal.questionForm.removeEventListener('submit', onFormSubmit);
     openModal(refsModal.backdropAnswer);
     return;
   }

@@ -20,17 +20,16 @@ import { useTemplate } from '../../common/use-template';
 import { createFAQsection } from '../../common/createFaqSection';
 import { toggleFaq } from '../../common/toggle-faq';
 import { makeBoldFirst } from '../../common/make-bold-first';
+import { refsModal } from '../../components/contactUsModal/contactUs-refs';
 const ENDPOINT_COORDINATION = '/faq/bimCoordination.json';
 
 const spinner = document.querySelector('.spinner-loading');
-document.addEventListener('DOMContentLoaded', () => {
-  contentLoad();
-});
+document.addEventListener('DOMContentLoaded', contentLoad());
 
 function contentLoad() {
   spinner.classList.remove('visually-hidden');
 
-  document.body.style = 'overflow: hidden';
+  refsModal.body.classList.add('_lock');
 
   useTemplate(refs.hero, heroHBS, heroCoordination);
 
@@ -57,7 +56,7 @@ function contentLoad() {
   createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);
   makeBoldFirst('.bim-automation-services__item');
   spinner.classList.add('visually-hidden');
-  document.body.style = 'overflow: auto';
+  refsModal.body.classList.remove('_lock');
 }
 
 // useTemplate(refs.hero, heroHBS, heroCoordination);
