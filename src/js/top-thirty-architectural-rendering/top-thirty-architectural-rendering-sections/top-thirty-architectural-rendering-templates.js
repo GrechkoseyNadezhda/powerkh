@@ -53,22 +53,32 @@ $('.section-ourCases__slider.b7b').slick({
 
 refsCase.subscribeForm.addEventListener('submit', onSubscribeSubmit);
 
-useTemplate(refs.heroPartFour, heroFourHBS, heroFourData);
-useTemplate(refs.share, shareHBS, shareData);
-useTemplate(refs.contents, contentsHBS, contentsData);
-useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsData);
-useTemplate(refs.otherArticlesLinks, otherArticlesLinksHBS, listOfArticles);
+document.addEventListener('DOMContentLoaded', contentLoad());
 
-useTemplate(
-  refs.architectRendServ,
-  architectRendServHBS,
-  architectRendServData
-);
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
 
-fetchDatabaseAuthor(
-  '/authors/TetianaRapina.json',
-  refs.author,
-  refs.otherArticlesAuthor,
-  authorHBS,
-  authorInfoHBS
-);
+  useTemplate(refs.heroPartFour, heroFourHBS, heroFourData);
+  useTemplate(refs.share, shareHBS, shareData);
+  useTemplate(refs.contents, contentsHBS, contentsData);
+  useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsData);
+  useTemplate(refs.otherArticlesLinks, otherArticlesLinksHBS, listOfArticles);
+
+  useTemplate(
+    refs.architectRendServ,
+    architectRendServHBS,
+    architectRendServData
+  );
+
+  fetchDatabaseAuthor(
+    '/authors/TetianaRapina.json',
+    refs.author,
+    refs.otherArticlesAuthor,
+    authorHBS,
+    authorInfoHBS
+  );
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}

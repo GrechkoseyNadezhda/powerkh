@@ -11,20 +11,20 @@ import faqHBS from '../../../templates/faq.hbs';
 import sliderHBS from '../../../templates/ourProjectsSlider.hbs';
 import ourProjectsSliderHBS from '../../../templates/ourProjectsSlider.hbs';
 import {
-    heroStructuralDetailing,
-    briefDescriptStructuralDetailing,
-    howStructuralDetailing,
-    servicesStructuralDetailing,
-    contactUsStructuralDetailing,
-    addValueStructuralDetailing,
-    projectStructuralDetailing,
+  heroStructuralDetailing,
+  briefDescriptStructuralDetailing,
+  howStructuralDetailing,
+  servicesStructuralDetailing,
+  contactUsStructuralDetailing,
+  addValueStructuralDetailing,
+  projectStructuralDetailing,
 } from './structural-detailing-data';
 import { refs, refsCase } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { createFAQsection } from '../../common/createFaqSection';
 import { toggleFaq } from '../../common/toggle-faq';
 
-const ENDPOINT_STRUCTDETAILING= '/faq/structuralDetailing.json';
+const ENDPOINT_STRUCTDETAILING = '/faq/structuralDetailing.json';
 // Projects slider
 // $(function(){
 //     $('.section-projects__slider-item').slick({
@@ -38,27 +38,43 @@ const ENDPOINT_STRUCTDETAILING= '/faq/structuralDetailing.json';
 //         draggable: true,
 //         swipe: true,
 //         touchMove: true,
-            // pauseOnFocus: false,
-            // pauseOnHover: false,
-        
+// pauseOnFocus: false,
+// pauseOnHover: false,
+
 //     });
 // })
 
+document.addEventListener('DOMContentLoaded', contentLoad());
 
-useTemplate(refs.hero, heroHBS, heroStructuralDetailing);
-useTemplate(refs.herBIMAndVDC, briefDescriptHBS,  briefDescriptStructuralDetailing);
-useTemplate(refs.howWeWork, howWeWorkHBS, howStructuralDetailing);
-useTemplate(refs.services, servicesHBS, servicesStructuralDetailing);
-useTemplate(refs.featuresForProjects, featuresForProjectsHBS, addValueStructuralDetailing);
-useTemplate(refs.contactUs, contactUsHBS, contactUsStructuralDetailing);
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
 
-// useTemplate(refsCase.sdSlider, ourProjectsSliderHBS, projectImg);
-useTemplate(refs.slider, sliderHBS, projectStructuralDetailing);
-const hidden = document.querySelector('.hidden');
-const bimTextList = document.querySelector('.BIM__text-list');
+  useTemplate(refs.hero, heroHBS, heroStructuralDetailing);
+  useTemplate(
+    refs.herBIMAndVDC,
+    briefDescriptHBS,
+    briefDescriptStructuralDetailing
+  );
+  useTemplate(refs.howWeWork, howWeWorkHBS, howStructuralDetailing);
+  useTemplate(refs.services, servicesHBS, servicesStructuralDetailing);
+  useTemplate(
+    refs.featuresForProjects,
+    featuresForProjectsHBS,
+    addValueStructuralDetailing
+  );
+  useTemplate(refs.contactUs, contactUsHBS, contactUsStructuralDetailing);
 
-hidden.style.display = 'none';
-bimTextList.style.marginBottom = '0px';
+  // useTemplate(refsCase.sdSlider, ourProjectsSliderHBS, projectImg);
+  useTemplate(refs.slider, sliderHBS, projectStructuralDetailing);
+  const hidden = document.querySelector('.hidden');
+  const bimTextList = document.querySelector('.BIM__text-list');
 
-createFAQsection(ENDPOINT_STRUCTDETAILING, refs.faq, faqHBS);
-toggleFaq();
+  hidden.style.display = 'none';
+  bimTextList.style.marginBottom = '0px';
+
+  createFAQsection(ENDPOINT_STRUCTDETAILING, refs.faq, faqHBS);
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}

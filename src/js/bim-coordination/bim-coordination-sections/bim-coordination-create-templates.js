@@ -22,7 +22,7 @@ import { makeBoldFirst } from '../../common/make-bold-first';
 
 const ENDPOINT_COORDINATION = '/faq/bimCoordination.json';
 
-const spinner = document.querySelector('.spinner-loading');
+// const spinner = document.querySelector('.spinner-loading');
 document.addEventListener('DOMContentLoaded', contentLoad());
 
 function contentLoad() {
@@ -30,27 +30,28 @@ function contentLoad() {
 
   document.body.classList.add('_lock');
 
-  useTemplate(refs.hero, heroHBS, heroCoordination);
-  useTemplate(refs.herBIMAndVDC, briefDescriptHBS, briefDescriptCoordination);
-
-  const hidden = document.querySelector('.hidden');
-  const bimTextList = document.querySelector('.BIM__text-list');
-
-  hidden.style.display = 'none';
-  bimTextList.style.marginBottom = '0px';
-
-  useTemplate(refs.howWeWork, howWeWorkHBS, howCoordination);
-  useTemplate(refs.services, servicesHBS, servicesCoordination);
-  useTemplate(
-    refs.featuresForProjects,
-    featuresForProjectsHBS,
-    addValueCoordination
-  );
-  useTemplate(refs.slider, sliderHBS, projectCoordination);
-  useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
-
-  createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);
-  makeBoldFirst('.bim-automation-services__item');
   refs.spinner.classList.add('visually-hidden');
   document.body.classList.remove('_lock');
 }
+
+useTemplate(refs.hero, heroHBS, heroCoordination);
+useTemplate(refs.herBIMAndVDC, briefDescriptHBS, briefDescriptCoordination);
+
+const hidden = document.querySelector('.hidden');
+const bimTextList = document.querySelector('.BIM__text-list');
+
+hidden.style.display = 'none';
+bimTextList.style.marginBottom = '0px';
+
+useTemplate(refs.howWeWork, howWeWorkHBS, howCoordination);
+useTemplate(refs.services, servicesHBS, servicesCoordination);
+useTemplate(
+  refs.featuresForProjects,
+  featuresForProjectsHBS,
+  addValueCoordination
+);
+useTemplate(refs.slider, sliderHBS, projectCoordination);
+useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
+
+createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);
+makeBoldFirst('.bim-automation-services__item');

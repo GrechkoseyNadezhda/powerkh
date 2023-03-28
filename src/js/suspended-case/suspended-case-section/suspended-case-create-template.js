@@ -12,17 +12,26 @@ import {
   impactSuspended,
   solutionSuspended,
 } from '../../suspended-case/suspended-case-section/suspended-case-data';
-import { refsCase } from '../../common/refs-services';
+import { refs, refsCase } from '../../common/refs-services';
 
 import SimpleLightbox from 'simplelightbox';
-
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-useTemplate(refsCase.heroTextBlock, herotextHBS, textHeroSuspended);
-useTemplate(refsCase.heroSlider, sliderHBS, sliderPicturesSuspended);
-useTemplate(refsCase.process, processHBS, processSuspended);
-useTemplate(refsCase.solution, solutionHBS, solutionSuspended);
-useTemplate(refsCase.impactOnBusiness, impactHBS, impactSuspended);
+document.addEventListener('DOMContentLoaded', contentLoad());
+
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
+
+  useTemplate(refsCase.heroTextBlock, herotextHBS, textHeroSuspended);
+  useTemplate(refsCase.heroSlider, sliderHBS, sliderPicturesSuspended);
+  useTemplate(refsCase.process, processHBS, processSuspended);
+  useTemplate(refsCase.solution, solutionHBS, solutionSuspended);
+  useTemplate(refsCase.impactOnBusiness, impactHBS, impactSuspended);
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}
 
 const lightboxImg = new SimpleLightbox('img', {
   sourceAttr: 'src',
