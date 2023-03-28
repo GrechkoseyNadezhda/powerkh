@@ -1,7 +1,7 @@
 .author {
   position: static;
 
-  width: 320px;
+  width: 100%;
   display: none;
   margin: 0 auto;
   @include mq(tab) {
@@ -14,9 +14,13 @@
     right: 152px;
   }
 
+  &__img {
+    @include mq(mob-only) {
+      width: 100%;
+    }
+  }
+
   &__img-wrapper {
-    width: 320px;
-    height: 422px;
     margin-bottom: 8px;
     @include mq(tab) {
       width: 263px;

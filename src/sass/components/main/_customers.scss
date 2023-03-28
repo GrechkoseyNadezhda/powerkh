@@ -25,7 +25,12 @@
 
   @include mq(mob-only) {
     row-gap: 40px;
+    column-gap: 20px;
     justify-content: space-between;
+
+    & li {
+      min-width: 30%;
+    }
   }
 
   @include mq(tab) {

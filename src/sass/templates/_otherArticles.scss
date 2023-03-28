@@ -8,8 +8,13 @@
     padding-bottom: 80px;
   }
   &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     @include mq(tab) {
       display: flex;
+      flex-wrap: nowrap;
       justify-content: space-between;
     }
 
@@ -20,11 +25,10 @@
   }
 }
 .other-articles__wrapper {
-  width: 300px;
+  width: 100%;
   margin-bottom: 20px;
-
   @include mq(tab) {
-    margin-bottom: 0;
+    width: 300px;
   }
 }
 
