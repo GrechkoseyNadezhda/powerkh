@@ -18,21 +18,19 @@ import {
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { createFAQsection } from '../../common/createFaqSection';
-import { toggleFaq } from '../../common/toggle-faq';
 import { makeBoldFirst } from '../../common/make-bold-first';
-import { refsModal } from '../../components/contactUsModal/contactUs-refs';
+
 const ENDPOINT_COORDINATION = '/faq/bimCoordination.json';
 
 const spinner = document.querySelector('.spinner-loading');
 document.addEventListener('DOMContentLoaded', contentLoad());
 
 function contentLoad() {
-  spinner.classList.remove('visually-hidden');
+  refs.spinner.classList.remove('visually-hidden');
 
-  refsModal.body.classList.add('_lock');
+  document.body.classList.add('_lock');
 
   useTemplate(refs.hero, heroHBS, heroCoordination);
-
   useTemplate(refs.herBIMAndVDC, briefDescriptHBS, briefDescriptCoordination);
 
   const hidden = document.querySelector('.hidden');
@@ -42,9 +40,7 @@ function contentLoad() {
   bimTextList.style.marginBottom = '0px';
 
   useTemplate(refs.howWeWork, howWeWorkHBS, howCoordination);
-
   useTemplate(refs.services, servicesHBS, servicesCoordination);
-
   useTemplate(
     refs.featuresForProjects,
     featuresForProjectsHBS,
@@ -55,31 +51,6 @@ function contentLoad() {
 
   createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);
   makeBoldFirst('.bim-automation-services__item');
-  spinner.classList.add('visually-hidden');
-  refsModal.body.classList.remove('_lock');
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
 }
-
-// useTemplate(refs.hero, heroHBS, heroCoordination);
-
-// useTemplate(refs.herBIMAndVDC, briefDescriptHBS, briefDescriptCoordination);
-
-// const hidden = document.querySelector('.hidden');
-// const bimTextList = document.querySelector('.BIM__text-list');
-
-// hidden.style.display = 'none';
-// bimTextList.style.marginBottom = '0px';
-
-// useTemplate(refs.howWeWork, howWeWorkHBS, howCoordination);
-
-// useTemplate(refs.services, servicesHBS, servicesCoordination);
-
-// useTemplate(
-//   refs.featuresForProjects,
-//   featuresForProjectsHBS,
-//   addValueCoordination
-// );
-// useTemplate(refs.slider, sliderHBS, projectCoordination);
-// useTemplate(refs.contactUs, contactUsHBS, contactUsCoordination);
-
-// createFAQsection(ENDPOINT_COORDINATION, refs.faq, faqHBS);
-// makeBoldFirst('.bim-automation-services__item');
