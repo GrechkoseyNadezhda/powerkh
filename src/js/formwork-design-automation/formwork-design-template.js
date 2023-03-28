@@ -14,6 +14,8 @@ import {
 import { refs } from '../common/refs-services';
 import { refsCase } from '../common/refs-services';
 import { useTemplate } from '../common/use-template';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 document.addEventListener('DOMContentLoaded', contentLoad());
 
@@ -34,3 +36,12 @@ function contentLoad() {
   refs.spinner.classList.add('visually-hidden');
   document.body.classList.remove('_lock');
 }
+const lightboxImg = new SimpleLightbox('.case-picture', {
+  sourceAttr: 'data-l-size',
+  scrollZoom: false,
+  disableScroll: false,
+  close: false,
+});
+document.querySelector('.case-picture').addEventListener('click', e => {
+  lightboxImg.open();
+});

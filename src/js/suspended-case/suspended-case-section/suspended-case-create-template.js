@@ -33,25 +33,23 @@ function contentLoad() {
   document.body.classList.remove('_lock');
 }
 
-const lightboxImg = new SimpleLightbox('img', {
-  sourceAttr: 'src',
+const lightboxImg = new SimpleLightbox('.case-picture', {
+  sourceAttr: 'data-l-size',
   scrollZoom: false,
   disableScroll: false,
   close: false,
 });
-document
-  .querySelector('.solution__img-container')
-  .addEventListener('click', e => {
-    lightboxImg.open();
-  });
-const ligthboxGif = new SimpleLightbox('.solution__gif', {
-  sourceAttr: 'src',
-  scrollZoom: false,
-  disableScroll: true,
-  close: false,
+document.querySelector('.case-picture').addEventListener('click', e => {
+  lightboxImg.open();
 });
-document
-  .querySelector('.solution__gif-container')
-  .addEventListener('click', e => {
-    ligthboxGif.open();
-  });
+// const ligthboxGif = new SimpleLightbox('.solution__gif', {
+//   sourceAttr: 'src',
+//   scrollZoom: false,
+//   disableScroll: true,
+//   close: false,
+// });
+// document
+//   .querySelector('.solution__gif-container')
+//   .addEventListener('click', e => {
+//     ligthboxGif.open();
+//   });

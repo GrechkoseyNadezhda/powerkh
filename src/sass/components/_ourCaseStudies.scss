@@ -119,6 +119,7 @@
 }
 
 .caseStudies__body {
+  @include font-body-reg;
   display: flex;
 }
 
