@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import 'slick-carousel';
-// import '../../components/ourCasesSlider/slick';
 import heroFourHBS from '../../../templates/hero-part-four.hbs';
 import shareHBS from '../../../templates/share.hbs';
 import contentsHBS from '../../../templates/contents.hbs';
@@ -46,9 +45,6 @@ $('.section-ourCases__slider.b7b').slick({
   mobileFirst: true,
   centerPadding: '100px',
   appendArrows: $('.section-ourCases__sliderArrow'),
-  // variableWidth: true,
-  // centerMode: true,
-  // dots: true,
 });
 
 refsCase.subscribeForm.addEventListener('submit', onSubscribeSubmit);
