@@ -87,14 +87,14 @@ import img3L1x from '../../../images/slider/bim-modeling/bim-modeling-3@1x.jpg';
     topic: 'We offer:',
     list: [
       '3D BIM modeling',
-      'Support of various levels of model elements details (LOD 100 to LOD 400/500)',
-      'Clash detection & resolution',
-      'BIM & Revit automation',
-      'BIM prefabrication for CNC manufacturing',
       'Converting 2D layout into 3D models in Revit',
+      'Support of various levels of model elements details (LOD 100 to LOD 400/500)',
       'Drafting services (schematic design and shop drawings)',
+      'Clash detection & resolution',
       'Constructability reviews and structural detailing',
-      'Scan to BIM with Point Cloud data'
+      'BIM & Revit automation',
+      'Scan to BIM with Point Cloud data',
+      'BIM prefabrication for CNC manufacturing'
 
     ],
   };
@@ -138,7 +138,7 @@ import img3L1x from '../../../images/slider/bim-modeling/bim-modeling-3@1x.jpg';
   export const contactUsModeling = {
     title: 'Expertise-Driven BIM Modeling Services',
     description:
-      'Do you want to enhance your construction project?Our experts can resolve your challenges and build a detailed 3D BIM model.Contact us to learn more about our services!',
+      'Do you want to enhance your construction project? Our experts can resolve your challenges and build a detailed 3D BIM model. Contact us to learn more about our services!',
   };
 
   export const projectCoordination = [
