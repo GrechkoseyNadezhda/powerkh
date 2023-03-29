@@ -22,13 +22,12 @@ $(function () {
   });
 });
 
-console.log(caseStudiesData);
-
 const readMore = document.querySelectorAll(
   '.case-studies .blog-section__slider-readMore'
 );
 readMore.forEach(el => el.classList.add('hide'));
 
+console.log(readMore, '!!!');
 const seeProject = document.querySelectorAll(
   '.case-studies .blog-section__slider-seeProject'
 );
