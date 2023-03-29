@@ -13,8 +13,8 @@ export const briefDescriptStructuralDetailing = {
   title: 'Structural Detailing Services',
   listText: [
     'Construction projects must rely on accurate documentation to avoid costly reworks and missed deadlines. How can you make sure your shop drawings are error-free?',
-    'You will get a precise library of objects, detailed specifications for every element and system, and statements of production — a full package of documents to begin the manufacturing and construction!',
     'Powerkh provides structural steel detailing services to help you find and resolve design errors and clashes before starting on-site work. Our teams of engineers and developers can refine your 3D models, shop drawings, and other construction documentation. We follow local construction codes and proven design principles to deliver quality results at a lower cost.',
+    'You will get a precise library of objects, detailed specifications for every element and system, and statements of production — a full package of documents to begin the manufacturing and construction!',
   ],
 };
 export const howStructuralDetailing = {
