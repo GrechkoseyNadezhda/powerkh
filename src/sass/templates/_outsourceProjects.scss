@@ -75,6 +75,11 @@
   @include font-body-reg;
 }
 
+.js-outsourceProjects__description {
+  margin-top: 20px;
+  @include font-body-reg;
+}
+
 .outsourceProjects__item > .outsourceProjects__description {
   @include mq(tab) {
     margin-left: 80px;

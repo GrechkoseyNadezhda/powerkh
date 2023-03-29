@@ -7,28 +7,26 @@ list: [{{!масив обєктів}},{{!масив обєктів}}]
 {{!boldText: "i love my team", text:"I love u"}} 
 <section class="BIM-modeling"></section>--}}
 
-
-
 <div class='container'>
   <h2 class='BIM__title'>{{this.title}}</h2>
-  <ul class="BIM__text-list">
+  <ul class='BIM__text-list'>
     {{#each this.listText}}
-    <li><p class='BIM__subtitle'>{{this}}</p></li>
-     {{/each}}
-  </ul>
-  <div class="hidden">
-    {{#if this.textForMainpage}}
-  <p class='BIM__benefits-mainpage'><b>{{textForMainpage}}</b></p>
-  {{/if}}
-       <p class='BIM__benefits-subtitle'>{{this.smallTitle}}</p>
-  <ul class='BIMServices__list'>
-    {{#each this.list}}
-      <li class='benefits__item'>
-        {{#if this.boldText}}
-        <b>{{boldText}}</b>
-        {{/if}}
-        {{this.text}}
-      </li>
+      <li class='BIM__text-list-item'><p class='BIM__subtitle'>{{this}}</p></li>
     {{/each}}
-  </ul></div>
+  </ul>
+  <div class='hidden'>
+    {{#if this.textForMainpage}}
+      <p class='BIM__benefits-mainpage'><b>{{textForMainpage}}</b></p>
+    {{/if}}
+    <p class='BIM__benefits-subtitle'>{{this.smallTitle}}</p>
+    <ul class='BIMServices__list'>
+      {{#each this.list}}
+        <li class='benefits__item'>
+          {{#if this.boldText}}
+            <b>{{boldText}}</b>
+          {{/if}}
+          {{this.text}}
+        </li>
+      {{/each}}
+    </ul></div>
 </div>

@@ -22,7 +22,6 @@ import { makeBoldFirst } from '../../common/make-bold-first';
 
 const ENDPOINT_COORDINATION = '/faq/bimCoordination.json';
 
-// const spinner = document.querySelector('.spinner-loading');
 document.addEventListener('DOMContentLoaded', contentLoad());
 
 function contentLoad() {

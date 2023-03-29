@@ -22,18 +22,6 @@ $(function () {
   });
 });
 
-console.log(caseStudiesData);
-
-const readMore = document.querySelectorAll(
-  '.case-studies .blog-section__slider-readMore'
-);
-readMore.forEach(el => el.classList.add('hide'));
-
-const seeProject = document.querySelectorAll(
-  '.case-studies .blog-section__slider-seeProject'
-);
-seeProject.forEach(el => el.classList.add('show'));
-
 document.addEventListener('DOMContentLoaded', contentLoad());
 
 function contentLoad() {
@@ -42,4 +30,14 @@ function contentLoad() {
   useTemplate(refsCase.csSlider, blogSliderHBS, caseStudiesData);
   refs.spinner.classList.add('visually-hidden');
   document.body.classList.remove('_lock');
+
+  const readMore = document.querySelectorAll(
+    '.case-studies .blog-section__slider-readMore'
+  );
+  readMore.forEach(el => el.classList.add('hide'));
+
+  const seeProject = document.querySelectorAll(
+    '.case-studies .blog-section__slider-seeProject'
+  );
+  seeProject.forEach(el => el.classList.add('show'));
 }

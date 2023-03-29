@@ -1,5 +1,5 @@
 import $ from 'jquery';
-// window.$ = window.jQuery = $;
+
 import 'slick-carousel';
 
 import heroPartFourHBS from '../../../templates/hero-part-four.hbs';

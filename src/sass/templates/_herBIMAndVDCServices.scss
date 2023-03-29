@@ -22,15 +22,30 @@
 }
 
 .BIM__text-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px 28px;
+}
 
-  @include mq(tab) {
+@include mq(desk) {
+  .BIM__text-list {
+    grid-template-columns: repeat(2, 1fr);
   }
-  @include mq(desk) {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .BIM__text-list-item:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .BIM__text-list-item:nth-child(2) {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .BIM__text-list-item:nth-child(3) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .BIM__text-list-item:nth-child(4) {
+    grid-row: 2;
+    grid-column: 2;
   }
 }
 

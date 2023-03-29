@@ -10,6 +10,11 @@
 }
 
 .caseStudies__subtitle {
+  margin-bottom: 52px;
+  @include font-title;
+}
+
+.main-page .caseStudies__subtitle {
   margin-bottom: 16px;
   @include font-title;
   @include mq(tab) {
