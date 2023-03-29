@@ -1,4 +1,3 @@
-// import Swiper, { Navigation, Pagination } from 'swiper';
 import impactHBS from '../../../templates/impactOnBusiness.hbs';
 import herotextHBS from '../../../templates/heroDescriptionText.hbs';
 import processHBS from '../../../templates/processTemplate.hbs';
@@ -42,14 +41,3 @@ const lightboxImg = new SimpleLightbox('.case-picture', {
 document.querySelector('.case-picture').addEventListener('click', e => {
   lightboxImg.open();
 });
-// const ligthboxGif = new SimpleLightbox('.solution__gif', {
-//   sourceAttr: 'src',
-//   scrollZoom: false,
-//   disableScroll: true,
-//   close: false,
-// });
-// document
-//   .querySelector('.solution__gif-container')
-//   .addEventListener('click', e => {
-//     ligthboxGif.open();
-//   });

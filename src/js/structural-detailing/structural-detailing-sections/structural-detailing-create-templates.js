@@ -1,6 +1,3 @@
-// import $ from 'jquery';
-// // window.$ = window.jQuery = $;
-// import 'slick-carousel'
 import heroHBS from '../../../templates/hero.hbs';
 import briefDescriptHBS from '../../../templates/herBIMAndVDCServices.hbs';
 import howWeWorkHBS from '../../../templates/howWeWork.hbs';
@@ -25,24 +22,6 @@ import { createFAQsection } from '../../common/createFaqSection';
 import { toggleFaq } from '../../common/toggle-faq';
 
 const ENDPOINT_STRUCTDETAILING = '/faq/structuralDetailing.json';
-// Projects slider
-// $(function(){
-//     $('.section-projects__slider-item').slick({
-//         arrows: false,
-//         dots: true,
-//         infinite: true,
-//         fade: true,
-//         cssEase: 'linear',
-//         autoplay: true,
-//         autoplaySpeed: 1500,
-//         draggable: true,
-//         swipe: true,
-//         touchMove: true,
-// pauseOnFocus: false,
-// pauseOnHover: false,
-
-//     });
-// })
 
 document.addEventListener('DOMContentLoaded', contentLoad());
 
@@ -65,7 +44,6 @@ function contentLoad() {
   );
   useTemplate(refs.contactUs, contactUsHBS, contactUsStructuralDetailing);
 
-  // useTemplate(refsCase.sdSlider, ourProjectsSliderHBS, projectImg);
   useTemplate(refs.slider, sliderHBS, projectStructuralDetailing);
   const hidden = document.querySelector('.hidden');
   const bimTextList = document.querySelector('.BIM__text-list');

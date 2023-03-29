@@ -5,8 +5,6 @@ import img22x from '../../../images/our-case-studies-tml/2-l@2x.jpg';
 import img31x from '../../../images/our-case-studies-tml/3-color-l@1x.jpg';
 import img32x from '../../../images/our-case-studies-tml/3-color-l@2x.jpg';
 
-// import img21x from '../../../images/slider/blog/blog-02@1x.jpg';
-// import img22x from '../../../images/slider/blog/blog-02@2x.jpg';
 import iconEye from '../../../images/vectors/eye.svg';
 export const caseStudiesData = [
   {
