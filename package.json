@@ -5,7 +5,7 @@
   "homepage": "https://yuriy0790.github.io/powerkh",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "start": "parcel src/pages/index.html",
     "build": "parcel build src/pages/index.html --public-url /powerkh/"
   },
