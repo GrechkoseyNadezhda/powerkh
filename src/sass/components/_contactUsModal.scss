@@ -1,8 +1,4 @@
-//popup
 .backdrop {
-  opacity: 0;
-
-  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,11 +8,8 @@
   z-index: 1000;
 
   transition: opacity 600ms;
-
-  &.active-modal {
-    pointer-events: all;
-    opacity: 1;
-  }
+  pointer-events: all;
+  opacity: 1;
 }
 
 .contact-modal__block {
@@ -96,9 +89,9 @@
       bottom: calc(50% - 10px);
 
       display: block;
-      width: 8%;
+      width: 7%;
       height: 2px;
-      background-color: #000000;
+      background-color: var(--pure-black-color);
 
       transform: scaleX(0);
       transition: transform 300ms linear;
@@ -114,7 +107,7 @@
         display: block;
         width: 55%;
         height: 2px;
-        background-color: #000000;
+        background-color: var(--pure-black-color);
 
         transform: scaleX(0);
         transition: transform 300ms linear;
@@ -134,7 +127,7 @@
         display: block;
         width: 40%;
         height: 2px;
-        background-color: #000000;
+        background-color: var(--pure-black-color);
 
         transform: scaleX(0);
         transition: transform 300ms linear;
@@ -145,7 +138,10 @@
 
 .contact-modal__btn:hover::after,
 .contact-modal__btn--link:hover::after,
-.contact-modal__btn--home:hover::after {
+.contact-modal__btn--home:hover::after,
+.contact-modal__btn:focus::after,
+.contact-modal__btn--link:focus::after,
+.contact-modal__btn--home:focus::after {
   transform: scaleX(1);
 }
 
@@ -159,7 +155,7 @@
   display: block;
   width: 40%;
   height: 2px;
-  background-color: #000000;
+  background-color: var(--pure-black-color);
 
   transform: scaleX(0);
   transition: transform 300ms linear;
@@ -179,8 +175,9 @@
   right: 24px;
   border: none;
   background-color: transparent;
-  &:hover {
-    fill: red;
+  &:hover,
+  &:focus {
+    opacity: 0.5;
   }
 }
 
@@ -205,7 +202,7 @@
   gap: 32px;
   width: 100%;
   padding-bottom: 32px;
-  color: #0e0e0e;
+  color: var(--dark-grey-color);
   @include font-body-reg;
 }
 
@@ -226,7 +223,7 @@
   height: 36px;
   padding: 10px 10px 5px;
   border: none;
-  border-bottom: 1px solid #0e0e0e;
+  border-bottom: 1px solid var(--dark-grey-color);
 }
 
 .contact-modal__input:focus {

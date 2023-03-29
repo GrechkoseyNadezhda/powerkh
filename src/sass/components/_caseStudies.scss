@@ -32,19 +32,18 @@
   display: flex;
 }
 
-// .slick-slide {
-//   pointer-events: none;
-// }
-// .blog-section__slider-seeProject {
-//   pointer-events: none;
-// }
+.case-studies .blog-section__slider-desc {
+  height: 120px;
 
+  @include mq(tab) {
+    height: 60px;
+  }
 
-// .slick-slide.slick-active .blog-section__slider-seeProject{
-//   pointer-events:auto;
-// }
+  @include mq(desk) {
+    height: 80px;
+  }
+}
 
 .slick-slide.slick-active {
   z-index: 20 !important;
 }
-

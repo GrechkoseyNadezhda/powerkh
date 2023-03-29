@@ -1,4 +1,3 @@
-// import Swiper, { Navigation, Pagination } from 'swiper';
 import processTemplateHBS from '../../templates/processTemplate.hbs';
 import solutionTemplateHBS from '../../templates/solution.hbs';
 import impactProcessTemplateHBS from '../../templates/impactOnBusiness.hbs';
@@ -15,19 +14,34 @@ import {
 import { refs } from '../common/refs-services';
 import { refsCase } from '../common/refs-services';
 import { useTemplate } from '../common/use-template';
-useTemplate(refs.process, processTemplateHBS, processTemplate);
-useTemplate(refs.solution, solutionTemplateHBS, processSolution);
-useTemplate(refsCase.impactOnBusiness, impactProcessTemplateHBS, processImpact);
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
-// const swiper = new Swiper('.swiper', {
-//   modules: [Navigation, Pagination],
+document.addEventListener('DOMContentLoaded', contentLoad());
 
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//     dynamicBullets: true,
-//   },
-// });
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
 
-useTemplate(refsCase.heroTextBlock, herotextHBS, textHeroFormworkDesign);
-useTemplate(refsCase.heroSlider, sliderHBS, sliderPicturesFormwork);
+  useTemplate(refs.process, processTemplateHBS, processTemplate);
+  useTemplate(refs.solution, solutionTemplateHBS, processSolution);
+  useTemplate(
+    refsCase.impactOnBusiness,
+    impactProcessTemplateHBS,
+    processImpact
+  );
+  useTemplate(refsCase.heroTextBlock, herotextHBS, textHeroFormworkDesign);
+  useTemplate(refsCase.heroSlider, sliderHBS, sliderPicturesFormwork);
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}
+const lightboxImg = new SimpleLightbox('.case-picture', {
+  sourceAttr: 'data-l-size',
+  scrollZoom: false,
+  disableScroll: false,
+  close: false,
+});
+document.querySelector('.case-picture').addEventListener('click', e => {
+  lightboxImg.open();
+});

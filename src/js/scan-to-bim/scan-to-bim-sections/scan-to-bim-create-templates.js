@@ -22,16 +22,26 @@ import {
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 
-useTemplate(refs.hero, heroHBS, heroScanToBIM);
-useTemplate(refs.herBIMAndVDC, herBIMAndVDCHBS, herBIMAndVDCScanToBIM);
-useTemplate(refs.howWeWork, howWeWorkHBS, howWeWorkScanToBIM);
-useTemplate(refs.services, servicesHBS, servicesScanToBIM);
-useTemplate(
-  refs.featuresForProjects,
-  outsourceProjectsHBS,
-  advantagesOfScanYoBIM
-);
-useTemplate(refs.slider, sliderHBS, scanToBimSliderData);
-useTemplate(refs.contactUs, contactUsHBS, contactUsScanToBIM);
+document.addEventListener('DOMContentLoaded', contentLoad());
 
-createFAQsection('/faq/scanToBim.json', refs.faq, faqHBS);
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
+
+  useTemplate(refs.hero, heroHBS, heroScanToBIM);
+  useTemplate(refs.herBIMAndVDC, herBIMAndVDCHBS, herBIMAndVDCScanToBIM);
+  useTemplate(refs.howWeWork, howWeWorkHBS, howWeWorkScanToBIM);
+  useTemplate(refs.services, servicesHBS, servicesScanToBIM);
+  useTemplate(
+    refs.featuresForProjects,
+    outsourceProjectsHBS,
+    advantagesOfScanYoBIM
+  );
+  useTemplate(refs.slider, sliderHBS, scanToBimSliderData);
+  useTemplate(refs.contactUs, contactUsHBS, contactUsScanToBIM);
+
+  createFAQsection('/faq/scanToBim.json', refs.faq, faqHBS);
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}

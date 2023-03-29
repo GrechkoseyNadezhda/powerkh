@@ -1,10 +1,13 @@
 .customers__section {
+  padding-top: 40px;
   padding-bottom: 40px;
 
   @include mq(tab) {
+    padding-top: 60px;
     padding-bottom: 60px;
   }
   @include mq(desk) {
+    padding-top: 80px;
     padding-bottom: 80px;
   }
 }
@@ -22,7 +25,12 @@
 
   @include mq(mob-only) {
     row-gap: 40px;
+    column-gap: 20px;
     justify-content: space-between;
+
+    & li {
+      min-width: 30%;
+    }
   }
 
   @include mq(tab) {
@@ -37,19 +45,18 @@
   }
 }
 
-.customers__list img {
-  width: 150px;
-  @include mq(tab) {
-    width: 166px;
-  }
-}
-
 .customers__list_partner-img {
   filter: grayscale(100%);
   opacity: 0.7;
   transition: 350ms;
+  width: 150px;
 
-  &:hover {
+  @include mq(tab) {
+    width: 166px;
+  }
+
+  &:hover,
+  &:focus {
     filter: grayscale(0);
     opacity: 1;
   }

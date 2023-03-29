@@ -35,6 +35,10 @@
     @include font-body-reg;
     color: var(--dark-grey-color);
     margin-bottom: 20px;
+
+    &-underline {
+      text-decoration: underline;
+    }
   }
 
   &__last-paragraph {
@@ -48,5 +52,8 @@
   }
   &__img-wrap {
     margin-bottom: 40px;
+  }
+  &__img {
+    width: 100%;
   }
 }

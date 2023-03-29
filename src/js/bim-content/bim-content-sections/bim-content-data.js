@@ -14,10 +14,8 @@ export const contentCreationObj = {
   title: 'BIM Content Creation',
   listText: [
     'Every object in BIM is a part of the family — a hierarchy of categories that comprise all construction elements. BIM families include thousands of model components for the floor, walls, doors, stairs, beams, and other elements with varying sizes, shapes, and logical behaviors.',
-
-    'Professionals use Autodesk Revit software for BIM object library creation. However, building an intelligent parametric model for each element requires precision, experience, and technical expertise.',
-
     'Revit family model creation is an indispensable part of BIM services because it allows manufacturers, designers, engineers, and other stakeholders to adjust object parameters while maintaining their logic.',
+    'Professionals use Autodesk Revit software for BIM object library creation. However, building an intelligent parametric model for each element requires precision, experience, and technical expertise.',
   ],
   smallTitle:
     'Powerkh’s BIM content creating services can enhance your workflow and content strategy by:',

@@ -11,8 +11,9 @@
      
         <div class="swiper-slide">
           <img
-          srcset='{{this.img1x}} 1x, {{this.img2x}} 2x'
-            src={{this.img1x}} alt="Slider"
+          srcset='{{this.img1x}} 1x, {{this.img2x}} 2x' class="case-picture"
+          loading="lazy"
+            src={{this.img1x}} alt="Slider"  data-l-size={{this.img2x}}
           />
         </div>
        {{/each}}

@@ -13,10 +13,10 @@
 
 .blog-preview__section-list {
   @extend .caseStudies__list;
-  gap: 27px;
 
   @include mq(desk) {
     justify-content: flex-start;
+    gap: 27px;
   }
 }
 

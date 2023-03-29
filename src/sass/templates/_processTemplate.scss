@@ -35,10 +35,8 @@
 }
 
 .process__main-title {
-  font-family: 'PT Mono';
-  font-size: 20px;
-  color: #0e0e0e;
-  line-height: calc(22 / 20);
+  @include font-title;
+  color: var(--dark-grey-color);
 }
 
 .process__list {

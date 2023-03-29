@@ -43,30 +43,30 @@ export const briefDescriptPrefabrication = {
 };
 export const howPrefabrication = {
   title: 'How We Deliver BIM Prefabrication & Fabrication',
-list: [
-  {
-    subtitle: 'The client sends technical documentation.',
-    description:
-      'We analyze drawings, cutsheets, plans, as well as the limitations and specifications of your project.',
-  },
-  {
-    subtitle: 'We create a parametric 3D model.',
-    description:
-      'Our experts use advanced software and an extensive object database to build a BIM for structural modular construction, as well as architectural and MEP systems.',
-  },
+  list: [
+    {
+      subtitle: 'The client sends technical documentation.',
+      description:
+        'We analyze drawings, cutsheets, plans, as well as the limitations and specifications of your project.',
+    },
+    {
+      subtitle: 'We create a parametric 3D model.',
+      description:
+        'Our experts use advanced software and an extensive object database to build a BIM for structural modular construction, as well as architectural and MEP systems.',
+    },
 
-  {
-    subtitle: 'The client receives a BIM project and production drawings.',
-    description:
-      'We will deliver accurate 3D models that you can use for CNC fabrication.',
-  },
-  {
-    subtitle: 'We guide you through the project.',
-    description:
-      'Powerkh can coordinate your construction project and boost your productivity by automating repetitive tasks.',
-  },
-]
-}
+    {
+      subtitle: 'The client receives a BIM project and production drawings.',
+      description:
+        'We will deliver accurate 3D models that you can use for CNC fabrication.',
+    },
+    {
+      subtitle: 'We guide you through the project.',
+      description:
+        'Powerkh can coordinate your construction project and boost your productivity by automating repetitive tasks.',
+    },
+  ],
+};
 
 export const servicesPrefabrication = {
   title: 'Our BIM Services for Prefabrication & Fabrication',
@@ -74,12 +74,12 @@ export const servicesPrefabrication = {
   topic: 'We offer:',
   list: [
     'BIM prefabrication for CNC manufacturing',
-    'Shop drawings',
-    'Model coordination (LOD 100 to LOD 400/500)',
-    'BIM coordination and clash detection services',
     'Autodesk Revit BIM development',
+    'Shop drawings',
     'Design drafting based on 3D BIM models',
+    'Model coordination (LOD 100 to LOD 400/500)',
     'Automation and design-to-fabrication workflows',
+    'BIM coordination and clash detection services',
   ],
 };
 export const addValuePrefabrication = {
@@ -96,12 +96,12 @@ export const addValuePrefabrication = {
     {
       subtitle: 'Advanced software',
       subtitleDescription:
-      'Our professionals have mastered advanced BIM modeling software (Autodesk Revit, Dynamo, SYNCHRO Pro, Solibri, Tekla).',
+        'Our professionals have mastered advanced BIM modeling software (Autodesk Revit, Dynamo, SYNCHRO Pro, Solibri, Tekla).',
     },
     {
       subtitle: 'Project support',
       subtitleDescription:
-      'We can develop schematic designs, support manufacturing, implement scripting solutions, and coordinate your project.',
+        'We can develop schematic designs, support manufacturing, implement scripting solutions, and coordinate your project.',
     },
     {
       subtitle: 'Engineering & design background',

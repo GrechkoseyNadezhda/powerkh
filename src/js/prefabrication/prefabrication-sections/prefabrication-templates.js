@@ -19,19 +19,27 @@ import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { createFAQsection } from '../../common/createFaqSection';
 
-const ENDPOINT_PREFABRICATION= '/faq/preFab.json';
+const ENDPOINT_PREFABRICATION = '/faq/preFab.json';
 
-useTemplate(refs.hero, heroHBS, heroPrefabrication);
-useTemplate(refs.herBIMAndVDC, briefDescriptHBS,  briefDescriptPrefabrication);
-useTemplate(refs.howWeWork, howWeWorkHBS, howPrefabrication);
-useTemplate(refs.services, servicesHBS, servicesPrefabrication);
-useTemplate(
-  refs.featuresForProjects,
-  featuresForProjectsHBS,
-  addValuePrefabrication
-);
+document.addEventListener('DOMContentLoaded', contentLoad());
 
-useTemplate(refs.slider, sliderHBS, projectPrefabrication);
-useTemplate(refs.contactUs, contactUsHBS, contactUsPrefabrication);
-createFAQsection(ENDPOINT_PREFABRICATION, refs.faq, faqHBS);
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
 
+  useTemplate(refs.hero, heroHBS, heroPrefabrication);
+  useTemplate(refs.herBIMAndVDC, briefDescriptHBS, briefDescriptPrefabrication);
+  useTemplate(refs.howWeWork, howWeWorkHBS, howPrefabrication);
+  useTemplate(refs.services, servicesHBS, servicesPrefabrication);
+  useTemplate(
+    refs.featuresForProjects,
+    featuresForProjectsHBS,
+    addValuePrefabrication
+  );
+  useTemplate(refs.slider, sliderHBS, projectPrefabrication);
+  useTemplate(refs.contactUs, contactUsHBS, contactUsPrefabrication);
+  createFAQsection(ENDPOINT_PREFABRICATION, refs.faq, faqHBS);
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}

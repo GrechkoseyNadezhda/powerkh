@@ -13,3 +13,13 @@ const htmlString = `<img src='${logo}' alt="logo" height="96px" width="120px">`;
 refs.heroSection.classList.add('main_hero');
 mainHero.insertAdjacentHTML('beforebegin', htmlString);
 mainHero.insertAdjacentHTML('beforeend', hero(heroObject));
+
+document.addEventListener('DOMContentLoaded', contentLoad());
+
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}

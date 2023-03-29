@@ -8,8 +8,13 @@
     padding-bottom: 80px;
   }
   &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     @include mq(tab) {
       display: flex;
+      flex-wrap: nowrap;
       justify-content: space-between;
     }
 
@@ -20,7 +25,11 @@
   }
 }
 .other-articles__wrapper {
-  width: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+  @include mq(tab) {
+    width: 300px;
+  }
 }
 
 .other-articles__author-info {
@@ -42,13 +51,9 @@
 
 .other-articles__list-link {
   padding-left: 20px;
-  margin-bottom: 40px;
+
   @include font-body-bold-12;
   text-decoration: underline;
-
-  @include mq(tab) {
-    margin-bottom: 0;
-  }
 }
 
 .list-link__item {

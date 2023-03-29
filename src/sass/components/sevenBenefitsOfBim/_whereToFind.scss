@@ -9,16 +9,8 @@
 }
 
 .whereToFind__img {
-  min-width: 320px;
+  width: 100%;
   padding-bottom: 40px;
-
-  @include mq(tab) {
-    min-width: 704px;
-  }
-
-  @include mq(desk) {
-    min-width: 748px;
-  }
 }
 
 .whereToFind__text,

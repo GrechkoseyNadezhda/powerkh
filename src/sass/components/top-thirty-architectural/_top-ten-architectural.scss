@@ -9,13 +9,12 @@
   @include mq(desk) {
     padding-bottom: 80px;
   }
-
 }
 .top-thirty__section-container {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-    @include mq(tab) {
+  @include mq(tab) {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -25,13 +24,9 @@
   }
 }
 
-
 .architectural__list {
   list-style: decimal;
 }
-
-
-
 
 .architectural__list {
   list-style: decimal;
@@ -40,11 +35,7 @@
 .architectural__title {
   text-align: center;
   margin-bottom: 20px;
-  font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(20 / 20);
+  @include font-title-20;
 }
 .architectural__block-nameList {
   margin-bottom: 20px;
@@ -54,19 +45,11 @@
 }
 .architectural__part-number {
   text-align: center;
-  font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(20 / 20);
+  @include font-title-20;
 }
 .architectural__part-name {
   text-align: center;
-  font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(20 / 20);
+  @include font-title-20;
 }
 
 .architectural__table {
@@ -164,7 +147,7 @@
     width: 10px;
     height: 9px;
     background-size: cover;
-    color: #cdcdcd;
+    color: var(--ligth-grey-color);
     padding-right: 10px;
   }
 }
@@ -181,11 +164,10 @@
     width: 10px;
     height: 9px;
     background-size: cover;
-    color: #cdcdcd;
+    color: var(--ligth-grey-color);
     padding-right: 10px;
   }
 }
-
 
 .architectural__item-last {
   @include font-body-reg;
@@ -199,7 +181,7 @@
     width: 10px;
     height: 9px;
     background-size: cover;
-    color: #cdcdcd;
+    color: var(--ligth-grey-color);
     padding-right: 10px;
   }
 }
@@ -216,10 +198,9 @@
   @include mq(desk) {
     font-size: 14px;
   }
-
 }
 
-.architectural__description-last{
+.architectural__description-last {
   @include font-body-reg;
   margin-bottom: 0px;
 }

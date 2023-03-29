@@ -29,6 +29,7 @@ import icon from './img/vectors/sprite.svg#icon-eye'
 {{#each this}}
      <img 
         class="section-ourCases__slider-img" 
+        loading="lazy"
         srcset='{{this.img1x}} 1x, {{this.img2x}} 2x' 
         src={{this.img1x}}
         alt="Slide">    

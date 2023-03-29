@@ -1,5 +1,5 @@
 .contacts-section {
-  background-color: #ffffff;
+  background-color: var(--pure-white-color);
   padding: 40px 0px;
 
   @include font-body-reg;
@@ -53,8 +53,7 @@
   flex-direction: column;
   gap: 4px;
 }
-.contacts-section__link {
-}
+
 .contacts-section__open-hrs {
   max-width: 141px;
 }
@@ -67,8 +66,6 @@
 
 .contacts-page__social-links-block {
   margin-bottom: 24px;
-}
-.contacts-section__plain-text-block {
 }
 
 .contacts-page .hero__btn {
