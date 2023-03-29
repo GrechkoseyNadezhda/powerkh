@@ -1,27 +1,27 @@
-.hero {
-  padding-top: 80px;
-}
-.hero {
-  min-height: 640px;
-}
+// .hero {
+//   padding-top: 80px;
+// }
+// .hero {
+//   min-height: 640px;
+// }
 
-.hero__block {
-  @media screen and (max-height: 640px) {
-    position: static;
-    margin: 0 auto;
-    width: 288px;
-    transform: translate(0, 0);
+// .hero__block {
+//   @media screen and (max-height: 640px) {
+//     position: static;
+//     margin: 0 auto;
+//     width: 288px;
+//     transform: translate(0, 0);
 
-    @include mq(tab) {
-      width: 632px;
-      margin: 0 auto;
-      transform: translate(0, 0);
-    }
-    @include mq(desk) {
-      margin-left: 16px;
-    }
-  }
-}
+//     @include mq(tab) {
+//       width: 632px;
+//       margin: 0 auto;
+//       transform: translate(0, 0);
+//     }
+//     @include mq(desk) {
+//       margin-left: 16px;
+//     }
+//   }
+// }
 .contacts-page .hero__block {
   @include mq(tab) {
     padding-top: 24px;

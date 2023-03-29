@@ -1,5 +1,12 @@
+.hero {
+  @include mq(not-desk) {
+    min-height: 639px;
+  }
+}
+
 .hero .container {
   position: relative;
+  padding-top: 84px;
   height: 100vh;
 }
 
@@ -22,6 +29,24 @@
     padding: 52px 40px 24px;
     margin-left: 16px;
     transform: translate(0, -50%);
+  }
+}
+
+.hero__block {
+  @media screen and (max-height: 639px) {
+    @include mq(mob-only) {
+      position: static;
+      margin: 0 auto;
+      width: 288px;
+      transform: translate(0, 0);
+    }
+
+    @include mq(tab-only) {
+      position: static;
+      width: 632px;
+      margin: 0 auto;
+      transform: translate(0, 0);
+    }
   }
 }
 

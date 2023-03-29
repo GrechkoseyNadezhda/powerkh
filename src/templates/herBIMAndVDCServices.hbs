@@ -24,7 +24,10 @@ list: [{{!масив обєктів}},{{!масив обєктів}}]
   <ul class='BIMServices__list'>
     {{#each this.list}}
       <li class='benefits__item'>
-        <b>{{this.boldText}}</b>{{this.text}}
+        {{#if this.boldText}}
+        <b>{{boldText}}</b>
+        {{/if}}
+        {{this.text}}
       </li>
     {{/each}}
   </ul></div>

@@ -1,8 +1,8 @@
 //popup
 .backdrop {
-  opacity: 0;
+  // opacity: 0;
 
-  pointer-events: none;
+  // pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,11 +12,11 @@
   z-index: 1000;
 
   transition: opacity 600ms;
+  pointer-events: all;
+  opacity: 1;
+  // &.active-modal {
 
-  &.active-modal {
-    pointer-events: all;
-    opacity: 1;
-  }
+  // }
 }
 
 .contact-modal__block {
@@ -184,7 +184,7 @@
   background-color: transparent;
   &:hover,
   &:focus {
-    fill: red;
+    opacity: 0.5;
   }
 }
 

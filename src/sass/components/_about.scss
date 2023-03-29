@@ -1,275 +1,275 @@
 .about-page .container {
-    @media screen and (min-width: 1199px) {
-        // .container {
-        //   padding: 0 152px;
-        //   max-width: 1440px;
-        // }
-        padding: 0 32px;
-        max-width: 1199px;
-    }
+  @media screen and (min-width: 1199px) {
+    // .container {
+    //   padding: 0 152px;
+    //   max-width: 1440px;
+    // }
+    padding: 0 32px;
+    max-width: 1199px;
+  }
+}
+
+.about-page .footer .container {
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .about-page .site-header {
-    @media screen and (min-width: 1199px) {
-        max-width: 1136px;
+  @media screen and (min-width: 1199px) {
+    max-width: 1136px;
 
-        .main-navigation {
-            gap: 40px;
-        }
-        .main-navigation__item {
-            &:last-child {
-              display: block;
-            }
-        }
-
+    .main-navigation {
+      gap: 40px;
     }
-    @media screen and (min-width: 1440px) {
-        max-width: 1136px;
+    .main-navigation__item {
+      &:last-child {
+        display: block;
+      }
     }
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1136px;
+  }
 }
 
 // FOOTER
 .about-page .footer .flex-container {
-    // max-width: 1199px;
-    @media screen and (min-width: 1199px) {
-        max-width: 1199px; 
-    }
-
-    
+  // max-width: 1199px;
+  @media screen and (min-width: 1199px) {
+    max-width: 1199px;
+  }
 }
 
-.about-page .footer__nav {    
-    @media screen and (min-width: 1199px) {
-      columns: 2;
-      column-gap: 40px;
-      margin-right: 98px;
-    }
+.about-page .footer__nav {
+  @media screen and (min-width: 1199px) {
+    columns: 2;
+    column-gap: 40px;
+    margin-right: 98px;
+  }
 }
 
 .about-page .footer__services {
-
-    @media screen and (min-width: 1199px) {
-      display: inline-block;
-      columns: 3;
-    }
+  @media screen and (min-width: 1199px) {
+    display: inline-block;
+    columns: 3;
+  }
 }
-
 
 .about-page .footer__slogan {
-
-    @media screen and (min-width: 1199px) {
-      text-align: left;
-      margin-left: 0;
-    }
+  @media screen and (min-width: 1199px) {
+    text-align: left;
+    margin-left: 0;
+  }
 }
 .div {
-    width: 1199px;
-    height: 10px;
-    background-color: #000;
-    margin: 32px auto;
-}  
+  width: 1199px;
+  height: 10px;
+  background-color: #000;
+  margin: 32px auto;
+}
 
 // FIRST BLOCK
-.about-section__info{
-    margin-top: 100px;
+.about-section__info {
+  margin-top: 100px;
 
-    @include mq(tab) {
-        margin-top: 120px;
-    }
-    @media screen and (min-width: 1199px) {
+  @include mq(tab) {
+    margin-top: 120px;
+  }
+  @media screen and (min-width: 1199px) {
     margin-top: 140px;
-    }
+  }
 }
 
 .about-section__info-block {
-    width: 100%;
+  width: 100%;
 }
 
-.about-section__info-topblock{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.about-section__info-topblock {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 
-    @include mq(tab) {
-        flex-direction: row;
-        gap: 112px;
-    }
-    @media screen and (min-width: 1199px) {
-        flex-direction: row;
-        gap: 219px;
-    }
+  @include mq(tab) {
+    flex-direction: row;
+    gap: 112px;
+  }
+  @media screen and (min-width: 1199px) {
+    flex-direction: row;
+    gap: 219px;
+  }
 }
 
-.about-section__info-lowerblock{
+.about-section__info-lowerblock {
+  margin-top: 40px;
+  @include mq(tab) {
     margin-top: 40px;
-    @include mq(tab) {
-        margin-top: 40px;
-        width: 546px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    @media screen and (min-width: 1199px) {
-        margin-top: 80px;
-        width: 1136px;
-    }
+    width: 546px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1199px) {
+    margin-top: 80px;
+    width: 1136px;
+  }
 }
 
-.about-section__info-datalist{
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
+.about-section__info-datalist {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 
-    @include mq(tab) {
-        flex-wrap: wrap;
-        flex-direction: row;
-        row-gap: 20px;
-        column-gap: 20px;
-    }
-    @media screen and (min-width: 1199px) {
-        gap: 28px;
-    }
+  @include mq(tab) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  @media screen and (min-width: 1199px) {
+    gap: 28px;
+  }
 }
 
-.about-section__info-dataitem{
-    width: 320px;
-    text-align: start;
+.about-section__info-dataitem {
+  //   width: 320px;
+  text-align: start;
 
-    @include mq(tab) {
-        width: 263px;
-        text-align: center;
-    }
-    @media screen and (min-width: 1199px) {
-    }
+  @include mq(tab) {
+    width: 263px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1199px) {
+  }
 }
 .about-section__info-title {
-    @include font-h1;
-    text-transform: uppercase;
-    font-size: 24px;
-    line-height: 26px;
+  @include font-h1;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 26px;
 }
 
 .about-section__info-desc {
-    @include font-body-reg;
-    width: 320px;
+  @include font-body-reg;
+  // width: 320px;
 
-    @include mq(tab) {
-        width: 520px;
-    }
-    @media screen and (min-width: 1199px) {
-        width: 845px;
-    }
+  @include mq(tab) {
+    width: 520px;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 845px;
+  }
 }
 
-.about-section__info-datatitle{
-    @include font-title;
+.about-section__info-datatitle {
+  @include font-title;
 }
 
 .about-section__info-datatext {
-    @include font-body-reg;
-    margin-top: 20px;
+  //   width: 100%;
+  @include font-body-reg;
+  margin-top: 20px;
 }
-
 
 .about-section__team {
-    margin-top: 40px;
-    margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
-    @include mq(tab) {
-        margin-top: 40px;
-        margin-bottom: 60px;
-    }
-    @media screen and (min-width: 1199px) {
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
+  @include mq(tab) {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1199px) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
 }
 
-.about-section__teamlist{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    
-    @include mq(tab) {
-        gap: 40px;
-    }
-    @media screen and (min-width: 1199px) {
-        width: 1136px;
-        gap: 0;
-        row-gap: 60px;
-        column-gap: 28px;
-    }
+.about-section__teamlist {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  @include mq(tab) {
+    gap: 40px;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 1136px;
+    gap: 0;
+    row-gap: 60px;
+    column-gap: 28px;
+  }
 }
 
 .about-section__membercard {
-    width: 320px;
-    @include mq(tab) {
-        width: 704px;
-    }
-    @media screen and (min-width: 1199px) {
-        width: 360px;
-    }
+  width: 100%;
+  @include mq(tab) {
+    width: 704px;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 360px;
+  }
 }
 .about-section__membercard:hover {
-    .about-section__membercard-photo{
-        filter: grayscale(0);
-    }
+  .about-section__membercard-photo {
+    filter: grayscale(0);
+  }
 }
 .about-section__membercard:focus {
-    .about-section__membercard-photo{
-        filter: grayscale(0);
-    }
+  .about-section__membercard-photo {
+    filter: grayscale(0);
+  }
 }
-.about-section__membercard-photo{
-    width: 320px;
-    height: 420px;
-    filter: grayscale(1);
-    transition: all 0.3s ease;
-    
-    @include mq(tab) {
-        width: 704px;
-        height: 896px;
-    }
-    @media screen and (min-width: 1199px) {
-        width: 360px;
-        height: 476px;
-    }
+.about-section__membercard-photo {
+  //   width: 320px;
+  //   height: 420px;
+  width: 100%;
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+
+  @include mq(tab) {
+    width: 704px;
+    height: 896px;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 360px;
+    height: 476px;
+  }
 }
 
 .about-section__membercard-name {
-    @include font-title;
-    margin-top: 20px;
+  @include font-title;
+  margin-top: 20px;
 }
 
 .about-section__membercard-position {
-    @include font-body-reg;
-    margin-top: 16px;
+  @include font-body-reg;
+  margin-top: 16px;
 }
 
-.about-section__video{
-    display: none;
+.about-section__video {
+  display: none;
 
-    @media screen and (min-width: 1199px) {
-        display: block;
-        margin-top: 60px;
-    }
+  @media screen and (min-width: 1199px) {
+    display: block;
+    margin-top: 60px;
+  }
 }
 .about-section__video-block {
-
 }
 
-.about-section__video-wrapper{
-    width: 1136px;
-    // min-height: 100vh;
-    // display: flex;
-    // flex-direction: column;
+.about-section__video-wrapper {
+  width: 1136px;
+  // min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
 
-    // justify-content: center;
-    // align-items: center;
+  // justify-content: center;
+  // align-items: center;
 }
 
 .about-section__video-item {
-    object-fit: cover;
-    width: 1136px;
-    height: 630px;
-    // padding: 0 0 50% 0;
+  object-fit: cover;
+  width: 1136px;
+  height: 630px;
+  // padding: 0 0 50% 0;
 }

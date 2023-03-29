@@ -12,37 +12,44 @@ import {
   impactSuspended,
   solutionSuspended,
 } from '../../suspended-case/suspended-case-section/suspended-case-data';
-import { refsCase } from '../../common/refs-services';
+import { refs, refsCase } from '../../common/refs-services';
 
 import SimpleLightbox from 'simplelightbox';
-
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-useTemplate(refsCase.heroTextBlock, herotextHBS, textHeroSuspended);
-useTemplate(refsCase.heroSlider, sliderHBS, sliderPicturesSuspended);
-useTemplate(refsCase.process, processHBS, processSuspended);
-useTemplate(refsCase.solution, solutionHBS, solutionSuspended);
-useTemplate(refsCase.impactOnBusiness, impactHBS, impactSuspended);
+document.addEventListener('DOMContentLoaded', contentLoad());
 
-const lightboxImg = new SimpleLightbox('.solution__img', {
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
+
+  useTemplate(refsCase.heroTextBlock, herotextHBS, textHeroSuspended);
+  useTemplate(refsCase.heroSlider, sliderHBS, sliderPicturesSuspended);
+  useTemplate(refsCase.process, processHBS, processSuspended);
+  useTemplate(refsCase.solution, solutionHBS, solutionSuspended);
+  useTemplate(refsCase.impactOnBusiness, impactHBS, impactSuspended);
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}
+
+const lightboxImg = new SimpleLightbox('.case-picture', {
   sourceAttr: 'data-l-size',
   scrollZoom: false,
   disableScroll: false,
   close: false,
 });
-document
-  .querySelector('.solution__img-container')
-  .addEventListener('click', e => {
-    lightboxImg.open();
-  });
-const ligthboxGif = new SimpleLightbox('.solution__gif', {
-  sourceAttr: 'src',
-  scrollZoom: false,
-  disableScroll: true,
-  close: false,
+document.querySelector('.case-picture').addEventListener('click', e => {
+  lightboxImg.open();
 });
-document
-  .querySelector('.solution__gif-container')
-  .addEventListener('click', e => {
-    ligthboxGif.open();
-  });
+// const ligthboxGif = new SimpleLightbox('.solution__gif', {
+//   sourceAttr: 'src',
+//   scrollZoom: false,
+//   disableScroll: true,
+//   close: false,
+// });
+// document
+//   .querySelector('.solution__gif-container')
+//   .addEventListener('click', e => {
+//     ligthboxGif.open();
+//   });

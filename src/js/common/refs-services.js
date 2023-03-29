@@ -18,7 +18,7 @@ export const refs = {
   heroBlock: document.querySelector('.hero__block'),
   solution: document.querySelector('.solution'),
   author: document.querySelector('.author'),
-
+  spinner: document.querySelector('.spinner-loading'),
   otherArticlesLinks: document.querySelector('.other-articles__wrapper'),
   otherArticlesAuthor: document.querySelector('.other-articles__author-info'),
 

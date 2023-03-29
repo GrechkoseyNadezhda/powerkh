@@ -1,5 +1,4 @@
 .hero-main {
-  padding-top: 0px;
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -82,12 +81,12 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  @media screen and (max-height: 640px) {
-    position: static;
-    margin: 0 auto;
-    transform: translate(0, 0);
-    width: 30%;
-  }
+  // @media screen and (max-height: 640px) {
+  //   position: static;
+  //   margin: 0 auto;
+  //   transform: translate(0, 0);
+  //   width: 30%;
+  // }
 }
 
 .hero__block-main {
@@ -113,14 +112,36 @@
   }
 }
 
+.hero__block-main {
+  @media screen and (max-height: 639px) {
+    @include mq(mob-only) {
+      position: static;
+      margin: 0 auto;
+      width: 288px;
+      transform: translate(0, 0);
+    }
+
+    @include mq(tab-only) {
+      position: static;
+      width: 632px;
+      margin: 0 auto;
+      transform: translate(0, 0);
+    }
+  }
+}
+
 .hero-main__aside {
   display: none;
 
   @include mq(desk) {
-    margin-left: 37px;
+    position: absolute;
+    top: 50%;
+    right: 186px;
+    transform: translate(0%, -50%);
+    // margin-left: 37px;
     display: inline-block;
-    margin-top: 15%;
-    @media screen and (max-height: 717px) {
+    // margin-top: 15%;
+    @media screen and (max-height: 804px) {
       display: none;
     }
   }
@@ -212,6 +233,7 @@
 .hero-main__link-4 {
   @extend .hero-main__link-1;
   margin-left: 0;
+  margin-bottom: 0;
 
   &::after {
     background-image: url('../images/main-hero/video-poster-sm.webp');

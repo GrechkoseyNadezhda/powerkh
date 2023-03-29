@@ -31,7 +31,7 @@
 
 .outsourceProjects__subtitle {
   text-transform: uppercase;
-  @include font-title-14;
+  @include font-mono-14-20;
   margin-bottom: 34px;
   max-width: 100%;
   padding-left: 80px;
@@ -40,7 +40,7 @@
     margin-bottom: 32px;
   }
   @include mq(desk) {
-    width: 440px;
+    width: 462px;
     margin-bottom: 0;
     padding-left: 175px;
 

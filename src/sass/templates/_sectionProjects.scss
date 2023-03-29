@@ -108,8 +108,8 @@
 .section-projects__slider-item {
   box-sizing: border-box;
 
-  width: 320px;
-  height: 160px;
+  // width: 320px;
+  // height: 160px;
   position: relative;
 
   @include mq(tab) {

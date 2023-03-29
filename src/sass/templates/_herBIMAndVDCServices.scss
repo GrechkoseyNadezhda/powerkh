@@ -21,18 +21,16 @@
   }
 }
 
-.BIM__text-list{
+.BIM__text-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 
   @include mq(tab) {
-  
   }
   @include mq(desk) {
     flex-direction: row;
     flex-wrap: wrap;
-  
   }
 }
 
@@ -75,7 +73,7 @@
 .benefits__item {
   position: relative;
   @include font-body-reg;
-  width: 260px;
+  width: 100%;
   margin-bottom: 32px;
   &::before {
     content: ' ';
@@ -145,19 +143,21 @@
   font-size: 20px;
 }
 
-.BIM__benefits-subtitle{
- padding-top: 40px;
+.BIM__benefits-subtitle {
+  padding-top: 40px;
   @include font-body-reg;
   @include mq(tab) {
     padding-top: 52px;
   }
   @include mq(desk) {
     width: 793px;
-     padding-top: 52px;
+    padding-top: 52px;
   }
 }
 
 .BIM__benefits-mainpage {
+  @include font-body-bold;
+  font-weight: 700 !important;
   margin-top: 40px;
   @include mq(tab) {
     margin-top: 60px;

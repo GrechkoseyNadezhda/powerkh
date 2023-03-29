@@ -15,6 +15,12 @@
 }
 
 .bimServices__list {
+  @include mq(mob-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @include mq(tab) {
     display: flex;
     gap: 0;

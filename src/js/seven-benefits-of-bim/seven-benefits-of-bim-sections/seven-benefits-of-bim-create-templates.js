@@ -42,7 +42,7 @@ $('.section-ourCases__slider.b7b').slick({
   touchMove: true,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 767,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -59,26 +59,36 @@ $('.section-ourCases__slider.b7b').slick({
 
 refsCase.subscribeForm.addEventListener('submit', onSubscribeSubmit);
 
-useTemplate(refs.heroPartFour, heroPartFourHBS, heroPartFourData);
-useTemplate(refs.share, shareHBS, shareBim);
-useTemplate(refs.contents, contentsHBS, contentsBim);
-useTemplate(refs.contentsInform, contentsInformationHBS, contentsInformBim);
-useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
+document.addEventListener('DOMContentLoaded', contentLoad());
 
-useTemplate(refs.otherArticlesLinks, otherArticlesLinksHBS, listOfArticles);
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
 
-fetchDatabaseAuthor(
-  '/authors/KostiaRapina.json',
-  refs.author,
-  refs.otherArticlesAuthor,
-  authorHBS,
-  authorInfoHBS
-);
+  useTemplate(refs.heroPartFour, heroPartFourHBS, heroPartFourData);
+  useTemplate(refs.share, shareHBS, shareBim);
+  useTemplate(refs.contents, contentsHBS, contentsBim);
+  useTemplate(refs.contentsInform, contentsInformationHBS, contentsInformBim);
+  useTemplate(refs.whatProblems, whatProblemsHBS, whatProblemsBim);
 
-useTemplate(
-  refs.architectRendServ,
-  architectRendServHBS,
-  architectRendServData
-);
+  useTemplate(refs.otherArticlesLinks, otherArticlesLinksHBS, listOfArticles);
 
-makeBoldFirst('.whereToFind__text__list');
+  fetchDatabaseAuthor(
+    '/authors/KostiaRapina.json',
+    refs.author,
+    refs.otherArticlesAuthor,
+    authorHBS,
+    authorInfoHBS
+  );
+
+  useTemplate(
+    refs.architectRendServ,
+    architectRendServHBS,
+    architectRendServData
+  );
+
+  makeBoldFirst('.whereToFind__text__list');
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}

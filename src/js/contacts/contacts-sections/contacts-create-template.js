@@ -4,7 +4,17 @@ import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { onFormSubmit } from '../../components/contactUsModal/contactUsModal';
 
-useTemplate(refs.hero, contactFormHBS, formContacts);
+document.addEventListener('DOMContentLoaded', contentLoad());
+
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
+
+  useTemplate(refs.hero, contactFormHBS, formContacts);
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}
 
 if (
   document

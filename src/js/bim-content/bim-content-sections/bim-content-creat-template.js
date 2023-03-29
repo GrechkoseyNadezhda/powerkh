@@ -22,11 +22,19 @@ import { createFAQsection } from '../../common/createFaqSection';
 
 const ENDPOINT_CONTENT = '/faq/bimContent.json';
 
-useTemplate(refs.hero, heroHBS, heroContentObj);
-useTemplate(refs.herBIMAndVDC, contentCreationHBS, contentCreationObj);
-useTemplate(refs.howWeWork, objLibraryCreationHBS, objLibraryCreationObj);
-useTemplate(refs.services, servicesHBS, servicesCreationObj);
-useTemplate(refs.featuresForProjects, advantagesHBS, advantagesObj);
-useTemplate(refs.slider, sliderHBS, samplesSliderObj);
-useTemplate(refs.contactUs, contactUsHBS, contactUsContentObj);
-createFAQsection(ENDPOINT_CONTENT, refs.faq, faqHBS);
+document.addEventListener('DOMContentLoaded', contentLoad());
+
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+  document.body.classList.add('_lock');
+  useTemplate(refs.hero, heroHBS, heroContentObj);
+  useTemplate(refs.herBIMAndVDC, contentCreationHBS, contentCreationObj);
+  useTemplate(refs.howWeWork, objLibraryCreationHBS, objLibraryCreationObj);
+  useTemplate(refs.services, servicesHBS, servicesCreationObj);
+  useTemplate(refs.featuresForProjects, advantagesHBS, advantagesObj);
+  useTemplate(refs.slider, sliderHBS, samplesSliderObj);
+  useTemplate(refs.contactUs, contactUsHBS, contactUsContentObj);
+  createFAQsection(ENDPOINT_CONTENT, refs.faq, faqHBS);
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}

@@ -18,12 +18,23 @@ import {
 import { refs } from '../../common/refs-services';
 import { useTemplate } from '../../common/use-template';
 import { createFAQsection } from '../../common/createFaqSection';
-import { toggleFaq } from '../../common/toggle-faq';
 import { makeBoldFirst } from '../../common/make-bold-first';
+
 const ENDPOINT_COORDINATION = '/faq/bimCoordination.json';
 
-useTemplate(refs.hero, heroHBS, heroCoordination);
+// const spinner = document.querySelector('.spinner-loading');
+document.addEventListener('DOMContentLoaded', contentLoad());
 
+function contentLoad() {
+  refs.spinner.classList.remove('visually-hidden');
+
+  document.body.classList.add('_lock');
+
+  refs.spinner.classList.add('visually-hidden');
+  document.body.classList.remove('_lock');
+}
+
+useTemplate(refs.hero, heroHBS, heroCoordination);
 useTemplate(refs.herBIMAndVDC, briefDescriptHBS, briefDescriptCoordination);
 
 const hidden = document.querySelector('.hidden');
@@ -33,9 +44,7 @@ hidden.style.display = 'none';
 bimTextList.style.marginBottom = '0px';
 
 useTemplate(refs.howWeWork, howWeWorkHBS, howCoordination);
-
 useTemplate(refs.services, servicesHBS, servicesCoordination);
-
 useTemplate(
   refs.featuresForProjects,
   featuresForProjectsHBS,
