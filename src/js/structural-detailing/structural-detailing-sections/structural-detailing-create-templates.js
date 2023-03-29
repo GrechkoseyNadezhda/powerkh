@@ -48,6 +48,13 @@ function contentLoad() {
   const hidden = document.querySelector('.hidden');
   const bimTextList = document.querySelector('.BIM__text-list');
 
+  document
+    .querySelector('.outsourceProjects__description')
+    .insertAdjacentHTML(
+      'afterend',
+      `<p class="js-outsourceProjects__description">${addValueStructuralDetailing.jsDescription}</p>`
+    );
+
   hidden.style.display = 'none';
   bimTextList.style.marginBottom = '0px';
 

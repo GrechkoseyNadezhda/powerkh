@@ -64,7 +64,9 @@ export const servicesStructuralDetailing = {
 export const addValueStructuralDetailing = {
   title: 'Why Choose Powerkh as Structural Detailers',
   description:
-    'Steel detailing is a complex service that involves exact dimensional accuracy for every little detail. However, our refined approach helps us automate recurring tasks to deliver fast and error-free results. Powerkh delivers affordable steel detailing solutions for commercial and industrial clients in the US, UK, and Europe.',
+    'Steel detailing is a complex service that involves exact dimensional accuracy for every little detail. However, our refined approach helps us automate recurring tasks to deliver fast and error-free results.',
+  jsDescription:
+    'Powerkh delivers affordable steel detailing solutions for commercial and industrial clients in the US, UK, and Europe.',
   listDescription:
     'Here’s what you can expect if you outsource structural detailing services to us:',
   items: [
