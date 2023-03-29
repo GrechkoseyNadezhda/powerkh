@@ -1,27 +1,3 @@
-// .hero {
-//   padding-top: 80px;
-// }
-// .hero {
-//   min-height: 640px;
-// }
-
-// .hero__block {
-//   @media screen and (max-height: 640px) {
-//     position: static;
-//     margin: 0 auto;
-//     width: 288px;
-//     transform: translate(0, 0);
-
-//     @include mq(tab) {
-//       width: 632px;
-//       margin: 0 auto;
-//       transform: translate(0, 0);
-//     }
-//     @include mq(desk) {
-//       margin-left: 16px;
-//     }
-//   }
-// }
 .contacts-page .hero__block {
   @include mq(tab) {
     padding-top: 24px;
@@ -39,7 +15,7 @@
 
 .contact-form {
   width: 100%;
-  color: #0e0e0e;
+  color: var(--dark-grey-color);
   @include font-body-reg;
 }
 
@@ -66,7 +42,7 @@
   height: 36px;
   padding: 10px 10px 5px;
   border: none;
-  border-bottom: 1px solid #0e0e0e;
+  border-bottom: 1px solid var(--dark-grey-color);
 }
 
 .contact-form__input:focus {
@@ -79,17 +55,12 @@
   top: -16px;
 }
 
-.contact-form__dsc {
-}
 .contact-form__textarea {
   width: 100%;
   min-height: 134px;
   margin-top: 8px;
   padding: 10px;
   resize: none;
-}
-
-.contact-form__text-area-label {
 }
 
 .contact-submit {
@@ -114,7 +85,7 @@
   display: block;
   width: 39px;
   height: 2px;
-  background-color: #000000;
+  background-color: var(--pure-black-color);
 
   transform: scaleX(0);
   transition: all 300ms linear;

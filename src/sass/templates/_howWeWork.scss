@@ -53,8 +53,6 @@
 }
 
 .howWeWork__item {
-  // padding-left: 89px;
-
   padding-top: 35px;
   min-height: 289px;
   position: relative;
@@ -69,8 +67,6 @@
   &::before {
     content: ' ';
     position: absolute;
-    // top: 69px;
-    // left: 4;
     bottom: 47px;
     left: 0;
     display: block;
@@ -96,8 +92,6 @@
     font-size: 70px;
     line-height: 78px;
     position: absolute;
-    // right: 0;
-    // top: 49px;
     bottom: 28px;
     right: 0;
     width: 84px;

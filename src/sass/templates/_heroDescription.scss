@@ -64,12 +64,10 @@
   @include font-title;
   &--client {
     @include mq(tab-only) {
-      // margin-bottom: 13px;
     }
   }
   &--challenge {
     @include mq(tab) {
-      // margin-top: 32px;
     }
   }
 }
@@ -78,8 +76,7 @@
   &--client {
     margin-bottom: 32px;
   }
-  &--challenge1 {
-  }
+
   &--challenge2 {
     display: block;
     margin: 20px 0;
@@ -94,7 +91,6 @@
 }
 
 .swiper {
-  // --swiper-pagination-bottom: -304px;
   --swiper-pagination-bottom: 44px;
   @include mq(tab) {
     width: 554px;

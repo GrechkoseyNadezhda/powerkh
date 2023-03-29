@@ -119,12 +119,13 @@
   display: block;
   width: 115px;
   height: 2px;
-  background-color: #000000;
+  background-color: var(--pure-black-color);
 
   transform: scaleX(0);
   transition: transform 300ms linear;
 }
 
-.join-team__btn:hover::after {
+.join-team__btn:hover::after,
+.join-team__btn:focus::after {
   transform: scaleX(1);
 }

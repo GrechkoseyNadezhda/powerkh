@@ -1,9 +1,5 @@
 .about-page .container {
   @media screen and (min-width: 1199px) {
-    // .container {
-    //   padding: 0 152px;
-    //   max-width: 1440px;
-    // }
     padding: 0 32px;
     max-width: 1199px;
   }
@@ -34,7 +30,6 @@
 
 // FOOTER
 .about-page .footer .flex-container {
-  // max-width: 1199px;
   @media screen and (min-width: 1199px) {
     max-width: 1199px;
   }
@@ -130,7 +125,6 @@
 }
 
 .about-section__info-dataitem {
-  //   width: 320px;
   text-align: start;
 
   @include mq(tab) {
@@ -149,7 +143,6 @@
 
 .about-section__info-desc {
   @include font-body-reg;
-  // width: 320px;
 
   @include mq(tab) {
     width: 520px;
@@ -164,7 +157,6 @@
 }
 
 .about-section__info-datatext {
-  //   width: 100%;
   @include font-body-reg;
   margin-top: 20px;
 }
@@ -209,7 +201,8 @@
     width: 360px;
   }
 }
-.about-section__membercard:hover {
+.about-section__membercard:hover,
+.about-section__membercard:focus {
   .about-section__membercard-photo {
     filter: grayscale(0);
   }
@@ -220,8 +213,6 @@
   }
 }
 .about-section__membercard-photo {
-  //   width: 320px;
-  //   height: 420px;
   width: 100%;
   filter: grayscale(1);
   transition: all 0.3s ease;
@@ -259,17 +250,10 @@
 
 .about-section__video-wrapper {
   width: 1136px;
-  // min-height: 100vh;
-  // display: flex;
-  // flex-direction: column;
-
-  // justify-content: center;
-  // align-items: center;
 }
 
 .about-section__video-item {
   object-fit: cover;
   width: 1136px;
   height: 630px;
-  // padding: 0 0 50% 0;
 }

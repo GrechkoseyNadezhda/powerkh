@@ -2,37 +2,34 @@
   background-color: var(--pure-white-color);
   padding-bottom: 40px;
 
-.table__container::-webkit-scrollbar-track{   
-    box-shadow: none; 
-    background: none;    /* ширина всей полосы прокрутки */
+  .table__container::-webkit-scrollbar-track {
+    box-shadow: none;
+    background: none; /* ширина всей полосы прокрутки */
   }
 
-  .table__container::-webkit-scrollbar {   
-    height: 2px;  
-    padding-top: 16px;        /* ширина всей полосы прокрутки */
+  .table__container::-webkit-scrollbar {
+    height: 2px;
+    padding-top: 16px; /* ширина всей полосы прокрутки */
   }
-  
+
   .table__container::-webkit-scrollbar-thumb {
-    background-color: #C4C4C4; 
+    background-color: #c4c4c4;
   }
 
   .top-twenty__architectural-section {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
-    
-    @include mq(tab) {
-padding-left: 32px;
-padding-right: 32px; 
 
+    @include mq(tab) {
+      padding-left: 32px;
+      padding-right: 32px;
     }
     @include mq(desk) {
-        padding-left: 249px;
-    padding-right: 441px;
-    
+      padding-left: 249px;
+      padding-right: 441px;
     }
   }
-
 
   @include mq(tab) {
     padding-bottom: 60px;
@@ -69,11 +66,7 @@ padding-right: 32px;
 .architectural__title-twenty {
   text-align: center;
   margin-bottom: 20px;
-  font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(20 / 20);
+  @include font-title-20;
 }
 .architectural__description-twenty {
   margin-bottom: 20px;
@@ -82,7 +75,6 @@ padding-right: 32px;
 
 .architectural__left-block-twenty {
   width: 144px;
-  // display: flex;
   align-items: flex-start;
   padding-left: 12px;
   font-size: 9px;

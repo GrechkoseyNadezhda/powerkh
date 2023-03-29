@@ -91,11 +91,7 @@
   &__service-name {
     padding-top: 68px;
     padding-bottom: 68px;
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.1;
+    @include font-mono-reg-20;
     color: var(--pure-white-color);
     background-color: var(--dark-grey-color);
     text-align: center;
@@ -108,11 +104,7 @@
   &__service-link {
     background: var(--dark-grey-color);
     padding: 15px 15px 13px 15px;
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font-mono-reg-14;
     text-transform: uppercase;
 
     color: var(--pure-white-color);

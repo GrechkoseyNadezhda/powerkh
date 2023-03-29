@@ -45,7 +45,8 @@ body.blog-page {
   }
 }
 
-.blog-section__slider:hover {
+.blog-section__slider:hover,
+.blog-section__slider:focus {
   .blog-section__slider-img {
     filter: grayscale(0);
   }
@@ -58,18 +59,13 @@ body.blog-page {
 
 .blog-section__slider-item {
   display: block !important;
-  // flex-direction: column;
-  // gap: 0px;
+
   @include mq(desk) {
     display: flex !important;
     flex-direction: row;
     gap: 28px;
   }
 }
-
-// .section-projects__slider-item {
-//   display: block;
-// }
 
 .blog-section__slider-picture {
   position: relative;
@@ -95,9 +91,8 @@ body.blog-page {
 
   width: 280px;
   height: 164px;
-  // left: 153px;
-  // top: 217px;
-  border: 2px solid #000000;
+
+  border: 2px solid var(--pure-black-color);
 
   @include mq(tab) {
     width: 516px;
@@ -112,9 +107,6 @@ body.blog-page {
 .blog-section__slider-img {
   position: relative;
   z-index: 10;
-
-  // margin-top: 17px;
-  // margin-left: 17px;
   top: 17px;
   left: 17px;
   width: 280px;
@@ -126,8 +118,6 @@ body.blog-page {
   @include mq(tab) {
     top: 32;
     left: 32;
-    // margin-top: 32px;
-    // margin-left: 32px;
     width: 516px;
     height: 320px;
   }
@@ -153,9 +143,7 @@ body.blog-page {
 
 .blog-section__slider-badge {
   @include font-body-reg;
-
   margin-top: 34px;
-  // font-weight: 400;
 }
 
 .blog-section__slider-title {
@@ -174,9 +162,7 @@ body.blog-page {
 
 .blog-section__slider-author {
   @include font-body-reg;
-
   margin-top: 8px;
-  // font-weight: 400;
 }
 
 .blog-section__slider-desc {
@@ -221,12 +207,9 @@ body.blog-page {
 
 .blog-section__slider-seeProject {
   @include font-button;
-
   display: flex;
-
   margin-top: 24px;
 
-  // gap: 14px;
   align-items: center;
   justify-content: flex-start;
 
@@ -246,12 +229,7 @@ body.blog-page {
 
 /* Точки (булиты) */
 .blog-section__slider .slick-dots {
-  // position: relative;
   z-index: 21 !important;
-  // top: -100;
-  // left: 338px;
-  // top: -18px;
-  // left: 582px;
 
   margin-top: 16px;
   display: flex;
@@ -261,13 +239,9 @@ body.blog-page {
   justify-content: center;
   gap: 36px;
 
-  // margin-top: 40px;
-
   @include mq(tab) {
-    // margin-top: 52px;
   }
   @include mq(desk) {
-    // margin-top: 52px;
     position: relative;
     max-width: 554px;
     margin-top: 0;

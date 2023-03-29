@@ -1,8 +1,4 @@
-//popup
 .backdrop {
-  // opacity: 0;
-
-  // pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,9 +10,6 @@
   transition: opacity 600ms;
   pointer-events: all;
   opacity: 1;
-  // &.active-modal {
-
-  // }
 }
 
 .contact-modal__block {
@@ -98,7 +91,7 @@
       display: block;
       width: 7%;
       height: 2px;
-      background-color: #000000;
+      background-color: var(--pure-black-color);
 
       transform: scaleX(0);
       transition: transform 300ms linear;
@@ -114,7 +107,7 @@
         display: block;
         width: 55%;
         height: 2px;
-        background-color: #000000;
+        background-color: var(--pure-black-color);
 
         transform: scaleX(0);
         transition: transform 300ms linear;
@@ -134,7 +127,7 @@
         display: block;
         width: 40%;
         height: 2px;
-        background-color: #000000;
+        background-color: var(--pure-black-color);
 
         transform: scaleX(0);
         transition: transform 300ms linear;
@@ -162,7 +155,7 @@
   display: block;
   width: 40%;
   height: 2px;
-  background-color: #000000;
+  background-color: var(--pure-black-color);
 
   transform: scaleX(0);
   transition: transform 300ms linear;
@@ -209,7 +202,7 @@
   gap: 32px;
   width: 100%;
   padding-bottom: 32px;
-  color: #0e0e0e;
+  color: var(--dark-grey-color);
   @include font-body-reg;
 }
 
@@ -230,7 +223,7 @@
   height: 36px;
   padding: 10px 10px 5px;
   border: none;
-  border-bottom: 1px solid #0e0e0e;
+  border-bottom: 1px solid var(--dark-grey-color);
 }
 
 .contact-modal__input:focus {
