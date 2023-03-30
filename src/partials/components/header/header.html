@@ -9,7 +9,6 @@
     </svg>
   </a>
 
-  <!-- Navigation block -->
   <nav class="main-navigation">
     <ul class="main-navigation__list">
       <li class="main-navigation__item has-dropdown">
@@ -17,7 +16,7 @@
         <svg class="main-navigation__triangle-icon" width="12" height="9">
           <use href="../images/vectors/sprite.svg#icon-polygon-down"></use>
         </svg>
-        <ul class="main-navigation__dropdown">
+        <ul class="main-navigation__dropdown no-transition">
           <li class="main-navigation__dropdown-item">
             <a href="./bim-modeling.html" class="main-navigation__dropdown-link"
               >BIM Modeling</a
@@ -82,12 +81,16 @@
         <a class="main-navigation__link" href="./about.html">About</a>
       </li>
       <li class="main-navigation__item">
-        <!-- Contact Us modal trigger -->
         <button class="contact-us-btn js-btn-modal">Contact Us</button>
       </li>
     </ul>
-    <!-- Burger menu -->
-    <button type="button" class="burger-btn" data-menu-button>
+
+    <button
+      type="button"
+      class="burger-btn"
+      aria-label="navigation menu button"
+      data-menu-button
+    >
       <svg width="24" height="24">
         <use
           href="../images/vectors/sprite.svg#icon-burger"

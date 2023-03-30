@@ -1,3 +1,11 @@
+.no-transition {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -136,9 +144,10 @@
     top: 100%;
     transform: scaleY(0);
     transform-origin: right top;
-    transition: all 0.25s linear;
+
     visibility: hidden;
     width: 360px;
+    transition: all 0.25s linear;
 
     @include font-mono-16-18;
 

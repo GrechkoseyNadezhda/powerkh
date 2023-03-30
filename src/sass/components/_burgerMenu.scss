@@ -37,7 +37,7 @@
     background-color: transparent;
     z-index: 998;
 
-    transition: 0.3s all;
+    transition: all 0.3s linear;
     &.active-burger {
       opacity: 1;
       visibility: visible;

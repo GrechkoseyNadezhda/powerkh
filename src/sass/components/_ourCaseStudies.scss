@@ -137,7 +137,7 @@
   width: 152px;
   height: 56px;
   padding: 19px 64px 19px 0px;
-  @include font-button;
+  @include font-mono-16-18;
 
   &::after {
     content: '';
