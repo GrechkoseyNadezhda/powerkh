@@ -32,3 +32,9 @@ if (current === 'contacts') {
     .querySelector('.main-navigation__item > .contact-us-btn')
     .classList.add('disable-component');
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  document
+    .querySelectorAll('.no-transition')
+    .forEach(el => el.classList.remove('no-transition'));
+});
