@@ -139,7 +139,7 @@
 
     visibility: hidden;
     width: 360px;
-    transition: transform 2s linear;
+    transition: all 0.25s linear;
 
     @include font-mono-16-18;
 
