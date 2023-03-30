@@ -37,7 +37,7 @@
     background-color: transparent;
     z-index: 998;
 
-    transition: 0.3s all;
+    transition: opacity 0.3s linear;
     &.active-burger {
       opacity: 1;
       visibility: visible;
@@ -58,8 +58,9 @@
   overflow: auto;
   pointer-events: none;
   transform: scaleY(0);
+  opacity: 0;
   transform-origin: right top;
-  transition: all 0.3s linear;
+  transition: opacity 0.3s linear, transform 0.3s linear;
   @include font-button;
 
   @include mq(tab) {
@@ -74,6 +75,7 @@
 }
 
 .burger-menu._active {
+  opacity: 1;
   pointer-events: auto;
   transform: scaleY(1);
   visibility: visible;
