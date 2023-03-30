@@ -274,3 +274,9 @@
     width: 192px;
   }
 }
+
+.hero-main .hero__title {
+  @extend .hero__text;
+  text-transform: none;
+  padding-top: 24px;
+}
